@@ -1,0 +1,6080 @@
+{
+  "wares": {
+    "rhydoniumcell": {
+      "id": "rhydoniumcell",
+      "name": "Rhydonium Cell",
+      "group": "hightech",
+      "transport": "container",
+      "volume": 200,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "shipsupplies": {
+      "id": "shipsupplies",
+      "name": "Ship Supplies",
+      "group": "refined",
+      "transport": "container",
+      "volume": 30,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "advancedelectronics": {
+      "id": "advancedelectronics",
+      "name": "Advanced Electronics",
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 30,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "claytronics": {
+      "id": "claytronics",
+      "name": "Claytronics",
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 24,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "energycells": {
+      "id": "energycells",
+      "name": "Energy Cells",
+      "group": "energy",
+      "transport": "container",
+      "volume": 1,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "foodrations": {
+      "id": "foodrations",
+      "name": "Food Rations",
+      "group": "food",
+      "transport": "container",
+      "volume": 1,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "hullparts": {
+      "id": "hullparts",
+      "name": "Hull Parts",
+      "group": "hightech",
+      "transport": "container",
+      "volume": 12,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "meat": {
+      "id": "meat",
+      "name": "Meat",
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 6,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "medicalsupplies": {
+      "id": "medicalsupplies",
+      "name": "Medical Supplies",
+      "group": "pharmaceutical",
+      "transport": "container",
+      "volume": 2,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "wheat": {
+      "id": "wheat",
+      "name": "Wheat",
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 4,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "computronicsubstrate": {
+      "id": "computronicsubstrate",
+      "name": "Computronic Substrate",
+      "group": "hightech",
+      "transport": "container",
+      "volume": 50,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "metallicmicrolattice": {
+      "id": "metallicmicrolattice",
+      "name": "Metallic Microlattice",
+      "group": "hightech",
+      "transport": "container",
+      "volume": 1,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "terranmre": {
+      "id": "terranmre",
+      "name": "Terran MRE",
+      "group": "food",
+      "transport": "container",
+      "volume": 2,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "proteinpaste": {
+      "id": "proteinpaste",
+      "name": "Protein Paste",
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 4,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "siliconcarbide": {
+      "id": "siliconcarbide",
+      "name": "Silicon Carbide",
+      "group": "hightech",
+      "transport": "container",
+      "volume": 20,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "spacefuel": {
+      "id": "spacefuel",
+      "name": "Space Fuel",
+      "group": "pharmaceutical",
+      "transport": "container",
+      "volume": 2,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "advancedcomposites": {
+      "id": "advancedcomposites",
+      "name": "Advanced Composites",
+      "group": "hightech",
+      "transport": "container",
+      "volume": 32,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "antimattercells": {
+      "id": "antimattercells",
+      "name": "Antimatter Cells",
+      "group": "refined",
+      "transport": "container",
+      "volume": 18,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "antimatterconverters": {
+      "id": "antimatterconverters",
+      "name": "Antimatter Converters",
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 10,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "dronecomponents": {
+      "id": "dronecomponents",
+      "name": "Drone Components",
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 30,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "engineparts": {
+      "id": "engineparts",
+      "name": "Engine Parts",
+      "group": "hightech",
+      "transport": "container",
+      "volume": 15,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "fieldcoils": {
+      "id": "fieldcoils",
+      "name": "Field Coils",
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 15,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "graphene": {
+      "id": "graphene",
+      "name": "Graphene",
+      "group": "refined",
+      "transport": "container",
+      "volume": 20,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "microchips": {
+      "id": "microchips",
+      "name": "Microchips",
+      "group": "hightech",
+      "transport": "container",
+      "volume": 22,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "missilecomponents": {
+      "id": "missilecomponents",
+      "name": "Missile Components",
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 2,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "plasmaconductors": {
+      "id": "plasmaconductors",
+      "name": "Plasma Conductors",
+      "group": "hightech",
+      "transport": "container",
+      "volume": 32,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "quantumtubes": {
+      "id": "quantumtubes",
+      "name": "Quantum Tubes",
+      "group": "hightech",
+      "transport": "container",
+      "volume": 22,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "refinedmetals": {
+      "id": "refinedmetals",
+      "name": "Refined Metals",
+      "group": "refined",
+      "transport": "container",
+      "volume": 14,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "scanningarrays": {
+      "id": "scanningarrays",
+      "name": "Scanning Arrays",
+      "group": "hightech",
+      "transport": "container",
+      "volume": 38,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "shieldcomponents": {
+      "id": "shieldcomponents",
+      "name": "Shield Components",
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 10,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "siliconwafers": {
+      "id": "siliconwafers",
+      "name": "Silicon Wafers",
+      "group": "refined",
+      "transport": "container",
+      "volume": 18,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "smartchips": {
+      "id": "smartchips",
+      "name": "Smart Chips",
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 2,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "spices": {
+      "id": "spices",
+      "name": "Spices",
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 3,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "superfluidcoolant": {
+      "id": "superfluidcoolant",
+      "name": "Superfluid Coolant",
+      "group": "refined",
+      "transport": "container",
+      "volume": 16,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "turretcomponents": {
+      "id": "turretcomponents",
+      "name": "Turret Components",
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 20,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "water": {
+      "id": "water",
+      "name": "Water",
+      "group": "water",
+      "transport": "container",
+      "volume": 6,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "weaponcomponents": {
+      "id": "weaponcomponents",
+      "name": "Weapon Components",
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 20,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "majadust": {
+      "id": "majadust",
+      "name": "Maja Dust",
+      "group": "pharmaceutical",
+      "transport": "container",
+      "volume": 6,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "majasnails": {
+      "id": "majasnails",
+      "name": "Maja Snails",
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 6,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "sojabeans": {
+      "id": "sojabeans",
+      "name": "Soja Beans",
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 5,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "sojahusk": {
+      "id": "sojahusk",
+      "name": "Soja Husk",
+      "group": "food",
+      "transport": "container",
+      "volume": 1,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "nostropoil": {
+      "id": "nostropoil",
+      "name": "Nostrop Oil",
+      "group": "food",
+      "transport": "container",
+      "volume": 1,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "spaceweed": {
+      "id": "spaceweed",
+      "name": "Space Weed",
+      "group": "pharmaceutical",
+      "transport": "container",
+      "volume": 3,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "sunriseflowers": {
+      "id": "sunriseflowers",
+      "name": "Sunrise Flowers",
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 5,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "swampplant": {
+      "id": "swampplant",
+      "name": "Swamp Plant",
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 6,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "teladianium": {
+      "id": "teladianium",
+      "name": "Teladianium",
+      "group": "refined",
+      "transport": "container",
+      "volume": 16,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "ore": {
+      "id": "ore",
+      "name": "Ore",
+      "group": "minerals",
+      "transport": "solid",
+      "volume": 10,
+      "tags": [
+        "economy",
+        "minable",
+        "mineral",
+        "solid"
+      ]
+    },
+    "nividium": {
+      "id": "nividium",
+      "name": "Nividium",
+      "group": "minerals",
+      "transport": "solid",
+      "volume": 60,
+      "tags": [
+        "economy",
+        "minable",
+        "mineral",
+        "solid"
+      ]
+    },
+    "hydrogen": {
+      "id": "hydrogen",
+      "name": "Hydrogen",
+      "group": "gases",
+      "transport": "liquid",
+      "volume": 6,
+      "tags": [
+        "economy",
+        "gas",
+        "liquid",
+        "minable"
+      ]
+    },
+    "silicon": {
+      "id": "silicon",
+      "name": "Silicon",
+      "group": "minerals",
+      "transport": "solid",
+      "volume": 10,
+      "tags": [
+        "economy",
+        "minable",
+        "mineral",
+        "solid"
+      ]
+    },
+    "methane": {
+      "id": "methane",
+      "name": "Methane",
+      "group": "gases",
+      "transport": "liquid",
+      "volume": 6,
+      "tags": [
+        "economy",
+        "gas",
+        "liquid",
+        "minable"
+      ]
+    },
+    "helium": {
+      "id": "helium",
+      "name": "Helium",
+      "group": "gases",
+      "transport": "liquid",
+      "volume": 6,
+      "tags": [
+        "economy",
+        "gas",
+        "liquid",
+        "minable"
+      ]
+    },
+    "ice": {
+      "id": "ice",
+      "name": "Ice",
+      "group": "ice",
+      "transport": "solid",
+      "volume": 8,
+      "tags": [
+        "economy",
+        "minable",
+        "mineral",
+        "solid"
+      ]
+    }
+  },
+  "recipes": {
+    "majadust_default": {
+      "id": "majadust_default",
+      "wareId": "majadust",
+      "method": "default",
+      "time": 600,
+      "amount": 64,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 40
+        },
+        {
+          "ware": "majasnails",
+          "amount": 120
+        },
+        {
+          "ware": "spices",
+          "amount": 60
+        }
+      ],
+      "workforceBonus": 0.75
+    },
+    "majasnails_default": {
+      "id": "majasnails_default",
+      "wareId": "majasnails",
+      "method": "default",
+      "time": 450,
+      "amount": 146,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 40
+        },
+        {
+          "ware": "water",
+          "amount": 100
+        }
+      ],
+      "workforceBonus": 0.59
+    },
+    "nostropoil_default": {
+      "id": "nostropoil_default",
+      "wareId": "nostropoil",
+      "method": "default",
+      "time": 300,
+      "amount": 500,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 100
+        },
+        {
+          "ware": "spices",
+          "amount": 40
+        },
+        {
+          "ware": "sunriseflowers",
+          "amount": 40
+        },
+        {
+          "ware": "water",
+          "amount": 60
+        }
+      ],
+      "workforceBonus": 0.2
+    },
+    "sojabeans_default": {
+      "id": "sojabeans_default",
+      "wareId": "sojabeans",
+      "method": "default",
+      "time": 300,
+      "amount": 104,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 30
+        },
+        {
+          "ware": "water",
+          "amount": 80
+        }
+      ],
+      "workforceBonus": 0.48
+    },
+    "sojahusk_default": {
+      "id": "sojahusk_default",
+      "wareId": "sojahusk",
+      "method": "default",
+      "time": 300,
+      "amount": 350,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 80
+        },
+        {
+          "ware": "majasnails",
+          "amount": 50
+        },
+        {
+          "ware": "sojabeans",
+          "amount": 40
+        },
+        {
+          "ware": "spices",
+          "amount": 20
+        }
+      ],
+      "workforceBonus": 0.37
+    },
+    "sunriseflowers_default": {
+      "id": "sunriseflowers_default",
+      "wareId": "sunriseflowers",
+      "method": "default",
+      "time": 300,
+      "amount": 100,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 30
+        },
+        {
+          "ware": "water",
+          "amount": 80
+        }
+      ],
+      "workforceBonus": 0.28
+    },
+    "teladianium_default": {
+      "id": "teladianium_default",
+      "wareId": "teladianium",
+      "method": "default",
+      "time": 120,
+      "amount": 70,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 45
+        },
+        {
+          "ware": "ore",
+          "amount": 280
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "shipsupplies_default": {
+      "id": "shipsupplies_default",
+      "wareId": "shipsupplies",
+      "method": "default",
+      "time": 200,
+      "amount": 20,
+      "inputs": [
+        {
+          "ware": "foodrations",
+          "amount": 150
+        },
+        {
+          "ware": "medicalsupplies",
+          "amount": 100
+        },
+        {
+          "ware": "refinedmetals",
+          "amount": 50
+        },
+        {
+          "ware": "water",
+          "amount": 50
+        },
+        {
+          "ware": "energycells",
+          "amount": 100
+        }
+      ],
+      "workforceBonus": 0.3
+    },
+    "shipsupplies_terran": {
+      "id": "shipsupplies_terran",
+      "wareId": "shipsupplies",
+      "method": "terran",
+      "time": 200,
+      "amount": 20,
+      "inputs": [
+        {
+          "ware": "metallicmicrolattice",
+          "amount": 20
+        },
+        {
+          "ware": "energycells",
+          "amount": 100
+        },
+        {
+          "ware": "proteinpaste",
+          "amount": 24
+        }
+      ],
+      "workforceBonus": 0.4
+    },
+    "rhydoniumcell_default": {
+      "id": "rhydoniumcell_default",
+      "wareId": "rhydoniumcell",
+      "method": "default",
+      "time": 800,
+      "amount": 30,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 4000
+        },
+        {
+          "ware": "nividium",
+          "amount": 900
+        }
+      ],
+      "workforceBonus": 0.4
+    },
+    "computronicsubstrate_default": {
+      "id": "computronicsubstrate_default",
+      "wareId": "computronicsubstrate",
+      "method": "default",
+      "time": 600,
+      "amount": 200,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 8000
+        },
+        {
+          "ware": "hydrogen",
+          "amount": 4000
+        },
+        {
+          "ware": "ore",
+          "amount": 6000
+        },
+        {
+          "ware": "silicon",
+          "amount": 6000
+        }
+      ],
+      "workforceBonus": 0.1
+    },
+    "siliconcarbide_default": {
+      "id": "siliconcarbide_default",
+      "wareId": "siliconcarbide",
+      "method": "default",
+      "time": 300,
+      "amount": 100,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 400
+        },
+        {
+          "ware": "metallicmicrolattice",
+          "amount": 4
+        },
+        {
+          "ware": "methane",
+          "amount": 800
+        },
+        {
+          "ware": "silicon",
+          "amount": 600
+        }
+      ],
+      "workforceBonus": 0.2
+    },
+    "metallicmicrolattice_default": {
+      "id": "metallicmicrolattice_default",
+      "wareId": "metallicmicrolattice",
+      "method": "default",
+      "time": 180,
+      "amount": 400,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 100
+        },
+        {
+          "ware": "helium",
+          "amount": 260
+        },
+        {
+          "ware": "ore",
+          "amount": 100
+        }
+      ],
+      "workforceBonus": 0.2
+    },
+    "terranmre_default": {
+      "id": "terranmre_default",
+      "wareId": "terranmre",
+      "method": "default",
+      "time": 240,
+      "amount": 115,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 120
+        },
+        {
+          "ware": "proteinpaste",
+          "amount": 120
+        }
+      ],
+      "workforceBonus": 0.42
+    },
+    "proteinpaste_default": {
+      "id": "proteinpaste_default",
+      "wareId": "proteinpaste",
+      "method": "default",
+      "time": 300,
+      "amount": 440,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 160
+        },
+        {
+          "ware": "ice",
+          "amount": 160
+        },
+        {
+          "ware": "methane",
+          "amount": 400
+        }
+      ],
+      "workforceBonus": 0.3
+    },
+    "advancedcomposites_default": {
+      "id": "advancedcomposites_default",
+      "wareId": "advancedcomposites",
+      "method": "default",
+      "time": 300,
+      "amount": 162,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 150
+        },
+        {
+          "ware": "graphene",
+          "amount": 240
+        },
+        {
+          "ware": "refinedmetals",
+          "amount": 240
+        }
+      ],
+      "workforceBonus": 0.34
+    },
+    "advancedelectronics_default": {
+      "id": "advancedelectronics_default",
+      "wareId": "advancedelectronics",
+      "method": "default",
+      "time": 720,
+      "amount": 162,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 180
+        },
+        {
+          "ware": "microchips",
+          "amount": 132
+        },
+        {
+          "ware": "quantumtubes",
+          "amount": 60
+        }
+      ],
+      "workforceBonus": 0.42
+    },
+    "antimattercells_default": {
+      "id": "antimattercells_default",
+      "wareId": "antimattercells",
+      "method": "default",
+      "time": 120,
+      "amount": 300,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 300
+        },
+        {
+          "ware": "hydrogen",
+          "amount": 960
+        }
+      ],
+      "workforceBonus": 0.35
+    },
+    "antimatterconverters_default": {
+      "id": "antimatterconverters_default",
+      "wareId": "antimatterconverters",
+      "method": "default",
+      "time": 300,
+      "amount": 399,
+      "inputs": [
+        {
+          "ware": "advancedcomposites",
+          "amount": 60
+        },
+        {
+          "ware": "energycells",
+          "amount": 240
+        },
+        {
+          "ware": "microchips",
+          "amount": 90
+        }
+      ],
+      "workforceBonus": 0.39
+    },
+    "claytronics_default": {
+      "id": "claytronics_default",
+      "wareId": "claytronics",
+      "method": "default",
+      "time": 900,
+      "amount": 324,
+      "inputs": [
+        {
+          "ware": "plasmaconductors",
+          "amount": 150
+        },
+        {
+          "ware": "energycells",
+          "amount": 420
+        },
+        {
+          "ware": "microchips",
+          "amount": 480
+        },
+        {
+          "ware": "quantumtubes",
+          "amount": 300
+        }
+      ],
+      "workforceBonus": 0.34
+    },
+    "dronecomponents_default": {
+      "id": "dronecomponents_default",
+      "wareId": "dronecomponents",
+      "method": "default",
+      "time": 1200,
+      "amount": 315,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 180
+        },
+        {
+          "ware": "engineparts",
+          "amount": 60
+        },
+        {
+          "ware": "hullparts",
+          "amount": 60
+        },
+        {
+          "ware": "microchips",
+          "amount": 60
+        },
+        {
+          "ware": "scanningarrays",
+          "amount": 120
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "energycells_default": {
+      "id": "energycells_default",
+      "wareId": "energycells",
+      "method": "default",
+      "time": 60,
+      "amount": 525,
+      "inputs": [],
+      "workforceBonus": 0.43
+    },
+    "energycells_imperial": {
+      "id": "energycells_imperial",
+      "wareId": "energycells",
+      "method": "imperial",
+      "time": 60,
+      "amount": 400,
+      "inputs": [],
+      "workforceBonus": 0.43
+    },
+    "engineparts_default": {
+      "id": "engineparts_default",
+      "wareId": "engineparts",
+      "method": "default",
+      "time": 900,
+      "amount": 624,
+      "inputs": [
+        {
+          "ware": "antimattercells",
+          "amount": 450
+        },
+        {
+          "ware": "energycells",
+          "amount": 180
+        },
+        {
+          "ware": "refinedmetals",
+          "amount": 288
+        }
+      ],
+      "workforceBonus": 0.47
+    },
+    "fieldcoils_default": {
+      "id": "fieldcoils_default",
+      "wareId": "fieldcoils",
+      "method": "default",
+      "time": 600,
+      "amount": 525,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 180
+        },
+        {
+          "ware": "plasmaconductors",
+          "amount": 120
+        },
+        {
+          "ware": "quantumtubes",
+          "amount": 129
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "graphene_default": {
+      "id": "graphene_default",
+      "wareId": "graphene",
+      "method": "default",
+      "time": 240,
+      "amount": 288,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 160
+        },
+        {
+          "ware": "methane",
+          "amount": 960
+        }
+      ],
+      "workforceBonus": 0.46
+    },
+    "hullparts_default": {
+      "id": "hullparts_default",
+      "wareId": "hullparts",
+      "method": "default",
+      "time": 900,
+      "amount": 882,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 160
+        },
+        {
+          "ware": "graphene",
+          "amount": 120
+        },
+        {
+          "ware": "refinedmetals",
+          "amount": 840
+        }
+      ],
+      "workforceBonus": 0.37
+    },
+    "microchips_default": {
+      "id": "microchips_default",
+      "wareId": "microchips",
+      "method": "default",
+      "time": 600,
+      "amount": 216,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 150
+        },
+        {
+          "ware": "siliconwafers",
+          "amount": 600
+        }
+      ],
+      "workforceBonus": 0.36
+    },
+    "missilecomponents_default": {
+      "id": "missilecomponents_default",
+      "wareId": "missilecomponents",
+      "method": "default",
+      "time": 900,
+      "amount": 843,
+      "inputs": [
+        {
+          "ware": "advancedcomposites",
+          "amount": 6
+        },
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "hullparts",
+          "amount": 6
+        }
+      ],
+      "workforceBonus": 0.53
+    },
+    "plasmaconductors_default": {
+      "id": "plasmaconductors_default",
+      "wareId": "plasmaconductors",
+      "method": "default",
+      "time": 900,
+      "amount": 132,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 180
+        },
+        {
+          "ware": "graphene",
+          "amount": 288
+        },
+        {
+          "ware": "superfluidcoolant",
+          "amount": 420
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "quantumtubes_default": {
+      "id": "quantumtubes_default",
+      "wareId": "quantumtubes",
+      "method": "default",
+      "time": 720,
+      "amount": 282,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 120
+        },
+        {
+          "ware": "graphene",
+          "amount": 348
+        },
+        {
+          "ware": "superfluidcoolant",
+          "amount": 90
+        }
+      ],
+      "workforceBonus": 0.53
+    },
+    "refinedmetals_default": {
+      "id": "refinedmetals_default",
+      "wareId": "refinedmetals",
+      "method": "default",
+      "time": 150,
+      "amount": 264,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 270
+        },
+        {
+          "ware": "ore",
+          "amount": 720
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "scanningarrays_default": {
+      "id": "scanningarrays_default",
+      "wareId": "scanningarrays",
+      "method": "default",
+      "time": 600,
+      "amount": 108,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 180
+        },
+        {
+          "ware": "refinedmetals",
+          "amount": 300
+        },
+        {
+          "ware": "siliconwafers",
+          "amount": 180
+        }
+      ],
+      "workforceBonus": 0.38
+    },
+    "shieldcomponents_default": {
+      "id": "shieldcomponents_default",
+      "wareId": "shieldcomponents",
+      "method": "default",
+      "time": 1200,
+      "amount": 579,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 210
+        },
+        {
+          "ware": "plasmaconductors",
+          "amount": 60
+        },
+        {
+          "ware": "quantumtubes",
+          "amount": 60
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "siliconwafers_default": {
+      "id": "siliconwafers_default",
+      "wareId": "siliconwafers",
+      "method": "default",
+      "time": 180,
+      "amount": 321,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 270
+        },
+        {
+          "ware": "silicon",
+          "amount": 720
+        }
+      ],
+      "workforceBonus": 0.37
+    },
+    "smartchips_default": {
+      "id": "smartchips_default",
+      "wareId": "smartchips",
+      "method": "default",
+      "time": 600,
+      "amount": 429,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 150
+        },
+        {
+          "ware": "siliconwafers",
+          "amount": 60
+        }
+      ],
+      "workforceBonus": 0.37
+    },
+    "spacefuel_default": {
+      "id": "spacefuel_default",
+      "wareId": "spacefuel",
+      "method": "default",
+      "time": 480,
+      "amount": 294,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 120
+        },
+        {
+          "ware": "water",
+          "amount": 300
+        },
+        {
+          "ware": "wheat",
+          "amount": 240
+        }
+      ],
+      "workforceBonus": 0.69
+    },
+    "spaceweed_default": {
+      "id": "spaceweed_default",
+      "wareId": "spaceweed",
+      "method": "default",
+      "time": 600,
+      "amount": 549,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 420
+        },
+        {
+          "ware": "spices",
+          "amount": 60
+        },
+        {
+          "ware": "swampplant",
+          "amount": 360
+        }
+      ],
+      "workforceBonus": 0.7
+    },
+    "spices_default": {
+      "id": "spices_default",
+      "wareId": "spices",
+      "method": "default",
+      "time": 600,
+      "amount": 1500,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 120
+        },
+        {
+          "ware": "water",
+          "amount": 240
+        }
+      ],
+      "workforceBonus": 0.4
+    },
+    "superfluidcoolant_default": {
+      "id": "superfluidcoolant_default",
+      "wareId": "superfluidcoolant",
+      "method": "default",
+      "time": 240,
+      "amount": 285,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 180
+        },
+        {
+          "ware": "helium",
+          "amount": 960
+        }
+      ],
+      "workforceBonus": 0.49
+    },
+    "swampplant_default": {
+      "id": "swampplant_default",
+      "wareId": "swampplant",
+      "method": "default",
+      "time": 450,
+      "amount": 360,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 120
+        },
+        {
+          "ware": "water",
+          "amount": 300
+        }
+      ],
+      "workforceBonus": 0.59
+    },
+    "turretcomponents_default": {
+      "id": "turretcomponents_default",
+      "wareId": "turretcomponents",
+      "method": "default",
+      "time": 1800,
+      "amount": 410,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 120
+        },
+        {
+          "ware": "microchips",
+          "amount": 40
+        },
+        {
+          "ware": "quantumtubes",
+          "amount": 40
+        },
+        {
+          "ware": "scanningarrays",
+          "amount": 30
+        },
+        {
+          "ware": "antimattercells",
+          "amount": 60
+        }
+      ],
+      "workforceBonus": 0.53
+    },
+    "water_default": {
+      "id": "water_default",
+      "wareId": "water",
+      "method": "default",
+      "time": 120,
+      "amount": 579,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 180
+        },
+        {
+          "ware": "ice",
+          "amount": 960
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "weaponcomponents_default": {
+      "id": "weaponcomponents_default",
+      "wareId": "weaponcomponents",
+      "method": "default",
+      "time": 1800,
+      "amount": 510,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 180
+        },
+        {
+          "ware": "hullparts",
+          "amount": 60
+        },
+        {
+          "ware": "antimattercells",
+          "amount": 180
+        }
+      ],
+      "workforceBonus": 0.53
+    },
+    "wheat_default": {
+      "id": "wheat_default",
+      "wareId": "wheat",
+      "method": "default",
+      "time": 300,
+      "amount": 930,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 180
+        },
+        {
+          "ware": "water",
+          "amount": 240
+        }
+      ],
+      "workforceBonus": 0.28
+    },
+    "foodrations_default": {
+      "id": "foodrations_default",
+      "wareId": "foodrations",
+      "method": "default",
+      "time": 240,
+      "amount": 1380,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 300
+        },
+        {
+          "ware": "meat",
+          "amount": 150
+        },
+        {
+          "ware": "spices",
+          "amount": 150
+        },
+        {
+          "ware": "wheat",
+          "amount": 150
+        }
+      ],
+      "workforceBonus": 0.35
+    },
+    "meat_default": {
+      "id": "meat_default",
+      "wareId": "meat",
+      "method": "default",
+      "time": 450,
+      "amount": 870,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 240
+        },
+        {
+          "ware": "water",
+          "amount": 300
+        }
+      ],
+      "workforceBonus": 0.33
+    },
+    "medicalsupplies_default": {
+      "id": "medicalsupplies_default",
+      "wareId": "medicalsupplies",
+      "method": "default",
+      "time": 300,
+      "amount": 624,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 300
+        },
+        {
+          "ware": "spices",
+          "amount": 120
+        },
+        {
+          "ware": "water",
+          "amount": 180
+        },
+        {
+          "ware": "wheat",
+          "amount": 90
+        }
+      ],
+      "workforceBonus": 0.28
+    }
+  },
+  "modules": {
+    "production": {
+      "prod_gen_rhydoniumcell_macro": {
+        "id": "prod_gen_rhydoniumcell_macro",
+        "name": "Gen Rhydoniumcell",
+        "producedWareId": "rhydoniumcell",
+        "workforceMax": 700
+      },
+      "prod_gen_shipsupplies_macro": {
+        "id": "prod_gen_shipsupplies_macro",
+        "name": "Gen Shipsupplies",
+        "producedWareId": "shipsupplies",
+        "workforceMax": 100
+      },
+      "prod_imp_advancedelectronics_macro": {
+        "id": "prod_imp_advancedelectronics_macro",
+        "name": "Imp Advancedelectronics",
+        "producedWareId": "advancedelectronics",
+        "workforceMax": 540
+      },
+      "prod_imp_claytronics_macro": {
+        "id": "prod_imp_claytronics_macro",
+        "name": "Imp Claytronics",
+        "producedWareId": "claytronics",
+        "workforceMax": 1215
+      },
+      "prod_imp_energycells_macro": {
+        "id": "prod_imp_energycells_macro",
+        "name": "Imp Energycells",
+        "producedWareId": "energycells",
+        "workforceMax": 45
+      },
+      "prod_imp_foodrations_macro": {
+        "id": "prod_imp_foodrations_macro",
+        "name": "Imp Foodrations",
+        "producedWareId": "foodrations",
+        "workforceMax": 90
+      },
+      "prod_imp_hullparts_macro": {
+        "id": "prod_imp_hullparts_macro",
+        "name": "Imp Hullparts",
+        "producedWareId": "hullparts",
+        "workforceMax": 270
+      },
+      "prod_imp_meat_macro": {
+        "id": "prod_imp_meat_macro",
+        "name": "Imp Meat",
+        "producedWareId": "meat",
+        "workforceMax": 75
+      },
+      "prod_imp_medicalsupplies_macro": {
+        "id": "prod_imp_medicalsupplies_macro",
+        "name": "Imp Medicalsupplies",
+        "producedWareId": "medicalsupplies",
+        "workforceMax": 90
+      },
+      "prod_imp_rhydoniumcell_macro": {
+        "id": "prod_imp_rhydoniumcell_macro",
+        "name": "Imp Rhydoniumcell",
+        "producedWareId": "rhydoniumcell",
+        "workforceMax": 700
+      },
+      "prod_imp_shipsupplies_macro": {
+        "id": "prod_imp_shipsupplies_macro",
+        "name": "Imp Shipsupplies",
+        "producedWareId": "shipsupplies",
+        "workforceMax": 100
+      },
+      "prod_imp_wheat_macro": {
+        "id": "prod_imp_wheat_macro",
+        "name": "Imp Wheat",
+        "producedWareId": "wheat",
+        "workforceMax": 75
+      },
+      "prod_sith_computronicsubstrate_macro": {
+        "id": "prod_sith_computronicsubstrate_macro",
+        "name": "Sith Computronicsubstrate",
+        "producedWareId": "computronicsubstrate",
+        "workforceMax": 1500
+      },
+      "prod_sith_metallicmicrolattice_macro": {
+        "id": "prod_sith_metallicmicrolattice_macro",
+        "name": "Sith Metallicmicrolattice",
+        "producedWareId": "metallicmicrolattice",
+        "workforceMax": 120
+      },
+      "prod_sith_mre_macro": {
+        "id": "prod_sith_mre_macro",
+        "name": "Sith Mre",
+        "producedWareId": "terranmre",
+        "workforceMax": 135
+      },
+      "prod_sith_proteinpaste_macro": {
+        "id": "prod_sith_proteinpaste_macro",
+        "name": "Sith Proteinpaste",
+        "producedWareId": "proteinpaste",
+        "workforceMax": 180
+      },
+      "prod_sith_scrap_recycler_macro": {
+        "id": "prod_sith_scrap_recycler_macro",
+        "name": "Sith Scrap Recycler",
+        "producedWareId": "computronicsubstrate siliconcarbide",
+        "workforceMax": 1250
+      },
+      "prod_sith_shipsupplies_macro": {
+        "id": "prod_sith_shipsupplies_macro",
+        "name": "Sith Shipsupplies",
+        "producedWareId": "shipsupplies",
+        "workforceMax": 100
+      },
+      "prod_sith_siliconcarbide_macro": {
+        "id": "prod_sith_siliconcarbide_macro",
+        "name": "Sith Siliconcarbide",
+        "producedWareId": "siliconcarbide",
+        "workforceMax": 750
+      },
+      "prod_arg_foodrations_macro": {
+        "id": "prod_arg_foodrations_macro",
+        "name": "Arg Foodrations",
+        "producedWareId": "foodrations",
+        "workforceMax": 90
+      },
+      "prod_arg_meat_macro": {
+        "id": "prod_arg_meat_macro",
+        "name": "Arg Meat",
+        "producedWareId": "meat",
+        "workforceMax": 75
+      },
+      "prod_arg_medicalsupplies_macro": {
+        "id": "prod_arg_medicalsupplies_macro",
+        "name": "Arg Medicalsupplies",
+        "producedWareId": "medicalsupplies",
+        "workforceMax": 90
+      },
+      "prod_arg_spacefuel_macro": {
+        "id": "prod_arg_spacefuel_macro",
+        "name": "Arg Spacefuel",
+        "producedWareId": "spacefuel",
+        "workforceMax": 225
+      },
+      "prod_arg_wheat_macro": {
+        "id": "prod_arg_wheat_macro",
+        "name": "Arg Wheat",
+        "producedWareId": "wheat",
+        "workforceMax": 75
+      },
+      "prod_gen_advancedcomposites_macro": {
+        "id": "prod_gen_advancedcomposites_macro",
+        "name": "Gen Advancedcomposites",
+        "producedWareId": "advancedcomposites",
+        "workforceMax": 315
+      },
+      "prod_gen_advancedelectronics_macro": {
+        "id": "prod_gen_advancedelectronics_macro",
+        "name": "Gen Advancedelectronics",
+        "producedWareId": "advancedelectronics",
+        "workforceMax": 540
+      },
+      "prod_gen_antimattercells_macro": {
+        "id": "prod_gen_antimattercells_macro",
+        "name": "Gen Antimattercells",
+        "producedWareId": "antimattercells",
+        "workforceMax": 180
+      },
+      "prod_gen_antimatterconverters_macro": {
+        "id": "prod_gen_antimatterconverters_macro",
+        "name": "Gen Antimatterconverters",
+        "producedWareId": "antimatterconverters",
+        "workforceMax": 1080
+      },
+      "prod_gen_claytronics_macro": {
+        "id": "prod_gen_claytronics_macro",
+        "name": "Gen Claytronics",
+        "producedWareId": "claytronics",
+        "workforceMax": 1215
+      },
+      "prod_gen_dronecomponents_macro": {
+        "id": "prod_gen_dronecomponents_macro",
+        "name": "Gen Dronecomponents",
+        "producedWareId": "dronecomponents",
+        "workforceMax": 675
+      },
+      "prod_gen_energycells_macro": {
+        "id": "prod_gen_energycells_macro",
+        "name": "Gen Energycells",
+        "producedWareId": "energycells",
+        "workforceMax": 90
+      },
+      "prod_gen_engineparts_macro": {
+        "id": "prod_gen_engineparts_macro",
+        "name": "Gen Engineparts",
+        "producedWareId": "engineparts",
+        "workforceMax": 225
+      },
+      "prod_gen_fieldcoils_macro": {
+        "id": "prod_gen_fieldcoils_macro",
+        "name": "Gen Fieldcoils",
+        "producedWareId": "fieldcoils",
+        "workforceMax": 810
+      },
+      "prod_gen_graphene_macro": {
+        "id": "prod_gen_graphene_macro",
+        "name": "Gen Graphene",
+        "producedWareId": "graphene",
+        "workforceMax": 180
+      },
+      "prod_gen_hullparts_macro": {
+        "id": "prod_gen_hullparts_macro",
+        "name": "Gen Hullparts",
+        "producedWareId": "hullparts",
+        "workforceMax": 270
+      },
+      "prod_gen_microchips_macro": {
+        "id": "prod_gen_microchips_macro",
+        "name": "Gen Microchips",
+        "producedWareId": "microchips",
+        "workforceMax": 450
+      },
+      "prod_gen_missilecomponents_macro": {
+        "id": "prod_gen_missilecomponents_macro",
+        "name": "Gen Missilecomponents",
+        "producedWareId": "missilecomponents",
+        "workforceMax": 22
+      },
+      "prod_gen_plasmaconductors_macro": {
+        "id": "prod_gen_plasmaconductors_macro",
+        "name": "Gen Plasmaconductors",
+        "producedWareId": "plasmaconductors",
+        "workforceMax": 225
+      },
+      "prod_gen_quantumtubes_macro": {
+        "id": "prod_gen_quantumtubes_macro",
+        "name": "Gen Quantumtubes",
+        "producedWareId": "quantumtubes",
+        "workforceMax": 225
+      },
+      "prod_gen_refinedmetals_macro": {
+        "id": "prod_gen_refinedmetals_macro",
+        "name": "Gen Refinedmetals",
+        "producedWareId": "refinedmetals",
+        "workforceMax": 225
+      },
+      "prod_gen_scanningarrays_macro": {
+        "id": "prod_gen_scanningarrays_macro",
+        "name": "Gen Scanningarrays",
+        "producedWareId": "scanningarrays",
+        "workforceMax": 315
+      },
+      "prod_gen_scrap_recycler_macro": {
+        "id": "prod_gen_scrap_recycler_macro",
+        "name": "Gen Scrap Recycler",
+        "producedWareId": "claytronics hullparts",
+        "workforceMax": 1250
+      },
+      "prod_gen_shieldcomponents_macro": {
+        "id": "prod_gen_shieldcomponents_macro",
+        "name": "Gen Shieldcomponents",
+        "producedWareId": "shieldcomponents",
+        "workforceMax": 225
+      },
+      "prod_gen_siliconwafers_macro": {
+        "id": "prod_gen_siliconwafers_macro",
+        "name": "Gen Siliconwafers",
+        "producedWareId": "siliconwafers",
+        "workforceMax": 225
+      },
+      "prod_gen_smartchips_macro": {
+        "id": "prod_gen_smartchips_macro",
+        "name": "Gen Smartchips",
+        "producedWareId": "smartchips",
+        "workforceMax": 60
+      },
+      "prod_gen_spices_macro": {
+        "id": "prod_gen_spices_macro",
+        "name": "Gen Spices",
+        "producedWareId": "spices",
+        "workforceMax": 60
+      },
+      "prod_gen_superfluidcoolant_macro": {
+        "id": "prod_gen_superfluidcoolant_macro",
+        "name": "Gen Superfluidcoolant",
+        "producedWareId": "superfluidcoolant",
+        "workforceMax": 180
+      },
+      "prod_gen_turretcomponents_macro": {
+        "id": "prod_gen_turretcomponents_macro",
+        "name": "Gen Turretcomponents",
+        "producedWareId": "turretcomponents",
+        "workforceMax": 225
+      },
+      "prod_gen_water_macro": {
+        "id": "prod_gen_water_macro",
+        "name": "Gen Water",
+        "producedWareId": "water",
+        "workforceMax": 180
+      },
+      "prod_gen_weaponcomponents_macro": {
+        "id": "prod_gen_weaponcomponents_macro",
+        "name": "Gen Weaponcomponents",
+        "producedWareId": "weaponcomponents",
+        "workforceMax": 225
+      },
+      "prod_par_majadust_macro": {
+        "id": "prod_par_majadust_macro",
+        "name": "Par Majadust",
+        "producedWareId": "majadust",
+        "workforceMax": 123
+      },
+      "prod_par_majasnails_macro": {
+        "id": "prod_par_majasnails_macro",
+        "name": "Par Majasnails",
+        "producedWareId": "majasnails",
+        "workforceMax": 175
+      },
+      "prod_par_medicalsupplies_macro": {
+        "id": "prod_par_medicalsupplies_macro",
+        "name": "Par Medicalsupplies",
+        "producedWareId": "medicalsupplies",
+        "workforceMax": 90
+      },
+      "prod_par_sojabeans_macro": {
+        "id": "prod_par_sojabeans_macro",
+        "name": "Par Sojabeans",
+        "producedWareId": "sojabeans",
+        "workforceMax": 175
+      },
+      "prod_par_sojahusk_macro": {
+        "id": "prod_par_sojahusk_macro",
+        "name": "Par Sojahusk",
+        "producedWareId": "sojahusk",
+        "workforceMax": 99
+      },
+      "prod_tel_advancedcomposites_macro": {
+        "id": "prod_tel_advancedcomposites_macro",
+        "name": "Tel Advancedcomposites",
+        "producedWareId": "advancedcomposites",
+        "workforceMax": 315
+      },
+      "prod_tel_engineparts_macro": {
+        "id": "prod_tel_engineparts_macro",
+        "name": "Tel Engineparts",
+        "producedWareId": "engineparts",
+        "workforceMax": 225
+      },
+      "prod_tel_hullparts_macro": {
+        "id": "prod_tel_hullparts_macro",
+        "name": "Tel Hullparts",
+        "producedWareId": "hullparts",
+        "workforceMax": 270
+      },
+      "prod_tel_medicalsupplies_macro": {
+        "id": "prod_tel_medicalsupplies_macro",
+        "name": "Tel Medicalsupplies",
+        "producedWareId": "medicalsupplies",
+        "workforceMax": 90
+      },
+      "prod_tel_nostropoil_macro": {
+        "id": "prod_tel_nostropoil_macro",
+        "name": "Tel Nostropoil",
+        "producedWareId": "nostropoil",
+        "workforceMax": 120
+      },
+      "prod_tel_scanningarrays_macro": {
+        "id": "prod_tel_scanningarrays_macro",
+        "name": "Tel Scanningarrays",
+        "producedWareId": "scanningarrays",
+        "workforceMax": 315
+      },
+      "prod_tel_spaceweed_macro": {
+        "id": "prod_tel_spaceweed_macro",
+        "name": "Tel Spaceweed",
+        "producedWareId": "spaceweed",
+        "workforceMax": 90
+      },
+      "prod_tel_sunriseflowers_macro": {
+        "id": "prod_tel_sunriseflowers_macro",
+        "name": "Tel Sunriseflowers",
+        "producedWareId": "sunriseflowers",
+        "workforceMax": 50
+      },
+      "prod_tel_swampplant_macro": {
+        "id": "prod_tel_swampplant_macro",
+        "name": "Tel Swampplant",
+        "producedWareId": "swampplant",
+        "workforceMax": 50
+      },
+      "prod_tel_teladianium_macro": {
+        "id": "prod_tel_teladianium_macro",
+        "name": "Tel Teladianium",
+        "producedWareId": "teladianium",
+        "workforceMax": 225
+      }
+    },
+    "habitat": {
+      "hab_arg_l_01_macro": {
+        "id": "hab_arg_l_01_macro",
+        "name": "Arg L 01",
+        "race": "argon",
+        "workforceCapacity": 1000
+      },
+      "hab_arg_m_01_macro": {
+        "id": "hab_arg_m_01_macro",
+        "name": "Arg M 01",
+        "race": "argon",
+        "workforceCapacity": 500
+      },
+      "hab_arg_s_01_macro": {
+        "id": "hab_arg_s_01_macro",
+        "name": "Arg S 01",
+        "race": "argon",
+        "workforceCapacity": 250
+      },
+      "hab_par_l_01_macro": {
+        "id": "hab_par_l_01_macro",
+        "name": "Par L 01",
+        "race": "paranid",
+        "workforceCapacity": 999
+      },
+      "hab_par_m_01_macro": {
+        "id": "hab_par_m_01_macro",
+        "name": "Par M 01",
+        "race": "paranid",
+        "workforceCapacity": 666
+      },
+      "hab_par_s_01_macro": {
+        "id": "hab_par_s_01_macro",
+        "name": "Par S 01",
+        "race": "paranid",
+        "workforceCapacity": 333
+      },
+      "hab_tel_l_01_macro": {
+        "id": "hab_tel_l_01_macro",
+        "name": "Tel L 01",
+        "race": "teladi",
+        "workforceCapacity": 1000
+      },
+      "hab_tel_m_01_macro": {
+        "id": "hab_tel_m_01_macro",
+        "name": "Tel M 01",
+        "race": "teladi",
+        "workforceCapacity": 500
+      },
+      "hab_tel_s_01_macro": {
+        "id": "hab_tel_s_01_macro",
+        "name": "Tel S 01",
+        "race": "teladi",
+        "workforceCapacity": 250
+      },
+      "deathstar_01_macro": {
+        "id": "deathstar_01_macro",
+        "name": "Deathstar 01",
+        "race": "argon",
+        "workforceCapacity": 10000
+      },
+      "freeport_xl_disk_macro": {
+        "id": "freeport_xl_disk_macro",
+        "name": "Freeport Xl Disk",
+        "race": "argon",
+        "workforceCapacity": 10000
+      },
+      "hab_ano_l_01_macro": {
+        "id": "hab_ano_l_01_macro",
+        "name": "Ano L 01",
+        "race": "argon",
+        "workforceCapacity": 1000
+      },
+      "hab_ano_m_01_macro": {
+        "id": "hab_ano_m_01_macro",
+        "name": "Ano M 01",
+        "race": "argon",
+        "workforceCapacity": 500
+      },
+      "hab_ano_s_01_macro": {
+        "id": "hab_ano_s_01_macro",
+        "name": "Ano S 01",
+        "race": "argon",
+        "workforceCapacity": 250
+      },
+      "hab_gen_xl_city_macro": {
+        "id": "hab_gen_xl_city_macro",
+        "name": "Gen Xl City",
+        "race": "argon",
+        "workforceCapacity": 500
+      },
+      "hab_hap_l_01_macro": {
+        "id": "hab_hap_l_01_macro",
+        "name": "Hap L 01",
+        "race": "argon",
+        "workforceCapacity": 1000
+      },
+      "hab_hap_m_01_macro": {
+        "id": "hab_hap_m_01_macro",
+        "name": "Hap M 01",
+        "race": "argon",
+        "workforceCapacity": 500
+      },
+      "hab_hap_s_01_macro": {
+        "id": "hab_hap_s_01_macro",
+        "name": "Hap S 01",
+        "race": "argon",
+        "workforceCapacity": 250
+      },
+      "hab_imp_l_01_macro": {
+        "id": "hab_imp_l_01_macro",
+        "name": "Imp L 01",
+        "race": "imperial",
+        "workforceCapacity": 1250
+      },
+      "hab_imp_m_01_macro": {
+        "id": "hab_imp_m_01_macro",
+        "name": "Imp M 01",
+        "race": "imperial",
+        "workforceCapacity": 650
+      },
+      "hab_imp_s_01_macro": {
+        "id": "hab_imp_s_01_macro",
+        "name": "Imp S 01",
+        "race": "imperial",
+        "workforceCapacity": 300
+      },
+      "hab_imp_trade_macro": {
+        "id": "hab_imp_trade_macro",
+        "name": "Imp Trade",
+        "race": "imperial",
+        "workforceCapacity": 3500
+      },
+      "hab_man_l_01_macro": {
+        "id": "hab_man_l_01_macro",
+        "name": "Man L 01",
+        "race": "argon",
+        "workforceCapacity": 1000
+      },
+      "hab_man_m_01_macro": {
+        "id": "hab_man_m_01_macro",
+        "name": "Man M 01",
+        "race": "argon",
+        "workforceCapacity": 500
+      },
+      "hab_man_s_01_macro": {
+        "id": "hab_man_s_01_macro",
+        "name": "Man S 01",
+        "race": "argon",
+        "workforceCapacity": 250
+      },
+      "hab_nrl_l_macro": {
+        "id": "hab_nrl_l_macro",
+        "name": "Nrl L",
+        "race": "argon",
+        "workforceCapacity": 1000
+      },
+      "hab_nrl_xl_macro": {
+        "id": "hab_nrl_xl_macro",
+        "name": "Nrl Xl",
+        "race": "argon",
+        "workforceCapacity": 2500
+      },
+      "hab_sith_l_01_macro": {
+        "id": "hab_sith_l_01_macro",
+        "name": "Sith L 01",
+        "race": "sith",
+        "workforceCapacity": 1250
+      },
+      "hab_sith_m_01_macro": {
+        "id": "hab_sith_m_01_macro",
+        "name": "Sith M 01",
+        "race": "sith",
+        "workforceCapacity": 650
+      },
+      "hab_sith_s_01_macro": {
+        "id": "hab_sith_s_01_macro",
+        "name": "Sith S 01",
+        "race": "sith",
+        "workforceCapacity": 300
+      },
+      "hab_sith_trade_macro": {
+        "id": "hab_sith_trade_macro",
+        "name": "Sith Trade",
+        "race": "sith",
+        "workforceCapacity": 3500
+      },
+      "tower_imp_throneroom_macro": {
+        "id": "tower_imp_throneroom_macro",
+        "name": "Tower Imp Throneroom",
+        "race": "argon",
+        "workforceCapacity": 300
+      }
+    },
+    "storage": {
+      "storage_arg_l_container_01_macro": {
+        "id": "storage_arg_l_container_01_macro",
+        "name": "Arg L Container 01",
+        "cargoMax": 1000000,
+        "cargoType": "container"
+      },
+      "storage_arg_l_liquid_01_macro": {
+        "id": "storage_arg_l_liquid_01_macro",
+        "name": "Arg L Liquid 01",
+        "cargoMax": 1000000,
+        "cargoType": "liquid"
+      },
+      "storage_arg_l_solid_01_macro": {
+        "id": "storage_arg_l_solid_01_macro",
+        "name": "Arg L Solid 01",
+        "cargoMax": 1000000,
+        "cargoType": "solid"
+      },
+      "storage_arg_l_tradestation_01_macro": {
+        "id": "storage_arg_l_tradestation_01_macro",
+        "name": "Arg L Tradestation 01",
+        "cargoMax": 300000,
+        "cargoType": "liquid"
+      },
+      "storage_arg_m_container_01_macro": {
+        "id": "storage_arg_m_container_01_macro",
+        "name": "Arg M Container 01",
+        "cargoMax": 500000,
+        "cargoType": "container"
+      },
+      "storage_arg_m_liquid_01_macro": {
+        "id": "storage_arg_m_liquid_01_macro",
+        "name": "Arg M Liquid 01",
+        "cargoMax": 500000,
+        "cargoType": "liquid"
+      },
+      "storage_arg_m_solid_01_macro": {
+        "id": "storage_arg_m_solid_01_macro",
+        "name": "Arg M Solid 01",
+        "cargoMax": 500000,
+        "cargoType": "solid"
+      },
+      "storage_arg_s_container_01_macro": {
+        "id": "storage_arg_s_container_01_macro",
+        "name": "Arg S Container 01",
+        "cargoMax": 100000,
+        "cargoType": "container"
+      },
+      "storage_arg_s_liquid_01_macro": {
+        "id": "storage_arg_s_liquid_01_macro",
+        "name": "Arg S Liquid 01",
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_arg_s_solid_01_macro": {
+        "id": "storage_arg_s_solid_01_macro",
+        "name": "Arg S Solid 01",
+        "cargoMax": 100000,
+        "cargoType": "solid"
+      },
+      "storage_par_l_container_01_macro": {
+        "id": "storage_par_l_container_01_macro",
+        "name": "Par L Container 01",
+        "cargoMax": 1000000,
+        "cargoType": "container"
+      },
+      "storage_par_l_liquid_01_macro": {
+        "id": "storage_par_l_liquid_01_macro",
+        "name": "Par L Liquid 01",
+        "cargoMax": 1000000,
+        "cargoType": "liquid"
+      },
+      "storage_par_l_solid_01_macro": {
+        "id": "storage_par_l_solid_01_macro",
+        "name": "Par L Solid 01",
+        "cargoMax": 1000000,
+        "cargoType": "solid"
+      },
+      "storage_par_m_container_01_macro": {
+        "id": "storage_par_m_container_01_macro",
+        "name": "Par M Container 01",
+        "cargoMax": 100000,
+        "cargoType": "container"
+      },
+      "storage_par_m_liquid_01_macro": {
+        "id": "storage_par_m_liquid_01_macro",
+        "name": "Par M Liquid 01",
+        "cargoMax": 500000,
+        "cargoType": "liquid"
+      },
+      "storage_par_m_solid_01_macro": {
+        "id": "storage_par_m_solid_01_macro",
+        "name": "Par M Solid 01",
+        "cargoMax": 500000,
+        "cargoType": "solid"
+      },
+      "storage_par_s_container_01_macro": {
+        "id": "storage_par_s_container_01_macro",
+        "name": "Par S Container 01",
+        "cargoMax": 25000,
+        "cargoType": "container"
+      },
+      "storage_par_s_liquid_01_macro": {
+        "id": "storage_par_s_liquid_01_macro",
+        "name": "Par S Liquid 01",
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_par_s_solid_01_macro": {
+        "id": "storage_par_s_solid_01_macro",
+        "name": "Par S Solid 01",
+        "cargoMax": 100000,
+        "cargoType": "solid"
+      },
+      "storage_tel_l_container_01_macro": {
+        "id": "storage_tel_l_container_01_macro",
+        "name": "Tel L Container 01",
+        "cargoMax": 1000000,
+        "cargoType": "container"
+      },
+      "storage_tel_l_liquid_01_macro": {
+        "id": "storage_tel_l_liquid_01_macro",
+        "name": "Tel L Liquid 01",
+        "cargoMax": 1000000,
+        "cargoType": "liquid"
+      },
+      "storage_tel_l_solid_01_macro": {
+        "id": "storage_tel_l_solid_01_macro",
+        "name": "Tel L Solid 01",
+        "cargoMax": 1000000,
+        "cargoType": "solid"
+      },
+      "storage_tel_m_container_01_macro": {
+        "id": "storage_tel_m_container_01_macro",
+        "name": "Tel M Container 01",
+        "cargoMax": 500000,
+        "cargoType": "container"
+      },
+      "storage_tel_m_liquid_01_macro": {
+        "id": "storage_tel_m_liquid_01_macro",
+        "name": "Tel M Liquid 01",
+        "cargoMax": 500000,
+        "cargoType": "liquid"
+      },
+      "storage_tel_m_solid_01_macro": {
+        "id": "storage_tel_m_solid_01_macro",
+        "name": "Tel M Solid 01",
+        "cargoMax": 500000,
+        "cargoType": "solid"
+      },
+      "storage_tel_s_container_01_macro": {
+        "id": "storage_tel_s_container_01_macro",
+        "name": "Tel S Container 01",
+        "cargoMax": 100000,
+        "cargoType": "container"
+      },
+      "storage_tel_s_liquid_01_macro": {
+        "id": "storage_tel_s_liquid_01_macro",
+        "name": "Tel S Liquid 01",
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_tel_s_solid_01_macro": {
+        "id": "storage_tel_s_solid_01_macro",
+        "name": "Tel S Solid 01",
+        "cargoMax": 100000,
+        "cargoType": "solid"
+      },
+      "storage_freeport_macro": {
+        "id": "storage_freeport_macro",
+        "name": "Freeport",
+        "cargoMax": 5000000,
+        "cargoType": "container"
+      },
+      "storage_hap_l_container_01_macro": {
+        "id": "storage_hap_l_container_01_macro",
+        "name": "Hap L Container 01",
+        "cargoMax": 1000000,
+        "cargoType": "container"
+      },
+      "storage_hap_l_liquid_01_macro": {
+        "id": "storage_hap_l_liquid_01_macro",
+        "name": "Hap L Liquid 01",
+        "cargoMax": 1000000,
+        "cargoType": "liquid"
+      },
+      "storage_hap_l_solid_01_macro": {
+        "id": "storage_hap_l_solid_01_macro",
+        "name": "Hap L Solid 01",
+        "cargoMax": 1000000,
+        "cargoType": "solid"
+      },
+      "storage_hap_m_container_01_macro": {
+        "id": "storage_hap_m_container_01_macro",
+        "name": "Hap M Container 01",
+        "cargoMax": 500000,
+        "cargoType": "container"
+      },
+      "storage_hap_m_liquid_01_macro": {
+        "id": "storage_hap_m_liquid_01_macro",
+        "name": "Hap M Liquid 01",
+        "cargoMax": 500000,
+        "cargoType": "liquid"
+      },
+      "storage_hap_m_solid_01_macro": {
+        "id": "storage_hap_m_solid_01_macro",
+        "name": "Hap M Solid 01",
+        "cargoMax": 500000,
+        "cargoType": "solid"
+      },
+      "storage_hap_s_container_01_macro": {
+        "id": "storage_hap_s_container_01_macro",
+        "name": "Hap S Container 01",
+        "cargoMax": 100000,
+        "cargoType": "container"
+      },
+      "storage_hap_s_liquid_01_macro": {
+        "id": "storage_hap_s_liquid_01_macro",
+        "name": "Hap S Liquid 01",
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_hap_s_solid_01_macro": {
+        "id": "storage_hap_s_solid_01_macro",
+        "name": "Hap S Solid 01",
+        "cargoMax": 100000,
+        "cargoType": "solid"
+      },
+      "storage_imp_l_container_01_macro": {
+        "id": "storage_imp_l_container_01_macro",
+        "name": "Imp L Container 01",
+        "cargoMax": 1100000,
+        "cargoType": "container"
+      },
+      "storage_imp_l_liquid_01_macro": {
+        "id": "storage_imp_l_liquid_01_macro",
+        "name": "Imp L Liquid 01",
+        "cargoMax": 1100000,
+        "cargoType": "liquid"
+      },
+      "storage_imp_l_solid_01_macro": {
+        "id": "storage_imp_l_solid_01_macro",
+        "name": "Imp L Solid 01",
+        "cargoMax": 1100000,
+        "cargoType": "solid"
+      },
+      "storage_imp_liquid_tradestation_01_macro": {
+        "id": "storage_imp_liquid_tradestation_01_macro",
+        "name": "Imp Liquid Tradestation 01",
+        "cargoMax": 3200000,
+        "cargoType": "container"
+      },
+      "storage_imp_m_container_01_macro": {
+        "id": "storage_imp_m_container_01_macro",
+        "name": "Imp M Container 01",
+        "cargoMax": 500000,
+        "cargoType": "container"
+      },
+      "storage_imp_m_liquid_01_macro": {
+        "id": "storage_imp_m_liquid_01_macro",
+        "name": "Imp M Liquid 01",
+        "cargoMax": 500000,
+        "cargoType": "liquid"
+      },
+      "storage_imp_m_solid_01_macro": {
+        "id": "storage_imp_m_solid_01_macro",
+        "name": "Imp M Solid 01",
+        "cargoMax": 500000,
+        "cargoType": "solid"
+      },
+      "storage_imp_s_container_01_macro": {
+        "id": "storage_imp_s_container_01_macro",
+        "name": "Imp S Container 01",
+        "cargoMax": 100000,
+        "cargoType": "container"
+      },
+      "storage_imp_s_liquid_01_macro": {
+        "id": "storage_imp_s_liquid_01_macro",
+        "name": "Imp S Liquid 01",
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_imp_s_solid_01_macro": {
+        "id": "storage_imp_s_solid_01_macro",
+        "name": "Imp S Solid 01",
+        "cargoMax": 100000,
+        "cargoType": "solid"
+      },
+      "storage_man_l_container_01_macro": {
+        "id": "storage_man_l_container_01_macro",
+        "name": "Man L Container 01",
+        "cargoMax": 1000000,
+        "cargoType": "container"
+      },
+      "storage_man_l_liquid_01_macro": {
+        "id": "storage_man_l_liquid_01_macro",
+        "name": "Man L Liquid 01",
+        "cargoMax": 1000000,
+        "cargoType": "liquid"
+      },
+      "storage_man_l_solid_01_macro": {
+        "id": "storage_man_l_solid_01_macro",
+        "name": "Man L Solid 01",
+        "cargoMax": 1000000,
+        "cargoType": "solid"
+      },
+      "storage_man_m_container_01_macro": {
+        "id": "storage_man_m_container_01_macro",
+        "name": "Man M Container 01",
+        "cargoMax": 500000,
+        "cargoType": "container"
+      },
+      "storage_man_m_liquid_01_macro": {
+        "id": "storage_man_m_liquid_01_macro",
+        "name": "Man M Liquid 01",
+        "cargoMax": 500000,
+        "cargoType": "liquid"
+      },
+      "storage_man_m_solid_01_macro": {
+        "id": "storage_man_m_solid_01_macro",
+        "name": "Man M Solid 01",
+        "cargoMax": 500000,
+        "cargoType": "solid"
+      },
+      "storage_man_s_container_01_macro": {
+        "id": "storage_man_s_container_01_macro",
+        "name": "Man S Container 01",
+        "cargoMax": 100000,
+        "cargoType": "container"
+      },
+      "storage_man_s_liquid_01_macro": {
+        "id": "storage_man_s_liquid_01_macro",
+        "name": "Man S Liquid 01",
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_man_s_solid_01_macro": {
+        "id": "storage_man_s_solid_01_macro",
+        "name": "Man S Solid 01",
+        "cargoMax": 100000,
+        "cargoType": "solid"
+      }
+    }
+  },
+  "sectors": {
+    "abregado-rae": {
+      "id": "abregado-rae",
+      "name": "Abregado-Rae",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "adarlon": {
+      "id": "adarlon",
+      "name": "Adarlon",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "agamar": {
+      "id": "agamar",
+      "name": "Agamar",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "ach-to": {
+      "id": "ach-to",
+      "name": "Ach-To",
+      "sunlight": 60,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "ajan-kloss": {
+      "id": "ajan-kloss",
+      "name": "Ajan Kloss",
+      "sunlight": 150,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "alderaan": {
+      "id": "alderaan",
+      "name": "Alderaan",
+      "sunlight": 50,
+      "owner": "REB",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "andalia": {
+      "id": "andalia",
+      "name": "Andalia",
+      "sunlight": 100,
+      "owner": "HAP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "annaj": {
+      "id": "annaj",
+      "name": "Annaj",
+      "sunlight": 60,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "anoat": {
+      "id": "anoat",
+      "name": "Anoat",
+      "sunlight": 40,
+      "owner": "ANO",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "ansion": {
+      "id": "ansion",
+      "name": "Ansion",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "anteevy": {
+      "id": "anteevy",
+      "name": "Anteevy",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "arkanis": {
+      "id": "arkanis",
+      "name": "Arkanis",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "ast-kikorie": {
+      "id": "ast-kikorie",
+      "name": "Ast Kikorie",
+      "sunlight": 200,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "atrisia": {
+      "id": "atrisia",
+      "name": "Atrisia",
+      "sunlight": 30,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "bakura": {
+      "id": "bakura",
+      "name": "Bakura",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "balmorra": {
+      "id": "balmorra",
+      "name": "Balmorra",
+      "sunlight": 80,
+      "owner": "NRL",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "bandomeer": {
+      "id": "bandomeer",
+      "name": "Bandomeer",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "baros": {
+      "id": "baros",
+      "name": "Baros",
+      "sunlight": 300,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "bastion": {
+      "id": "bastion",
+      "name": "Bastion",
+      "sunlight": 150,
+      "owner": "IMP",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "bellassa": {
+      "id": "bellassa",
+      "name": "Bellassa",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "bescane": {
+      "id": "bescane",
+      "name": "Bescane",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "bespin": {
+      "id": "bespin",
+      "name": "Bespin",
+      "sunlight": 200,
+      "owner": "ANO",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "bilbringi": {
+      "id": "bilbringi",
+      "name": "Bilbringi",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "bogden": {
+      "id": "bogden",
+      "name": "Bogden",
+      "sunlight": 200,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "boonta": {
+      "id": "boonta",
+      "name": "Boonta",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "bothawui": {
+      "id": "bothawui",
+      "name": "Bothawui",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "brentaal": {
+      "id": "brentaal",
+      "name": "Brentaal",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "byss": {
+      "id": "byss",
+      "name": "Byss",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "cantonica": {
+      "id": "cantonica",
+      "name": "Cantonica",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "celanon": {
+      "id": "celanon",
+      "name": "Celanon",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "celesta": {
+      "id": "celesta",
+      "name": "Celesta",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "centares": {
+      "id": "centares",
+      "name": "Centares",
+      "sunlight": 50,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "cerea": {
+      "id": "cerea",
+      "name": "Cerea",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "chardaan": {
+      "id": "chardaan",
+      "name": "Chardaan",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "columex": {
+      "id": "columex",
+      "name": "Columex",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "commenor": {
+      "id": "commenor",
+      "name": "Commenor",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "concord-dawn": {
+      "id": "concord-dawn",
+      "name": "Concord Dawn",
+      "sunlight": 170,
+      "owner": "MDW",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "corbos": {
+      "id": "corbos",
+      "name": "Corbos",
+      "sunlight": 200,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "corellia": {
+      "id": "corellia",
+      "name": "Corellia",
+      "sunlight": 200,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "corsin": {
+      "id": "corsin",
+      "name": "Corsin",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "corulag": {
+      "id": "corulag",
+      "name": "Corulag",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "coruscant": {
+      "id": "coruscant",
+      "name": "Coruscant",
+      "sunlight": 200,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "crustai": {
+      "id": "crustai",
+      "name": "Crustai",
+      "sunlight": 200,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "d-qar": {
+      "id": "d-qar",
+      "name": "D'Qar",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "daalang": {
+      "id": "daalang",
+      "name": "Daalang",
+      "sunlight": 100,
+      "owner": "HUTT",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "dagobah": {
+      "id": "dagobah",
+      "name": "Dagobah",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "dantooine": {
+      "id": "dantooine",
+      "name": "Dantooine",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "darkknell": {
+      "id": "darkknell",
+      "name": "Darkknell",
+      "sunlight": 50,
+      "owner": "ASC",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "dathomir": {
+      "id": "dathomir",
+      "name": "Dathomir",
+      "sunlight": 30,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "dellalt": {
+      "id": "dellalt",
+      "name": "Dellalt",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "delrakkin": {
+      "id": "delrakkin",
+      "name": "Delrakkin",
+      "sunlight": 70,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "denon": {
+      "id": "denon",
+      "name": "Denon",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "dolla": {
+      "id": "dolla",
+      "name": "Dolla",
+      "sunlight": 100,
+      "owner": "ASC",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "dorin": {
+      "id": "dorin",
+      "name": "Dorin",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "dromund-kaas": {
+      "id": "dromund-kaas",
+      "name": "Dromund Kaas",
+      "sunlight": 50,
+      "owner": "SITH",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "eadu": {
+      "id": "eadu",
+      "name": "Eadu",
+      "sunlight": 60,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "empress-teta": {
+      "id": "empress-teta",
+      "name": "Empress Teta",
+      "sunlight": 40,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "enarc": {
+      "id": "enarc",
+      "name": "Enarc",
+      "sunlight": 100,
+      "owner": "ASC",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "endor": {
+      "id": "endor",
+      "name": "Endor",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "eriadu": {
+      "id": "eriadu",
+      "name": "Eriadu",
+      "sunlight": 250,
+      "owner": "ASC",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "esfandia": {
+      "id": "esfandia",
+      "name": "Esfandia",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "exodeen": {
+      "id": "exodeen",
+      "name": "Exodeen",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "fedalle": {
+      "id": "fedalle",
+      "name": "Fedalle",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "felucia": {
+      "id": "felucia",
+      "name": "Felucia",
+      "sunlight": 200,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "firrerre": {
+      "id": "firrerre",
+      "name": "Firrerre",
+      "sunlight": 20,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "foless": {
+      "id": "foless",
+      "name": "Foless",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "fondor": {
+      "id": "fondor",
+      "name": "Fondor",
+      "sunlight": 200,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "fusai": {
+      "id": "fusai",
+      "name": "Fusai",
+      "sunlight": 65,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "garos": {
+      "id": "garos",
+      "name": "Garos",
+      "sunlight": 100,
+      "owner": "MDW",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "gaulus": {
+      "id": "gaulus",
+      "name": "Gaulus",
+      "sunlight": 90,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "geonosis": {
+      "id": "geonosis",
+      "name": "Geonosis",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "gerrenthum": {
+      "id": "gerrenthum",
+      "name": "Gerrenthum",
+      "sunlight": 100,
+      "owner": "ANO",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "giju": {
+      "id": "giju",
+      "name": "Giju",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "gizer": {
+      "id": "gizer",
+      "name": "Gizer",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "glee-anselm": {
+      "id": "glee-anselm",
+      "name": "Glee Anselm",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "greater-javin": {
+      "id": "greater-javin",
+      "name": "Greater Javin",
+      "sunlight": 100,
+      "owner": "ANO",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "gyndine": {
+      "id": "gyndine",
+      "name": "Gyndine",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "hapes": {
+      "id": "hapes",
+      "name": "Hapes",
+      "sunlight": 100,
+      "owner": "HAP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "hosnian-prime": {
+      "id": "hosnian-prime",
+      "name": "Hosnian Prime",
+      "sunlight": 60,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "hoth": {
+      "id": "hoth",
+      "name": "Hoth",
+      "sunlight": 30,
+      "owner": "ANO",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "huk": {
+      "id": "huk",
+      "name": "Huk",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "hypori": {
+      "id": "hypori",
+      "name": "Hypori",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "ilum": {
+      "id": "ilum",
+      "name": "Ilum",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "imynusoph": {
+      "id": "imynusoph",
+      "name": "Imynusoph",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "isde-naha": {
+      "id": "isde-naha",
+      "name": "Isde Naha",
+      "sunlight": 50,
+      "owner": "ANO",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "ithor": {
+      "id": "ithor",
+      "name": "Ithor",
+      "sunlight": 70,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "jabiim": {
+      "id": "jabiim",
+      "name": "Jabiim",
+      "sunlight": 180,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "jakku": {
+      "id": "jakku",
+      "name": "Jakku",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "jedha": {
+      "id": "jedha",
+      "name": "Jedha",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "kabal": {
+      "id": "kabal",
+      "name": "Kabal",
+      "sunlight": 100,
+      "owner": "ASC",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "kadavo": {
+      "id": "kadavo",
+      "name": "Kadavo",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "kalee": {
+      "id": "kalee",
+      "name": "Kalee",
+      "sunlight": 40,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "kalevala": {
+      "id": "kalevala",
+      "name": "Kalevala",
+      "sunlight": 50,
+      "owner": "MDW",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "kamino": {
+      "id": "kamino",
+      "name": "Kamino",
+      "sunlight": 100,
+      "owner": "KAM",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "kashyyyk": {
+      "id": "kashyyyk",
+      "name": "Kashyyyk",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "kelada": {
+      "id": "kelada",
+      "name": "Kelada",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "kessel": {
+      "id": "kessel",
+      "name": "Kessel",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "kinyen": {
+      "id": "kinyen",
+      "name": "Kinyen",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "kira": {
+      "id": "kira",
+      "name": "Kira",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "korriban": {
+      "id": "korriban",
+      "name": "Korriban",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "kriselist": {
+      "id": "kriselist",
+      "name": "Kriselist",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "kuat": {
+      "id": "kuat",
+      "name": "Kuat",
+      "sunlight": 250,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "kubindi": {
+      "id": "kubindi",
+      "name": "Kubindi",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "kuna": {
+      "id": "kuna",
+      "name": "Kuna",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "lah-mu": {
+      "id": "lah-mu",
+      "name": "Lah'mu",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "lannic": {
+      "id": "lannic",
+      "name": "Lannic",
+      "sunlight": 100,
+      "owner": "HUTT",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "lantilies": {
+      "id": "lantilies",
+      "name": "Lantilies",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "lasan": {
+      "id": "lasan",
+      "name": "Lasan",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "leritor": {
+      "id": "leritor",
+      "name": "Leritor",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "lianna": {
+      "id": "lianna",
+      "name": "Lianna",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "llanic": {
+      "id": "llanic",
+      "name": "Llanic",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "loronar": {
+      "id": "loronar",
+      "name": "Loronar",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "lorta": {
+      "id": "lorta",
+      "name": "Lorta",
+      "sunlight": 200,
+      "owner": "ANO",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "lothal": {
+      "id": "lothal",
+      "name": "Lothal",
+      "sunlight": 80,
+      "owner": "CSA",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "lucazec": {
+      "id": "lucazec",
+      "name": "Lucazec",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "manaan": {
+      "id": "manaan",
+      "name": "Manaan",
+      "sunlight": 50,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "manda": {
+      "id": "manda",
+      "name": "Manda",
+      "sunlight": 200,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "mandalore": {
+      "id": "mandalore",
+      "name": "Mandalore",
+      "sunlight": 200,
+      "owner": "MDW",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "mataou": {
+      "id": "mataou",
+      "name": "Mataou",
+      "sunlight": 100,
+      "owner": "ANO",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "milagro": {
+      "id": "milagro",
+      "name": "Milagro",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "mimban": {
+      "id": "mimban",
+      "name": "Mimban",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "molavar": {
+      "id": "molavar",
+      "name": "Molavar",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "mon-calamari": {
+      "id": "mon-calamari",
+      "name": "Mon Calamari",
+      "sunlight": 150,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "mon-gazza": {
+      "id": "mon-gazza",
+      "name": "Mon Gazza",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "morellia": {
+      "id": "morellia",
+      "name": "Morellia",
+      "sunlight": 350,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "mustafar": {
+      "id": "mustafar",
+      "name": "Mustafar",
+      "sunlight": 100,
+      "owner": "ASC",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "muunilinst": {
+      "id": "muunilinst",
+      "name": "Muunilinst",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "mygeeto": {
+      "id": "mygeeto",
+      "name": "Mygeeto",
+      "sunlight": 200,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "mytus": {
+      "id": "mytus",
+      "name": "Mytus",
+      "sunlight": 30,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "n-zoth": {
+      "id": "n-zoth",
+      "name": "N'zoth",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "naboo": {
+      "id": "naboo",
+      "name": "Naboo",
+      "sunlight": 230,
+      "owner": "NAB",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "nal-hutta": {
+      "id": "nal-hutta",
+      "name": "Nal Hutta",
+      "sunlight": 200,
+      "owner": "HUTT",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "nanth-ri": {
+      "id": "nanth-ri",
+      "name": "Nanth'ri",
+      "sunlight": 100,
+      "owner": "HUTT",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "nar-shaddaa": {
+      "id": "nar-shaddaa",
+      "name": "Nar Shaddaa",
+      "sunlight": 100,
+      "owner": "HUTT",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "nazzri": {
+      "id": "nazzri",
+      "name": "Nazzri",
+      "sunlight": 40,
+      "owner": "VLS",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "necropolis": {
+      "id": "necropolis",
+      "name": "Necropolis",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "nemoidia": {
+      "id": "nemoidia",
+      "name": "Nemoidia",
+      "sunlight": 50,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "nimban": {
+      "id": "nimban",
+      "name": "Nimban",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "nirauan": {
+      "id": "nirauan",
+      "name": "Nirauan",
+      "sunlight": 60,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "ord-mantell": {
+      "id": "ord-mantell",
+      "name": "Ord Mantell",
+      "sunlight": 200,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "ord-trasi": {
+      "id": "ord-trasi",
+      "name": "Ord Trasi",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "ordo": {
+      "id": "ordo",
+      "name": "Ordo",
+      "sunlight": 100,
+      "owner": "MDW",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "orto-plutonia": {
+      "id": "orto-plutonia",
+      "name": "Orto Plutonia",
+      "sunlight": 50,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "pakuuni": {
+      "id": "pakuuni",
+      "name": "Pakuuni",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "palanhi": {
+      "id": "palanhi",
+      "name": "Palanhi",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "parnassos": {
+      "id": "parnassos",
+      "name": "Parnassos",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "pax": {
+      "id": "pax",
+      "name": "Pax",
+      "sunlight": 100,
+      "owner": "ASC",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "perma": {
+      "id": "perma",
+      "name": "Perma",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "phindar": {
+      "id": "phindar",
+      "name": "Phindar",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "pho-ph-eah": {
+      "id": "pho-ph-eah",
+      "name": "Pho Ph'eah",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "polis-massa": {
+      "id": "polis-massa",
+      "name": "Polis Massa",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "prakith": {
+      "id": "prakith",
+      "name": "Prakith",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "quellor": {
+      "id": "quellor",
+      "name": "Quellor",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "quermia": {
+      "id": "quermia",
+      "name": "Quermia",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "rago": {
+      "id": "rago",
+      "name": "Rago",
+      "sunlight": 200,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "rakata-prime": {
+      "id": "rakata-prime",
+      "name": "Rakata Prime",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "randon": {
+      "id": "randon",
+      "name": "Randon",
+      "sunlight": 200,
+      "owner": "HUTT",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "renatasia": {
+      "id": "renatasia",
+      "name": "Renatasia",
+      "sunlight": 200,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "rendili": {
+      "id": "rendili",
+      "name": "Rendili",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "ring-o-moon": {
+      "id": "ring-o-moon",
+      "name": "Ring-o-Moon",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "roche": {
+      "id": "roche",
+      "name": "Roche",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "roon": {
+      "id": "roon",
+      "name": "Roon",
+      "sunlight": 200,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "roqoo": {
+      "id": "roqoo",
+      "name": "Roqoo",
+      "sunlight": 60,
+      "owner": "HAP",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "rorak": {
+      "id": "rorak",
+      "name": "Rorak",
+      "sunlight": 40,
+      "owner": "HUTT",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "rothana": {
+      "id": "rothana",
+      "name": "Rothana",
+      "sunlight": 140,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "rutan": {
+      "id": "rutan",
+      "name": "Rutan",
+      "sunlight": 200,
+      "owner": "ASC",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "ryloth": {
+      "id": "ryloth",
+      "name": "Ryloth",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "saleucami": {
+      "id": "saleucami",
+      "name": "Saleucami",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "savareen": {
+      "id": "savareen",
+      "name": "Savareen",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "scarif": {
+      "id": "scarif",
+      "name": "Scarif",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "scipio": {
+      "id": "scipio",
+      "name": "Scipio",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "sirpar": {
+      "id": "sirpar",
+      "name": "Sirpar",
+      "sunlight": 60,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "smuggler-s-run": {
+      "id": "smuggler-s-run",
+      "name": "Smuggler's Run",
+      "sunlight": 50,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "stenos": {
+      "id": "stenos",
+      "name": "Stenos",
+      "sunlight": 100,
+      "owner": "VLS",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "sullust": {
+      "id": "sullust",
+      "name": "Sullust",
+      "sunlight": 100,
+      "owner": "ASC",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "sump": {
+      "id": "sump",
+      "name": "Sump",
+      "sunlight": 60,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "syvris": {
+      "id": "syvris",
+      "name": "Syvris",
+      "sunlight": 100,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "taanab": {
+      "id": "taanab",
+      "name": "Taanab",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "takodana": {
+      "id": "takodana",
+      "name": "Takodana",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "targonn": {
+      "id": "targonn",
+      "name": "Targonn",
+      "sunlight": 90,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "taris": {
+      "id": "taris",
+      "name": "Taris",
+      "sunlight": 300,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "tatooine": {
+      "id": "tatooine",
+      "name": "Tatooine",
+      "sunlight": 400,
+      "owner": "HUTT",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "telos": {
+      "id": "telos",
+      "name": "Telos",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "tepasi": {
+      "id": "tepasi",
+      "name": "Tepasi",
+      "sunlight": 200,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "terminus": {
+      "id": "terminus",
+      "name": "Terminus",
+      "sunlight": 200,
+      "owner": "ANO",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "teth": {
+      "id": "teth",
+      "name": "Teth",
+      "sunlight": 50,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "the-maw": {
+      "id": "the-maw",
+      "name": "The Maw",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "the-redoubt": {
+      "id": "the-redoubt",
+      "name": "The Redoubt",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "thrago": {
+      "id": "thrago",
+      "name": "Thrago",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "thule": {
+      "id": "thule",
+      "name": "Thule",
+      "sunlight": 50,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "thyferra": {
+      "id": "thyferra",
+      "name": "Thyferra",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "tirahn": {
+      "id": "tirahn",
+      "name": "Tirahn",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "toydaria": {
+      "id": "toydaria",
+      "name": "Toydaria",
+      "sunlight": 100,
+      "owner": "HUTT",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "trandosha": {
+      "id": "trandosha",
+      "name": "Trandosha",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "trellen": {
+      "id": "trellen",
+      "name": "Trellen",
+      "sunlight": 200,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "triton": {
+      "id": "triton",
+      "name": "Triton",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "tython": {
+      "id": "tython",
+      "name": "Tython",
+      "sunlight": 30,
+      "owner": "NRL",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "umbara": {
+      "id": "umbara",
+      "name": "Umbara",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "unknown-regions-1": {
+      "id": "unknown-regions-1",
+      "name": "Unknown Regions 1",
+      "sunlight": 30,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "unknown-regions-2": {
+      "id": "unknown-regions-2",
+      "name": "Unknown Regions 2",
+      "sunlight": 50,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "unknown-regions-3": {
+      "id": "unknown-regions-3",
+      "name": "Unknown Regions 3",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": true
+      }
+    },
+    "utapau": {
+      "id": "utapau",
+      "name": "Utapau",
+      "sunlight": 200,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "uviuy-exen": {
+      "id": "uviuy-exen",
+      "name": "Uviuy Exen",
+      "sunlight": 50,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "uyter": {
+      "id": "uyter",
+      "name": "Uyter",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "vakkar": {
+      "id": "vakkar",
+      "name": "Vakkar",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "vergesso": {
+      "id": "vergesso",
+      "name": "Vergesso",
+      "sunlight": 200,
+      "owner": "ICG",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "vondarc": {
+      "id": "vondarc",
+      "name": "Vondarc",
+      "sunlight": 100,
+      "owner": "ASC",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "vortex": {
+      "id": "vortex",
+      "name": "Vortex",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "voss": {
+      "id": "voss",
+      "name": "Voss",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "wayland": {
+      "id": "wayland",
+      "name": "Wayland",
+      "sunlight": 60,
+      "owner": "MDW",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "wild-space-1": {
+      "id": "wild-space-1",
+      "name": "Wild Space 1",
+      "sunlight": 80,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "wild-space-2": {
+      "id": "wild-space-2",
+      "name": "Wild Space 2",
+      "sunlight": 50,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "wrea": {
+      "id": "wrea",
+      "name": "Wrea",
+      "sunlight": 50,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "wroona": {
+      "id": "wroona",
+      "name": "Wroona",
+      "sunlight": 100,
+      "owner": "Unclaimed",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "yag-dhul": {
+      "id": "yag-dhul",
+      "name": "Yag'Dhul",
+      "sunlight": 100,
+      "owner": "ASC",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": true
+      }
+    },
+    "yaga-minor": {
+      "id": "yaga-minor",
+      "name": "Yaga Minor",
+      "sunlight": 100,
+      "owner": "IMP",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "yavin-4": {
+      "id": "yavin-4",
+      "name": "Yavin 4",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "tibanna": false
+      }
+    },
+    "zeltros": {
+      "id": "zeltros",
+      "name": "Zeltros",
+      "sunlight": 100,
+      "owner": "NRL",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "ziost": {
+      "id": "ziost",
+      "name": "Ziost",
+      "sunlight": 300,
+      "owner": "SITH",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    },
+    "zygerria": {
+      "id": "zygerria",
+      "name": "Zygerria",
+      "sunlight": 100,
+      "owner": "CSA",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "rhydonium": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "tibanna": false
+      }
+    }
+  }
+}

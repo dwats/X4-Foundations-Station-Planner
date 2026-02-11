@@ -1,0 +1,71 @@
+/* ==============================================
+   Handle (Connection Point) Styling
+   ============================================== */
+
+/* Size variants */
+.handle-sm {
+  @apply !w-2 !h-2;
+}
+
+.handle-md {
+  @apply !w-3 !h-3;
+}
+
+/* Position variants */
+.handle-left {
+  @apply !-left-1;
+}
+
+.handle-right {
+  @apply !-right-1;
+}
+
+/* Color variants - Input types */
+.handle-input {
+  @apply !bg-yellow-300;
+}
+
+.handle-input-satisfied {
+  @apply !bg-green-400;
+}
+
+/* Color variants - Output types */
+.handle-output {
+  @apply !bg-blue-500;
+}
+
+.handle-output-satisfied {
+  @apply !bg-blue-500;
+}
+
+/* Color variants - Station Import (purple) */
+.handle-import {
+  @apply !bg-purple-400;
+}
+
+/* Color variants - Station Export (teal) */
+.handle-export {
+  @apply !bg-teal-500;
+}
+
+/* Module-level handles (inline within flex rows) */
+.handle-module {
+  @apply !min-w-0 !min-h-0 !rounded-full;
+  border: 1px solid gray !important;
+  position: relative !important;
+  top: auto !important;
+  transform: none !important;
+  flex-shrink: 0;
+}
+
+.handle-module.handle-left {
+  margin-right: 4px;
+}
+
+.handle-module.handle-right {
+  margin-left: 4px;
+}
+
+.handle.handle-right {
+  margin-left: 14px;
+}
