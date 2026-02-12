@@ -5,8 +5,10 @@ import { ReportDrawer } from '@/components/report';
 import { NetworkCanvas, StationCanvas } from '@/components/canvas';
 import { loadGameData } from '@/data/loader';
 import { useGameDataStore, useUIStore, usePlanStore } from '@/store';
+import { useTheme } from '@/hooks/useTheme';
 
 function App() {
+  useTheme();
   const { gameData, loading, error, setGameData, setError } = useGameDataStore();
   const viewMode = useUIStore((state) => state.viewMode);
 

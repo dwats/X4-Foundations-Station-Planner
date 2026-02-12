@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState, useRef } from 'react';
+import { useCallback, useMemo, useRef } from 'react';
 import {
   ReactFlow,
   ReactFlowProvider,
@@ -13,6 +13,8 @@ import {
   type NodeTypes,
   type EdgeTypes,
   type Viewport,
+  type NodeMouseHandler,
+  type EdgeMouseHandler,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
@@ -24,7 +26,7 @@ import {
   type SectorGroupType,
 } from '@/components/nodes';
 import { ResourceEdge, type ResourceEdgeType } from '@/components/edges';
-import { ContextMenu } from './ContextMenu';
+import { ContextMenuShell } from './context-menu';
 
 // Register custom node types
 const nodeTypes: NodeTypes = {
@@ -40,7 +42,7 @@ const edgeTypes: EdgeTypes = {
 type AllNodeTypes = StationNodeType | SectorGroupType;
 
 function NetworkCanvasInner() {
-  const { setViewport } = useReactFlow();
+  const { setViewport, screenToFlowPosition } = useReactFlow();
 
   // Use granular selectors to ensure re-renders on changes
   const stations = usePlanStore((state) => state.plan.stations);
@@ -58,13 +60,9 @@ function NetworkCanvasInner() {
   const selectNode = useUIStore((state) => state.selectNode);
   const selectEdge = useUIStore((state) => state.selectEdge);
   const clearSelection = useUIStore((state) => state.clearSelection);
+  const openContextMenu = useUIStore((state) => state.openContextMenu);
+  const closeContextMenu = useUIStore((state) => state.closeContextMenu);
 
-  // Context menu state
-  const [contextMenu, setContextMenu] = useState<{
-    x: number;
-    y: number;
-    flowPosition: { x: number; y: number };
-  } | null>(null);
   const reactFlowWrapper = useRef<HTMLDivElement>(null);
 
   // Convert plan sectors and stations to React Flow nodes
@@ -265,28 +263,51 @@ function NetworkCanvasInner() {
   // Handle pane click (clear selection)
   const onPaneClick = useCallback(() => {
     clearSelection();
-    setContextMenu(null);
-  }, [clearSelection]);
+    closeContextMenu();
+  }, [clearSelection, closeContextMenu]);
 
-  // Handle right-click context menu
+  // Handle right-click on empty canvas
   const onPaneContextMenu = useCallback(
     (event: MouseEvent | React.MouseEvent) => {
       event.preventDefault();
-
-      if (!reactFlowWrapper.current) return;
-
-      const bounds = reactFlowWrapper.current.getBoundingClientRect();
-
-      setContextMenu({
+      openContextMenu({
         x: event.clientX,
         y: event.clientY,
-        flowPosition: {
-          x: event.clientX - bounds.left,
-          y: event.clientY - bounds.top,
-        },
+        flowPosition: screenToFlowPosition({ x: event.clientX, y: event.clientY }),
+        target: { type: 'pane', viewMode: 'network' },
       });
     },
-    []
+    [openContextMenu, screenToFlowPosition]
+  );
+
+  // Handle right-click on nodes
+  const onNodeContextMenu: NodeMouseHandler<AllNodeTypes> = useCallback(
+    (event, node) => {
+      event.preventDefault();
+      selectNode(node.id);
+      openContextMenu({
+        x: event.clientX,
+        y: event.clientY,
+        flowPosition: screenToFlowPosition({ x: event.clientX, y: event.clientY }),
+        target: { type: 'node', nodeId: node.id, nodeType: node.type ?? 'station', viewMode: 'network' },
+      });
+    },
+    [openContextMenu, screenToFlowPosition, selectNode]
+  );
+
+  // Handle right-click on edges
+  const onEdgeContextMenu: EdgeMouseHandler<ResourceEdgeType> = useCallback(
+    (event, edge) => {
+      event.preventDefault();
+      selectEdge(edge.id);
+      openContextMenu({
+        x: event.clientX,
+        y: event.clientY,
+        flowPosition: screenToFlowPosition({ x: event.clientX, y: event.clientY }),
+        target: { type: 'edge', edgeId: edge.id, edgeType: edge.type ?? 'resource', viewMode: 'network' },
+      });
+    },
+    [openContextMenu, screenToFlowPosition, selectEdge]
   );
 
   // Handle keyboard events (Delete key)
@@ -351,6 +372,8 @@ function NetworkCanvasInner() {
         onNodeDragStop={onNodeDragStop}
         onPaneClick={onPaneClick}
         onPaneContextMenu={onPaneContextMenu}
+        onNodeContextMenu={onNodeContextMenu}
+        onEdgeContextMenu={onEdgeContextMenu}
         onViewportChange={onViewportChange}
         nodeTypes={nodeTypes}
         edgeTypes={edgeTypes}
@@ -374,14 +397,7 @@ function NetworkCanvasInner() {
       </ReactFlow>
 
       {/* Context Menu */}
-      {contextMenu && (
-        <ContextMenu
-          x={contextMenu.x}
-          y={contextMenu.y}
-          flowPosition={contextMenu.flowPosition}
-          onClose={() => setContextMenu(null)}
-        />
-      )}
+      <ContextMenuShell />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useMemo, useRef } from 'react';
 import {
   ReactFlow,
   ReactFlowProvider,
@@ -12,6 +12,8 @@ import {
   type NodeTypes,
   type EdgeTypes,
   type Viewport,
+  type NodeMouseHandler,
+  type EdgeMouseHandler,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
@@ -26,7 +28,7 @@ import {
   type StationOutputNodeType,
 } from '@/components/nodes';
 import { ModuleEdge, type ModuleEdgeType } from '@/components/edges';
-import { ModuleContextMenu } from './ModuleContextMenu';
+import { ContextMenuShell } from './context-menu';
 import { STATION_INPUT_ID, STATION_OUTPUT_ID } from '@/types/plan';
 
 // Type for all nodes in station canvas
@@ -45,7 +47,7 @@ const edgeTypes: EdgeTypes = {
 };
 
 function StationCanvasInner() {
-  const { setViewport } = useReactFlow();
+  const { setViewport, screenToFlowPosition } = useReactFlow();
   const activeStationId = useUIStore((state) => state.activeStationId);
   const stations = usePlanStore((state) => state.plan.stations);
   const computed = usePlanStore((state) => state.computed);
@@ -57,11 +59,10 @@ function StationCanvasInner() {
   const selectNode = useUIStore((state) => state.selectNode);
   const selectEdge = useUIStore((state) => state.selectEdge);
   const clearSelection = useUIStore((state) => state.clearSelection);
+  const openContextMenu = useUIStore((state) => state.openContextMenu);
+  const closeContextMenu = useUIStore((state) => state.closeContextMenu);
 
   const reactFlowWrapper = useRef<HTMLDivElement>(null);
-
-  // Context menu state
-  const [contextMenu, setContextMenu] = useState<{ x: number; y: number } | null>(null);
 
   // Find the active station
   const station = useMemo(
@@ -253,19 +254,51 @@ function StationCanvasInner() {
   // Handle pane click (clear selection)
   const onPaneClick = useCallback(() => {
     clearSelection();
-    setContextMenu(null);
-  }, [clearSelection]);
+    closeContextMenu();
+  }, [clearSelection, closeContextMenu]);
 
-  // Handle right-click context menu
+  // Handle right-click on empty canvas
   const onPaneContextMenu = useCallback(
     (event: MouseEvent | React.MouseEvent) => {
       event.preventDefault();
-      setContextMenu({
+      openContextMenu({
         x: event.clientX,
         y: event.clientY,
+        flowPosition: screenToFlowPosition({ x: event.clientX, y: event.clientY }),
+        target: { type: 'pane', viewMode: 'station' },
       });
     },
-    []
+    [openContextMenu, screenToFlowPosition]
+  );
+
+  // Handle right-click on nodes
+  const onNodeContextMenu: NodeMouseHandler<StationCanvasNode> = useCallback(
+    (event, node) => {
+      event.preventDefault();
+      selectNode(node.id);
+      openContextMenu({
+        x: event.clientX,
+        y: event.clientY,
+        flowPosition: screenToFlowPosition({ x: event.clientX, y: event.clientY }),
+        target: { type: 'node', nodeId: node.id, nodeType: node.type ?? 'module', viewMode: 'station' },
+      });
+    },
+    [openContextMenu, screenToFlowPosition, selectNode]
+  );
+
+  // Handle right-click on edges
+  const onEdgeContextMenu: EdgeMouseHandler<ModuleEdgeType> = useCallback(
+    (event, edge) => {
+      event.preventDefault();
+      selectEdge(edge.id);
+      openContextMenu({
+        x: event.clientX,
+        y: event.clientY,
+        flowPosition: screenToFlowPosition({ x: event.clientX, y: event.clientY }),
+        target: { type: 'edge', edgeId: edge.id, edgeType: edge.type ?? 'module', viewMode: 'station' },
+      });
+    },
+    [openContextMenu, screenToFlowPosition, selectEdge]
   );
 
   // Handle keyboard events (Delete key)
@@ -332,6 +365,8 @@ function StationCanvasInner() {
         onConnect={onConnect}
         onPaneClick={onPaneClick}
         onPaneContextMenu={onPaneContextMenu}
+        onNodeContextMenu={onNodeContextMenu}
+        onEdgeContextMenu={onEdgeContextMenu}
         onViewportChange={onViewportChange}
         nodeTypes={nodeTypes}
         edgeTypes={edgeTypes}
@@ -355,13 +390,7 @@ function StationCanvasInner() {
       </div>
 
       {/* Context Menu */}
-      {contextMenu && (
-        <ModuleContextMenu
-          x={contextMenu.x}
-          y={contextMenu.y}
-          onClose={() => setContextMenu(null)}
-        />
-      )}
+      <ContextMenuShell />
     </div>
   );
 }

@@ -70,3 +70,34 @@
 .react-flow__edge-path {
   stroke-width: 2;
 }
+
+/* React Flow Controls - theme aware */
+.react-flow__controls {
+  background: hsl(var(--card)) !important;
+  border: 1px solid hsl(var(--border)) !important;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1) !important;
+}
+
+.react-flow__controls-button {
+  background: hsl(var(--card)) !important;
+  border: none !important;
+  border-bottom: 1px solid hsl(var(--border)) !important;
+}
+
+.react-flow__controls-button:hover {
+  background: hsl(var(--secondary)) !important;
+}
+
+.react-flow__controls-button svg {
+  fill: hsl(var(--foreground)) !important;
+}
+
+/* React Flow MiniMap - theme aware */
+.react-flow__minimap {
+  background: hsl(var(--card)) !important;
+  border: 1px solid hsl(var(--border)) !important;
+}
+
+.react-flow__minimap svg {
+  background: hsl(var(--card)) !important;
+}

@@ -1,6 +1,8 @@
 import { create } from 'zustand';
+import type { ContextMenuState } from '@/components/canvas/context-menu/types';
 
 export type ViewMode = 'network' | 'station';
+export type Theme = 'light' | 'dark' | 'system';
 
 interface UIStore {
   // View state
@@ -15,6 +17,12 @@ interface UIStore {
   sidebarOpen: boolean;
   reportOpen: boolean;
 
+  // Theme state
+  theme: Theme;
+
+  // Context menu state
+  contextMenu: ContextMenuState | null;
+
   // Actions
   setViewMode: (mode: ViewMode) => void;
   drillIntoStation: (stationId: string) => void;
@@ -28,6 +36,11 @@ interface UIStore {
   setSidebarOpen: (open: boolean) => void;
   toggleReport: () => void;
   setReportOpen: (open: boolean) => void;
+
+  setTheme: (theme: Theme) => void;
+
+  openContextMenu: (state: ContextMenuState) => void;
+  closeContextMenu: () => void;
 }
 
 export const useUIStore = create<UIStore>((set) => ({
@@ -37,6 +50,8 @@ export const useUIStore = create<UIStore>((set) => ({
   selectedEdgeId: null,
   sidebarOpen: true,
   reportOpen: false,
+  theme: 'system',
+  contextMenu: null,
 
   setViewMode: (mode) => set({ viewMode: mode }),
 
@@ -46,6 +61,7 @@ export const useUIStore = create<UIStore>((set) => ({
       activeStationId: stationId,
       selectedNodeId: null,
       selectedEdgeId: null,
+      contextMenu: null,
     }),
 
   exitStationView: () =>
@@ -54,6 +70,7 @@ export const useUIStore = create<UIStore>((set) => ({
       activeStationId: null,
       selectedNodeId: null,
       selectedEdgeId: null,
+      contextMenu: null,
     }),
 
   selectNode: (nodeId) =>
@@ -78,4 +95,9 @@ export const useUIStore = create<UIStore>((set) => ({
   setSidebarOpen: (open) => set({ sidebarOpen: open }),
   toggleReport: () => set((state) => ({ reportOpen: !state.reportOpen })),
   setReportOpen: (open) => set({ reportOpen: open }),
+
+  setTheme: (theme) => set({ theme }),
+
+  openContextMenu: (state) => set({ contextMenu: state }),
+  closeContextMenu: () => set({ contextMenu: null }),
 }));

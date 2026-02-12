@@ -10,31 +10,18 @@ const CATEGORY_INFO: Record<ModuleCategory, { label: string; icon: string }> = {
   storage: { label: 'Storage', icon: '📦' },
 };
 
-interface ModuleContextMenuProps {
-  x: number;
-  y: number;
-  onClose: () => void;
-}
-
-export function ModuleContextMenu({ x, y, onClose }: ModuleContextMenuProps) {
-  const menuRef = useRef<HTMLDivElement>(null);
-  const searchRef = useRef<HTMLInputElement>(null);
+export function StationPaneMenu() {
   const { screenToFlowPosition } = useReactFlow();
+  const searchRef = useRef<HTMLInputElement>(null);
 
   const gameData = useGameDataStore((state) => state.gameData);
   const addModule = usePlanStore((state) => state.addModule);
-  const removeModule = usePlanStore((state) => state.removeModule);
   const activeStationId = useUIStore((state) => state.activeStationId);
-  const selectedNodeId = useUIStore((state) => state.selectedNodeId);
-  const clearSelection = useUIStore((state) => state.clearSelection);
-  const stations = usePlanStore((state) => state.plan.stations);
+  const contextMenu = useUIStore((state) => state.contextMenu);
+  const closeContextMenu = useUIStore((state) => state.closeContextMenu);
 
   const [expandedCategory, setExpandedCategory] = useState<ModuleCategory | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
-
-  // Find selected module
-  const activeStation = stations.find((s) => s.id === activeStationId);
-  const selectedModule = activeStation?.modules.find((m) => m.id === selectedNodeId);
 
   // Filter modules by search query
   const searchResults = useMemo(() => {
@@ -51,7 +38,7 @@ export function ModuleContextMenu({ x, y, onClose }: ModuleContextMenuProps) {
       });
     });
 
-    return results.slice(0, 15); // Limit results
+    return results.slice(0, 15);
   }, [gameData, searchQuery]);
 
   // Auto-focus search input on mount
@@ -59,77 +46,35 @@ export function ModuleContextMenu({ x, y, onClose }: ModuleContextMenuProps) {
     searchRef.current?.focus();
   }, []);
 
-  // Close menu when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        onClose();
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [onClose]);
-
-  // Close on Escape key
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        onClose();
-      }
-    };
-
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [onClose]);
-
   const handleAddModule = useCallback(
     (e: React.MouseEvent, blueprintId: string) => {
       e.stopPropagation();
-      if (!activeStationId) return;
-
-      const position = screenToFlowPosition({ x, y });
+      if (!activeStationId || !contextMenu) return;
+      const position = screenToFlowPosition({ x: contextMenu.x, y: contextMenu.y });
       addModule(activeStationId, blueprintId, position);
-      onClose();
+      closeContextMenu();
     },
-    [screenToFlowPosition, x, y, activeStationId, addModule, onClose]
-  );
-
-  const handleDeleteModule = useCallback(
-    (e: React.MouseEvent) => {
-      e.stopPropagation();
-      if (selectedModule && activeStationId) {
-        removeModule(activeStationId, selectedModule.id);
-        clearSelection();
-      }
-      onClose();
-    },
-    [selectedModule, activeStationId, removeModule, clearSelection, onClose]
+    [screenToFlowPosition, contextMenu, activeStationId, addModule, closeContextMenu]
   );
 
   if (!gameData) return null;
 
   return (
-    <div
-      ref={menuRef}
-      className="fixed z-50 min-w-[240px] max-w-[280px] rounded-md border border-border bg-popover shadow-lg"
-      style={{ left: x, top: y }}
-      onClick={(e) => e.stopPropagation()}
-      onMouseDown={(e) => e.stopPropagation()}
-    >
-      <div className="p-2">
-        {/* Search input */}
+    <>
+      {/* Search input */}
+      <div className="p-2 pb-0">
         <input
           ref={searchRef}
           type="text"
           placeholder="Search modules..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          onKeyDown={(e) => e.stopPropagation()}
           className="w-full px-3 py-1.5 text-sm rounded border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring"
         />
       </div>
 
-      <div className="p-1 pt-0">
+      <div className="p-1 pt-1">
         {/* Search results */}
         {searchResults ? (
           <div className="max-h-64 overflow-y-auto">
@@ -187,7 +132,7 @@ export function ModuleContextMenu({ x, y, onClose }: ModuleContextMenuProps) {
                       ))}
                       {modules.length > 20 && (
                         <p className="px-3 py-1.5 text-xs text-muted-foreground">
-                          +{modules.length - 20} more
+                          +{modules.length - 20} more (use search)
                         </p>
                       )}
                     </div>
@@ -197,21 +142,7 @@ export function ModuleContextMenu({ x, y, onClose }: ModuleContextMenuProps) {
             })}
           </>
         )}
-
-        {/* Delete selected module */}
-        {selectedModule && (
-          <>
-            <div className="my-1 h-px bg-border" />
-            <button
-              onClick={handleDeleteModule}
-              className="w-full flex items-center gap-2 px-3 py-2 text-sm text-destructive rounded hover:bg-destructive/10 transition-colors text-left"
-            >
-              <span className="text-lg leading-none">×</span>
-              Delete Module
-            </button>
-          </>
-        )}
       </div>
-    </div>
+    </>
   );
 }
