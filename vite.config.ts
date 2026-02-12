@@ -5,7 +5,7 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/X4-Foundations-Station-Planner/',
+  base: '/Station-Planner-For-X4-Foundations/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
