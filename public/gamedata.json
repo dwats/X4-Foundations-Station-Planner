@@ -1,8 +1,21 @@
 {
+  "languages": {
+    "en": "English",
+    "ru": "Русский",
+    "fr": "Français",
+    "de": "Deutsch",
+    "zh": "中文"
+  },
   "wares": {
     "rhydoniumcell": {
       "id": "rhydoniumcell",
-      "name": "Rhydonium Cell",
+      "name": {
+        "en": "Rhydonium Core",
+        "ru": "Ядро Ридониума",
+        "fr": "Noyau de rhydonium",
+        "de": "Rhydonium Kern",
+        "zh": "赖登素核心"
+      },
       "group": "hightech",
       "transport": "container",
       "volume": 200,
@@ -14,7 +27,13 @@
     },
     "shipsupplies": {
       "id": "shipsupplies",
-      "name": "Ship Supplies",
+      "name": {
+        "en": "Ship Supplies",
+        "ru": "Судовые припасы",
+        "fr": "Ravitaillement de vaisseaux",
+        "de": "Schiffsvorratswaren",
+        "zh": "舰船补给品"
+      },
       "group": "refined",
       "transport": "container",
       "volume": 30,
@@ -25,7 +44,13 @@
     },
     "advancedelectronics": {
       "id": "advancedelectronics",
-      "name": "Advanced Electronics",
+      "name": {
+        "en": "Advanced Electronics",
+        "ru": "Системы упреждения",
+        "fr": "Composants électroniques avancés",
+        "de": "Elektronikkomponenten",
+        "zh": "先进电子设备"
+      },
       "group": "shiptech",
       "transport": "container",
       "volume": 30,
@@ -37,7 +62,13 @@
     },
     "claytronics": {
       "id": "claytronics",
-      "name": "Claytronics",
+      "name": {
+        "en": "Module PreFab",
+        "ru": "Модуль конструкции",
+        "fr": "Module préfabriqué",
+        "de": "Modul Fertigteil",
+        "zh": "模块预制件"
+      },
       "group": "shiptech",
       "transport": "container",
       "volume": 24,
@@ -49,7 +80,13 @@
     },
     "energycells": {
       "id": "energycells",
-      "name": "Energy Cells",
+      "name": {
+        "en": "Energy Cells",
+        "ru": "Энергоэлементы",
+        "fr": "Photopiles",
+        "de": "Energiezellen",
+        "zh": "能量电池"
+      },
       "group": "energy",
       "transport": "container",
       "volume": 1,
@@ -61,7 +98,13 @@
     },
     "foodrations": {
       "id": "foodrations",
-      "name": "Food Rations",
+      "name": {
+        "en": "Food Rations",
+        "ru": "Рационы питания",
+        "fr": "Ration de nourriture",
+        "de": "Nahrungsrationen",
+        "zh": "食品配给"
+      },
       "group": "food",
       "transport": "container",
       "volume": 1,
@@ -72,7 +115,13 @@
     },
     "hullparts": {
       "id": "hullparts",
-      "name": "Hull Parts",
+      "name": {
+        "en": "Durasteel Plates",
+        "ru": "Пластинки дюрастила",
+        "fr": "Plaques de duracier",
+        "de": "Durastahl Platten",
+        "zh": "硬质合金钢板"
+      },
       "group": "hightech",
       "transport": "container",
       "volume": 12,
@@ -84,7 +133,13 @@
     },
     "meat": {
       "id": "meat",
-      "name": "Meat",
+      "name": {
+        "en": "Meat",
+        "ru": "Мясо",
+        "fr": "Viande",
+        "de": "Fleisch",
+        "zh": "食用肉"
+      },
       "group": "agricultural",
       "transport": "container",
       "volume": 6,
@@ -95,7 +150,13 @@
     },
     "medicalsupplies": {
       "id": "medicalsupplies",
-      "name": "Medical Supplies",
+      "name": {
+        "en": "Medical Supplies",
+        "ru": "Медикаменты",
+        "fr": "Trousses de médicaments",
+        "de": "Medikamente",
+        "zh": "医疗物资"
+      },
       "group": "pharmaceutical",
       "transport": "container",
       "volume": 2,
@@ -106,7 +167,13 @@
     },
     "wheat": {
       "id": "wheat",
-      "name": "Wheat",
+      "name": {
+        "en": "Agricultural Goods",
+        "ru": "Сельхозпродукция",
+        "fr": "Produits agricoles",
+        "de": "Landwirtschaftliche Güter",
+        "zh": "农产品"
+      },
       "group": "agricultural",
       "transport": "container",
       "volume": 4,
@@ -117,7 +184,13 @@
     },
     "computronicsubstrate": {
       "id": "computronicsubstrate",
-      "name": "Computronic Substrate",
+      "name": {
+        "en": "Darkfusion Cell",
+        "ru": "Тёмнофузионная ячейка",
+        "fr": "Cellule de fusion noire",
+        "de": "Dunklefusions Zelle",
+        "zh": "暗融合单元"
+      },
       "group": "hightech",
       "transport": "container",
       "volume": 50,
@@ -129,7 +202,13 @@
     },
     "metallicmicrolattice": {
       "id": "metallicmicrolattice",
-      "name": "Metallic Microlattice",
+      "name": {
+        "en": "Fibersteel",
+        "ru": "Волокнистая сталь",
+        "fr": "Fibroacier",
+        "de": "Fiberstahl",
+        "zh": "复合金属纤维"
+      },
       "group": "hightech",
       "transport": "container",
       "volume": 1,
@@ -141,7 +220,13 @@
     },
     "terranmre": {
       "id": "terranmre",
-      "name": "Terran MRE",
+      "name": {
+        "en": "Cloning Vats",
+        "ru": "Клонировочные резервуары",
+        "fr": "Cuves de clonage",
+        "de": "Klonbehälter",
+        "zh": "克隆缸"
+      },
       "group": "food",
       "transport": "container",
       "volume": 2,
@@ -152,7 +237,13 @@
     },
     "proteinpaste": {
       "id": "proteinpaste",
-      "name": "Protein Paste",
+      "name": {
+        "en": "Bacta Solution",
+        "ru": "Бакта-раствор",
+        "fr": "Solution de bacta",
+        "de": "Bacta Lösung",
+        "zh": "巴克塔溶液"
+      },
       "group": "agricultural",
       "transport": "container",
       "volume": 4,
@@ -163,7 +254,13 @@
     },
     "siliconcarbide": {
       "id": "siliconcarbide",
-      "name": "Silicon Carbide",
+      "name": {
+        "en": "Obsidian Composite",
+        "ru": "Обсидиановый композит",
+        "fr": "Composite d’obsidienne",
+        "de": "Obsidian Komposit",
+        "zh": "黑石复合材料"
+      },
       "group": "hightech",
       "transport": "container",
       "volume": 20,
@@ -175,7 +272,13 @@
     },
     "spacefuel": {
       "id": "spacefuel",
-      "name": "Space Fuel",
+      "name": {
+        "en": "Contraband Alcohol",
+        "ru": "Контрабанда алкоголя",
+        "fr": "Alcool de contrebande",
+        "de": "Geschmuggelter Alkohol",
+        "zh": "违禁品酒精"
+      },
       "group": "pharmaceutical",
       "transport": "container",
       "volume": 2,
@@ -186,7 +289,13 @@
     },
     "advancedcomposites": {
       "id": "advancedcomposites",
-      "name": "Advanced Composites",
+      "name": {
+        "en": "Advanced Composites",
+        "ru": "Суперкомпозиты",
+        "fr": "Composites avancés",
+        "de": "Verbundwerkstoffe",
+        "zh": "先进复合材料"
+      },
       "group": "hightech",
       "transport": "container",
       "volume": 32,
@@ -198,7 +307,13 @@
     },
     "antimattercells": {
       "id": "antimattercells",
-      "name": "Antimatter Cells",
+      "name": {
+        "en": "Tibanna Cells",
+        "ru": "Тибановые элементы",
+        "fr": "Cellules de tibanna",
+        "de": "Tibannazellen",
+        "zh": "提班纳容舱"
+      },
       "group": "refined",
       "transport": "container",
       "volume": 18,
@@ -209,7 +324,13 @@
     },
     "antimatterconverters": {
       "id": "antimatterconverters",
-      "name": "Antimatter Converters",
+      "name": {
+        "en": "Antimatter Converters",
+        "ru": "АМ-конвертеры",
+        "fr": "Convertisseurs d'antimatière",
+        "de": "Antimateriewandler",
+        "zh": "反物质转换器"
+      },
       "group": "shiptech",
       "transport": "container",
       "volume": 10,
@@ -220,7 +341,13 @@
     },
     "dronecomponents": {
       "id": "dronecomponents",
-      "name": "Drone Components",
+      "name": {
+        "en": "Droid Parts",
+        "ru": "Запчасти дроидов",
+        "fr": "Pièces de droïdes",
+        "de": "Droidenteile",
+        "zh": "机器人部件"
+      },
       "group": "shiptech",
       "transport": "container",
       "volume": 30,
@@ -231,7 +358,13 @@
     },
     "engineparts": {
       "id": "engineparts",
-      "name": "Engine Parts",
+      "name": {
+        "en": "Engine Parts",
+        "ru": "Детали двигателей",
+        "fr": "Pièces de moteur",
+        "de": "Antriebsteile",
+        "zh": "引擎部件"
+      },
       "group": "hightech",
       "transport": "container",
       "volume": 15,
@@ -242,7 +375,13 @@
     },
     "fieldcoils": {
       "id": "fieldcoils",
-      "name": "Field Coils",
+      "name": {
+        "en": "Field Coils",
+        "ru": "Полевые катушки",
+        "fr": "Bobines de champ",
+        "de": "Feldspulen",
+        "zh": "励磁线圈"
+      },
       "group": "shiptech",
       "transport": "container",
       "volume": 15,
@@ -254,7 +393,13 @@
     },
     "graphene": {
       "id": "graphene",
-      "name": "Graphene",
+      "name": {
+        "en": "Graphene",
+        "ru": "Графен",
+        "fr": "Graphène",
+        "de": "Graphen",
+        "zh": "石墨烯"
+      },
       "group": "refined",
       "transport": "container",
       "volume": 20,
@@ -265,7 +410,13 @@
     },
     "microchips": {
       "id": "microchips",
-      "name": "Microchips",
+      "name": {
+        "en": "Microchips",
+        "ru": "Микросхемы",
+        "fr": "Circuits intégrés",
+        "de": "Mikrochips",
+        "zh": "微芯片"
+      },
       "group": "hightech",
       "transport": "container",
       "volume": 22,
@@ -276,7 +427,13 @@
     },
     "missilecomponents": {
       "id": "missilecomponents",
-      "name": "Missile Components",
+      "name": {
+        "en": "Missile Components",
+        "ru": "Компоненты ракет",
+        "fr": "Composants de missiles",
+        "de": "Raketenbauteile",
+        "zh": "导弹部件"
+      },
       "group": "shiptech",
       "transport": "container",
       "volume": 2,
@@ -287,7 +444,13 @@
     },
     "plasmaconductors": {
       "id": "plasmaconductors",
-      "name": "Plasma Conductors",
+      "name": {
+        "en": "Plasma Conductors",
+        "ru": "Плазмопроводы",
+        "fr": "Conducteurs de plasma",
+        "de": "Plasmaleiter",
+        "zh": "等离子导体"
+      },
       "group": "hightech",
       "transport": "container",
       "volume": 32,
@@ -299,7 +462,13 @@
     },
     "quantumtubes": {
       "id": "quantumtubes",
-      "name": "Quantum Tubes",
+      "name": {
+        "en": "Capacitors",
+        "ru": "Конденсатор",
+        "fr": "Condensateurs",
+        "de": "Kondensatoren",
+        "zh": "电容器"
+      },
       "group": "hightech",
       "transport": "container",
       "volume": 22,
@@ -310,7 +479,13 @@
     },
     "refinedmetals": {
       "id": "refinedmetals",
-      "name": "Refined Metals",
+      "name": {
+        "en": "Refined Metals",
+        "ru": "Очищенные металлы",
+        "fr": "Métal raffiné",
+        "de": "Veredelte Metalle",
+        "zh": "精炼金属"
+      },
       "group": "refined",
       "transport": "container",
       "volume": 14,
@@ -321,7 +496,13 @@
     },
     "scanningarrays": {
       "id": "scanningarrays",
-      "name": "Scanning Arrays",
+      "name": {
+        "en": "Sensor Components",
+        "ru": "Компоненты сенсоров",
+        "fr": "Composants de capteurs",
+        "de": "Sensorkomponenten",
+        "zh": "传感器元件"
+      },
       "group": "hightech",
       "transport": "container",
       "volume": 38,
@@ -332,7 +513,13 @@
     },
     "shieldcomponents": {
       "id": "shieldcomponents",
-      "name": "Shield Components",
+      "name": {
+        "en": "Shield Components",
+        "ru": "Компоненты щитов",
+        "fr": "Composants de boucliers",
+        "de": "Schildkomponenten",
+        "zh": "护盾部件"
+      },
       "group": "shiptech",
       "transport": "container",
       "volume": 10,
@@ -344,7 +531,13 @@
     },
     "siliconwafers": {
       "id": "siliconwafers",
-      "name": "Silicon Wafers",
+      "name": {
+        "en": "Silicon Wafers",
+        "ru": "Кремниевые пластины",
+        "fr": "Tranches de silicium",
+        "de": "Siliziumscheiben",
+        "zh": "硅晶片"
+      },
       "group": "refined",
       "transport": "container",
       "volume": 18,
@@ -355,7 +548,13 @@
     },
     "smartchips": {
       "id": "smartchips",
-      "name": "Smart Chips",
+      "name": {
+        "en": "Smart Chips",
+        "ru": "Смарт-чипы",
+        "fr": "Puces intelligentes",
+        "de": "Smart-Chips",
+        "zh": "智能芯片"
+      },
       "group": "shiptech",
       "transport": "container",
       "volume": 2,
@@ -366,7 +565,13 @@
     },
     "spices": {
       "id": "spices",
-      "name": "Spices",
+      "name": {
+        "en": "Spices",
+        "ru": "Специи",
+        "fr": "Epices",
+        "de": "Gewürze",
+        "zh": "香料"
+      },
       "group": "agricultural",
       "transport": "container",
       "volume": 3,
@@ -377,7 +582,13 @@
     },
     "superfluidcoolant": {
       "id": "superfluidcoolant",
-      "name": "Superfluid Coolant",
+      "name": {
+        "en": "Superfluid Coolant",
+        "ru": "Сверхтекучий хладагент",
+        "fr": "Superfluide de refroidissement",
+        "de": "Suprafluid-Kühlmittel",
+        "zh": "超流体冷却剂"
+      },
       "group": "refined",
       "transport": "container",
       "volume": 16,
@@ -388,7 +599,13 @@
     },
     "turretcomponents": {
       "id": "turretcomponents",
-      "name": "Turret Components",
+      "name": {
+        "en": "Turret Components",
+        "ru": "Компоненты турелей",
+        "fr": "Composants de tourelles",
+        "de": "Geschützkomp.",
+        "zh": "炮塔部件"
+      },
       "group": "shiptech",
       "transport": "container",
       "volume": 20,
@@ -400,7 +617,13 @@
     },
     "water": {
       "id": "water",
-      "name": "Water",
+      "name": {
+        "en": "Water",
+        "ru": "Вода",
+        "fr": "Eau",
+        "de": "Wasser",
+        "zh": "水"
+      },
       "group": "water",
       "transport": "container",
       "volume": 6,
@@ -411,7 +634,13 @@
     },
     "weaponcomponents": {
       "id": "weaponcomponents",
-      "name": "Weapon Components",
+      "name": {
+        "en": "Weapon Components",
+        "ru": "Компоненты орудий",
+        "fr": "Composants d'armements",
+        "de": "Waffenkomponenten",
+        "zh": "武器部件"
+      },
       "group": "shiptech",
       "transport": "container",
       "volume": 20,
@@ -422,7 +651,13 @@
     },
     "majadust": {
       "id": "majadust",
-      "name": "Maja Dust",
+      "name": {
+        "en": "Maja Dust",
+        "ru": "Порошок майя",
+        "fr": "Poudre Maja",
+        "de": "Majastaub",
+        "zh": "艳耀星尘"
+      },
       "group": "pharmaceutical",
       "transport": "container",
       "volume": 6,
@@ -433,7 +668,13 @@
     },
     "majasnails": {
       "id": "majasnails",
-      "name": "Maja Snails",
+      "name": {
+        "en": "Maja Snails",
+        "ru": "Улитки майя",
+        "fr": "Escargots Maja",
+        "de": "Majaschnecken",
+        "zh": "艳耀蜗牛"
+      },
       "group": "agricultural",
       "transport": "container",
       "volume": 6,
@@ -444,7 +685,13 @@
     },
     "sojabeans": {
       "id": "sojabeans",
-      "name": "Soja Beans",
+      "name": {
+        "en": "Soja Beans",
+        "ru": "Соевые бобы",
+        "fr": "Graines de soja",
+        "de": "Sojabohnen",
+        "zh": "白豆"
+      },
       "group": "agricultural",
       "transport": "container",
       "volume": 5,
@@ -455,7 +702,13 @@
     },
     "sojahusk": {
       "id": "sojahusk",
-      "name": "Soja Husk",
+      "name": {
+        "en": "Soja Husk",
+        "ru": "Соевая паста",
+        "fr": "Enveloppes de soja",
+        "de": "Sojagrütze",
+        "zh": "白豆荚"
+      },
       "group": "food",
       "transport": "container",
       "volume": 1,
@@ -466,7 +719,13 @@
     },
     "nostropoil": {
       "id": "nostropoil",
-      "name": "Nostrop Oil",
+      "name": {
+        "en": "Nostrop Oil",
+        "ru": "Ностроповое масло",
+        "fr": "Huile Nostrop",
+        "de": "Nostropöl",
+        "zh": "滋养油"
+      },
       "group": "food",
       "transport": "container",
       "volume": 1,
@@ -477,7 +736,13 @@
     },
     "spaceweed": {
       "id": "spaceweed",
-      "name": "Space Weed",
+      "name": {
+        "en": "Hutt Spice",
+        "ru": "Спайс Хаттов",
+        "fr": "Épice Hutt",
+        "de": "Hutt Gewürz",
+        "zh": "赫特香料"
+      },
       "group": "pharmaceutical",
       "transport": "container",
       "volume": 3,
@@ -488,7 +753,13 @@
     },
     "sunriseflowers": {
       "id": "sunriseflowers",
-      "name": "Sunrise Flowers",
+      "name": {
+        "en": "Sunrise Flowers",
+        "ru": "Подсолнечники",
+        "fr": "Fleurs de soleil",
+        "de": "Sonnenblumen",
+        "zh": "日出花"
+      },
       "group": "agricultural",
       "transport": "container",
       "volume": 5,
@@ -499,7 +770,13 @@
     },
     "swampplant": {
       "id": "swampplant",
-      "name": "Swamp Plant",
+      "name": {
+        "en": "Hutt Chemicals",
+        "ru": "Химикаты Хаттов",
+        "fr": "Produits chimiques Hutt",
+        "de": "Hutt Chemikalien",
+        "zh": "赫特化学药品"
+      },
       "group": "agricultural",
       "transport": "container",
       "volume": 6,
@@ -510,7 +787,13 @@
     },
     "teladianium": {
       "id": "teladianium",
-      "name": "Teladianium",
+      "name": {
+        "en": "Teladianium",
+        "ru": "Теладианий",
+        "fr": "Teladianium",
+        "de": "Teladianium",
+        "zh": "T材料"
+      },
       "group": "refined",
       "transport": "container",
       "volume": 16,
@@ -521,7 +804,13 @@
     },
     "ore": {
       "id": "ore",
-      "name": "Ore",
+      "name": {
+        "en": "Ore",
+        "ru": "Руда",
+        "fr": "Minerai",
+        "de": "Erz",
+        "zh": "金属矿石"
+      },
       "group": "minerals",
       "transport": "solid",
       "volume": 10,
@@ -534,7 +823,13 @@
     },
     "nividium": {
       "id": "nividium",
-      "name": "Nividium",
+      "name": {
+        "en": "Rhydonium",
+        "ru": "Ридониум",
+        "fr": "Rhydonium",
+        "de": "Rhydonium",
+        "zh": "赖登素"
+      },
       "group": "minerals",
       "transport": "solid",
       "volume": 60,
@@ -547,7 +842,13 @@
     },
     "hydrogen": {
       "id": "hydrogen",
-      "name": "Hydrogen",
+      "name": {
+        "en": "Tibanna",
+        "ru": "Тибанна",
+        "fr": "Tibanna",
+        "de": "Tibanna",
+        "zh": "提班纳"
+      },
       "group": "gases",
       "transport": "liquid",
       "volume": 6,
@@ -560,7 +861,13 @@
     },
     "silicon": {
       "id": "silicon",
-      "name": "Silicon",
+      "name": {
+        "en": "Silicon",
+        "ru": "Кремний",
+        "fr": "Silicium",
+        "de": "Silizium",
+        "zh": "硅"
+      },
       "group": "minerals",
       "transport": "solid",
       "volume": 10,
@@ -573,7 +880,13 @@
     },
     "methane": {
       "id": "methane",
-      "name": "Methane",
+      "name": {
+        "en": "Methane",
+        "ru": "Метан",
+        "fr": "Méthane",
+        "de": "Methan",
+        "zh": "甲烷"
+      },
       "group": "gases",
       "transport": "liquid",
       "volume": 6,
@@ -586,7 +899,13 @@
     },
     "helium": {
       "id": "helium",
-      "name": "Helium",
+      "name": {
+        "en": "Helium",
+        "ru": "Гелий",
+        "fr": "Hélium",
+        "de": "Helium",
+        "zh": "氦"
+      },
       "group": "gases",
       "transport": "liquid",
       "volume": 6,
@@ -599,7 +918,13 @@
     },
     "ice": {
       "id": "ice",
-      "name": "Ice",
+      "name": {
+        "en": "Ice",
+        "ru": "Лед",
+        "fr": "Glace",
+        "de": "Eis",
+        "zh": "冰"
+      },
       "group": "ice",
       "transport": "solid",
       "volume": 8,
@@ -1627,391 +1952,781 @@
     "production": {
       "prod_gen_rhydoniumcell_macro": {
         "id": "prod_gen_rhydoniumcell_macro",
-        "name": "Gen Rhydoniumcell",
+        "name": {
+          "en": "Rhydonium Refinery",
+          "ru": "Ридониумный перерабатывающий завод",
+          "fr": "Raffinerie de rhydonium",
+          "de": "Rhydonium Raffinerie",
+          "zh": "赖登素精炼厂"
+        },
         "producedWareId": "rhydoniumcell",
         "workforceMax": 700
       },
       "prod_gen_shipsupplies_macro": {
         "id": "prod_gen_shipsupplies_macro",
-        "name": "Gen Shipsupplies",
+        "name": {
+          "en": "Ship Supplies Factory",
+          "ru": "Завод корабельных запасов",
+          "fr": "Usine de ravitaillement de vaisseaux",
+          "de": "Schiffsvorratswaren Fabrik",
+          "zh": "舰船补给品制造厂"
+        },
         "producedWareId": "shipsupplies",
         "workforceMax": 100
       },
       "prod_imp_advancedelectronics_macro": {
         "id": "prod_imp_advancedelectronics_macro",
-        "name": "Imp Advancedelectronics",
+        "name": {
+          "en": "Imperial Advanced Electronics Factory",
+          "ru": "Имперец Фабрика продвинутой электроники",
+          "fr": "Imperial Usine d’Électronique Avancée",
+          "de": "Imperial Advanced Electronics Fabrik",
+          "zh": "Imperial 先进电子设备工厂"
+        },
         "producedWareId": "advancedelectronics",
         "workforceMax": 540
       },
       "prod_imp_claytronics_macro": {
         "id": "prod_imp_claytronics_macro",
-        "name": "Imp Claytronics",
+        "name": {
+          "en": "Imperial Module PreFab Factory",
+          "ru": "Имперец Фабрика модульных конструкций",
+          "fr": "Imperial Usine de modules préfabriqués",
+          "de": "Imperial Modul Fertigteil Fabrik",
+          "zh": "Imperial 模块预制厂"
+        },
         "producedWareId": "claytronics",
         "workforceMax": 1215
       },
       "prod_imp_energycells_macro": {
         "id": "prod_imp_energycells_macro",
-        "name": "Imp Energycells",
+        "name": {
+          "en": "Imperial Energy Cell Production",
+          "ru": "Имперец Производство Энергоячеек",
+          "fr": "Imperial Production de Cellules d’Énergie",
+          "de": "Imperial Energiezellen Produktion",
+          "zh": "Imperial 能量电池生产"
+        },
         "producedWareId": "energycells",
         "workforceMax": 45
       },
       "prod_imp_foodrations_macro": {
         "id": "prod_imp_foodrations_macro",
-        "name": "Imp Foodrations",
+        "name": {
+          "en": "Imperial Food Ration Production",
+          "ru": "Имперец Производство Пищевых пайков",
+          "fr": "Imperial Production de Rations Alimentaires",
+          "de": "Imperial Nahrungsrationen Produktion",
+          "zh": "Imperial 食物配给生产"
+        },
         "producedWareId": "foodrations",
         "workforceMax": 90
       },
       "prod_imp_hullparts_macro": {
         "id": "prod_imp_hullparts_macro",
-        "name": "Imp Hullparts",
+        "name": {
+          "en": "Imperial Durasteel Foundry",
+          "ru": "Имперец Производство Дюрастали",
+          "fr": "Imperial Fonderie de duracier",
+          "de": "Imperial Durastahl Gießerei",
+          "zh": "Imperial 硬质合金钢铸造厂"
+        },
         "producedWareId": "hullparts",
         "workforceMax": 270
       },
       "prod_imp_meat_macro": {
         "id": "prod_imp_meat_macro",
-        "name": "Imp Meat",
+        "name": {
+          "en": "Imperial Meat Production",
+          "ru": "Имперец Производство мяса",
+          "fr": "Imperial Production de Viande",
+          "de": "Imperial Fleisch Produktion",
+          "zh": "Imperial 肉类生产"
+        },
         "producedWareId": "meat",
         "workforceMax": 75
       },
       "prod_imp_medicalsupplies_macro": {
         "id": "prod_imp_medicalsupplies_macro",
-        "name": "Imp Medicalsupplies",
+        "name": {
+          "en": "Imperial Medical Supplies Production",
+          "ru": "Имперец Производство медицинских принадлежностей",
+          "fr": "Imperial Production de fournitures médicales",
+          "de": "Imperial Produktion von medizinischem Material",
+          "zh": "Imperial 医疗用品产线"
+        },
         "producedWareId": "medicalsupplies",
         "workforceMax": 90
       },
       "prod_imp_rhydoniumcell_macro": {
         "id": "prod_imp_rhydoniumcell_macro",
-        "name": "Imp Rhydoniumcell",
+        "name": {
+          "en": "Imperial Rhydonium Refinery",
+          "ru": "Имперец Ридониумный перерабатывающий завод",
+          "fr": "Imperial Raffinerie de rhydonium",
+          "de": "Imperial Rhydonium Raffinerie",
+          "zh": "Imperial 赖登素精炼厂"
+        },
         "producedWareId": "rhydoniumcell",
         "workforceMax": 700
       },
       "prod_imp_shipsupplies_macro": {
         "id": "prod_imp_shipsupplies_macro",
-        "name": "Imp Shipsupplies",
+        "name": {
+          "en": "Imperial Ship Supplies Factory",
+          "ru": "Имперец Завод корабельных запасов",
+          "fr": "Imperial Usine de ravitaillement de vaisseaux",
+          "de": "Imperial Schiffsvorratswaren Fabrik",
+          "zh": "Imperial 舰船补给品制造厂"
+        },
         "producedWareId": "shipsupplies",
         "workforceMax": 100
       },
       "prod_imp_wheat_macro": {
         "id": "prod_imp_wheat_macro",
-        "name": "Imp Wheat",
+        "name": {
+          "en": "Imperial Agricultural Goods Factory",
+          "ru": "Имперец Фабрика сельхозпродукции",
+          "fr": "Imperial Usine de produits agricoles",
+          "de": "Imperial Landwirtschaftliche Güter Fabrik",
+          "zh": "Imperial 农产品厂"
+        },
         "producedWareId": "wheat",
         "workforceMax": 75
       },
       "prod_sith_computronicsubstrate_macro": {
         "id": "prod_sith_computronicsubstrate_macro",
-        "name": "Sith Computronicsubstrate",
+        "name": {
+          "en": "Darkfusion Cell Factory",
+          "ru": "Завод Тёмнофузионных ячеек",
+          "fr": "Usine de cellules de fusion noire",
+          "de": "Dunklefusions Zelle Fabrik",
+          "zh": "暗融合单元工厂"
+        },
         "producedWareId": "computronicsubstrate",
         "workforceMax": 1500
       },
       "prod_sith_metallicmicrolattice_macro": {
         "id": "prod_sith_metallicmicrolattice_macro",
-        "name": "Sith Metallicmicrolattice",
+        "name": {
+          "en": "Fibersteel Foundry",
+          "ru": "Фабрика волокнистой стали",
+          "fr": "Fonderie de fibroacier",
+          "de": "Fiberstahl Gießerei",
+          "zh": "复合金属纤维精炼厂"
+        },
         "producedWareId": "metallicmicrolattice",
         "workforceMax": 120
       },
       "prod_sith_mre_macro": {
         "id": "prod_sith_mre_macro",
-        "name": "Sith Mre",
+        "name": {
+          "en": "Cloning Vats Factory",
+          "ru": "Фабрика клонировочных резервуаров",
+          "fr": "Usine de cuves de clonage",
+          "de": "Klonbehälter Fabrik",
+          "zh": "克隆缸工厂"
+        },
         "producedWareId": "terranmre",
         "workforceMax": 135
       },
       "prod_sith_proteinpaste_macro": {
         "id": "prod_sith_proteinpaste_macro",
-        "name": "Sith Proteinpaste",
+        "name": {
+          "en": "Bacta Blender",
+          "ru": "Смеситель бакты",
+          "fr": "Mélangeur de bacta",
+          "de": "Bacta Mixer",
+          "zh": "巴克塔混合器"
+        },
         "producedWareId": "proteinpaste",
         "workforceMax": 180
       },
       "prod_sith_scrap_recycler_macro": {
         "id": "prod_sith_scrap_recycler_macro",
-        "name": "Sith Scrap Recycler",
+        "name": {
+          "en": "Sith Scrap Recycler",
+          "ru": "Ситх переработчик лома",
+          "fr": "Recycleur de Ferraille Sith",
+          "de": "Sith Schrottumwandler",
+          "zh": "西斯废料回收器"
+        },
         "producedWareId": "computronicsubstrate siliconcarbide",
         "workforceMax": 1250
       },
       "prod_sith_shipsupplies_macro": {
         "id": "prod_sith_shipsupplies_macro",
-        "name": "Sith Shipsupplies",
+        "name": {
+          "en": "Sith Ship Supplies Factory",
+          "ru": "Ситх Завод корабельных запасов",
+          "fr": "Sith Usine de ravitaillement de vaisseaux",
+          "de": "Sith Schiffsvorratswaren Fabrik",
+          "zh": "Sith 舰船补给品制造厂"
+        },
         "producedWareId": "shipsupplies",
         "workforceMax": 100
       },
       "prod_sith_siliconcarbide_macro": {
         "id": "prod_sith_siliconcarbide_macro",
-        "name": "Sith Siliconcarbide",
+        "name": {
+          "en": "Obsidian Composite Factory",
+          "ru": "Фабрика обсидиановых композитов",
+          "fr": "Usine de composite d’obsidienne",
+          "de": "Obsidian Komposit Fabrik",
+          "zh": "黑石复合材料工厂"
+        },
         "producedWareId": "siliconcarbide",
         "workforceMax": 750
       },
       "prod_arg_foodrations_macro": {
         "id": "prod_arg_foodrations_macro",
-        "name": "Arg Foodrations",
+        "name": {
+          "en": "Food Ration Production",
+          "ru": "Производство рационов питания",
+          "fr": "Production de rations de nourriture",
+          "de": "Nahrungsrationsproduktion",
+          "zh": "食品配给产线"
+        },
         "producedWareId": "foodrations",
         "workforceMax": 90
       },
       "prod_arg_meat_macro": {
         "id": "prod_arg_meat_macro",
-        "name": "Arg Meat",
+        "name": {
+          "en": "Meat Production",
+          "ru": "Производство мяса",
+          "fr": "Production de viande",
+          "de": "Fleischproduktion",
+          "zh": "食用肉产线"
+        },
         "producedWareId": "meat",
         "workforceMax": 75
       },
       "prod_arg_medicalsupplies_macro": {
         "id": "prod_arg_medicalsupplies_macro",
-        "name": "Arg Medicalsupplies",
+        "name": {
+          "en": "Argon Medical Supply Production",
+          "ru": "Аргон Производство медикаментов",
+          "fr": "Argon Production de fournitures médicales",
+          "de": "Argonen Medizinische Versorgungsgüter-Produktion",
+          "zh": "Argon 医疗物资产线"
+        },
         "producedWareId": "medicalsupplies",
         "workforceMax": 90
       },
       "prod_arg_spacefuel_macro": {
         "id": "prod_arg_spacefuel_macro",
-        "name": "Arg Spacefuel",
+        "name": {
+          "en": "Spacefuel Production",
+          "ru": "Производство космотоплива",
+          "fr": "Production de whisky de l'espace",
+          "de": "Raumspritproduktion",
+          "zh": "太空燃料产线"
+        },
         "producedWareId": "spacefuel",
         "workforceMax": 225
       },
       "prod_arg_wheat_macro": {
         "id": "prod_arg_wheat_macro",
-        "name": "Arg Wheat",
+        "name": {
+          "en": "Wheat Production",
+          "ru": "Производство пшеницы",
+          "fr": "Production de blé",
+          "de": "Weizenproduktion",
+          "zh": "小麦产线"
+        },
         "producedWareId": "wheat",
         "workforceMax": 75
       },
       "prod_gen_advancedcomposites_macro": {
         "id": "prod_gen_advancedcomposites_macro",
-        "name": "Gen Advancedcomposites",
+        "name": {
+          "en": "Advanced Composite Production",
+          "ru": "Производство суперкомпозитов",
+          "fr": "Production de composites avancés",
+          "de": "Verbundwerkstoffproduktion",
+          "zh": "先进复合材料产线"
+        },
         "producedWareId": "advancedcomposites",
         "workforceMax": 315
       },
       "prod_gen_advancedelectronics_macro": {
         "id": "prod_gen_advancedelectronics_macro",
-        "name": "Gen Advancedelectronics",
+        "name": {
+          "en": "Advanced Electronics Production",
+          "ru": "Производство систем упреждения",
+          "fr": "Production d'électronique avancée",
+          "de": "Elektronikkomponentenproduktion",
+          "zh": "先进电子设备产线"
+        },
         "producedWareId": "advancedelectronics",
         "workforceMax": 540
       },
       "prod_gen_antimattercells_macro": {
         "id": "prod_gen_antimattercells_macro",
-        "name": "Gen Antimattercells",
+        "name": {
+          "en": "Antimatter Cell Production",
+          "ru": "Производство АМ-элементов",
+          "fr": "Production de cellules d'antimatière",
+          "de": "Antimateriezellenproduktion",
+          "zh": "反物质单元产线"
+        },
         "producedWareId": "antimattercells",
         "workforceMax": 180
       },
       "prod_gen_antimatterconverters_macro": {
         "id": "prod_gen_antimatterconverters_macro",
-        "name": "Gen Antimatterconverters",
+        "name": {
+          "en": "Antimatter Converter Production",
+          "ru": "Производство АМ-конвертеров",
+          "fr": "Production de convertisseur d'antimatière",
+          "de": "Antimateriekonverterproduktion",
+          "zh": "反物质转换器产线"
+        },
         "producedWareId": "antimatterconverters",
         "workforceMax": 1080
       },
       "prod_gen_claytronics_macro": {
         "id": "prod_gen_claytronics_macro",
-        "name": "Gen Claytronics",
+        "name": {
+          "en": "Claytronics Production",
+          "ru": "Производство клэйтроники",
+          "fr": "Production de nanobots",
+          "de": "Nanotronikproduktion",
+          "zh": "电子黏土产线"
+        },
         "producedWareId": "claytronics",
         "workforceMax": 1215
       },
       "prod_gen_dronecomponents_macro": {
         "id": "prod_gen_dronecomponents_macro",
-        "name": "Gen Dronecomponents",
+        "name": {
+          "en": "Drone Component Production",
+          "ru": "Производство компонентов дронов",
+          "fr": "Production de composants de drones",
+          "de": "Drohnenkomponentenproduktion",
+          "zh": "无人机组件产线"
+        },
         "producedWareId": "dronecomponents",
         "workforceMax": 675
       },
       "prod_gen_energycells_macro": {
         "id": "prod_gen_energycells_macro",
-        "name": "Gen Energycells",
+        "name": {
+          "en": "Energy Cell Production",
+          "ru": "Производство энергоэлементов",
+          "fr": "Production de photopiles",
+          "de": "Energiezellenproduktion",
+          "zh": "能量电池产线"
+        },
         "producedWareId": "energycells",
         "workforceMax": 90
       },
       "prod_gen_engineparts_macro": {
         "id": "prod_gen_engineparts_macro",
-        "name": "Gen Engineparts",
+        "name": {
+          "en": "Engine Part Production",
+          "ru": "Производство деталей двигателей",
+          "fr": "Production de pièces de moteur",
+          "de": "Antriebsteilproduktion",
+          "zh": "引擎部件产线"
+        },
         "producedWareId": "engineparts",
         "workforceMax": 225
       },
       "prod_gen_fieldcoils_macro": {
         "id": "prod_gen_fieldcoils_macro",
-        "name": "Gen Fieldcoils",
+        "name": {
+          "en": "Field Coil Production",
+          "ru": "Производство полевых катушек",
+          "fr": "Production de bobines de champ",
+          "de": "Feldspulenproduktion",
+          "zh": "励磁线圈产线"
+        },
         "producedWareId": "fieldcoils",
         "workforceMax": 810
       },
       "prod_gen_graphene_macro": {
         "id": "prod_gen_graphene_macro",
-        "name": "Gen Graphene",
+        "name": {
+          "en": "Graphene Production",
+          "ru": "Производство графена",
+          "fr": "Production de graphène",
+          "de": "Graphenproduktion",
+          "zh": "石墨烯生产线"
+        },
         "producedWareId": "graphene",
         "workforceMax": 180
       },
       "prod_gen_hullparts_macro": {
         "id": "prod_gen_hullparts_macro",
-        "name": "Gen Hullparts",
+        "name": {
+          "en": "Hull Part Production",
+          "ru": "Производство деталей корпуса",
+          "fr": "Production de pièces de coque",
+          "de": "Hüllenteileproduktion",
+          "zh": "船体部件产线"
+        },
         "producedWareId": "hullparts",
         "workforceMax": 270
       },
       "prod_gen_microchips_macro": {
         "id": "prod_gen_microchips_macro",
-        "name": "Gen Microchips",
+        "name": {
+          "en": "Microchip Production",
+          "ru": "Производство микросхем",
+          "fr": "Production de circuits intégrés",
+          "de": "Mikrochipproduktion",
+          "zh": "微芯片产线"
+        },
         "producedWareId": "microchips",
         "workforceMax": 450
       },
       "prod_gen_missilecomponents_macro": {
         "id": "prod_gen_missilecomponents_macro",
-        "name": "Gen Missilecomponents",
+        "name": {
+          "en": "Missile Component Production",
+          "ru": "Производство компонентов ракет",
+          "fr": "Production de composants de missile",
+          "de": "Raketenbauteilproduktion",
+          "zh": "导弹部件产线"
+        },
         "producedWareId": "missilecomponents",
         "workforceMax": 22
       },
       "prod_gen_plasmaconductors_macro": {
         "id": "prod_gen_plasmaconductors_macro",
-        "name": "Gen Plasmaconductors",
+        "name": {
+          "en": "Plasma Conductor Production",
+          "ru": "Производство плазмопроводов",
+          "fr": "Production de conducteur de plasma",
+          "de": "Plasmaleiterproduktion",
+          "zh": "等离子导体产线"
+        },
         "producedWareId": "plasmaconductors",
         "workforceMax": 225
       },
       "prod_gen_quantumtubes_macro": {
         "id": "prod_gen_quantumtubes_macro",
-        "name": "Gen Quantumtubes",
+        "name": {
+          "en": "Quantum Tube Production",
+          "ru": "Производство квантовых трубок",
+          "fr": "Production de tubes quantiques",
+          "de": "Quantumröhrenproduktion",
+          "zh": "量子管产线"
+        },
         "producedWareId": "quantumtubes",
         "workforceMax": 225
       },
       "prod_gen_refinedmetals_macro": {
         "id": "prod_gen_refinedmetals_macro",
-        "name": "Gen Refinedmetals",
+        "name": {
+          "en": "Refined Metal Production",
+          "ru": "Производство очищенных металлов",
+          "fr": "Production de métal raffiné",
+          "de": "Metallveredelungsanlage",
+          "zh": "精炼金属产线"
+        },
         "producedWareId": "refinedmetals",
         "workforceMax": 225
       },
       "prod_gen_scanningarrays_macro": {
         "id": "prod_gen_scanningarrays_macro",
-        "name": "Gen Scanningarrays",
+        "name": {
+          "en": "Scanning Array Production",
+          "ru": "Производство сканирующих матриц",
+          "fr": "Production d'ensemble de scanners",
+          "de": "Sensorbündelproduktion",
+          "zh": "扫描阵列产线"
+        },
         "producedWareId": "scanningarrays",
         "workforceMax": 315
       },
       "prod_gen_scrap_recycler_macro": {
         "id": "prod_gen_scrap_recycler_macro",
-        "name": "Gen Scrap Recycler",
+        "name": {
+          "en": "Scrap Recycler",
+          "ru": "Переработчик Металлолома",
+          "fr": "Recycleur de ferraille",
+          "de": "Schrottrecycler",
+          "zh": "废料再生设施"
+        },
         "producedWareId": "claytronics hullparts",
         "workforceMax": 1250
       },
       "prod_gen_shieldcomponents_macro": {
         "id": "prod_gen_shieldcomponents_macro",
-        "name": "Gen Shieldcomponents",
+        "name": {
+          "en": "Shield Component Production",
+          "ru": "Производство компонентов щитов",
+          "fr": "Production de composants de bouclier",
+          "de": "Schildkomponentenfabrik",
+          "zh": "护盾部件产线"
+        },
         "producedWareId": "shieldcomponents",
         "workforceMax": 225
       },
       "prod_gen_siliconwafers_macro": {
         "id": "prod_gen_siliconwafers_macro",
-        "name": "Gen Siliconwafers",
+        "name": {
+          "en": "Silicon Wafer Production",
+          "ru": "Производство кремниевых пластин",
+          "fr": "Production de tranches de silicium",
+          "de": "Siliziumscheibenproduktion",
+          "zh": "硅晶片产线"
+        },
         "producedWareId": "siliconwafers",
         "workforceMax": 225
       },
       "prod_gen_smartchips_macro": {
         "id": "prod_gen_smartchips_macro",
-        "name": "Gen Smartchips",
+        "name": {
+          "en": "Smart Chip Production",
+          "ru": "Производство смарт-чипов",
+          "fr": "Production de puces intelligentes",
+          "de": "Smart-Chip-Produktion",
+          "zh": "智能芯片产线"
+        },
         "producedWareId": "smartchips",
         "workforceMax": 60
       },
       "prod_gen_spices_macro": {
         "id": "prod_gen_spices_macro",
-        "name": "Gen Spices",
+        "name": {
+          "en": "Spice Production",
+          "ru": "Производство специй",
+          "fr": "Production d'épices",
+          "de": "Gewürzproduktion",
+          "zh": "香料产线"
+        },
         "producedWareId": "spices",
         "workforceMax": 60
       },
       "prod_gen_superfluidcoolant_macro": {
         "id": "prod_gen_superfluidcoolant_macro",
-        "name": "Gen Superfluidcoolant",
+        "name": {
+          "en": "Superfluid Coolant Production",
+          "ru": "Производство сверхтекучего хладагента",
+          "fr": "Production de réfrigérant de superfluide",
+          "de": "Suprafluid-Kühlmittelproduktion",
+          "zh": "超流体冷却剂产线"
+        },
         "producedWareId": "superfluidcoolant",
         "workforceMax": 180
       },
       "prod_gen_turretcomponents_macro": {
         "id": "prod_gen_turretcomponents_macro",
-        "name": "Gen Turretcomponents",
+        "name": {
+          "en": "Turret Component Production",
+          "ru": "Производство компонентов турелей",
+          "fr": "Production de composants de tourelle",
+          "de": "Geschützkomp.-Produktion",
+          "zh": "炮塔部件产线"
+        },
         "producedWareId": "turretcomponents",
         "workforceMax": 225
       },
       "prod_gen_water_macro": {
         "id": "prod_gen_water_macro",
-        "name": "Gen Water",
+        "name": {
+          "en": "Water Production",
+          "ru": "Производство воды",
+          "fr": "Production d'eau",
+          "de": "Wasserproduktion",
+          "zh": "水产线"
+        },
         "producedWareId": "water",
         "workforceMax": 180
       },
       "prod_gen_weaponcomponents_macro": {
         "id": "prod_gen_weaponcomponents_macro",
-        "name": "Gen Weaponcomponents",
+        "name": {
+          "en": "Weapon Component Production",
+          "ru": "Производство компонентов орудий",
+          "fr": "Production de composants d'armes",
+          "de": "Waffenkomponentenproduktion",
+          "zh": "武器部件产线"
+        },
         "producedWareId": "weaponcomponents",
         "workforceMax": 225
       },
       "prod_par_majadust_macro": {
         "id": "prod_par_majadust_macro",
-        "name": "Par Majadust",
+        "name": {
+          "en": "Maja Dust Production",
+          "ru": "Производство порошка майя",
+          "fr": "Production de poussière de Maja",
+          "de": "Majastaubproduktion",
+          "zh": "艳耀星尘产线"
+        },
         "producedWareId": "majadust",
         "workforceMax": 123
       },
       "prod_par_majasnails_macro": {
         "id": "prod_par_majasnails_macro",
-        "name": "Par Majasnails",
+        "name": {
+          "en": "Maja Snail Production",
+          "ru": "Производство улиток майя",
+          "fr": "Production d'escargots Maja",
+          "de": "Majaschneckenproduktion",
+          "zh": "艳耀蜗牛产线"
+        },
         "producedWareId": "majasnails",
         "workforceMax": 175
       },
       "prod_par_medicalsupplies_macro": {
         "id": "prod_par_medicalsupplies_macro",
-        "name": "Par Medicalsupplies",
+        "name": {
+          "en": "Paranid Medical Supply Production",
+          "ru": "Паранид Производство медикаментов",
+          "fr": "Paranide Production de fournitures médicales",
+          "de": "Paraniden Medizinische Versorgungsgüter-Produktion",
+          "zh": "Paranid 医疗物资产线"
+        },
         "producedWareId": "medicalsupplies",
         "workforceMax": 90
       },
       "prod_par_sojabeans_macro": {
         "id": "prod_par_sojabeans_macro",
-        "name": "Par Sojabeans",
+        "name": {
+          "en": "Soja Bean Production",
+          "ru": "Производство соевых бобов",
+          "fr": "Production de noix de soja",
+          "de": "Sojabohnenproduktion",
+          "zh": "白豆产线"
+        },
         "producedWareId": "sojabeans",
         "workforceMax": 175
       },
       "prod_par_sojahusk_macro": {
         "id": "prod_par_sojahusk_macro",
-        "name": "Par Sojahusk",
+        "name": {
+          "en": "Soja Husk Production",
+          "ru": "Производство соевой пасты",
+          "fr": "Production d'enveloppes de soja",
+          "de": "Sojagrützeproduktion",
+          "zh": "白豆荚产线"
+        },
         "producedWareId": "sojahusk",
         "workforceMax": 99
       },
       "prod_tel_advancedcomposites_macro": {
         "id": "prod_tel_advancedcomposites_macro",
-        "name": "Tel Advancedcomposites",
+        "name": {
+          "en": "Teladi Advanced Composite Production",
+          "ru": "Телади Производство суперкомпозитов",
+          "fr": "Teladi Production de composites avancés",
+          "de": "Teladi Verbundwerkstoffproduktion",
+          "zh": "Teladi 先进复合材料产线"
+        },
         "producedWareId": "advancedcomposites",
         "workforceMax": 315
       },
       "prod_tel_engineparts_macro": {
         "id": "prod_tel_engineparts_macro",
-        "name": "Tel Engineparts",
+        "name": {
+          "en": "Teladi Engine Part Production",
+          "ru": "Телади Производство деталей двигателей",
+          "fr": "Teladi Production de pièces de moteur",
+          "de": "Teladi Antriebsteilproduktion",
+          "zh": "Teladi 引擎部件产线"
+        },
         "producedWareId": "engineparts",
         "workforceMax": 225
       },
       "prod_tel_hullparts_macro": {
         "id": "prod_tel_hullparts_macro",
-        "name": "Tel Hullparts",
+        "name": {
+          "en": "Teladi Hull Part Production",
+          "ru": "Телади Производство деталей корпуса",
+          "fr": "Teladi Production de pièces de coque",
+          "de": "Teladi Hüllenteileproduktion",
+          "zh": "Teladi 船体部件产线"
+        },
         "producedWareId": "hullparts",
         "workforceMax": 270
       },
       "prod_tel_medicalsupplies_macro": {
         "id": "prod_tel_medicalsupplies_macro",
-        "name": "Tel Medicalsupplies",
+        "name": {
+          "en": "Teladi Medical Supply Production",
+          "ru": "Телади Производство медикаментов",
+          "fr": "Teladi Production de fournitures médicales",
+          "de": "Teladi Medizinische Versorgungsgüter-Produktion",
+          "zh": "Teladi 医疗物资产线"
+        },
         "producedWareId": "medicalsupplies",
         "workforceMax": 90
       },
       "prod_tel_nostropoil_macro": {
         "id": "prod_tel_nostropoil_macro",
-        "name": "Tel Nostropoil",
+        "name": {
+          "en": "Nostrop Oil Production",
+          "ru": "Производство ностропового масла",
+          "fr": "Production de Nostrop",
+          "de": "Nostropölproduktion",
+          "zh": "滋养油产线"
+        },
         "producedWareId": "nostropoil",
         "workforceMax": 120
       },
       "prod_tel_scanningarrays_macro": {
         "id": "prod_tel_scanningarrays_macro",
-        "name": "Tel Scanningarrays",
+        "name": {
+          "en": "Teladi Scanning Array Production",
+          "ru": "Телади Производство сканирующих матриц",
+          "fr": "Teladi Production d'ensemble de scanners",
+          "de": "Teladi Sensorbündelproduktion",
+          "zh": "Teladi 扫描阵列产线"
+        },
         "producedWareId": "scanningarrays",
         "workforceMax": 315
       },
       "prod_tel_spaceweed_macro": {
         "id": "prod_tel_spaceweed_macro",
-        "name": "Tel Spaceweed",
+        "name": {
+          "en": "Spaceweed Production",
+          "ru": "Производство космотабака",
+          "fr": "Production d'herbe de l'espace",
+          "de": "Raumkrautproduktion",
+          "zh": "太空烟草产线"
+        },
         "producedWareId": "spaceweed",
         "workforceMax": 90
       },
       "prod_tel_sunriseflowers_macro": {
         "id": "prod_tel_sunriseflowers_macro",
-        "name": "Tel Sunriseflowers",
+        "name": {
+          "en": "Sunrise Flower Production",
+          "ru": "Производство подсолнечников",
+          "fr": "Production de fleurs de soleil",
+          "de": "Sonnenblumenproduktion",
+          "zh": "日出花产线"
+        },
         "producedWareId": "sunriseflowers",
         "workforceMax": 50
       },
       "prod_tel_swampplant_macro": {
         "id": "prod_tel_swampplant_macro",
-        "name": "Tel Swampplant",
+        "name": {
+          "en": "Swamp Plant Production",
+          "ru": "Производство болотной травы",
+          "fr": "Production d'herbe de marécage",
+          "de": "Sumpfpflanzenproduktion",
+          "zh": "沼泽植物产线"
+        },
         "producedWareId": "swampplant",
         "workforceMax": 50
       },
       "prod_tel_teladianium_macro": {
         "id": "prod_tel_teladianium_macro",
-        "name": "Tel Teladianium",
+        "name": {
+          "en": "Teladianium Production",
+          "ru": "Производство теладиания",
+          "fr": "Production de teladianium",
+          "de": "Teladianiumproduktion",
+          "zh": "T材料产线"
+        },
         "producedWareId": "teladianium",
         "workforceMax": 225
       }
@@ -2019,193 +2734,385 @@
     "habitat": {
       "hab_arg_l_01_macro": {
         "id": "hab_arg_l_01_macro",
-        "name": "Arg L 01",
+        "name": {
+          "en": "Argon L Habitat",
+          "ru": "Аргон L Ареал",
+          "fr": "Argon L Habitat",
+          "de": "Argonen L-Habitat",
+          "zh": "Argon L 居住区"
+        },
         "race": "argon",
         "workforceCapacity": 1000
       },
       "hab_arg_m_01_macro": {
         "id": "hab_arg_m_01_macro",
-        "name": "Arg M 01",
+        "name": {
+          "en": "Argon M Habitat",
+          "ru": "Аргон M Ареал",
+          "fr": "Argon M Habitat",
+          "de": "Argonen M-Habitat",
+          "zh": "Argon M 居住区"
+        },
         "race": "argon",
         "workforceCapacity": 500
       },
       "hab_arg_s_01_macro": {
         "id": "hab_arg_s_01_macro",
-        "name": "Arg S 01",
+        "name": {
+          "en": "Argon S Habitat",
+          "ru": "Аргон S Ареал",
+          "fr": "Argon S Habitat",
+          "de": "Argonen S-Habitat",
+          "zh": "Argon S 居住区"
+        },
         "race": "argon",
         "workforceCapacity": 250
       },
       "hab_par_l_01_macro": {
         "id": "hab_par_l_01_macro",
-        "name": "Par L 01",
+        "name": {
+          "en": "Paranid L Dome",
+          "ru": "Паранид L Купол",
+          "fr": "Paranide L Dome",
+          "de": "Paraniden L-Kuppel",
+          "zh": "Paranid L 穹顶"
+        },
         "race": "paranid",
         "workforceCapacity": 999
       },
       "hab_par_m_01_macro": {
         "id": "hab_par_m_01_macro",
-        "name": "Par M 01",
+        "name": {
+          "en": "Paranid M Dome",
+          "ru": "Паранид M Купол",
+          "fr": "Paranide M Dome",
+          "de": "Paraniden M-Kuppel",
+          "zh": "Paranid M 穹顶"
+        },
         "race": "paranid",
         "workforceCapacity": 666
       },
       "hab_par_s_01_macro": {
         "id": "hab_par_s_01_macro",
-        "name": "Par S 01",
+        "name": {
+          "en": "Paranid S Dome",
+          "ru": "Паранид S Купол",
+          "fr": "Paranide S Dome",
+          "de": "Paraniden S-Kuppel",
+          "zh": "Paranid S 穹顶"
+        },
         "race": "paranid",
         "workforceCapacity": 333
       },
       "hab_tel_l_01_macro": {
         "id": "hab_tel_l_01_macro",
-        "name": "Tel L 01",
+        "name": {
+          "en": "Teladi L Biome",
+          "ru": "Телади L Биом",
+          "fr": "Teladi L Biome",
+          "de": "Teladi L-Biom",
+          "zh": "Teladi L 生物群落"
+        },
         "race": "teladi",
         "workforceCapacity": 1000
       },
       "hab_tel_m_01_macro": {
         "id": "hab_tel_m_01_macro",
-        "name": "Tel M 01",
+        "name": {
+          "en": "Teladi M Biome",
+          "ru": "Телади M Биом",
+          "fr": "Teladi M Biome",
+          "de": "Teladi M-Biom",
+          "zh": "Teladi M 生物群落"
+        },
         "race": "teladi",
         "workforceCapacity": 500
       },
       "hab_tel_s_01_macro": {
         "id": "hab_tel_s_01_macro",
-        "name": "Tel S 01",
+        "name": {
+          "en": "Teladi S Biome",
+          "ru": "Телади S Биом",
+          "fr": "Teladi S Biome",
+          "de": "Teladi S-Biom",
+          "zh": "Teladi S 生物群落"
+        },
         "race": "teladi",
         "workforceCapacity": 250
       },
       "deathstar_01_macro": {
         "id": "deathstar_01_macro",
-        "name": "Deathstar 01",
+        "name": {
+          "en": "Free Port Trading Station",
+          "ru": "Торговая станция свободного порта",
+          "fr": "Station commerciale du port franc",
+          "de": "Freier Hafen Handelsstation",
+          "zh": "自由港贸易站"
+        },
         "race": "argon",
         "workforceCapacity": 10000
       },
       "freeport_xl_disk_macro": {
         "id": "freeport_xl_disk_macro",
-        "name": "Freeport Xl Disk",
+        "name": {
+          "en": "Free Port Trading Station",
+          "ru": "Торговая станция свободного порта",
+          "fr": "Station commerciale du port franc",
+          "de": "Freier Hafen Handelsstation",
+          "zh": "自由港贸易站"
+        },
         "race": "argon",
         "workforceCapacity": 10000
       },
       "hab_ano_l_01_macro": {
         "id": "hab_ano_l_01_macro",
-        "name": "Ano L 01",
+        "name": {
+          "en": "Anoat L Habitat",
+          "ru": "Аноат L Ареал",
+          "fr": "Habitat L d’Anoat",
+          "de": "Anoat L Habitat",
+          "zh": "阿诺阿特 L 栖息地"
+        },
         "race": "argon",
         "workforceCapacity": 1000
       },
       "hab_ano_m_01_macro": {
         "id": "hab_ano_m_01_macro",
-        "name": "Ano M 01",
+        "name": {
+          "en": "Anoat M Habitat",
+          "ru": "Аноат М Ареал",
+          "fr": "Habitat M d’Anoat",
+          "de": "Anoat M Habitat",
+          "zh": "阿诺阿特 M 栖息地"
+        },
         "race": "argon",
         "workforceCapacity": 500
       },
       "hab_ano_s_01_macro": {
         "id": "hab_ano_s_01_macro",
-        "name": "Ano S 01",
+        "name": {
+          "en": "Anoat S Habitat",
+          "ru": "Аноат S Ареал",
+          "fr": "Habitat S d’Anoat",
+          "de": "Anoat S Habitat",
+          "zh": "阿诺阿特 S 栖息地"
+        },
         "race": "argon",
         "workforceCapacity": 250
       },
       "hab_gen_xl_city_macro": {
         "id": "hab_gen_xl_city_macro",
-        "name": "Gen Xl City",
+        "name": {
+          "en": "Free Port City Habitats",
+          "ru": "Ареал-сити свободного порта",
+          "fr": "Habitats de la ville du port franc",
+          "de": "Freie Lebensräume in der Hafenstadt",
+          "zh": "自由港城市住宅"
+        },
         "race": "argon",
         "workforceCapacity": 500
       },
       "hab_hap_l_01_macro": {
         "id": "hab_hap_l_01_macro",
-        "name": "Hap L 01",
+        "name": {
+          "en": "Hapan L Dome",
+          "ru": "Хапан L Купол",
+          "fr": "Dôme L hapan",
+          "de": "Hapan L Dome",
+          "zh": "海皮斯 L 穹顶"
+        },
         "race": "argon",
         "workforceCapacity": 1000
       },
       "hab_hap_m_01_macro": {
         "id": "hab_hap_m_01_macro",
-        "name": "Hap M 01",
+        "name": {
+          "en": "Hapan M Dome",
+          "ru": "Хапан М Купол",
+          "fr": "Dôme M hapan",
+          "de": "Hapan M Dome",
+          "zh": "海皮斯 M 穹顶"
+        },
         "race": "argon",
         "workforceCapacity": 500
       },
       "hab_hap_s_01_macro": {
         "id": "hab_hap_s_01_macro",
-        "name": "Hap S 01",
+        "name": {
+          "en": "Hapan S Dome",
+          "ru": "Хапан S Купол",
+          "fr": "Dôme S hapan",
+          "de": "Hapan S Dome",
+          "zh": "海皮斯 S 穹顶"
+        },
         "race": "argon",
         "workforceCapacity": 250
       },
       "hab_imp_l_01_macro": {
         "id": "hab_imp_l_01_macro",
-        "name": "Imp L 01",
+        "name": {
+          "en": "Imperial L Habitat",
+          "ru": "Имперец Имп. L Ареал",
+          "fr": "Imperial Habitat L imp.",
+          "de": "Imperial L Habitat",
+          "zh": "Imperial L 栖息地"
+        },
         "race": "imperial",
         "workforceCapacity": 1250
       },
       "hab_imp_m_01_macro": {
         "id": "hab_imp_m_01_macro",
-        "name": "Imp M 01",
+        "name": {
+          "en": "Imperial M Habitat",
+          "ru": "Имперец Имп. M Ареал",
+          "fr": "Imperial Habitat M imp.",
+          "de": "Imperial M Habitat",
+          "zh": "Imperial M 栖息地"
+        },
         "race": "imperial",
         "workforceCapacity": 650
       },
       "hab_imp_s_01_macro": {
         "id": "hab_imp_s_01_macro",
-        "name": "Imp S 01",
+        "name": {
+          "en": "Imperial S Habitat",
+          "ru": "Имперец Имп. S Ареал",
+          "fr": "Imperial Habitat S imp.",
+          "de": "Imperial S Habitat",
+          "zh": "Imperial S 栖息地"
+        },
         "race": "imperial",
         "workforceCapacity": 300
       },
       "hab_imp_trade_macro": {
         "id": "hab_imp_trade_macro",
-        "name": "Imp Trade",
+        "name": {
+          "en": "Imperial Trade Station Habitat",
+          "ru": "Империя Ареал торговой станции",
+          "fr": "Habitat de station commerciale impériale",
+          "de": "Imperial Handelsstation Habitat",
+          "zh": "帝国贸易站居住区"
+        },
         "race": "imperial",
         "workforceCapacity": 3500
       },
       "hab_man_l_01_macro": {
         "id": "hab_man_l_01_macro",
-        "name": "Man L 01",
+        "name": {
+          "en": "Mando L Quarters",
+          "ru": "Мандо L каюты",
+          "fr": "Quartiers L mando",
+          "de": "Mando L Quarters",
+          "zh": "曼达洛 L 宿舍"
+        },
         "race": "argon",
         "workforceCapacity": 1000
       },
       "hab_man_m_01_macro": {
         "id": "hab_man_m_01_macro",
-        "name": "Man M 01",
+        "name": {
+          "en": "Mando M Quarters",
+          "ru": "Мандо M каюты",
+          "fr": "Quartiers M mando",
+          "de": "Mando M Quarters",
+          "zh": "曼达洛 M 宿舍"
+        },
         "race": "argon",
         "workforceCapacity": 500
       },
       "hab_man_s_01_macro": {
         "id": "hab_man_s_01_macro",
-        "name": "Man S 01",
+        "name": {
+          "en": "Mando S Quarters",
+          "ru": "Мандо S каюты",
+          "fr": "Quartiers S mando",
+          "de": "Mando S Quarters",
+          "zh": "曼达洛 S 宿舍"
+        },
         "race": "argon",
         "workforceCapacity": 250
       },
       "hab_nrl_l_macro": {
         "id": "hab_nrl_l_macro",
-        "name": "Nrl L",
+        "name": {
+          "en": "Republic L Spire",
+          "ru": "Республика L Шпиль",
+          "fr": "Flèche L républicaine",
+          "de": "Republik L Turm",
+          "zh": "共和国 L 尖塔"
+        },
         "race": "argon",
         "workforceCapacity": 1000
       },
       "hab_nrl_xl_macro": {
         "id": "hab_nrl_xl_macro",
-        "name": "Nrl Xl",
+        "name": {
+          "en": "Republic XL Spire",
+          "ru": "Республика XL Шпиль",
+          "fr": "Flèche XL républicaine",
+          "de": "Republik XL Turm",
+          "zh": "共和国 XL 尖塔"
+        },
         "race": "argon",
         "workforceCapacity": 2500
       },
       "hab_sith_l_01_macro": {
         "id": "hab_sith_l_01_macro",
-        "name": "Sith L 01",
+        "name": {
+          "en": "Sith L Habitat",
+          "ru": "Ситх L Ареал",
+          "fr": "Habitat Sith L",
+          "de": "Sith L Habitat",
+          "zh": "西斯 L 休眠中心"
+        },
         "race": "sith",
         "workforceCapacity": 1250
       },
       "hab_sith_m_01_macro": {
         "id": "hab_sith_m_01_macro",
-        "name": "Sith M 01",
+        "name": {
+          "en": "Sith M Habitat",
+          "ru": "Ситх M Ареал",
+          "fr": "Habitat Sith M",
+          "de": "Sith M Habitat",
+          "zh": "西斯 M 休眠中心"
+        },
         "race": "sith",
         "workforceCapacity": 650
       },
       "hab_sith_s_01_macro": {
         "id": "hab_sith_s_01_macro",
-        "name": "Sith S 01",
+        "name": {
+          "en": "Sith S Habitat",
+          "ru": "Ситх S Ареал",
+          "fr": "Habitat Sith S",
+          "de": "Sith S Habitat",
+          "zh": "西斯 S 休眠中心"
+        },
         "race": "sith",
         "workforceCapacity": 300
       },
       "hab_sith_trade_macro": {
         "id": "hab_sith_trade_macro",
-        "name": "Sith Trade",
+        "name": {
+          "en": "Sith XL Habitat",
+          "ru": "Ситхи XL Ареал",
+          "fr": "Habitat Sith XL",
+          "de": "Sith XL Habitat",
+          "zh": "西斯XL休眠设施"
+        },
         "race": "sith",
         "workforceCapacity": 3500
       },
       "tower_imp_throneroom_macro": {
         "id": "tower_imp_throneroom_macro",
-        "name": "Tower Imp Throneroom",
+        "name": {
+          "en": "Imperial Tower",
+          "ru": "Императорская Башня",
+          "fr": "Tour impériale",
+          "de": "Imperial Turm",
+          "zh": "帝国王座塔"
+        },
         "race": "argon",
         "workforceCapacity": 300
       }
@@ -2213,343 +3120,685 @@
     "storage": {
       "storage_arg_l_container_01_macro": {
         "id": "storage_arg_l_container_01_macro",
-        "name": "Arg L Container 01",
+        "name": {
+          "en": "Horiz. L Container",
+          "ru": "Гориз. L Контейнер",
+          "fr": "Conteneur L horiz.",
+          "de": "Horizontaler L Container",
+          "zh": "水平 L 集装箱"
+        },
         "cargoMax": 1000000,
         "cargoType": "container"
       },
       "storage_arg_l_liquid_01_macro": {
         "id": "storage_arg_l_liquid_01_macro",
-        "name": "Arg L Liquid 01",
+        "name": {
+          "en": "Horiz. L Liquid",
+          "ru": "Гориз. L Жидкий",
+          "fr": "Liquide L horiz.",
+          "de": "Horizontaler L Tank",
+          "zh": "水平 L 液体容器"
+        },
         "cargoMax": 1000000,
         "cargoType": "liquid"
       },
       "storage_arg_l_solid_01_macro": {
         "id": "storage_arg_l_solid_01_macro",
-        "name": "Arg L Solid 01",
+        "name": {
+          "en": "Horiz. L Solid",
+          "ru": "Гориз. L Твердый",
+          "fr": "Solide L horiz.",
+          "de": "Horizontaler L Solid",
+          "zh": "水平 L 固体容器"
+        },
         "cargoMax": 1000000,
         "cargoType": "solid"
       },
       "storage_arg_l_tradestation_01_macro": {
         "id": "storage_arg_l_tradestation_01_macro",
-        "name": "Arg L Tradestation 01",
+        "name": {
+          "en": "Argon L Universal Storage",
+          "ru": "Аргон L Универсальное хранилище",
+          "fr": "Argon L Stockage universel",
+          "de": "Argonen L-Universallager",
+          "zh": "Argon L 通用仓储"
+        },
         "cargoMax": 300000,
         "cargoType": "liquid"
       },
       "storage_arg_m_container_01_macro": {
         "id": "storage_arg_m_container_01_macro",
-        "name": "Arg M Container 01",
+        "name": {
+          "en": "Horiz. M Container",
+          "ru": "Гориз. M Контейнер",
+          "fr": "Conteneur M horiz.",
+          "de": "Horizontaler M Container",
+          "zh": "水平 M 集装箱"
+        },
         "cargoMax": 500000,
         "cargoType": "container"
       },
       "storage_arg_m_liquid_01_macro": {
         "id": "storage_arg_m_liquid_01_macro",
-        "name": "Arg M Liquid 01",
+        "name": {
+          "en": "Horiz. M Liquid",
+          "ru": "Гориз. M Жидкий",
+          "fr": "Liquide M horiz.",
+          "de": "Horizontaler M Tank",
+          "zh": "水平 M 液体容器"
+        },
         "cargoMax": 500000,
         "cargoType": "liquid"
       },
       "storage_arg_m_solid_01_macro": {
         "id": "storage_arg_m_solid_01_macro",
-        "name": "Arg M Solid 01",
+        "name": {
+          "en": "Horiz. M Solid",
+          "ru": "Гориз. M Твердый",
+          "fr": "Solide M horiz.",
+          "de": "Horizontaler M Solid",
+          "zh": "水平 M 固体容器"
+        },
         "cargoMax": 500000,
         "cargoType": "solid"
       },
       "storage_arg_s_container_01_macro": {
         "id": "storage_arg_s_container_01_macro",
-        "name": "Arg S Container 01",
+        "name": {
+          "en": "Horiz. S Container",
+          "ru": "Гориз. S Контейнер",
+          "fr": "Conteneur S horiz.",
+          "de": "Horizontaler S Container",
+          "zh": "水平 S 集装箱"
+        },
         "cargoMax": 100000,
         "cargoType": "container"
       },
       "storage_arg_s_liquid_01_macro": {
         "id": "storage_arg_s_liquid_01_macro",
-        "name": "Arg S Liquid 01",
+        "name": {
+          "en": "Horiz. S Liquid",
+          "ru": "Гориз. S Жидкий",
+          "fr": "Liquide S horiz.",
+          "de": "Horizontaler S Tank",
+          "zh": "水平 S 液体容器"
+        },
         "cargoMax": 100000,
         "cargoType": "liquid"
       },
       "storage_arg_s_solid_01_macro": {
         "id": "storage_arg_s_solid_01_macro",
-        "name": "Arg S Solid 01",
+        "name": {
+          "en": "Horiz. S Solid",
+          "ru": "Гориз. S Твердый",
+          "fr": "Solide S horiz.",
+          "de": "Horizontaler S Solid",
+          "zh": "水平 S 固体容器"
+        },
         "cargoMax": 100000,
         "cargoType": "solid"
       },
       "storage_par_l_container_01_macro": {
         "id": "storage_par_l_container_01_macro",
-        "name": "Par L Container 01",
+        "name": {
+          "en": "Paranid L Container Storage",
+          "ru": "Паранид L Хранилище контейнеров",
+          "fr": "Paranide L Stockage de conteneurs",
+          "de": "Paraniden L-Containerlager",
+          "zh": "Paranid L 集装仓储"
+        },
         "cargoMax": 1000000,
         "cargoType": "container"
       },
       "storage_par_l_liquid_01_macro": {
         "id": "storage_par_l_liquid_01_macro",
-        "name": "Par L Liquid 01",
+        "name": {
+          "en": "Paranid L Liquid Storage",
+          "ru": "Паранид L Хранилище жидкостей",
+          "fr": "Paranide L Stockage de liquide",
+          "de": "Paraniden L-Flüssigkeitslager",
+          "zh": "Paranid L 液体仓储"
+        },
         "cargoMax": 1000000,
         "cargoType": "liquid"
       },
       "storage_par_l_solid_01_macro": {
         "id": "storage_par_l_solid_01_macro",
-        "name": "Par L Solid 01",
+        "name": {
+          "en": "Paranid L Solid Storage",
+          "ru": "Паранид L Хранилище твердых грузов",
+          "fr": "Paranide L Stockage de solide",
+          "de": "Paraniden L-Feststofflager",
+          "zh": "Paranid L 固体仓储"
+        },
         "cargoMax": 1000000,
         "cargoType": "solid"
       },
       "storage_par_m_container_01_macro": {
         "id": "storage_par_m_container_01_macro",
-        "name": "Par M Container 01",
+        "name": {
+          "en": "Paranid M Container Storage",
+          "ru": "Паранид M Хранилище контейнеров",
+          "fr": "Paranide M Stockage de conteneurs",
+          "de": "Paraniden M-Containerlager",
+          "zh": "Paranid M 集装仓储"
+        },
         "cargoMax": 100000,
         "cargoType": "container"
       },
       "storage_par_m_liquid_01_macro": {
         "id": "storage_par_m_liquid_01_macro",
-        "name": "Par M Liquid 01",
+        "name": {
+          "en": "Paranid M Liquid Storage",
+          "ru": "Паранид M Хранилище жидкостей",
+          "fr": "Paranide M Stockage de liquide",
+          "de": "Paraniden M-Flüssigkeitslager",
+          "zh": "Paranid M 液体仓储"
+        },
         "cargoMax": 500000,
         "cargoType": "liquid"
       },
       "storage_par_m_solid_01_macro": {
         "id": "storage_par_m_solid_01_macro",
-        "name": "Par M Solid 01",
+        "name": {
+          "en": "Paranid M Solid Storage",
+          "ru": "Паранид M Хранилище твердых грузов",
+          "fr": "Paranide M Stockage de solide",
+          "de": "Paraniden M-Feststofflager",
+          "zh": "Paranid M 固体仓储"
+        },
         "cargoMax": 500000,
         "cargoType": "solid"
       },
       "storage_par_s_container_01_macro": {
         "id": "storage_par_s_container_01_macro",
-        "name": "Par S Container 01",
+        "name": {
+          "en": "Paranid S Container Storage",
+          "ru": "Паранид S Хранилище контейнеров",
+          "fr": "Paranide S Stockage de conteneurs",
+          "de": "Paraniden S-Containerlager",
+          "zh": "Paranid S 集装仓储"
+        },
         "cargoMax": 25000,
         "cargoType": "container"
       },
       "storage_par_s_liquid_01_macro": {
         "id": "storage_par_s_liquid_01_macro",
-        "name": "Par S Liquid 01",
+        "name": {
+          "en": "Paranid S Liquid Storage",
+          "ru": "Паранид S Хранилище жидкостей",
+          "fr": "Paranide S Stockage de liquide",
+          "de": "Paraniden S-Flüssigkeitslager",
+          "zh": "Paranid S 液体仓储"
+        },
         "cargoMax": 100000,
         "cargoType": "liquid"
       },
       "storage_par_s_solid_01_macro": {
         "id": "storage_par_s_solid_01_macro",
-        "name": "Par S Solid 01",
+        "name": {
+          "en": "Paranid S Solid Storage",
+          "ru": "Паранид S Хранилище твердых грузов",
+          "fr": "Paranide S Stockage de solide",
+          "de": "Paraniden S-Feststofflager",
+          "zh": "Paranid S 固体仓储"
+        },
         "cargoMax": 100000,
         "cargoType": "solid"
       },
       "storage_tel_l_container_01_macro": {
         "id": "storage_tel_l_container_01_macro",
-        "name": "Tel L Container 01",
+        "name": {
+          "en": "Vert. L Container",
+          "ru": "Верт. L Контейнер",
+          "fr": "Conteneur L vert.",
+          "de": "Vertikaler L Container",
+          "zh": "垂直 L 集装箱"
+        },
         "cargoMax": 1000000,
         "cargoType": "container"
       },
       "storage_tel_l_liquid_01_macro": {
         "id": "storage_tel_l_liquid_01_macro",
-        "name": "Tel L Liquid 01",
+        "name": {
+          "en": "Vert. L Liquid",
+          "ru": "Верт. L Жидкий",
+          "fr": "Liquide L vert.",
+          "de": "Vertikaler L Tank",
+          "zh": "垂直 L 液体容器"
+        },
         "cargoMax": 1000000,
         "cargoType": "liquid"
       },
       "storage_tel_l_solid_01_macro": {
         "id": "storage_tel_l_solid_01_macro",
-        "name": "Tel L Solid 01",
+        "name": {
+          "en": "Vert. L Solid",
+          "ru": "Верт. L Твердый",
+          "fr": "Solide L vert.",
+          "de": "Vertikaler L Solid",
+          "zh": "垂直 L 固体容器"
+        },
         "cargoMax": 1000000,
         "cargoType": "solid"
       },
       "storage_tel_m_container_01_macro": {
         "id": "storage_tel_m_container_01_macro",
-        "name": "Tel M Container 01",
+        "name": {
+          "en": "Vert. M Container",
+          "ru": "Верт. M Контейнер",
+          "fr": "Conteneur M vert.",
+          "de": "Vertikaler M Container",
+          "zh": "垂直 M 集装箱"
+        },
         "cargoMax": 500000,
         "cargoType": "container"
       },
       "storage_tel_m_liquid_01_macro": {
         "id": "storage_tel_m_liquid_01_macro",
-        "name": "Tel M Liquid 01",
+        "name": {
+          "en": "Vert. M Liquid",
+          "ru": "Верт. M Жидкий",
+          "fr": "Liquide M vert.",
+          "de": "Vertikaler M Tank",
+          "zh": "垂直 M 液体容器"
+        },
         "cargoMax": 500000,
         "cargoType": "liquid"
       },
       "storage_tel_m_solid_01_macro": {
         "id": "storage_tel_m_solid_01_macro",
-        "name": "Tel M Solid 01",
+        "name": {
+          "en": "Vert. M Solid",
+          "ru": "Верт. M Твердый",
+          "fr": "Solide M vert.",
+          "de": "Vertikaler M Solid",
+          "zh": "垂直 M 固体容器"
+        },
         "cargoMax": 500000,
         "cargoType": "solid"
       },
       "storage_tel_s_container_01_macro": {
         "id": "storage_tel_s_container_01_macro",
-        "name": "Tel S Container 01",
+        "name": {
+          "en": "Vert. S Container",
+          "ru": "Верт. S Контейнер",
+          "fr": "Conteneur S vert.",
+          "de": "Vertikaler S Container",
+          "zh": "垂直 S 集装箱"
+        },
         "cargoMax": 100000,
         "cargoType": "container"
       },
       "storage_tel_s_liquid_01_macro": {
         "id": "storage_tel_s_liquid_01_macro",
-        "name": "Tel S Liquid 01",
+        "name": {
+          "en": "Vert. S Liquid",
+          "ru": "Верт. S Жидкий",
+          "fr": "Liquide S vert.",
+          "de": "Vertikaler S Tank",
+          "zh": "垂直 S 液体容器"
+        },
         "cargoMax": 100000,
         "cargoType": "liquid"
       },
       "storage_tel_s_solid_01_macro": {
         "id": "storage_tel_s_solid_01_macro",
-        "name": "Tel S Solid 01",
+        "name": {
+          "en": "Vert. S Solid",
+          "ru": "Верт. S Твердый",
+          "fr": "Solide S vert.",
+          "de": "Vertikaler S Solid",
+          "zh": "垂直 S 固体容器"
+        },
         "cargoMax": 100000,
         "cargoType": "solid"
       },
       "storage_freeport_macro": {
         "id": "storage_freeport_macro",
-        "name": "Freeport",
+        "name": {
+          "en": "Free Port Storage",
+          "ru": "Хранилище свободного порта",
+          "fr": "Stockage du port franc",
+          "de": "Freies Hafenlager",
+          "zh": "自由港存储"
+        },
         "cargoMax": 5000000,
         "cargoType": "container"
       },
       "storage_hap_l_container_01_macro": {
         "id": "storage_hap_l_container_01_macro",
-        "name": "Hap L Container 01",
+        "name": {
+          "en": "Hapan L Container",
+          "ru": "Хапан L контейнер",
+          "fr": "Conteneur L hapan",
+          "de": "Hapan L Container",
+          "zh": "海皮斯 L 集装箱"
+        },
         "cargoMax": 1000000,
         "cargoType": "container"
       },
       "storage_hap_l_liquid_01_macro": {
         "id": "storage_hap_l_liquid_01_macro",
-        "name": "Hap L Liquid 01",
+        "name": {
+          "en": "Hapan L Liquid",
+          "ru": "Хапан L жидкость",
+          "fr": "Liquide L hapan",
+          "de": "Hapan L Liquid",
+          "zh": "海皮斯 L 液体容器"
+        },
         "cargoMax": 1000000,
         "cargoType": "liquid"
       },
       "storage_hap_l_solid_01_macro": {
         "id": "storage_hap_l_solid_01_macro",
-        "name": "Hap L Solid 01",
+        "name": {
+          "en": "Hapan L Solid",
+          "ru": "Хапан L твердый",
+          "fr": "Solide L hapan",
+          "de": "Hapan L Solid",
+          "zh": "海皮斯 L 固体容器"
+        },
         "cargoMax": 1000000,
         "cargoType": "solid"
       },
       "storage_hap_m_container_01_macro": {
         "id": "storage_hap_m_container_01_macro",
-        "name": "Hap M Container 01",
+        "name": {
+          "en": "Hapan M Container",
+          "ru": "Хапан М контейнер",
+          "fr": "Conteneur M hapan",
+          "de": "Hapan M Container",
+          "zh": "海皮斯 M 集装箱"
+        },
         "cargoMax": 500000,
         "cargoType": "container"
       },
       "storage_hap_m_liquid_01_macro": {
         "id": "storage_hap_m_liquid_01_macro",
-        "name": "Hap M Liquid 01",
+        "name": {
+          "en": "Hapan M Liquid",
+          "ru": "Хапан М жидкость",
+          "fr": "Liquide M hapan",
+          "de": "Hapan M Liquid",
+          "zh": "海皮斯 M 液体容器"
+        },
         "cargoMax": 500000,
         "cargoType": "liquid"
       },
       "storage_hap_m_solid_01_macro": {
         "id": "storage_hap_m_solid_01_macro",
-        "name": "Hap M Solid 01",
+        "name": {
+          "en": "Hapan M Solid",
+          "ru": "Хапан М твердый",
+          "fr": "Solide M hapan",
+          "de": "Hapan M Solid",
+          "zh": "海皮斯 M 固体容器"
+        },
         "cargoMax": 500000,
         "cargoType": "solid"
       },
       "storage_hap_s_container_01_macro": {
         "id": "storage_hap_s_container_01_macro",
-        "name": "Hap S Container 01",
+        "name": {
+          "en": "Hapan S Container",
+          "ru": "Хапан S контейнер",
+          "fr": "Conteneur S hapan",
+          "de": "Hapan S Container",
+          "zh": "海皮斯 S 集装箱"
+        },
         "cargoMax": 100000,
         "cargoType": "container"
       },
       "storage_hap_s_liquid_01_macro": {
         "id": "storage_hap_s_liquid_01_macro",
-        "name": "Hap S Liquid 01",
+        "name": {
+          "en": "Hapan S Liquid",
+          "ru": "Хапан S жидкость",
+          "fr": "Liquide S hapan",
+          "de": "Hapan S Liquid",
+          "zh": "海皮斯 S 液体容器"
+        },
         "cargoMax": 100000,
         "cargoType": "liquid"
       },
       "storage_hap_s_solid_01_macro": {
         "id": "storage_hap_s_solid_01_macro",
-        "name": "Hap S Solid 01",
+        "name": {
+          "en": "Hapan S Solid",
+          "ru": "Хапан S твердый",
+          "fr": "Solide S hapan",
+          "de": "Hapan S Solid",
+          "zh": "海皮斯 S 固体容器"
+        },
         "cargoMax": 100000,
         "cargoType": "solid"
       },
       "storage_imp_l_container_01_macro": {
         "id": "storage_imp_l_container_01_macro",
-        "name": "Imp L Container 01",
+        "name": {
+          "en": "Imperial L Container",
+          "ru": "Имперец Имп. L Контейнер",
+          "fr": "Imperial Conteneur L",
+          "de": "Imperial L Container",
+          "zh": "Imperial L 集装箱"
+        },
         "cargoMax": 1100000,
         "cargoType": "container"
       },
       "storage_imp_l_liquid_01_macro": {
         "id": "storage_imp_l_liquid_01_macro",
-        "name": "Imp L Liquid 01",
+        "name": {
+          "en": "Imperial L Liquid",
+          "ru": "Имперец Имп. L Жидкий",
+          "fr": "Imperial Liquide L",
+          "de": "Imperial L Tank",
+          "zh": "Imperial L 液体容器"
+        },
         "cargoMax": 1100000,
         "cargoType": "liquid"
       },
       "storage_imp_l_solid_01_macro": {
         "id": "storage_imp_l_solid_01_macro",
-        "name": "Imp L Solid 01",
+        "name": {
+          "en": "Imperial L Solid",
+          "ru": "Имперец Имп. L Твердый",
+          "fr": "Imperial Solide L",
+          "de": "Imperial L Solid",
+          "zh": "Imperial L 固体容器"
+        },
         "cargoMax": 1100000,
         "cargoType": "solid"
       },
       "storage_imp_liquid_tradestation_01_macro": {
         "id": "storage_imp_liquid_tradestation_01_macro",
-        "name": "Imp Liquid Tradestation 01",
+        "name": {
+          "en": "Imperial Station Storage",
+          "ru": "Империя Хранилище станции",
+          "fr": "Stockage de station impériale",
+          "de": "Imperiales Stationslager",
+          "zh": "帝国轨道存储站"
+        },
         "cargoMax": 3200000,
         "cargoType": "container"
       },
       "storage_imp_m_container_01_macro": {
         "id": "storage_imp_m_container_01_macro",
-        "name": "Imp M Container 01",
+        "name": {
+          "en": "Imperial M Container",
+          "ru": "Имперец Имп. M Контейнер",
+          "fr": "Imperial Conteneur M",
+          "de": "Imperial M Container",
+          "zh": "Imperial M 集装箱"
+        },
         "cargoMax": 500000,
         "cargoType": "container"
       },
       "storage_imp_m_liquid_01_macro": {
         "id": "storage_imp_m_liquid_01_macro",
-        "name": "Imp M Liquid 01",
+        "name": {
+          "en": "Imperial M Liquid",
+          "ru": "Имперец Имп. M Жидкий",
+          "fr": "Imperial Liquide M",
+          "de": "Imperial M Tank",
+          "zh": "Imperial M 液体容器"
+        },
         "cargoMax": 500000,
         "cargoType": "liquid"
       },
       "storage_imp_m_solid_01_macro": {
         "id": "storage_imp_m_solid_01_macro",
-        "name": "Imp M Solid 01",
+        "name": {
+          "en": "Imperial M Solid",
+          "ru": "Имперец Имп. M Твердый",
+          "fr": "Imperial Solide M",
+          "de": "Imperial M Solid",
+          "zh": "Imperial M 固体容器"
+        },
         "cargoMax": 500000,
         "cargoType": "solid"
       },
       "storage_imp_s_container_01_macro": {
         "id": "storage_imp_s_container_01_macro",
-        "name": "Imp S Container 01",
+        "name": {
+          "en": "Imperial S Container",
+          "ru": "Имперец Имп. S Контейнер",
+          "fr": "Imperial Conteneur S",
+          "de": "Imperial S Container",
+          "zh": "Imperial S 集装箱"
+        },
         "cargoMax": 100000,
         "cargoType": "container"
       },
       "storage_imp_s_liquid_01_macro": {
         "id": "storage_imp_s_liquid_01_macro",
-        "name": "Imp S Liquid 01",
+        "name": {
+          "en": "Imperial S Liquid",
+          "ru": "Имперец Имп. S Жидкий",
+          "fr": "Imperial Liquide S",
+          "de": "Imperial S Tank",
+          "zh": "Imperial S 液体容器"
+        },
         "cargoMax": 100000,
         "cargoType": "liquid"
       },
       "storage_imp_s_solid_01_macro": {
         "id": "storage_imp_s_solid_01_macro",
-        "name": "Imp S Solid 01",
+        "name": {
+          "en": "Imperial S Solid",
+          "ru": "Имперец Имп. S Твердый",
+          "fr": "Imperial Solide S",
+          "de": "Imperial S Solid",
+          "zh": "Imperial S 固体容器"
+        },
         "cargoMax": 100000,
         "cargoType": "solid"
       },
       "storage_man_l_container_01_macro": {
         "id": "storage_man_l_container_01_macro",
-        "name": "Man L Container 01",
+        "name": {
+          "en": "Mando L Container",
+          "ru": "Мандо L контейнер",
+          "fr": "Conteneur L mando",
+          "de": "Mando L Container",
+          "zh": "曼达洛 L 集装箱"
+        },
         "cargoMax": 1000000,
         "cargoType": "container"
       },
       "storage_man_l_liquid_01_macro": {
         "id": "storage_man_l_liquid_01_macro",
-        "name": "Man L Liquid 01",
+        "name": {
+          "en": "Mando L Liquid",
+          "ru": "Мандо L жидкость",
+          "fr": "Liquide L mando",
+          "de": "Mando L Liquid",
+          "zh": "曼达洛 L 液体容器"
+        },
         "cargoMax": 1000000,
         "cargoType": "liquid"
       },
       "storage_man_l_solid_01_macro": {
         "id": "storage_man_l_solid_01_macro",
-        "name": "Man L Solid 01",
+        "name": {
+          "en": "Mando L Solid",
+          "ru": "Мандо L твердый",
+          "fr": "Solide L mando",
+          "de": "Mando L Solid",
+          "zh": "曼达洛 L 固体容器"
+        },
         "cargoMax": 1000000,
         "cargoType": "solid"
       },
       "storage_man_m_container_01_macro": {
         "id": "storage_man_m_container_01_macro",
-        "name": "Man M Container 01",
+        "name": {
+          "en": "Mando M Container",
+          "ru": "Мандо М контейнер",
+          "fr": "Conteneur M mando",
+          "de": "Mando M Container",
+          "zh": "曼达洛 M 集装箱"
+        },
         "cargoMax": 500000,
         "cargoType": "container"
       },
       "storage_man_m_liquid_01_macro": {
         "id": "storage_man_m_liquid_01_macro",
-        "name": "Man M Liquid 01",
+        "name": {
+          "en": "Mando M Liquid",
+          "ru": "Мандо М жидкость",
+          "fr": "Liquide M mando",
+          "de": "Mando M Liquid",
+          "zh": "曼达洛 M 液体容器"
+        },
         "cargoMax": 500000,
         "cargoType": "liquid"
       },
       "storage_man_m_solid_01_macro": {
         "id": "storage_man_m_solid_01_macro",
-        "name": "Man M Solid 01",
+        "name": {
+          "en": "Mando M Solid",
+          "ru": "Мандо M твердый",
+          "fr": "Solide M mando",
+          "de": "Mando M Solid",
+          "zh": "曼达洛 M 固体容器"
+        },
         "cargoMax": 500000,
         "cargoType": "solid"
       },
       "storage_man_s_container_01_macro": {
         "id": "storage_man_s_container_01_macro",
-        "name": "Man S Container 01",
+        "name": {
+          "en": "Mando S Container",
+          "ru": "Мандо S контейнер",
+          "fr": "Conteneur S mando",
+          "de": "Mando S Container",
+          "zh": "曼达洛 S 集装箱"
+        },
         "cargoMax": 100000,
         "cargoType": "container"
       },
       "storage_man_s_liquid_01_macro": {
         "id": "storage_man_s_liquid_01_macro",
-        "name": "Man S Liquid 01",
+        "name": {
+          "en": "Mando S Liquid",
+          "ru": "Мандо S жидкость",
+          "fr": "Liquide S mando",
+          "de": "Mando S Liquid",
+          "zh": "曼达洛 S 液体容器"
+        },
         "cargoMax": 100000,
         "cargoType": "liquid"
       },
       "storage_man_s_solid_01_macro": {
         "id": "storage_man_s_solid_01_macro",
-        "name": "Man S Solid 01",
+        "name": {
+          "en": "Mando S Solid",
+          "ru": "Мандо S твердый",
+          "fr": "Solide S mando",
+          "de": "Mando S Solid",
+          "zh": "曼达洛 S 固体容器"
+        },
         "cargoMax": 100000,
         "cargoType": "solid"
       }

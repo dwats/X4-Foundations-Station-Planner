@@ -1,5 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useGameDataStore, usePlanStore, useUIStore } from '@/store';
+import { useLocale } from '@/hooks/useLocale';
+import type { LocalizedName } from '@/types/gamedata';
 
 type ModuleCategory = 'production' | 'habitat' | 'storage';
 
@@ -14,6 +16,7 @@ export function ModulePalette() {
   const addModule = usePlanStore((state) => state.addModule);
   const activeStationId = useUIStore((state) => state.activeStationId);
   const stations = usePlanStore((state) => state.plan.stations);
+  const { t } = useLocale();
 
   const [expandedCategory, setExpandedCategory] = useState<ModuleCategory | null>('production');
   const [searchQuery, setSearchQuery] = useState('');
@@ -30,9 +33,9 @@ export function ModulePalette() {
 
     const query = searchQuery.toLowerCase();
 
-    const filterByName = <T extends { name: string }>(modules: Record<string, T>) =>
+    const filterByName = <T extends { id: string; name: LocalizedName | string }>(modules: Record<string, T>) =>
       Object.values(modules).filter((m) =>
-        m.name.toLowerCase().includes(query)
+        t(m.name).toLowerCase().includes(query)
       );
 
     return {
@@ -40,7 +43,7 @@ export function ModulePalette() {
       habitat: filterByName(gameData.modules.habitat),
       storage: filterByName(gameData.modules.storage),
     };
-  }, [gameData, searchQuery]);
+  }, [gameData, searchQuery, t]);
 
   const handleAddModule = (blueprintId: string) => {
     if (!activeStationId || !activeStation) return;
@@ -117,7 +120,7 @@ export function ModulePalette() {
                       onClick={() => handleAddModule(module.id)}
                       className="w-full px-3 py-2 text-left text-sm hover:bg-accent transition-colors border-t border-border flex items-center justify-between group"
                     >
-                      <span className="text-foreground truncate">{module.name}</span>
+                      <span className="text-foreground truncate">{t(module.name)}</span>
                       <span className="text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity">
                         + Add
                       </span>

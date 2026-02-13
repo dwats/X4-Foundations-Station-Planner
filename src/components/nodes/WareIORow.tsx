@@ -4,6 +4,7 @@
 
 import { Handle, Position } from '@xyflow/react';
 import { useGameDataStore } from '@/store/gamedataStore';
+import { useLocale } from '@/hooks/useLocale';
 import { formatAmount } from '@/lib/format';
 import type { WareIOPreset, WareIOColors } from './WareIORow.presets';
 import type { IOStatus, AmountDisplay } from './WareIORow.utils';
@@ -45,11 +46,12 @@ export function WareIORow({
   amountTooltip,
 }: WareIORowProps) {
   const gameData = useGameDataStore((s) => s.gameData);
+  const { t } = useLocale();
   const isInput = type === 'input';
   const colors: WareIOColors = isInput ? preset.inputColors : preset.outputColors;
 
   const getWareName = (id: string): string => {
-    return gameData?.wares[id]?.name ?? id;
+    return t(gameData?.wares[id]?.name, id);
   };
 
   const wareName = getWareName(wareId);

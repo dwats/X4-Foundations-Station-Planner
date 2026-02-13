@@ -1,6 +1,7 @@
 import { memo, useCallback, useMemo, useState } from 'react';
 import { type NodeProps, type Node } from '@xyflow/react';
 import { usePlanStore, useGameDataStore, useUIStore } from '@/store';
+import { useLocale } from '@/hooks/useLocale';
 import { getModuleComputed } from '@/engine';
 import { formatAmount } from '@/lib/format';
 import type { PlanModule, ResourceAmount } from '@/types';
@@ -38,6 +39,7 @@ export const ModuleNode = memo(function ModuleNode({
   const getModule = useGameDataStore((state) => state.getModule);
   const getModuleType = useGameDataStore((state) => state.getModuleType);
   const gameData = useGameDataStore((state) => state.gameData);
+  const { t } = useLocale();
 
   // Drag state for reordering I/O items
   const [draggedItem, setDraggedItem] = useState<string | null>(null);
@@ -59,9 +61,9 @@ export const ModuleNode = memo(function ModuleNode({
   // Get ware name helper
   const getWareName = useCallback(
     (wareId: string): string => {
-      return gameData?.wares[wareId]?.name ?? wareId;
+      return t(gameData?.wares[wareId]?.name, wareId);
     },
-    [gameData]
+    [gameData, t]
   );
 
   // Sort I/O items based on custom order
@@ -264,7 +266,7 @@ export const ModuleNode = memo(function ModuleNode({
         <div className="flex items-center gap-2">
           <span className="text-base">{icon}</span>
           <h3 className="font-medium text-sm text-foreground truncate flex-1">
-            {blueprint?.name ?? module.blueprintId}
+            {t(blueprint?.name, module.blueprintId)}
           </h3>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { usePlanStore, useGameDataStore } from '@/store';
 import { getStationComputed } from '@/engine';
+import { useLocale } from '@/hooks/useLocale';
 import type { PlanStation } from '@/types';
 
 interface StationPanelProps {
@@ -12,6 +13,7 @@ export function StationPanel({ station }: StationPanelProps) {
   const plan = usePlanStore((state) => state.plan);
   const computed = usePlanStore((state) => state.computed);
   const gameData = useGameDataStore((state) => state.gameData);
+  const { t } = useLocale();
 
   // Find the sector this station belongs to
   const sector = station.sectorId
@@ -56,7 +58,7 @@ export function StationPanel({ station }: StationPanelProps) {
 
   // Get ware name helper
   const getWareName = (wareId: string): string => {
-    return gameData?.wares[wareId]?.name ?? wareId;
+    return t(gameData?.wares[wareId]?.name, wareId);
   };
 
   // Format amount for display

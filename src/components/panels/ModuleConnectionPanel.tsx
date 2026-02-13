@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { usePlanStore, useGameDataStore, useUIStore } from '@/store';
+import { useLocale } from '@/hooks/useLocale';
 import { getModuleComputed, getStationComputed } from '@/engine';
 import type { PlanModuleConnection, ConnectionMode } from '@/types';
 import { STATION_INPUT_ID, STATION_OUTPUT_ID } from '@/types/plan';
@@ -16,6 +17,7 @@ export function ModuleConnectionPanel({ stationId, connection }: ModuleConnectio
   const computed = usePlanStore((state) => state.computed);
   const gameData = useGameDataStore((state) => state.gameData);
   const clearSelection = useUIStore((state) => state.clearSelection);
+  const { t } = useLocale();
 
   const station = stations.find((s) => s.id === stationId);
 
@@ -30,12 +32,11 @@ export function ModuleConnectionPanel({ stationId, connection }: ModuleConnectio
   // Get blueprint names
   const getModuleName = (blueprintId: string | undefined): string => {
     if (!blueprintId || !gameData) return 'Unknown';
-    return (
+    const name =
       gameData.modules.production[blueprintId]?.name ??
       gameData.modules.habitat[blueprintId]?.name ??
-      gameData.modules.storage[blueprintId]?.name ??
-      blueprintId
-    );
+      gameData.modules.storage[blueprintId]?.name;
+    return t(name, blueprintId);
   };
 
   const sourceName = isFromStationInput
@@ -65,7 +66,7 @@ export function ModuleConnectionPanel({ stationId, connection }: ModuleConnectio
   const currentMode: ConnectionMode = connection.mode ?? 'auto';
 
   // Get ware info
-  const wareName = gameData?.wares[connection.wareId]?.name ?? connection.wareId;
+  const wareName = t(gameData?.wares[connection.wareId]?.name, connection.wareId);
 
   // Source available = gross output for this ware
   const sourceGross = sourceComputed?.grossOutputs.find((o) => o.wareId === connection.wareId);

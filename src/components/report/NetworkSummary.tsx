@@ -1,14 +1,16 @@
 import { useMemo } from 'react';
 import { usePlanStore, useGameDataStore } from '@/store';
+import { useLocale } from '@/hooks/useLocale';
 import type { ResourceAmount } from '@/types';
 
 export function NetworkSummary() {
   const computed = usePlanStore((state) => state.computed);
   const gameData = useGameDataStore((state) => state.gameData);
+  const { t } = useLocale();
 
   // Get ware name helper
   const getWareName = (wareId: string): string => {
-    return gameData?.wares[wareId]?.name ?? wareId;
+    return t(gameData?.wares[wareId]?.name, wareId);
   };
 
   // Format amount for display

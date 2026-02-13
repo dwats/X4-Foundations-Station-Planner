@@ -6,9 +6,11 @@ import { NetworkCanvas, StationCanvas } from '@/components/canvas';
 import { loadGameData } from '@/data/loader';
 import { useGameDataStore, useUIStore, usePlanStore } from '@/store';
 import { useTheme } from '@/hooks/useTheme';
+import { useLanguage } from '@/hooks/useLanguage';
 
 function App() {
   useTheme();
+  useLanguage();
   const { gameData, loading, error, setGameData, setError } = useGameDataStore();
   const viewMode = useUIStore((state) => state.viewMode);
 

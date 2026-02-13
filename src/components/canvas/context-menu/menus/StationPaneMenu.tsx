@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState, useMemo } from 'react';
 import { useReactFlow } from '@xyflow/react';
 import { useGameDataStore, usePlanStore, useUIStore } from '@/store';
+import { useLocale } from '@/hooks/useLocale';
 
 type ModuleCategory = 'production' | 'habitat' | 'storage';
 
@@ -19,6 +20,7 @@ export function StationPaneMenu() {
   const activeStationId = useUIStore((state) => state.activeStationId);
   const contextMenu = useUIStore((state) => state.contextMenu);
   const closeContextMenu = useUIStore((state) => state.closeContextMenu);
+  const { t } = useLocale();
 
   const [expandedCategory, setExpandedCategory] = useState<ModuleCategory | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
@@ -32,14 +34,14 @@ export function StationPaneMenu() {
 
     (Object.keys(CATEGORY_INFO) as ModuleCategory[]).forEach((category) => {
       Object.values(gameData.modules[category]).forEach((module) => {
-        if (module.name.toLowerCase().includes(query)) {
-          results.push({ id: module.id, name: module.name, category });
+        if (t(module.name).toLowerCase().includes(query)) {
+          results.push({ id: module.id, name: t(module.name), category });
         }
       });
     });
 
     return results.slice(0, 15);
-  }, [gameData, searchQuery]);
+  }, [gameData, searchQuery, t]);
 
   // Auto-focus search input on mount
   useEffect(() => {
@@ -127,7 +129,7 @@ export function StationPaneMenu() {
                           onClick={(e) => handleAddModule(e, module.id)}
                           className="w-full px-3 py-1.5 text-sm text-foreground/80 hover:bg-accent hover:text-foreground transition-colors text-left truncate"
                         >
-                          {module.name}
+                          {t(module.name)}
                         </button>
                       ))}
                       {modules.length > 20 && (

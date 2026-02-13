@@ -1,6 +1,7 @@
 import { memo, useMemo, useState, useCallback } from 'react';
 import { Handle, Position, type NodeProps, type Node } from '@xyflow/react';
 import { usePlanStore, useGameDataStore, useUIStore } from '@/store';
+import { useLocale } from '@/hooks/useLocale';
 import { formatAmount } from '@/lib/format';
 import { WareIORow, STATION_OUTPUT_PRESET, computeStatus, type IOStatus, type DragConfig } from './WareIORow';
 
@@ -19,6 +20,7 @@ export const StationOutputNode = memo(function StationOutputNode({
   const gameData = useGameDataStore((state) => state.gameData);
   const stations = usePlanStore((state) => state.plan.stations);
   const updateStation = usePlanStore((state) => state.updateStation);
+  const { t } = useLocale();
 
   // Drag state for reordering
   const [draggedItem, setDraggedItem] = useState<string | null>(null);
@@ -38,7 +40,7 @@ export const StationOutputNode = memo(function StationOutputNode({
 
   // Get ware name helper (still needed for handle tooltip)
   const getWareName = (wareId: string): string => {
-    return gameData?.wares[wareId]?.name ?? wareId;
+    return t(gameData?.wares[wareId]?.name, wareId);
   };
 
   // Get wares that are connected to Station Output (modules exporting)

@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { usePlanStore, useGameDataStore } from '@/store';
 import { getStationComputed, getConnectionComputed } from '@/engine';
+import { useLocale } from '@/hooks/useLocale';
 import type { PlanConnection, ConnectionMode } from '@/types';
 
 interface ConnectionPanelProps {
@@ -13,6 +14,7 @@ export function ConnectionPanel({ connection }: ConnectionPanelProps) {
   const plan = usePlanStore((state) => state.plan);
   const computed = usePlanStore((state) => state.computed);
   const gameData = useGameDataStore((state) => state.gameData);
+  const { t } = useLocale();
 
   // Get source and target stations
   const sourceStation = plan.stations.find(
@@ -36,7 +38,7 @@ export function ConnectionPanel({ connection }: ConnectionPanelProps) {
 
   // Get ware info
   const wareName = connection.wareId
-    ? gameData?.wares[connection.wareId]?.name ?? connection.wareId
+    ? t(gameData?.wares[connection.wareId]?.name, connection.wareId)
     : 'Unknown';
 
   // Get source available amount for this ware

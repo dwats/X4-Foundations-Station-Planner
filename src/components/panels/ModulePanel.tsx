@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useGameDataStore, usePlanStore, useUIStore } from '@/store';
+import { useLocale } from '@/hooks/useLocale';
 import type { PlanModule } from '@/types';
 
 interface ModulePanelProps {
@@ -14,6 +15,7 @@ export function ModulePanel({ stationId, module }: ModulePanelProps) {
   const updateModule = usePlanStore((state) => state.updateModule);
   const removeModule = usePlanStore((state) => state.removeModule);
   const clearSelection = useUIStore((state) => state.clearSelection);
+  const { t } = useLocale();
 
   const blueprint = getModule(module.blueprintId);
   const moduleType = getModuleType(module.blueprintId);
@@ -23,8 +25,8 @@ export function ModulePanel({ stationId, module }: ModulePanelProps) {
     if (!gameData || !moduleType) return [];
 
     const modules = gameData.modules[moduleType];
-    return Object.values(modules).sort((a, b) => a.name.localeCompare(b.name));
-  }, [gameData, moduleType]);
+    return Object.values(modules).sort((a, b) => t(a.name).localeCompare(t(b.name)));
+  }, [gameData, moduleType, t]);
 
   const handleBlueprintChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     updateModule(stationId, module.id, { blueprintId: e.target.value });
@@ -43,7 +45,7 @@ export function ModulePanel({ stationId, module }: ModulePanelProps) {
   };
 
   const handleDelete = () => {
-    if (confirm(`Delete this ${blueprint?.name ?? 'module'}?`)) {
+    if (confirm(`Delete this ${t(blueprint?.name, 'module')}?`)) {
       removeModule(stationId, module.id);
       clearSelection();
     }
@@ -69,7 +71,7 @@ export function ModulePanel({ stationId, module }: ModulePanelProps) {
         >
           {availableBlueprints.map((bp) => (
             <option key={bp.id} value={bp.id}>
-              {bp.name}
+              {t(bp.name)}
             </option>
           ))}
         </select>

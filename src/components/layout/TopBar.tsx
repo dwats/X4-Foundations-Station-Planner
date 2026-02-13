@@ -1,4 +1,4 @@
-import { usePlanStore, useUIStore, Theme } from '@/store';
+import { usePlanStore, useUIStore, useGameDataStore, Theme } from '@/store';
 
 export function TopBar() {
   const plan = usePlanStore((state) => state.plan);
@@ -7,6 +7,9 @@ export function TopBar() {
   const reportOpen = useUIStore((state) => state.reportOpen);
   const theme = useUIStore((state) => state.theme);
   const setTheme = useUIStore((state) => state.setTheme);
+  const language = useUIStore((state) => state.language);
+  const setLanguage = useUIStore((state) => state.setLanguage);
+  const gameData = useGameDataStore((state) => state.gameData);
 
   const cycleTheme = () => {
     const next: Theme = theme === 'light' ? 'dark' : theme === 'dark' ? 'system' : 'light';
@@ -26,6 +29,20 @@ export function TopBar() {
         />
       </div>
       <div className="flex items-center gap-2">
+        {gameData?.languages && (
+          <select
+            value={language}
+            onChange={(e) => setLanguage(e.target.value)}
+            className="px-2 py-1.5 text-sm rounded bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors border-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-ring"
+            title="Language"
+          >
+            {Object.entries(gameData.languages).map(([code, label]) => (
+              <option key={code} value={code}>
+                {label}
+              </option>
+            ))}
+          </select>
+        )}
         <button
           onClick={cycleTheme}
           className="px-3 py-1.5 text-sm rounded bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors flex items-center gap-1.5"

@@ -1,4 +1,5 @@
 import { usePlanStore, useUIStore, useGameDataStore } from '@/store';
+import { useLocale } from '@/hooks/useLocale';
 import { MenuButton } from '../items/MenuButton';
 import { MenuSeparator } from '../items/MenuSeparator';
 import { InlineSelect } from '../items/InlineSelect';
@@ -25,13 +26,14 @@ export function ConnectionEdgeMenu({ edgeId, viewMode }: ConnectionEdgeMenuProps
   const updateModuleConnection = usePlanStore((state) => state.updateModuleConnection);
   const removeModuleConnection = usePlanStore((state) => state.removeModuleConnection);
   const gameData = useGameDataStore((state) => state.gameData);
+  const { t } = useLocale();
 
   if (viewMode === 'network') {
     const connection = plan.connections.find((c) => c.id === edgeId);
     if (!connection) return null;
 
     const wareName = connection.wareId
-      ? gameData?.wares[connection.wareId]?.name ?? connection.wareId
+      ? t(gameData?.wares[connection.wareId]?.name, connection.wareId)
       : 'Unknown';
 
     return (
@@ -66,7 +68,7 @@ export function ConnectionEdgeMenu({ edgeId, viewMode }: ConnectionEdgeMenuProps
   const connection = (station?.moduleConnections ?? []).find((c) => c.id === edgeId);
   if (!connection) return null;
 
-  const wareName = gameData?.wares[connection.wareId]?.name ?? connection.wareId;
+  const wareName = t(gameData?.wares[connection.wareId]?.name, connection.wareId);
 
   return (
     <>

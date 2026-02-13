@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useGameDataStore, usePlanStore, useUIStore } from '@/store';
+import { useLocale } from '@/hooks/useLocale';
 import { MenuButton } from '../items/MenuButton';
 import { MenuSeparator } from '../items/MenuSeparator';
 import { CountAdjuster } from '../items/CountAdjuster';
@@ -18,6 +19,7 @@ export function ModuleNodeMenu({ nodeId }: ModuleNodeMenuProps) {
   const removeModule = usePlanStore((state) => state.removeModule);
   const gameData = useGameDataStore((state) => state.gameData);
   const getModuleType = useGameDataStore((state) => state.getModuleType);
+  const { t } = useLocale();
 
   const station = stations.find((s) => s.id === activeStationId);
   const module = station?.modules.find((m) => m.id === nodeId);
@@ -28,9 +30,9 @@ export function ModuleNodeMenu({ nodeId }: ModuleNodeMenuProps) {
     if (!gameData || !moduleType) return [];
     const modules = gameData.modules[moduleType];
     return Object.values(modules)
-      .sort((a, b) => a.name.localeCompare(b.name))
-      .map((m) => ({ value: m.id, label: m.name }));
-  }, [gameData, moduleType]);
+      .sort((a, b) => t(a.name).localeCompare(t(b.name)))
+      .map((m) => ({ value: m.id, label: t(m.name) }));
+  }, [gameData, moduleType, t]);
 
   if (!station || !module || !activeStationId) return null;
 

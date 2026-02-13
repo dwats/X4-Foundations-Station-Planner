@@ -20,6 +20,9 @@ interface UIStore {
   // Theme state
   theme: Theme;
 
+  // Language state
+  language: string;
+
   // Context menu state
   contextMenu: ContextMenuState | null;
 
@@ -38,6 +41,7 @@ interface UIStore {
   setReportOpen: (open: boolean) => void;
 
   setTheme: (theme: Theme) => void;
+  setLanguage: (language: string) => void;
 
   openContextMenu: (state: ContextMenuState) => void;
   closeContextMenu: () => void;
@@ -51,6 +55,7 @@ export const useUIStore = create<UIStore>((set) => ({
   sidebarOpen: true,
   reportOpen: false,
   theme: 'system',
+  language: 'en',
   contextMenu: null,
 
   setViewMode: (mode) => set({ viewMode: mode }),
@@ -97,6 +102,7 @@ export const useUIStore = create<UIStore>((set) => ({
   setReportOpen: (open) => set({ reportOpen: open }),
 
   setTheme: (theme) => set({ theme }),
+  setLanguage: (language) => set({ language }),
 
   openContextMenu: (state) => set({ contextMenu: state }),
   closeContextMenu: () => set({ contextMenu: null }),
