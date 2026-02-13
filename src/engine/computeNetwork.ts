@@ -276,15 +276,15 @@ export function computeNetwork(plan: Plan, gameData: GameData): NetworkComputed 
     }
   }
 
-  // Calculate deficits for each station
+  // Calculate deficits for each station (based on what's wired for import, not total demand)
   const deficits: ResourceDeficit[] = [];
 
   for (const sc of stationComputeds) {
     const supplied = stationSupplied.get(sc.stationId) || new Map();
 
-    for (const input of sc.netInputs) {
+    for (const input of sc.stationInputs) {
       const suppliedAmount = supplied.get(input.wareId) || 0;
-      if (suppliedAmount < input.amount) {
+      if (suppliedAmount < input.amount - 0.01) {
         deficits.push({
           wareId: input.wareId,
           stationId: sc.stationId,
