@@ -5,6 +5,9 @@ import { ReportDrawer } from '@/components/report';
 import { NetworkCanvas, StationCanvas } from '@/components/canvas';
 import { loadGameData } from '@/data/loader';
 import { useGameDataStore, useUIStore, usePlanStore } from '@/store';
+import { usePlanManagerStore } from '@/store/planManagerStore';
+import { useGameModeStore } from '@/store/gameModeStore';
+import { setupAutoSave } from '@/store/planStore';
 import { useTheme } from '@/hooks/useTheme';
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -13,16 +16,24 @@ function App() {
   useLanguage();
   const { gameData, loading, error, setGameData, setError } = useGameDataStore();
   const viewMode = useUIStore((state) => state.viewMode);
+  const gameMode = useGameModeStore((state) => state.gameMode);
 
   useEffect(() => {
-    loadGameData()
+    // Initialize plan manager (handles migration from legacy format)
+    usePlanManagerStore.getState().initializePlanManager();
+
+    // Set up auto-save subscription
+    setupAutoSave((plan) => usePlanManagerStore.getState().saveCurrentPlan(plan));
+
+    // Load game data for current mode
+    loadGameData(gameMode)
       .then((data) => {
         setGameData(data);
         // Trigger recompute now that gameData is available
         usePlanStore.getState().recompute();
       })
       .catch((err) => setError(err.message));
-  }, [setGameData, setError]);
+  }, [setGameData, setError, gameMode]);
 
   if (loading) {
     return (

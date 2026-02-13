@@ -16,6 +16,7 @@ interface UIStore {
   // Panel state
   sidebarOpen: boolean;
   reportOpen: boolean;
+  plansOpen: boolean;
 
   // Theme state
   theme: Theme;
@@ -39,6 +40,7 @@ interface UIStore {
   setSidebarOpen: (open: boolean) => void;
   toggleReport: () => void;
   setReportOpen: (open: boolean) => void;
+  setPlansOpen: (open: boolean) => void;
 
   setTheme: (theme: Theme) => void;
   setLanguage: (language: string) => void;
@@ -54,6 +56,7 @@ export const useUIStore = create<UIStore>((set) => ({
   selectedEdgeId: null,
   sidebarOpen: true,
   reportOpen: false,
+  plansOpen: false,
   theme: 'system',
   language: 'en',
   contextMenu: null,
@@ -100,6 +103,7 @@ export const useUIStore = create<UIStore>((set) => ({
   setSidebarOpen: (open) => set({ sidebarOpen: open }),
   toggleReport: () => set((state) => ({ reportOpen: !state.reportOpen })),
   setReportOpen: (open) => set({ reportOpen: open }),
+  setPlansOpen: (open) => set({ plansOpen: open }),
 
   setTheme: (theme) => set({ theme }),
   setLanguage: (language) => set({ language }),

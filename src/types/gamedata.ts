@@ -54,16 +54,9 @@ export interface Sector {
   name: string; // Sectors stay English-only (CSV-derived)
   sunlight: number; // percentage (e.g., 100, 200, 50)
   owner: string;
-  resources: {
-    ice: boolean;
-    ore: boolean;
-    silicon: boolean;
-    rhydonium: boolean;
-    rawScrap: boolean;
-    helium: boolean;
-    methane: boolean;
-    tibanna: boolean;
-  };
+  // SWI: ice, ore, silicon, rhydonium, rawScrap, helium, methane, tibanna
+  // Base: ice, ore, silicon, hydrogen, rawScrap, helium, methane, nividium
+  resources: Record<string, boolean>;
 }
 
 export interface GameData {

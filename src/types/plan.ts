@@ -2,6 +2,19 @@
 export const STATION_INPUT_ID = '__station_input__';
 export const STATION_OUTPUT_ID = '__station_output__';
 
+/** Game mode: base game or Star Wars Interworlds mod */
+export type GameMode = 'base' | 'swi';
+
+/** Lightweight plan metadata for the plan index */
+export interface PlanMeta {
+  id: string;
+  name: string;
+  gameMode: GameMode;
+  tags: string[];
+  createdAt: string;
+  updatedAt: string;
+}
+
 /** Resource amount - used for inputs/outputs */
 export interface ResourceAmount {
   wareId: string;
@@ -13,6 +26,8 @@ export interface Plan {
   id: string;
   name: string;
   version: number;
+  gameMode: GameMode;
+  tags: string[];
   createdAt: string;
   updatedAt: string;
   sectors: PlanSector[];

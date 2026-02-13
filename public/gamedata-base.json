@@ -1,0 +1,5191 @@
+{
+  "languages": {
+    "en": "English",
+    "ru": "Русский",
+    "fr": "Français",
+    "de": "Deutsch",
+    "zh": "中文"
+  },
+  "wares": {
+    "foodrations": {
+      "id": "foodrations",
+      "name": {
+        "en": "Food Rations",
+        "ru": "Рационы питания",
+        "fr": "Ration de nourriture",
+        "de": "Nahrungsrationen",
+        "zh": "食品配给"
+      },
+      "group": "food",
+      "transport": "container",
+      "volume": 1,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "meat": {
+      "id": "meat",
+      "name": {
+        "en": "Meat",
+        "ru": "Мясо",
+        "fr": "Viande",
+        "de": "Fleisch",
+        "zh": "食用肉"
+      },
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 6,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "medicalsupplies": {
+      "id": "medicalsupplies",
+      "name": {
+        "en": "Medical Supplies",
+        "ru": "Медикаменты",
+        "fr": "Trousses de médicaments",
+        "de": "Medikamente",
+        "zh": "医疗物资"
+      },
+      "group": "pharmaceutical",
+      "transport": "container",
+      "volume": 2,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "spacefuel": {
+      "id": "spacefuel",
+      "name": {
+        "en": "Spacefuel",
+        "ru": "Космотопливо",
+        "fr": "Carburant de l'espace",
+        "de": "Raumsprit",
+        "zh": "太空燃料"
+      },
+      "group": "pharmaceutical",
+      "transport": "container",
+      "volume": 2,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "wheat": {
+      "id": "wheat",
+      "name": {
+        "en": "Wheat",
+        "ru": "Пшеница",
+        "fr": "Blé",
+        "de": "Weizen",
+        "zh": "小麦"
+      },
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 4,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "advancedcomposites": {
+      "id": "advancedcomposites",
+      "name": {
+        "en": "Advanced Composites",
+        "ru": "Суперкомпозиты",
+        "fr": "Composites avancés",
+        "de": "Verbundwerkstoffe",
+        "zh": "先进复合材料"
+      },
+      "group": "hightech",
+      "transport": "container",
+      "volume": 32,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "advancedelectronics": {
+      "id": "advancedelectronics",
+      "name": {
+        "en": "Advanced Electronics",
+        "ru": "Системы упреждения",
+        "fr": "Composants électroniques avancés",
+        "de": "Elektronikkomponenten",
+        "zh": "先进电子设备"
+      },
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 30,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "antimattercells": {
+      "id": "antimattercells",
+      "name": {
+        "en": "Antimatter Cells",
+        "ru": "АМ-элементы",
+        "fr": "Cellule d'antimatière",
+        "de": "Antimateriezellen",
+        "zh": "反物质单元"
+      },
+      "group": "refined",
+      "transport": "container",
+      "volume": 18,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "antimatterconverters": {
+      "id": "antimatterconverters",
+      "name": {
+        "en": "Antimatter Converters",
+        "ru": "АМ-конвертеры",
+        "fr": "Convertisseurs d'antimatière",
+        "de": "Antimateriewandler",
+        "zh": "反物质转换器"
+      },
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 10,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "claytronics": {
+      "id": "claytronics",
+      "name": {
+        "en": "Claytronics",
+        "ru": "Клэйтроника",
+        "fr": "Nanobots",
+        "de": "Nanotronik",
+        "zh": "电子黏土"
+      },
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 24,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "dronecomponents": {
+      "id": "dronecomponents",
+      "name": {
+        "en": "Drone Components",
+        "ru": "Компоненты дронов",
+        "fr": "Composants pour drones",
+        "de": "Drohnenbauteile",
+        "zh": "无人机组件"
+      },
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 30,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "energycells": {
+      "id": "energycells",
+      "name": {
+        "en": "Energy Cells",
+        "ru": "Энергоэлементы",
+        "fr": "Photopiles",
+        "de": "Energiezellen",
+        "zh": "能量电池"
+      },
+      "group": "energy",
+      "transport": "container",
+      "volume": 1,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "engineparts": {
+      "id": "engineparts",
+      "name": {
+        "en": "Engine Parts",
+        "ru": "Детали двигателей",
+        "fr": "Pièces de moteur",
+        "de": "Antriebsteile",
+        "zh": "引擎部件"
+      },
+      "group": "hightech",
+      "transport": "container",
+      "volume": 15,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "fieldcoils": {
+      "id": "fieldcoils",
+      "name": {
+        "en": "Field Coils",
+        "ru": "Полевые катушки",
+        "fr": "Bobines de champ",
+        "de": "Feldspulen",
+        "zh": "励磁线圈"
+      },
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 15,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "graphene": {
+      "id": "graphene",
+      "name": {
+        "en": "Graphene",
+        "ru": "Графен",
+        "fr": "Graphène",
+        "de": "Graphen",
+        "zh": "石墨烯"
+      },
+      "group": "refined",
+      "transport": "container",
+      "volume": 20,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "hullparts": {
+      "id": "hullparts",
+      "name": {
+        "en": "Hull Parts",
+        "ru": "Детали корпуса",
+        "fr": "Pièces de coque",
+        "de": "Hüllenteile",
+        "zh": "船体部件"
+      },
+      "group": "hightech",
+      "transport": "container",
+      "volume": 12,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "microchips": {
+      "id": "microchips",
+      "name": {
+        "en": "Microchips",
+        "ru": "Микросхемы",
+        "fr": "Circuits intégrés",
+        "de": "Mikrochips",
+        "zh": "微芯片"
+      },
+      "group": "hightech",
+      "transport": "container",
+      "volume": 22,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "missilecomponents": {
+      "id": "missilecomponents",
+      "name": {
+        "en": "Missile Components",
+        "ru": "Компоненты ракет",
+        "fr": "Composants de missiles",
+        "de": "Raketenbauteile",
+        "zh": "导弹部件"
+      },
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 2,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "plasmaconductors": {
+      "id": "plasmaconductors",
+      "name": {
+        "en": "Plasma Conductors",
+        "ru": "Плазмопроводы",
+        "fr": "Conducteurs de plasma",
+        "de": "Plasmaleiter",
+        "zh": "等离子导体"
+      },
+      "group": "hightech",
+      "transport": "container",
+      "volume": 32,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "quantumtubes": {
+      "id": "quantumtubes",
+      "name": {
+        "en": "Quantum Tubes",
+        "ru": "Квантовые трубки",
+        "fr": "Tubes quantiques",
+        "de": "Quantumröhren",
+        "zh": "量子管"
+      },
+      "group": "hightech",
+      "transport": "container",
+      "volume": 22,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "refinedmetals": {
+      "id": "refinedmetals",
+      "name": {
+        "en": "Refined Metals",
+        "ru": "Очищенные металлы",
+        "fr": "Métal raffiné",
+        "de": "Veredelte Metalle",
+        "zh": "精炼金属"
+      },
+      "group": "refined",
+      "transport": "container",
+      "volume": 14,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "scanningarrays": {
+      "id": "scanningarrays",
+      "name": {
+        "en": "Scanning Arrays",
+        "ru": "Сканирующие матрицы",
+        "fr": "Ensemble de scanners",
+        "de": "Sensorenbündel",
+        "zh": "扫描阵列"
+      },
+      "group": "hightech",
+      "transport": "container",
+      "volume": 38,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "shieldcomponents": {
+      "id": "shieldcomponents",
+      "name": {
+        "en": "Shield Components",
+        "ru": "Компоненты щитов",
+        "fr": "Composants de boucliers",
+        "de": "Schildkomponenten",
+        "zh": "护盾部件"
+      },
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 10,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "siliconwafers": {
+      "id": "siliconwafers",
+      "name": {
+        "en": "Silicon Wafers",
+        "ru": "Кремниевые пластины",
+        "fr": "Tranches de silicium",
+        "de": "Siliziumscheiben",
+        "zh": "硅晶片"
+      },
+      "group": "refined",
+      "transport": "container",
+      "volume": 18,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "smartchips": {
+      "id": "smartchips",
+      "name": {
+        "en": "Smart Chips",
+        "ru": "Смарт-чипы",
+        "fr": "Puces intelligentes",
+        "de": "Smart-Chips",
+        "zh": "智能芯片"
+      },
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 2,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "spices": {
+      "id": "spices",
+      "name": {
+        "en": "Spices",
+        "ru": "Специи",
+        "fr": "Epices",
+        "de": "Gewürze",
+        "zh": "香料"
+      },
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 3,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "superfluidcoolant": {
+      "id": "superfluidcoolant",
+      "name": {
+        "en": "Superfluid Coolant",
+        "ru": "Сверхтекучий хладагент",
+        "fr": "Superfluide de refroidissement",
+        "de": "Suprafluid-Kühlmittel",
+        "zh": "超流体冷却剂"
+      },
+      "group": "refined",
+      "transport": "container",
+      "volume": 16,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "turretcomponents": {
+      "id": "turretcomponents",
+      "name": {
+        "en": "Turret Components",
+        "ru": "Компоненты турелей",
+        "fr": "Composants de tourelles",
+        "de": "Geschützkomp.",
+        "zh": "炮塔部件"
+      },
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 20,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "water": {
+      "id": "water",
+      "name": {
+        "en": "Water",
+        "ru": "Вода",
+        "fr": "Eau",
+        "de": "Wasser",
+        "zh": "水"
+      },
+      "group": "water",
+      "transport": "container",
+      "volume": 6,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "weaponcomponents": {
+      "id": "weaponcomponents",
+      "name": {
+        "en": "Weapon Components",
+        "ru": "Компоненты орудий",
+        "fr": "Composants d'armements",
+        "de": "Waffenkomponenten",
+        "zh": "武器部件"
+      },
+      "group": "shiptech",
+      "transport": "container",
+      "volume": 20,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "majadust": {
+      "id": "majadust",
+      "name": {
+        "en": "Maja Dust",
+        "ru": "Порошок майя",
+        "fr": "Poudre Maja",
+        "de": "Majastaub",
+        "zh": "艳耀星尘"
+      },
+      "group": "pharmaceutical",
+      "transport": "container",
+      "volume": 6,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "majasnails": {
+      "id": "majasnails",
+      "name": {
+        "en": "Maja Snails",
+        "ru": "Улитки майя",
+        "fr": "Escargots Maja",
+        "de": "Majaschnecken",
+        "zh": "艳耀蜗牛"
+      },
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 6,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "sojabeans": {
+      "id": "sojabeans",
+      "name": {
+        "en": "Soja Beans",
+        "ru": "Соевые бобы",
+        "fr": "Graines de soja",
+        "de": "Sojabohnen",
+        "zh": "白豆"
+      },
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 5,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "sojahusk": {
+      "id": "sojahusk",
+      "name": {
+        "en": "Soja Husk",
+        "ru": "Соевая паста",
+        "fr": "Enveloppes de soja",
+        "de": "Sojagrütze",
+        "zh": "白豆荚"
+      },
+      "group": "food",
+      "transport": "container",
+      "volume": 1,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "nostropoil": {
+      "id": "nostropoil",
+      "name": {
+        "en": "Nostrop Oil",
+        "ru": "Ностроповое масло",
+        "fr": "Huile Nostrop",
+        "de": "Nostropöl",
+        "zh": "滋养油"
+      },
+      "group": "food",
+      "transport": "container",
+      "volume": 1,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "spaceweed": {
+      "id": "spaceweed",
+      "name": {
+        "en": "Spaceweed",
+        "ru": "Космотабак",
+        "fr": "Herbe de l'espace",
+        "de": "Raumkraut",
+        "zh": "太空烟草"
+      },
+      "group": "pharmaceutical",
+      "transport": "container",
+      "volume": 3,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "sunriseflowers": {
+      "id": "sunriseflowers",
+      "name": {
+        "en": "Sunrise Flowers",
+        "ru": "Подсолнечники",
+        "fr": "Fleurs de soleil",
+        "de": "Sonnenblumen",
+        "zh": "日出花"
+      },
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 5,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "swampplant": {
+      "id": "swampplant",
+      "name": {
+        "en": "Swamp Plant",
+        "ru": "Болотная трава",
+        "fr": "Plante des marais",
+        "de": "Sumpfpflanze",
+        "zh": "沼泽植物"
+      },
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 6,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "teladianium": {
+      "id": "teladianium",
+      "name": {
+        "en": "Teladianium",
+        "ru": "Теладианий",
+        "fr": "Teladianium",
+        "de": "Teladianium",
+        "zh": "T材料"
+      },
+      "group": "refined",
+      "transport": "container",
+      "volume": 16,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "hydrogen": {
+      "id": "hydrogen",
+      "name": {
+        "en": "Hydrogen",
+        "ru": "Водород",
+        "fr": "Hydrogène",
+        "de": "Wasserstoff",
+        "zh": "氢"
+      },
+      "group": "gases",
+      "transport": "liquid",
+      "volume": 6,
+      "tags": [
+        "economy",
+        "gas",
+        "liquid",
+        "minable"
+      ]
+    },
+    "methane": {
+      "id": "methane",
+      "name": {
+        "en": "Methane",
+        "ru": "Метан",
+        "fr": "Méthane",
+        "de": "Methan",
+        "zh": "甲烷"
+      },
+      "group": "gases",
+      "transport": "liquid",
+      "volume": 6,
+      "tags": [
+        "economy",
+        "gas",
+        "liquid",
+        "minable"
+      ]
+    },
+    "ore": {
+      "id": "ore",
+      "name": {
+        "en": "Ore",
+        "ru": "Руда",
+        "fr": "Minerai",
+        "de": "Erz",
+        "zh": "金属矿石"
+      },
+      "group": "minerals",
+      "transport": "solid",
+      "volume": 10,
+      "tags": [
+        "economy",
+        "minable",
+        "mineral",
+        "solid"
+      ]
+    },
+    "silicon": {
+      "id": "silicon",
+      "name": {
+        "en": "Silicon",
+        "ru": "Кремний",
+        "fr": "Silicium",
+        "de": "Silizium",
+        "zh": "硅"
+      },
+      "group": "minerals",
+      "transport": "solid",
+      "volume": 10,
+      "tags": [
+        "economy",
+        "minable",
+        "mineral",
+        "solid"
+      ]
+    },
+    "helium": {
+      "id": "helium",
+      "name": {
+        "en": "Helium",
+        "ru": "Гелий",
+        "fr": "Hélium",
+        "de": "Helium",
+        "zh": "氦"
+      },
+      "group": "gases",
+      "transport": "liquid",
+      "volume": 6,
+      "tags": [
+        "economy",
+        "gas",
+        "liquid",
+        "minable"
+      ]
+    },
+    "ice": {
+      "id": "ice",
+      "name": {
+        "en": "Ice",
+        "ru": "Лед",
+        "fr": "Glace",
+        "de": "Eis",
+        "zh": "冰"
+      },
+      "group": "ice",
+      "transport": "solid",
+      "volume": 8,
+      "tags": [
+        "economy",
+        "minable",
+        "mineral",
+        "solid"
+      ]
+    }
+  },
+  "recipes": {
+    "advancedcomposites_default": {
+      "id": "advancedcomposites_default",
+      "wareId": "advancedcomposites",
+      "method": "default",
+      "time": 300,
+      "amount": 54,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 50
+        },
+        {
+          "ware": "graphene",
+          "amount": 80
+        },
+        {
+          "ware": "refinedmetals",
+          "amount": 80
+        }
+      ],
+      "workforceBonus": 0.34
+    },
+    "advancedcomposites_teladi": {
+      "id": "advancedcomposites_teladi",
+      "wareId": "advancedcomposites",
+      "method": "teladi",
+      "time": 300,
+      "amount": 54,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 50
+        },
+        {
+          "ware": "graphene",
+          "amount": 80
+        },
+        {
+          "ware": "teladianium",
+          "amount": 58
+        }
+      ],
+      "workforceBonus": 0.34
+    },
+    "advancedelectronics_default": {
+      "id": "advancedelectronics_default",
+      "wareId": "advancedelectronics",
+      "method": "default",
+      "time": 720,
+      "amount": 54,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "microchips",
+          "amount": 44
+        },
+        {
+          "ware": "quantumtubes",
+          "amount": 20
+        }
+      ],
+      "workforceBonus": 0.36
+    },
+    "antimattercells_default": {
+      "id": "antimattercells_default",
+      "wareId": "antimattercells",
+      "method": "default",
+      "time": 120,
+      "amount": 99,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 100
+        },
+        {
+          "ware": "hydrogen",
+          "amount": 320
+        }
+      ],
+      "workforceBonus": 0.35
+    },
+    "antimatterconverters_default": {
+      "id": "antimatterconverters_default",
+      "wareId": "antimatterconverters",
+      "method": "default",
+      "time": 300,
+      "amount": 133,
+      "inputs": [
+        {
+          "ware": "advancedcomposites",
+          "amount": 20
+        },
+        {
+          "ware": "energycells",
+          "amount": 80
+        },
+        {
+          "ware": "microchips",
+          "amount": 30
+        }
+      ],
+      "workforceBonus": 0.39
+    },
+    "claytronics_default": {
+      "id": "claytronics_default",
+      "wareId": "claytronics",
+      "method": "default",
+      "time": 900,
+      "amount": 108,
+      "inputs": [
+        {
+          "ware": "antimattercells",
+          "amount": 100
+        },
+        {
+          "ware": "energycells",
+          "amount": 140
+        },
+        {
+          "ware": "microchips",
+          "amount": 160
+        },
+        {
+          "ware": "quantumtubes",
+          "amount": 100
+        }
+      ],
+      "workforceBonus": 0.34
+    },
+    "dronecomponents_default": {
+      "id": "dronecomponents_default",
+      "wareId": "dronecomponents",
+      "method": "default",
+      "time": 1200,
+      "amount": 105,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "engineparts",
+          "amount": 20
+        },
+        {
+          "ware": "hullparts",
+          "amount": 20
+        },
+        {
+          "ware": "microchips",
+          "amount": 20
+        },
+        {
+          "ware": "scanningarrays",
+          "amount": 40
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "energycells_default": {
+      "id": "energycells_default",
+      "wareId": "energycells",
+      "method": "default",
+      "time": 60,
+      "amount": 175,
+      "inputs": [],
+      "workforceBonus": 0.43
+    },
+    "engineparts_default": {
+      "id": "engineparts_default",
+      "wareId": "engineparts",
+      "method": "default",
+      "time": 900,
+      "amount": 208,
+      "inputs": [
+        {
+          "ware": "antimattercells",
+          "amount": 80
+        },
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "refinedmetals",
+          "amount": 96
+        }
+      ],
+      "workforceBonus": 0.47
+    },
+    "engineparts_teladi": {
+      "id": "engineparts_teladi",
+      "wareId": "engineparts",
+      "method": "teladi",
+      "time": 900,
+      "amount": 208,
+      "inputs": [
+        {
+          "ware": "antimattercells",
+          "amount": 80
+        },
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "teladianium",
+          "amount": 70
+        }
+      ],
+      "workforceBonus": 0.47
+    },
+    "fieldcoils_default": {
+      "id": "fieldcoils_default",
+      "wareId": "fieldcoils",
+      "method": "default",
+      "time": 600,
+      "amount": 175,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "plasmaconductors",
+          "amount": 40
+        },
+        {
+          "ware": "quantumtubes",
+          "amount": 43
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "foodrations_default": {
+      "id": "foodrations_default",
+      "wareId": "foodrations",
+      "method": "default",
+      "time": 240,
+      "amount": 460,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 100
+        },
+        {
+          "ware": "meat",
+          "amount": 40
+        },
+        {
+          "ware": "spices",
+          "amount": 40
+        },
+        {
+          "ware": "wheat",
+          "amount": 40
+        }
+      ],
+      "workforceBonus": 0.35
+    },
+    "graphene_default": {
+      "id": "graphene_default",
+      "wareId": "graphene",
+      "method": "default",
+      "time": 240,
+      "amount": 96,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 80
+        },
+        {
+          "ware": "methane",
+          "amount": 320
+        }
+      ],
+      "workforceBonus": 0.46
+    },
+    "hullparts_default": {
+      "id": "hullparts_default",
+      "wareId": "hullparts",
+      "method": "default",
+      "time": 900,
+      "amount": 294,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 80
+        },
+        {
+          "ware": "graphene",
+          "amount": 40
+        },
+        {
+          "ware": "refinedmetals",
+          "amount": 280
+        }
+      ],
+      "workforceBonus": 0.37
+    },
+    "hullparts_teladi": {
+      "id": "hullparts_teladi",
+      "wareId": "hullparts",
+      "method": "teladi",
+      "time": 900,
+      "amount": 294,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 80
+        },
+        {
+          "ware": "graphene",
+          "amount": 40
+        },
+        {
+          "ware": "teladianium",
+          "amount": 204
+        }
+      ],
+      "workforceBonus": 0.37
+    },
+    "majadust_default": {
+      "id": "majadust_default",
+      "wareId": "majadust",
+      "method": "default",
+      "time": 600,
+      "amount": 64,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 40
+        },
+        {
+          "ware": "majasnails",
+          "amount": 120
+        },
+        {
+          "ware": "spices",
+          "amount": 60
+        }
+      ],
+      "workforceBonus": 0.75
+    },
+    "majasnails_default": {
+      "id": "majasnails_default",
+      "wareId": "majasnails",
+      "method": "default",
+      "time": 450,
+      "amount": 146,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 40
+        },
+        {
+          "ware": "water",
+          "amount": 100
+        }
+      ],
+      "workforceBonus": 0.59
+    },
+    "meat_default": {
+      "id": "meat_default",
+      "wareId": "meat",
+      "method": "default",
+      "time": 450,
+      "amount": 290,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 80
+        },
+        {
+          "ware": "water",
+          "amount": 100
+        }
+      ],
+      "workforceBonus": 0.33
+    },
+    "medicalsupplies_default": {
+      "id": "medicalsupplies_default",
+      "wareId": "medicalsupplies",
+      "method": "default",
+      "time": 300,
+      "amount": 208,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 100
+        },
+        {
+          "ware": "spices",
+          "amount": 40
+        },
+        {
+          "ware": "water",
+          "amount": 60
+        },
+        {
+          "ware": "wheat",
+          "amount": 30
+        }
+      ],
+      "workforceBonus": 0.28
+    },
+    "medicalsupplies_paranid": {
+      "id": "medicalsupplies_paranid",
+      "wareId": "medicalsupplies",
+      "method": "paranid",
+      "time": 300,
+      "amount": 208,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 100
+        },
+        {
+          "ware": "sojabeans",
+          "amount": 10
+        },
+        {
+          "ware": "spices",
+          "amount": 40
+        },
+        {
+          "ware": "water",
+          "amount": 60
+        }
+      ],
+      "workforceBonus": 0.28
+    },
+    "medicalsupplies_teladi": {
+      "id": "medicalsupplies_teladi",
+      "wareId": "medicalsupplies",
+      "method": "teladi",
+      "time": 300,
+      "amount": 208,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 100
+        },
+        {
+          "ware": "spices",
+          "amount": 40
+        },
+        {
+          "ware": "sunriseflowers",
+          "amount": 12
+        },
+        {
+          "ware": "water",
+          "amount": 60
+        }
+      ],
+      "workforceBonus": 0.28
+    },
+    "microchips_default": {
+      "id": "microchips_default",
+      "wareId": "microchips",
+      "method": "default",
+      "time": 600,
+      "amount": 72,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 50
+        },
+        {
+          "ware": "siliconwafers",
+          "amount": 200
+        }
+      ],
+      "workforceBonus": 0.36
+    },
+    "missilecomponents_default": {
+      "id": "missilecomponents_default",
+      "wareId": "missilecomponents",
+      "method": "default",
+      "time": 900,
+      "amount": 281,
+      "inputs": [
+        {
+          "ware": "advancedcomposites",
+          "amount": 2
+        },
+        {
+          "ware": "energycells",
+          "amount": 20
+        },
+        {
+          "ware": "hullparts",
+          "amount": 2
+        }
+      ],
+      "workforceBonus": 0.53
+    },
+    "nostropoil_default": {
+      "id": "nostropoil_default",
+      "wareId": "nostropoil",
+      "method": "default",
+      "time": 300,
+      "amount": 500,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 100
+        },
+        {
+          "ware": "spices",
+          "amount": 40
+        },
+        {
+          "ware": "sunriseflowers",
+          "amount": 40
+        },
+        {
+          "ware": "water",
+          "amount": 60
+        }
+      ],
+      "workforceBonus": 0.2
+    },
+    "plasmaconductors_default": {
+      "id": "plasmaconductors_default",
+      "wareId": "plasmaconductors",
+      "method": "default",
+      "time": 900,
+      "amount": 44,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "graphene",
+          "amount": 96
+        },
+        {
+          "ware": "superfluidcoolant",
+          "amount": 140
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "quantumtubes_default": {
+      "id": "quantumtubes_default",
+      "wareId": "quantumtubes",
+      "method": "default",
+      "time": 720,
+      "amount": 94,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 40
+        },
+        {
+          "ware": "graphene",
+          "amount": 116
+        },
+        {
+          "ware": "superfluidcoolant",
+          "amount": 30
+        }
+      ],
+      "workforceBonus": 0.53
+    },
+    "refinedmetals_default": {
+      "id": "refinedmetals_default",
+      "wareId": "refinedmetals",
+      "method": "default",
+      "time": 150,
+      "amount": 88,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 90
+        },
+        {
+          "ware": "ore",
+          "amount": 240
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "scanningarrays_default": {
+      "id": "scanningarrays_default",
+      "wareId": "scanningarrays",
+      "method": "default",
+      "time": 600,
+      "amount": 36,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "refinedmetals",
+          "amount": 100
+        },
+        {
+          "ware": "siliconwafers",
+          "amount": 60
+        }
+      ],
+      "workforceBonus": 0.38
+    },
+    "scanningarrays_teladi": {
+      "id": "scanningarrays_teladi",
+      "wareId": "scanningarrays",
+      "method": "teladi",
+      "time": 600,
+      "amount": 36,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "siliconwafers",
+          "amount": 60
+        },
+        {
+          "ware": "teladianium",
+          "amount": 73
+        }
+      ],
+      "workforceBonus": 0.38
+    },
+    "shieldcomponents_default": {
+      "id": "shieldcomponents_default",
+      "wareId": "shieldcomponents",
+      "method": "default",
+      "time": 1200,
+      "amount": 193,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 70
+        },
+        {
+          "ware": "plasmaconductors",
+          "amount": 20
+        },
+        {
+          "ware": "quantumtubes",
+          "amount": 20
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "siliconwafers_default": {
+      "id": "siliconwafers_default",
+      "wareId": "siliconwafers",
+      "method": "default",
+      "time": 180,
+      "amount": 107,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 90
+        },
+        {
+          "ware": "silicon",
+          "amount": 240
+        }
+      ],
+      "workforceBonus": 0.37
+    },
+    "smartchips_default": {
+      "id": "smartchips_default",
+      "wareId": "smartchips",
+      "method": "default",
+      "time": 600,
+      "amount": 143,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 50
+        },
+        {
+          "ware": "siliconwafers",
+          "amount": 20
+        }
+      ],
+      "workforceBonus": 0.37
+    },
+    "sojabeans_default": {
+      "id": "sojabeans_default",
+      "wareId": "sojabeans",
+      "method": "default",
+      "time": 300,
+      "amount": 104,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 30
+        },
+        {
+          "ware": "water",
+          "amount": 80
+        }
+      ],
+      "workforceBonus": 0.48
+    },
+    "sojahusk_default": {
+      "id": "sojahusk_default",
+      "wareId": "sojahusk",
+      "method": "default",
+      "time": 300,
+      "amount": 350,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 80
+        },
+        {
+          "ware": "majasnails",
+          "amount": 50
+        },
+        {
+          "ware": "sojabeans",
+          "amount": 40
+        },
+        {
+          "ware": "spices",
+          "amount": 20
+        }
+      ],
+      "workforceBonus": 0.37
+    },
+    "spacefuel_default": {
+      "id": "spacefuel_default",
+      "wareId": "spacefuel",
+      "method": "default",
+      "time": 480,
+      "amount": 98,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 40
+        },
+        {
+          "ware": "water",
+          "amount": 100
+        },
+        {
+          "ware": "wheat",
+          "amount": 80
+        }
+      ],
+      "workforceBonus": 0.69
+    },
+    "spaceweed_default": {
+      "id": "spaceweed_default",
+      "wareId": "spaceweed",
+      "method": "default",
+      "time": 600,
+      "amount": 183,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 140
+        },
+        {
+          "ware": "spices",
+          "amount": 40
+        },
+        {
+          "ware": "swampplant",
+          "amount": 120
+        }
+      ],
+      "workforceBonus": 0.7
+    },
+    "spices_default": {
+      "id": "spices_default",
+      "wareId": "spices",
+      "method": "default",
+      "time": 600,
+      "amount": 500,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 40
+        },
+        {
+          "ware": "water",
+          "amount": 80
+        }
+      ],
+      "workforceBonus": 0.4
+    },
+    "sunriseflowers_default": {
+      "id": "sunriseflowers_default",
+      "wareId": "sunriseflowers",
+      "method": "default",
+      "time": 300,
+      "amount": 100,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 30
+        },
+        {
+          "ware": "water",
+          "amount": 80
+        }
+      ],
+      "workforceBonus": 0.28
+    },
+    "superfluidcoolant_default": {
+      "id": "superfluidcoolant_default",
+      "wareId": "superfluidcoolant",
+      "method": "default",
+      "time": 240,
+      "amount": 95,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "helium",
+          "amount": 320
+        }
+      ],
+      "workforceBonus": 0.49
+    },
+    "swampplant_default": {
+      "id": "swampplant_default",
+      "wareId": "swampplant",
+      "method": "default",
+      "time": 450,
+      "amount": 120,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 40
+        },
+        {
+          "ware": "water",
+          "amount": 100
+        }
+      ],
+      "workforceBonus": 0.59
+    },
+    "teladianium_default": {
+      "id": "teladianium_default",
+      "wareId": "teladianium",
+      "method": "default",
+      "time": 120,
+      "amount": 70,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 45
+        },
+        {
+          "ware": "ore",
+          "amount": 280
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "turretcomponents_default": {
+      "id": "turretcomponents_default",
+      "wareId": "turretcomponents",
+      "method": "default",
+      "time": 1800,
+      "amount": 170,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "microchips",
+          "amount": 20
+        },
+        {
+          "ware": "quantumtubes",
+          "amount": 20
+        },
+        {
+          "ware": "scanningarrays",
+          "amount": 10
+        }
+      ],
+      "workforceBonus": 0.53
+    },
+    "water_default": {
+      "id": "water_default",
+      "wareId": "water",
+      "method": "default",
+      "time": 120,
+      "amount": 193,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "ice",
+          "amount": 320
+        }
+      ],
+      "workforceBonus": 0.43
+    },
+    "weaponcomponents_default": {
+      "id": "weaponcomponents_default",
+      "wareId": "weaponcomponents",
+      "method": "default",
+      "time": 1800,
+      "amount": 170,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "hullparts",
+          "amount": 20
+        },
+        {
+          "ware": "plasmaconductors",
+          "amount": 30
+        }
+      ],
+      "workforceBonus": 0.53
+    },
+    "wheat_default": {
+      "id": "wheat_default",
+      "wareId": "wheat",
+      "method": "default",
+      "time": 300,
+      "amount": 310,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 60
+        },
+        {
+          "ware": "water",
+          "amount": 80
+        }
+      ],
+      "workforceBonus": 0.28
+    }
+  },
+  "modules": {
+    "production": {
+      "prod_arg_foodrations_macro": {
+        "id": "prod_arg_foodrations_macro",
+        "name": {
+          "en": "Food Ration Production",
+          "ru": "Производство рационов питания",
+          "fr": "Production de rations de nourriture",
+          "de": "Nahrungsrationsproduktion",
+          "zh": "食品配给产线"
+        },
+        "producedWareId": "foodrations",
+        "workforceMax": 90
+      },
+      "prod_arg_meat_macro": {
+        "id": "prod_arg_meat_macro",
+        "name": {
+          "en": "Meat Production",
+          "ru": "Производство мяса",
+          "fr": "Production de viande",
+          "de": "Fleischproduktion",
+          "zh": "食用肉产线"
+        },
+        "producedWareId": "meat",
+        "workforceMax": 75
+      },
+      "prod_arg_medicalsupplies_macro": {
+        "id": "prod_arg_medicalsupplies_macro",
+        "name": {
+          "en": "Argon Medical Supply Production",
+          "ru": "Аргон Производство медикаментов",
+          "fr": "Argon Production de fournitures médicales",
+          "de": "Argonen Medizinische Versorgungsgüter-Produktion",
+          "zh": "Argon 医疗物资产线"
+        },
+        "producedWareId": "medicalsupplies",
+        "workforceMax": 90
+      },
+      "prod_arg_spacefuel_macro": {
+        "id": "prod_arg_spacefuel_macro",
+        "name": {
+          "en": "Spacefuel Production",
+          "ru": "Производство космотоплива",
+          "fr": "Production de whisky de l'espace",
+          "de": "Raumspritproduktion",
+          "zh": "太空燃料产线"
+        },
+        "producedWareId": "spacefuel",
+        "workforceMax": 225
+      },
+      "prod_arg_wheat_macro": {
+        "id": "prod_arg_wheat_macro",
+        "name": {
+          "en": "Wheat Production",
+          "ru": "Производство пшеницы",
+          "fr": "Production de blé",
+          "de": "Weizenproduktion",
+          "zh": "小麦产线"
+        },
+        "producedWareId": "wheat",
+        "workforceMax": 75
+      },
+      "prod_gen_advancedcomposites_macro": {
+        "id": "prod_gen_advancedcomposites_macro",
+        "name": {
+          "en": "Advanced Composite Production",
+          "ru": "Производство суперкомпозитов",
+          "fr": "Production de composites avancés",
+          "de": "Verbundwerkstoffproduktion",
+          "zh": "先进复合材料产线"
+        },
+        "producedWareId": "advancedcomposites",
+        "workforceMax": 315
+      },
+      "prod_gen_advancedelectronics_macro": {
+        "id": "prod_gen_advancedelectronics_macro",
+        "name": {
+          "en": "Advanced Electronics Production",
+          "ru": "Производство систем упреждения",
+          "fr": "Production d'électronique avancée",
+          "de": "Elektronikkomponentenproduktion",
+          "zh": "先进电子设备产线"
+        },
+        "producedWareId": "advancedelectronics",
+        "workforceMax": 540
+      },
+      "prod_gen_antimattercells_macro": {
+        "id": "prod_gen_antimattercells_macro",
+        "name": {
+          "en": "Antimatter Cell Production",
+          "ru": "Производство АМ-элементов",
+          "fr": "Production de cellules d'antimatière",
+          "de": "Antimateriezellenproduktion",
+          "zh": "反物质单元产线"
+        },
+        "producedWareId": "antimattercells",
+        "workforceMax": 180
+      },
+      "prod_gen_antimatterconverters_macro": {
+        "id": "prod_gen_antimatterconverters_macro",
+        "name": {
+          "en": "Antimatter Converter Production",
+          "ru": "Производство АМ-конвертеров",
+          "fr": "Production de convertisseur d'antimatière",
+          "de": "Antimateriekonverterproduktion",
+          "zh": "反物质转换器产线"
+        },
+        "producedWareId": "antimatterconverters",
+        "workforceMax": 1080
+      },
+      "prod_gen_claytronics_macro": {
+        "id": "prod_gen_claytronics_macro",
+        "name": {
+          "en": "Claytronics Production",
+          "ru": "Производство клэйтроники",
+          "fr": "Production de nanobots",
+          "de": "Nanotronikproduktion",
+          "zh": "电子黏土产线"
+        },
+        "producedWareId": "claytronics",
+        "workforceMax": 1215
+      },
+      "prod_gen_dronecomponents_macro": {
+        "id": "prod_gen_dronecomponents_macro",
+        "name": {
+          "en": "Drone Component Production",
+          "ru": "Производство компонентов дронов",
+          "fr": "Production de composants de drones",
+          "de": "Drohnenkomponentenproduktion",
+          "zh": "无人机组件产线"
+        },
+        "producedWareId": "dronecomponents",
+        "workforceMax": 675
+      },
+      "prod_gen_energycells_macro": {
+        "id": "prod_gen_energycells_macro",
+        "name": {
+          "en": "Energy Cell Production",
+          "ru": "Производство энергоэлементов",
+          "fr": "Production de photopiles",
+          "de": "Energiezellenproduktion",
+          "zh": "能量电池产线"
+        },
+        "producedWareId": "energycells",
+        "workforceMax": 90
+      },
+      "prod_gen_engineparts_macro": {
+        "id": "prod_gen_engineparts_macro",
+        "name": {
+          "en": "Engine Part Production",
+          "ru": "Производство деталей двигателей",
+          "fr": "Production de pièces de moteur",
+          "de": "Antriebsteilproduktion",
+          "zh": "引擎部件产线"
+        },
+        "producedWareId": "engineparts",
+        "workforceMax": 225
+      },
+      "prod_gen_fieldcoils_macro": {
+        "id": "prod_gen_fieldcoils_macro",
+        "name": {
+          "en": "Field Coil Production",
+          "ru": "Производство полевых катушек",
+          "fr": "Production de bobines de champ",
+          "de": "Feldspulenproduktion",
+          "zh": "励磁线圈产线"
+        },
+        "producedWareId": "fieldcoils",
+        "workforceMax": 810
+      },
+      "prod_gen_graphene_macro": {
+        "id": "prod_gen_graphene_macro",
+        "name": {
+          "en": "Graphene Production",
+          "ru": "Производство графена",
+          "fr": "Production de graphène",
+          "de": "Graphenproduktion",
+          "zh": "石墨烯生产线"
+        },
+        "producedWareId": "graphene",
+        "workforceMax": 180
+      },
+      "prod_gen_hullparts_macro": {
+        "id": "prod_gen_hullparts_macro",
+        "name": {
+          "en": "Hull Part Production",
+          "ru": "Производство деталей корпуса",
+          "fr": "Production de pièces de coque",
+          "de": "Hüllenteileproduktion",
+          "zh": "船体部件产线"
+        },
+        "producedWareId": "hullparts",
+        "workforceMax": 270
+      },
+      "prod_gen_microchips_macro": {
+        "id": "prod_gen_microchips_macro",
+        "name": {
+          "en": "Microchip Production",
+          "ru": "Производство микросхем",
+          "fr": "Production de circuits intégrés",
+          "de": "Mikrochipproduktion",
+          "zh": "微芯片产线"
+        },
+        "producedWareId": "microchips",
+        "workforceMax": 450
+      },
+      "prod_gen_missilecomponents_macro": {
+        "id": "prod_gen_missilecomponents_macro",
+        "name": {
+          "en": "Missile Component Production",
+          "ru": "Производство компонентов ракет",
+          "fr": "Production de composants de missile",
+          "de": "Raketenbauteilproduktion",
+          "zh": "导弹部件产线"
+        },
+        "producedWareId": "missilecomponents",
+        "workforceMax": 22
+      },
+      "prod_gen_plasmaconductors_macro": {
+        "id": "prod_gen_plasmaconductors_macro",
+        "name": {
+          "en": "Plasma Conductor Production",
+          "ru": "Производство плазмопроводов",
+          "fr": "Production de conducteur de plasma",
+          "de": "Plasmaleiterproduktion",
+          "zh": "等离子导体产线"
+        },
+        "producedWareId": "plasmaconductors",
+        "workforceMax": 225
+      },
+      "prod_gen_quantumtubes_macro": {
+        "id": "prod_gen_quantumtubes_macro",
+        "name": {
+          "en": "Quantum Tube Production",
+          "ru": "Производство квантовых трубок",
+          "fr": "Production de tubes quantiques",
+          "de": "Quantumröhrenproduktion",
+          "zh": "量子管产线"
+        },
+        "producedWareId": "quantumtubes",
+        "workforceMax": 225
+      },
+      "prod_gen_refinedmetals_macro": {
+        "id": "prod_gen_refinedmetals_macro",
+        "name": {
+          "en": "Refined Metal Production",
+          "ru": "Производство очищенных металлов",
+          "fr": "Production de métal raffiné",
+          "de": "Metallveredelungsanlage",
+          "zh": "精炼金属产线"
+        },
+        "producedWareId": "refinedmetals",
+        "workforceMax": 225
+      },
+      "prod_gen_scanningarrays_macro": {
+        "id": "prod_gen_scanningarrays_macro",
+        "name": {
+          "en": "Scanning Array Production",
+          "ru": "Производство сканирующих матриц",
+          "fr": "Production d'ensemble de scanners",
+          "de": "Sensorbündelproduktion",
+          "zh": "扫描阵列产线"
+        },
+        "producedWareId": "scanningarrays",
+        "workforceMax": 315
+      },
+      "prod_gen_scrap_recycler_macro": {
+        "id": "prod_gen_scrap_recycler_macro",
+        "name": {
+          "en": "Scrap Recycler",
+          "ru": "Переработчик Металлолома",
+          "fr": "Recycleur de ferraille",
+          "de": "Schrottrecycler",
+          "zh": "废料再生设施"
+        },
+        "producedWareId": "claytronics hullparts",
+        "workforceMax": 1250
+      },
+      "prod_gen_shieldcomponents_macro": {
+        "id": "prod_gen_shieldcomponents_macro",
+        "name": {
+          "en": "Shield Component Production",
+          "ru": "Производство компонентов щитов",
+          "fr": "Production de composants de bouclier",
+          "de": "Schildkomponentenfabrik",
+          "zh": "护盾部件产线"
+        },
+        "producedWareId": "shieldcomponents",
+        "workforceMax": 225
+      },
+      "prod_gen_siliconwafers_macro": {
+        "id": "prod_gen_siliconwafers_macro",
+        "name": {
+          "en": "Silicon Wafer Production",
+          "ru": "Производство кремниевых пластин",
+          "fr": "Production de tranches de silicium",
+          "de": "Siliziumscheibenproduktion",
+          "zh": "硅晶片产线"
+        },
+        "producedWareId": "siliconwafers",
+        "workforceMax": 225
+      },
+      "prod_gen_smartchips_macro": {
+        "id": "prod_gen_smartchips_macro",
+        "name": {
+          "en": "Smart Chip Production",
+          "ru": "Производство смарт-чипов",
+          "fr": "Production de puces intelligentes",
+          "de": "Smart-Chip-Produktion",
+          "zh": "智能芯片产线"
+        },
+        "producedWareId": "smartchips",
+        "workforceMax": 60
+      },
+      "prod_gen_spices_macro": {
+        "id": "prod_gen_spices_macro",
+        "name": {
+          "en": "Spice Production",
+          "ru": "Производство специй",
+          "fr": "Production d'épices",
+          "de": "Gewürzproduktion",
+          "zh": "香料产线"
+        },
+        "producedWareId": "spices",
+        "workforceMax": 60
+      },
+      "prod_gen_superfluidcoolant_macro": {
+        "id": "prod_gen_superfluidcoolant_macro",
+        "name": {
+          "en": "Superfluid Coolant Production",
+          "ru": "Производство сверхтекучего хладагента",
+          "fr": "Production de réfrigérant de superfluide",
+          "de": "Suprafluid-Kühlmittelproduktion",
+          "zh": "超流体冷却剂产线"
+        },
+        "producedWareId": "superfluidcoolant",
+        "workforceMax": 180
+      },
+      "prod_gen_turretcomponents_macro": {
+        "id": "prod_gen_turretcomponents_macro",
+        "name": {
+          "en": "Turret Component Production",
+          "ru": "Производство компонентов турелей",
+          "fr": "Production de composants de tourelle",
+          "de": "Geschützkomp.-Produktion",
+          "zh": "炮塔部件产线"
+        },
+        "producedWareId": "turretcomponents",
+        "workforceMax": 225
+      },
+      "prod_gen_water_macro": {
+        "id": "prod_gen_water_macro",
+        "name": {
+          "en": "Water Production",
+          "ru": "Производство воды",
+          "fr": "Production d'eau",
+          "de": "Wasserproduktion",
+          "zh": "水产线"
+        },
+        "producedWareId": "water",
+        "workforceMax": 180
+      },
+      "prod_gen_weaponcomponents_macro": {
+        "id": "prod_gen_weaponcomponents_macro",
+        "name": {
+          "en": "Weapon Component Production",
+          "ru": "Производство компонентов орудий",
+          "fr": "Production de composants d'armes",
+          "de": "Waffenkomponentenproduktion",
+          "zh": "武器部件产线"
+        },
+        "producedWareId": "weaponcomponents",
+        "workforceMax": 225
+      },
+      "prod_par_majadust_macro": {
+        "id": "prod_par_majadust_macro",
+        "name": {
+          "en": "Maja Dust Production",
+          "ru": "Производство порошка майя",
+          "fr": "Production de poussière de Maja",
+          "de": "Majastaubproduktion",
+          "zh": "艳耀星尘产线"
+        },
+        "producedWareId": "majadust",
+        "workforceMax": 123
+      },
+      "prod_par_majasnails_macro": {
+        "id": "prod_par_majasnails_macro",
+        "name": {
+          "en": "Maja Snail Production",
+          "ru": "Производство улиток майя",
+          "fr": "Production d'escargots Maja",
+          "de": "Majaschneckenproduktion",
+          "zh": "艳耀蜗牛产线"
+        },
+        "producedWareId": "majasnails",
+        "workforceMax": 175
+      },
+      "prod_par_medicalsupplies_macro": {
+        "id": "prod_par_medicalsupplies_macro",
+        "name": {
+          "en": "Paranid Medical Supply Production",
+          "ru": "Паранид Производство медикаментов",
+          "fr": "Paranide Production de fournitures médicales",
+          "de": "Paraniden Medizinische Versorgungsgüter-Produktion",
+          "zh": "Paranid 医疗物资产线"
+        },
+        "producedWareId": "medicalsupplies",
+        "workforceMax": 90
+      },
+      "prod_par_sojabeans_macro": {
+        "id": "prod_par_sojabeans_macro",
+        "name": {
+          "en": "Soja Bean Production",
+          "ru": "Производство соевых бобов",
+          "fr": "Production de noix de soja",
+          "de": "Sojabohnenproduktion",
+          "zh": "白豆产线"
+        },
+        "producedWareId": "sojabeans",
+        "workforceMax": 175
+      },
+      "prod_par_sojahusk_macro": {
+        "id": "prod_par_sojahusk_macro",
+        "name": {
+          "en": "Soja Husk Production",
+          "ru": "Производство соевой пасты",
+          "fr": "Production d'enveloppes de soja",
+          "de": "Sojagrützeproduktion",
+          "zh": "白豆荚产线"
+        },
+        "producedWareId": "sojahusk",
+        "workforceMax": 99
+      },
+      "prod_tel_advancedcomposites_macro": {
+        "id": "prod_tel_advancedcomposites_macro",
+        "name": {
+          "en": "Teladi Advanced Composite Production",
+          "ru": "Телади Производство суперкомпозитов",
+          "fr": "Teladi Production de composites avancés",
+          "de": "Teladi Verbundwerkstoffproduktion",
+          "zh": "Teladi 先进复合材料产线"
+        },
+        "producedWareId": "advancedcomposites",
+        "workforceMax": 315
+      },
+      "prod_tel_engineparts_macro": {
+        "id": "prod_tel_engineparts_macro",
+        "name": {
+          "en": "Teladi Engine Part Production",
+          "ru": "Телади Производство деталей двигателей",
+          "fr": "Teladi Production de pièces de moteur",
+          "de": "Teladi Antriebsteilproduktion",
+          "zh": "Teladi 引擎部件产线"
+        },
+        "producedWareId": "engineparts",
+        "workforceMax": 225
+      },
+      "prod_tel_hullparts_macro": {
+        "id": "prod_tel_hullparts_macro",
+        "name": {
+          "en": "Teladi Hull Part Production",
+          "ru": "Телади Производство деталей корпуса",
+          "fr": "Teladi Production de pièces de coque",
+          "de": "Teladi Hüllenteileproduktion",
+          "zh": "Teladi 船体部件产线"
+        },
+        "producedWareId": "hullparts",
+        "workforceMax": 270
+      },
+      "prod_tel_medicalsupplies_macro": {
+        "id": "prod_tel_medicalsupplies_macro",
+        "name": {
+          "en": "Teladi Medical Supply Production",
+          "ru": "Телади Производство медикаментов",
+          "fr": "Teladi Production de fournitures médicales",
+          "de": "Teladi Medizinische Versorgungsgüter-Produktion",
+          "zh": "Teladi 医疗物资产线"
+        },
+        "producedWareId": "medicalsupplies",
+        "workforceMax": 90
+      },
+      "prod_tel_nostropoil_macro": {
+        "id": "prod_tel_nostropoil_macro",
+        "name": {
+          "en": "Nostrop Oil Production",
+          "ru": "Производство ностропового масла",
+          "fr": "Production de Nostrop",
+          "de": "Nostropölproduktion",
+          "zh": "滋养油产线"
+        },
+        "producedWareId": "nostropoil",
+        "workforceMax": 120
+      },
+      "prod_tel_scanningarrays_macro": {
+        "id": "prod_tel_scanningarrays_macro",
+        "name": {
+          "en": "Teladi Scanning Array Production",
+          "ru": "Телади Производство сканирующих матриц",
+          "fr": "Teladi Production d'ensemble de scanners",
+          "de": "Teladi Sensorbündelproduktion",
+          "zh": "Teladi 扫描阵列产线"
+        },
+        "producedWareId": "scanningarrays",
+        "workforceMax": 315
+      },
+      "prod_tel_spaceweed_macro": {
+        "id": "prod_tel_spaceweed_macro",
+        "name": {
+          "en": "Spaceweed Production",
+          "ru": "Производство космотабака",
+          "fr": "Production d'herbe de l'espace",
+          "de": "Raumkrautproduktion",
+          "zh": "太空烟草产线"
+        },
+        "producedWareId": "spaceweed",
+        "workforceMax": 90
+      },
+      "prod_tel_sunriseflowers_macro": {
+        "id": "prod_tel_sunriseflowers_macro",
+        "name": {
+          "en": "Sunrise Flower Production",
+          "ru": "Производство подсолнечников",
+          "fr": "Production de fleurs de soleil",
+          "de": "Sonnenblumenproduktion",
+          "zh": "日出花产线"
+        },
+        "producedWareId": "sunriseflowers",
+        "workforceMax": 50
+      },
+      "prod_tel_swampplant_macro": {
+        "id": "prod_tel_swampplant_macro",
+        "name": {
+          "en": "Swamp Plant Production",
+          "ru": "Производство болотной травы",
+          "fr": "Production d'herbe de marécage",
+          "de": "Sumpfpflanzenproduktion",
+          "zh": "沼泽植物产线"
+        },
+        "producedWareId": "swampplant",
+        "workforceMax": 50
+      },
+      "prod_tel_teladianium_macro": {
+        "id": "prod_tel_teladianium_macro",
+        "name": {
+          "en": "Teladianium Production",
+          "ru": "Производство теладиания",
+          "fr": "Production de teladianium",
+          "de": "Teladianiumproduktion",
+          "zh": "T材料产线"
+        },
+        "producedWareId": "teladianium",
+        "workforceMax": 225
+      }
+    },
+    "habitat": {
+      "hab_arg_l_01_macro": {
+        "id": "hab_arg_l_01_macro",
+        "name": {
+          "en": "Argon L Habitat",
+          "ru": "Аргон L Ареал",
+          "fr": "Argon L Habitat",
+          "de": "Argonen L-Habitat",
+          "zh": "Argon L 居住区"
+        },
+        "race": "argon",
+        "workforceCapacity": 1000
+      },
+      "hab_arg_m_01_macro": {
+        "id": "hab_arg_m_01_macro",
+        "name": {
+          "en": "Argon M Habitat",
+          "ru": "Аргон M Ареал",
+          "fr": "Argon M Habitat",
+          "de": "Argonen M-Habitat",
+          "zh": "Argon M 居住区"
+        },
+        "race": "argon",
+        "workforceCapacity": 500
+      },
+      "hab_arg_s_01_macro": {
+        "id": "hab_arg_s_01_macro",
+        "name": {
+          "en": "Argon S Habitat",
+          "ru": "Аргон S Ареал",
+          "fr": "Argon S Habitat",
+          "de": "Argonen S-Habitat",
+          "zh": "Argon S 居住区"
+        },
+        "race": "argon",
+        "workforceCapacity": 250
+      },
+      "hab_par_l_01_macro": {
+        "id": "hab_par_l_01_macro",
+        "name": {
+          "en": "Paranid L Dome",
+          "ru": "Паранид L Купол",
+          "fr": "Paranide L Dome",
+          "de": "Paraniden L-Kuppel",
+          "zh": "Paranid L 穹顶"
+        },
+        "race": "paranid",
+        "workforceCapacity": 999
+      },
+      "hab_par_m_01_macro": {
+        "id": "hab_par_m_01_macro",
+        "name": {
+          "en": "Paranid M Dome",
+          "ru": "Паранид M Купол",
+          "fr": "Paranide M Dome",
+          "de": "Paraniden M-Kuppel",
+          "zh": "Paranid M 穹顶"
+        },
+        "race": "paranid",
+        "workforceCapacity": 666
+      },
+      "hab_par_s_01_macro": {
+        "id": "hab_par_s_01_macro",
+        "name": {
+          "en": "Paranid S Dome",
+          "ru": "Паранид S Купол",
+          "fr": "Paranide S Dome",
+          "de": "Paraniden S-Kuppel",
+          "zh": "Paranid S 穹顶"
+        },
+        "race": "paranid",
+        "workforceCapacity": 333
+      },
+      "hab_tel_l_01_macro": {
+        "id": "hab_tel_l_01_macro",
+        "name": {
+          "en": "Teladi L Biome",
+          "ru": "Телади L Биом",
+          "fr": "Teladi L Biome",
+          "de": "Teladi L-Biom",
+          "zh": "Teladi L 生物群落"
+        },
+        "race": "teladi",
+        "workforceCapacity": 1000
+      },
+      "hab_tel_m_01_macro": {
+        "id": "hab_tel_m_01_macro",
+        "name": {
+          "en": "Teladi M Biome",
+          "ru": "Телади M Биом",
+          "fr": "Teladi M Biome",
+          "de": "Teladi M-Biom",
+          "zh": "Teladi M 生物群落"
+        },
+        "race": "teladi",
+        "workforceCapacity": 500
+      },
+      "hab_tel_s_01_macro": {
+        "id": "hab_tel_s_01_macro",
+        "name": {
+          "en": "Teladi S Biome",
+          "ru": "Телади S Биом",
+          "fr": "Teladi S Biome",
+          "de": "Teladi S-Biom",
+          "zh": "Teladi S 生物群落"
+        },
+        "race": "teladi",
+        "workforceCapacity": 250
+      }
+    },
+    "storage": {
+      "storage_arg_l_container_01_macro": {
+        "id": "storage_arg_l_container_01_macro",
+        "name": {
+          "en": "Argon L Container Storage",
+          "ru": "Аргон L Хранилище контейнеров",
+          "fr": "Argon L Stockage de conteneurs",
+          "de": "Argonen L-Containerlager",
+          "zh": "Argon L 集装仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "container"
+      },
+      "storage_arg_l_liquid_01_macro": {
+        "id": "storage_arg_l_liquid_01_macro",
+        "name": {
+          "en": "Argon L Liquid Storage",
+          "ru": "Аргон L Хранилище жидкостей",
+          "fr": "Argon L Stockage de liquide",
+          "de": "Argonen L-Flüssigkeitslager",
+          "zh": "Argon L 液体仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "liquid"
+      },
+      "storage_arg_l_solid_01_macro": {
+        "id": "storage_arg_l_solid_01_macro",
+        "name": {
+          "en": "Argon L Solid Storage",
+          "ru": "Аргон L Хранилище твердых грузов",
+          "fr": "Argon L Stockage de solide",
+          "de": "Argonen L-Feststofflager",
+          "zh": "Argon L 固体仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "solid"
+      },
+      "storage_arg_l_tradestation_01_macro": {
+        "id": "storage_arg_l_tradestation_01_macro",
+        "name": {
+          "en": "Argon L Universal Storage",
+          "ru": "Аргон L Универсальное хранилище",
+          "fr": "Argon L Stockage universel",
+          "de": "Argonen L-Universallager",
+          "zh": "Argon L 通用仓储"
+        },
+        "cargoMax": 300000,
+        "cargoType": "liquid"
+      },
+      "storage_arg_m_container_01_macro": {
+        "id": "storage_arg_m_container_01_macro",
+        "name": {
+          "en": "Argon M Container Storage",
+          "ru": "Аргон M Хранилище контейнеров",
+          "fr": "Argon M Stockage de conteneurs",
+          "de": "Argonen M-Containerlager",
+          "zh": "Argon M 集装仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "container"
+      },
+      "storage_arg_m_liquid_01_macro": {
+        "id": "storage_arg_m_liquid_01_macro",
+        "name": {
+          "en": "Argon M Liquid Storage",
+          "ru": "Аргон M Хранилище жидкостей",
+          "fr": "Argon M Stockage de liquide",
+          "de": "Argonen M-Flüssigkeitslager",
+          "zh": "Argon M 液体仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "liquid"
+      },
+      "storage_arg_m_solid_01_macro": {
+        "id": "storage_arg_m_solid_01_macro",
+        "name": {
+          "en": "Argon M Solid Storage",
+          "ru": "Аргон M Хранилище твердых грузов",
+          "fr": "Argon M Stockage de solide",
+          "de": "Argonen M-Feststofflager",
+          "zh": "Argon M 固体仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "solid"
+      },
+      "storage_arg_s_container_01_macro": {
+        "id": "storage_arg_s_container_01_macro",
+        "name": {
+          "en": "Argon S Container Storage",
+          "ru": "Аргон S Хранилище контейнеров",
+          "fr": "Argon S Stockage de conteneurs",
+          "de": "Argonen S-Containerlager",
+          "zh": "Argon S 集装仓储"
+        },
+        "cargoMax": 25000,
+        "cargoType": "container"
+      },
+      "storage_arg_s_liquid_01_macro": {
+        "id": "storage_arg_s_liquid_01_macro",
+        "name": {
+          "en": "Argon S Liquid Storage",
+          "ru": "Аргон S Хранилище жидкостей",
+          "fr": "Argon S Stockage de liquide",
+          "de": "Argonen S-Flüssigkeitslager",
+          "zh": "Argon S 液体仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_arg_s_solid_01_macro": {
+        "id": "storage_arg_s_solid_01_macro",
+        "name": {
+          "en": "Argon S Solid Storage",
+          "ru": "Аргон S Хранилище твердых грузов",
+          "fr": "Argon S Stockage de solide",
+          "de": "Argonen S-Feststofflager",
+          "zh": "Argon S 固体仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "solid"
+      },
+      "storage_par_l_container_01_macro": {
+        "id": "storage_par_l_container_01_macro",
+        "name": {
+          "en": "Paranid L Container Storage",
+          "ru": "Паранид L Хранилище контейнеров",
+          "fr": "Paranide L Stockage de conteneurs",
+          "de": "Paraniden L-Containerlager",
+          "zh": "Paranid L 集装仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "container"
+      },
+      "storage_par_l_liquid_01_macro": {
+        "id": "storage_par_l_liquid_01_macro",
+        "name": {
+          "en": "Paranid L Liquid Storage",
+          "ru": "Паранид L Хранилище жидкостей",
+          "fr": "Paranide L Stockage de liquide",
+          "de": "Paraniden L-Flüssigkeitslager",
+          "zh": "Paranid L 液体仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "liquid"
+      },
+      "storage_par_l_solid_01_macro": {
+        "id": "storage_par_l_solid_01_macro",
+        "name": {
+          "en": "Paranid L Solid Storage",
+          "ru": "Паранид L Хранилище твердых грузов",
+          "fr": "Paranide L Stockage de solide",
+          "de": "Paraniden L-Feststofflager",
+          "zh": "Paranid L 固体仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "solid"
+      },
+      "storage_par_m_container_01_macro": {
+        "id": "storage_par_m_container_01_macro",
+        "name": {
+          "en": "Paranid M Container Storage",
+          "ru": "Паранид M Хранилище контейнеров",
+          "fr": "Paranide M Stockage de conteneurs",
+          "de": "Paraniden M-Containerlager",
+          "zh": "Paranid M 集装仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "container"
+      },
+      "storage_par_m_liquid_01_macro": {
+        "id": "storage_par_m_liquid_01_macro",
+        "name": {
+          "en": "Paranid M Liquid Storage",
+          "ru": "Паранид M Хранилище жидкостей",
+          "fr": "Paranide M Stockage de liquide",
+          "de": "Paraniden M-Flüssigkeitslager",
+          "zh": "Paranid M 液体仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "liquid"
+      },
+      "storage_par_m_solid_01_macro": {
+        "id": "storage_par_m_solid_01_macro",
+        "name": {
+          "en": "Paranid M Solid Storage",
+          "ru": "Паранид M Хранилище твердых грузов",
+          "fr": "Paranide M Stockage de solide",
+          "de": "Paraniden M-Feststofflager",
+          "zh": "Paranid M 固体仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "solid"
+      },
+      "storage_par_s_container_01_macro": {
+        "id": "storage_par_s_container_01_macro",
+        "name": {
+          "en": "Paranid S Container Storage",
+          "ru": "Паранид S Хранилище контейнеров",
+          "fr": "Paranide S Stockage de conteneurs",
+          "de": "Paraniden S-Containerlager",
+          "zh": "Paranid S 集装仓储"
+        },
+        "cargoMax": 25000,
+        "cargoType": "container"
+      },
+      "storage_par_s_liquid_01_macro": {
+        "id": "storage_par_s_liquid_01_macro",
+        "name": {
+          "en": "Paranid S Liquid Storage",
+          "ru": "Паранид S Хранилище жидкостей",
+          "fr": "Paranide S Stockage de liquide",
+          "de": "Paraniden S-Flüssigkeitslager",
+          "zh": "Paranid S 液体仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_par_s_solid_01_macro": {
+        "id": "storage_par_s_solid_01_macro",
+        "name": {
+          "en": "Paranid S Solid Storage",
+          "ru": "Паранид S Хранилище твердых грузов",
+          "fr": "Paranide S Stockage de solide",
+          "de": "Paraniden S-Feststofflager",
+          "zh": "Paranid S 固体仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "solid"
+      },
+      "storage_tel_l_container_01_macro": {
+        "id": "storage_tel_l_container_01_macro",
+        "name": {
+          "en": "Teladi L Container Storage",
+          "ru": "Телади L Хранилище контейнеров",
+          "fr": "Teladi L Stockage de conteneurs",
+          "de": "Teladi L-Containerlager",
+          "zh": "Teladi L 集装仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "container"
+      },
+      "storage_tel_l_liquid_01_macro": {
+        "id": "storage_tel_l_liquid_01_macro",
+        "name": {
+          "en": "Teladi L Liquid Storage",
+          "ru": "Телади L Хранилище жидкостей",
+          "fr": "Teladi L Stockage de liquide",
+          "de": "Teladi L-Flüssigkeitslager",
+          "zh": "Teladi L 液体仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "liquid"
+      },
+      "storage_tel_l_solid_01_macro": {
+        "id": "storage_tel_l_solid_01_macro",
+        "name": {
+          "en": "Teladi L Solid Storage",
+          "ru": "Телади L Хранилище твердых грузов",
+          "fr": "Teladi L Stockage de solide",
+          "de": "Teladi L-Feststofflager",
+          "zh": "Teladi L 固体仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "solid"
+      },
+      "storage_tel_m_container_01_macro": {
+        "id": "storage_tel_m_container_01_macro",
+        "name": {
+          "en": "Teladi M Container Storage",
+          "ru": "Телади M Хранилище контейнеров",
+          "fr": "Teladi M Stockage de conteneurs",
+          "de": "Teladi M-Containerlager",
+          "zh": "Teladi M 集装仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "container"
+      },
+      "storage_tel_m_liquid_01_macro": {
+        "id": "storage_tel_m_liquid_01_macro",
+        "name": {
+          "en": "Teladi M Liquid Storage",
+          "ru": "Телади M Хранилище жидкостей",
+          "fr": "Teladi M Stockage de liquide",
+          "de": "Teladi M-Flüssigkeitslager",
+          "zh": "Teladi M 液体仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "liquid"
+      },
+      "storage_tel_m_solid_01_macro": {
+        "id": "storage_tel_m_solid_01_macro",
+        "name": {
+          "en": "Teladi M Solid Storage",
+          "ru": "Телади M Хранилище твердых грузов",
+          "fr": "Teladi M Stockage de solide",
+          "de": "Teladi M-Feststofflager",
+          "zh": "Teladi M 固体仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "solid"
+      },
+      "storage_tel_s_container_01_macro": {
+        "id": "storage_tel_s_container_01_macro",
+        "name": {
+          "en": "Teladi S Container Storage",
+          "ru": "Телади S Хранилище контейнеров",
+          "fr": "Teladi S Stockage de conteneurs",
+          "de": "Teladi S-Containerlager",
+          "zh": "Teladi S 集装仓储"
+        },
+        "cargoMax": 25000,
+        "cargoType": "container"
+      },
+      "storage_tel_s_liquid_01_macro": {
+        "id": "storage_tel_s_liquid_01_macro",
+        "name": {
+          "en": "Teladi S Liquid Storage",
+          "ru": "Телади S Хранилище жидкостей",
+          "fr": "Teladi S Stockage de liquide",
+          "de": "Teladi S-Flüssigkeitslager",
+          "zh": "Teladi S 液体仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_tel_s_solid_01_macro": {
+        "id": "storage_tel_s_solid_01_macro",
+        "name": {
+          "en": "Teladi S Solid Storage",
+          "ru": "Телади S Хранилище твердых грузов",
+          "fr": "Teladi S Stockage de solide",
+          "de": "Teladi S-Feststofflager",
+          "zh": "Teladi S 固体仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "solid"
+      }
+    }
+  },
+  "sectors": {
+    "adventures-promise": {
+      "id": "adventures-promise",
+      "name": "Adventure's Promise",
+      "sunlight": 71,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "antigone-memorial": {
+      "id": "antigone-memorial",
+      "name": "Antigone Memorial",
+      "sunlight": 126,
+      "owner": "Antigone Republic",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "argon-prime": {
+      "id": "argon-prime",
+      "name": "Argon Prime",
+      "sunlight": 100,
+      "owner": "Argon Federation",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "asteroid-belt": {
+      "id": "asteroid-belt",
+      "name": "Asteroid Belt",
+      "sunlight": 13,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "atiyas-misfortune-i": {
+      "id": "atiyas-misfortune-i",
+      "name": "Atiya's Misfortune I",
+      "sunlight": 109,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "atiyas-misfortune-iii": {
+      "id": "atiyas-misfortune-iii",
+      "name": "Atiya's Misfortune III",
+      "sunlight": 93,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "atreus-clouds": {
+      "id": "atreus-clouds",
+      "name": "Atreus' Clouds",
+      "sunlight": 41,
+      "owner": "Queendom of Boron",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "avarice-i": {
+      "id": "avarice-i",
+      "name": "Avarice I",
+      "sunlight": 1,
+      "owner": "Riptide Rakers",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "avarice-iv": {
+      "id": "avarice-iv",
+      "name": "Avarice IV",
+      "sunlight": 1,
+      "owner": "Riptide Rakers",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "avarice-v-dead-end": {
+      "id": "avarice-v-dead-end",
+      "name": "Avarice V Dead End",
+      "sunlight": 1,
+      "owner": "Riptide Rakers",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "barren-shores": {
+      "id": "barren-shores",
+      "name": "Barren Shores",
+      "sunlight": 83,
+      "owner": "Queendom of Boron",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "black-hole-sun-iv": {
+      "id": "black-hole-sun-iv",
+      "name": "Black Hole Sun IV",
+      "sunlight": 116,
+      "owner": "Argon Federation",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "black-hole-sun-v": {
+      "id": "black-hole-sun-v",
+      "name": "Black Hole Sun V",
+      "sunlight": 119,
+      "owner": "Argon Federation",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "brennans-triumph": {
+      "id": "brennans-triumph",
+      "name": "Brennan's Triumph",
+      "sunlight": 122,
+      "owner": "Segaris Pioneers",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "bright-promise": {
+      "id": "bright-promise",
+      "name": "Bright Promise",
+      "sunlight": 204,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "ceos-doubt": {
+      "id": "ceos-doubt",
+      "name": "CEO's Doubt",
+      "sunlight": 82,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "cardinals-domain": {
+      "id": "cardinals-domain",
+      "name": "Cardinal's Domain",
+      "sunlight": 124,
+      "owner": "Godrealm of the Paranid",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "cardinals-redress": {
+      "id": "cardinals-redress",
+      "name": "Cardinal's Redress",
+      "sunlight": 88,
+      "owner": "Holy Order of the Pontifex",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "circle-of-deceit": {
+      "id": "circle-of-deceit",
+      "name": "Circle of Deceit",
+      "sunlight": 142,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": true,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "company-regard": {
+      "id": "company-regard",
+      "name": "Company Regard",
+      "sunlight": 83,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "earth": {
+      "id": "earth",
+      "name": "Earth",
+      "sunlight": 100,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "eighteen-billion": {
+      "id": "eighteen-billion",
+      "name": "Eighteen Billion",
+      "sunlight": 90,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "eleventh-hour": {
+      "id": "eleventh-hour",
+      "name": "Eleventh Hour",
+      "sunlight": 118,
+      "owner": "Argon Federation",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "emperors-pride-iv": {
+      "id": "emperors-pride-iv",
+      "name": "Emperor's Pride IV",
+      "sunlight": 71,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "emperors-pride-vi": {
+      "id": "emperors-pride-vi",
+      "name": "Emperor's Pride VI",
+      "sunlight": 65,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "family-kritt": {
+      "id": "family-kritt",
+      "name": "Family Kritt",
+      "sunlight": 239,
+      "owner": "Zyarth Patriarchy",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "family-nhuut": {
+      "id": "family-nhuut",
+      "name": "Family Nhuut",
+      "sunlight": 85,
+      "owner": "Zyarth Patriarchy",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": true,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "family-tkr": {
+      "id": "family-tkr",
+      "name": "Family Tkr",
+      "sunlight": 89,
+      "owner": "Free Families",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "family-zhin": {
+      "id": "family-zhin",
+      "name": "Family Zhin",
+      "sunlight": 71,
+      "owner": "Zyarth Patriarchy",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "faulty-logic-i": {
+      "id": "faulty-logic-i",
+      "name": "Faulty Logic I",
+      "sunlight": 177,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "faulty-logic-vii": {
+      "id": "faulty-logic-vii",
+      "name": "Faulty Logic VII",
+      "sunlight": 147,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "fires-of-defeat": {
+      "id": "fires-of-defeat",
+      "name": "Fires of Defeat",
+      "sunlight": 81,
+      "owner": "Free Families",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "freedoms-reach": {
+      "id": "freedoms-reach",
+      "name": "Freedom's Reach",
+      "sunlight": 221,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "frontier-edge": {
+      "id": "frontier-edge",
+      "name": "Frontier Edge",
+      "sunlight": 172,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "gaian-prophecy": {
+      "id": "gaian-prophecy",
+      "name": "Gaian Prophecy",
+      "sunlight": 208,
+      "owner": "Segaris Pioneers",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "getsu-fune": {
+      "id": "getsu-fune",
+      "name": "Getsu Fune",
+      "sunlight": 93,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "grand-exchange-i": {
+      "id": "grand-exchange-i",
+      "name": "Grand Exchange I",
+      "sunlight": 123,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "grand-exchange-iii": {
+      "id": "grand-exchange-iii",
+      "name": "Grand Exchange III",
+      "sunlight": 135,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": true,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "grand-exchange-iv": {
+      "id": "grand-exchange-iv",
+      "name": "Grand Exchange IV",
+      "sunlight": 129,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "great-reef": {
+      "id": "great-reef",
+      "name": "Great Reef",
+      "sunlight": 128,
+      "owner": "Queendom of Boron",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "guiding-star-v": {
+      "id": "guiding-star-v",
+      "name": "Guiding Star V",
+      "sunlight": 83,
+      "owner": "Argon Federation",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "guiding-star-vii": {
+      "id": "guiding-star-vii",
+      "name": "Guiding Star VII",
+      "sunlight": 71,
+      "owner": "Argon Federation",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "hatikvahs-choice-i": {
+      "id": "hatikvahs-choice-i",
+      "name": "Hatikvah's Choice I",
+      "sunlight": 112,
+      "owner": "Hatikvah Free League",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "hatikvahs-choice-iii": {
+      "id": "hatikvahs-choice-iii",
+      "name": "Hatikvah's Choice III",
+      "sunlight": 91,
+      "owner": "Argon Federation",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "hatikvahs-faith": {
+      "id": "hatikvahs-faith",
+      "name": "Hatikvah's Faith",
+      "sunlight": 88,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "heart-of-acrimony-i-the-boneyard": {
+      "id": "heart-of-acrimony-i-the-boneyard",
+      "name": "Heart of Acrimony I The Boneyard",
+      "sunlight": 64,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "heart-of-acrimony-ii": {
+      "id": "heart-of-acrimony-ii",
+      "name": "Heart of Acrimony II",
+      "sunlight": 245,
+      "owner": "Free Families",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "heretics-end": {
+      "id": "heretics-end",
+      "name": "Heretic's End",
+      "sunlight": 181,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "hewas-twin-i": {
+      "id": "hewas-twin-i",
+      "name": "Hewa's Twin I",
+      "sunlight": 116,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "hewas-twin-ii": {
+      "id": "hewas-twin-ii",
+      "name": "Hewa's Twin II",
+      "sunlight": 102,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "hewas-twin-iii": {
+      "id": "hewas-twin-iii",
+      "name": "Hewa's Twin III",
+      "sunlight": 86,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "hewas-twin-iv-the-cove": {
+      "id": "hewas-twin-iv-the-cove",
+      "name": "Hewa's Twin IV The Cove",
+      "sunlight": 91,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "hewas-twin-v": {
+      "id": "hewas-twin-v",
+      "name": "Hewa's Twin V",
+      "sunlight": 82,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "holy-vision": {
+      "id": "holy-vision",
+      "name": "Holy Vision",
+      "sunlight": 208,
+      "owner": "Holy Order of the Pontifex",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "ianamus-zura-iv": {
+      "id": "ianamus-zura-iv",
+      "name": "Ianamus Zura IV",
+      "sunlight": 133,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "ianamus-zura-vii": {
+      "id": "ianamus-zura-vii",
+      "name": "Ianamus Zura VII",
+      "sunlight": 115,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "jupiter": {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "sunlight": 10,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "kingdom-end-i": {
+      "id": "kingdom-end-i",
+      "name": "Kingdom End I",
+      "sunlight": 118,
+      "owner": "Queendom of Boron",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "lasting-vengeance": {
+      "id": "lasting-vengeance",
+      "name": "Lasting Vengeance",
+      "sunlight": 100,
+      "owner": "Holy Order of the Pontifex",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "litany-of-fury-ix": {
+      "id": "litany-of-fury-ix",
+      "name": "Litany of Fury IX",
+      "sunlight": 42,
+      "owner": "Godrealm of the Paranid",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "litany-of-fury-xii": {
+      "id": "litany-of-fury-xii",
+      "name": "Litany of Fury XII",
+      "sunlight": 32,
+      "owner": "Godrealm of the Paranid",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "loomanckstrats-legacy": {
+      "id": "loomanckstrats-legacy",
+      "name": "Loomanckstrat's Legacy",
+      "sunlight": 2,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "mars": {
+      "id": "mars",
+      "name": "Mars",
+      "sunlight": 44,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "matrix-101": {
+      "id": "matrix-101",
+      "name": "Matrix #101",
+      "sunlight": 408,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "matrix-451": {
+      "id": "matrix-451",
+      "name": "Matrix #451",
+      "sunlight": 201,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "matrix-598": {
+      "id": "matrix-598",
+      "name": "Matrix #598",
+      "sunlight": 77,
+      "owner": "Xenon",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "matrix-79b": {
+      "id": "matrix-79b",
+      "name": "Matrix #79B",
+      "sunlight": 239,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "matrix-9": {
+      "id": "matrix-9",
+      "name": "Matrix #9",
+      "sunlight": 100,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "memory-of-profit-ix": {
+      "id": "memory-of-profit-ix",
+      "name": "Memory of Profit IX",
+      "sunlight": 115,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "memory-of-profit-x": {
+      "id": "memory-of-profit-x",
+      "name": "Memory of Profit X",
+      "sunlight": 106,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "menelaus-oasis": {
+      "id": "menelaus-oasis",
+      "name": "Menelaus' Oasis",
+      "sunlight": 271,
+      "owner": "Queendom of Boron",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "mercury": {
+      "id": "mercury",
+      "name": "Mercury",
+      "sunlight": 714,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "mi-tons-refuge": {
+      "id": "mi-tons-refuge",
+      "name": "Mi Ton's Refuge",
+      "sunlight": 53,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "mists-of-artemis": {
+      "id": "mists-of-artemis",
+      "name": "Mists of Artemis",
+      "sunlight": 141,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "mitsunos-defiance": {
+      "id": "mitsunos-defiance",
+      "name": "Mitsuno's Defiance",
+      "sunlight": 111,
+      "owner": "Quettanauts",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "mitsunos-revelation": {
+      "id": "mitsunos-revelation",
+      "name": "Mitsuno's Revelation",
+      "sunlight": 118,
+      "owner": "Quettanauts",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "mitsunos-sacrifice": {
+      "id": "mitsunos-sacrifice",
+      "name": "Mitsuno's Sacrifice",
+      "sunlight": 106,
+      "owner": "Quettanauts",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "moo-kyes-revenge": {
+      "id": "moo-kyes-revenge",
+      "name": "Moo-Kye's Revenge",
+      "sunlight": 93,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "morning-star-iii": {
+      "id": "morning-star-iii",
+      "name": "Morning Star III",
+      "sunlight": 76,
+      "owner": "Argon Federation",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "morning-star-iv": {
+      "id": "morning-star-iv",
+      "name": "Morning Star IV",
+      "sunlight": 65,
+      "owner": "Argon Federation",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "neptune": {
+      "id": "neptune",
+      "name": "Neptune",
+      "sunlight": 6,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "nopileos-fortune-ii": {
+      "id": "nopileos-fortune-ii",
+      "name": "Nopileos' Fortune II",
+      "sunlight": 82,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "nopileos-fortune-vi": {
+      "id": "nopileos-fortune-vi",
+      "name": "Nopileos' Fortune VI",
+      "sunlight": 78,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "nopileos-memorial": {
+      "id": "nopileos-memorial",
+      "name": "Nopileos' Memorial",
+      "sunlight": 163,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "ocean-of-fantasy": {
+      "id": "ocean-of-fantasy",
+      "name": "Ocean of Fantasy",
+      "sunlight": 12,
+      "owner": "Queendom of Boron",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "oort-cloud": {
+      "id": "oort-cloud",
+      "name": "Oort Cloud",
+      "sunlight": 2,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "open-market": {
+      "id": "open-market",
+      "name": "Open Market",
+      "sunlight": 88,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "ore-belt": {
+      "id": "ore-belt",
+      "name": "Ore Belt",
+      "sunlight": 134,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": true,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "path-to-profit": {
+      "id": "path-to-profit",
+      "name": "Path to Profit",
+      "sunlight": 143,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "pious-mists-ii": {
+      "id": "pious-mists-ii",
+      "name": "Pious Mists II",
+      "sunlight": 136,
+      "owner": "Godrealm of the Paranid",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "pious-mists-iv": {
+      "id": "pious-mists-iv",
+      "name": "Pious Mists IV",
+      "sunlight": 89,
+      "owner": "Godrealm of the Paranid",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "pious-mists-xi": {
+      "id": "pious-mists-xi",
+      "name": "Pious Mists XI",
+      "sunlight": 118,
+      "owner": "Godrealm of the Paranid",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "pluto": {
+      "id": "pluto",
+      "name": "Pluto",
+      "sunlight": 5,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "pontifexs-claim": {
+      "id": "pontifexs-claim",
+      "name": "Pontifex's Claim",
+      "sunlight": 194,
+      "owner": "Holy Order of the Pontifex",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "presidents-end": {
+      "id": "presidents-end",
+      "name": "President's End",
+      "sunlight": 71,
+      "owner": "Argon Federation",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "profit-center-alpha": {
+      "id": "profit-center-alpha",
+      "name": "Profit Center Alpha",
+      "sunlight": 79,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "reflected-stars": {
+      "id": "reflected-stars",
+      "name": "Reflected Stars",
+      "sunlight": 118,
+      "owner": "Queendom of Boron",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "rhys-defiance": {
+      "id": "rhys-defiance",
+      "name": "Rhy's Defiance",
+      "sunlight": 163,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "rolks-demise": {
+      "id": "rolks-demise",
+      "name": "Rolk's Demise",
+      "sunlight": 15,
+      "owner": "Queendom of Boron",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "sacred-relic": {
+      "id": "sacred-relic",
+      "name": "Sacred Relic",
+      "sunlight": 71,
+      "owner": "Godrealm of the Paranid",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "sanctuary-of-darkness": {
+      "id": "sanctuary-of-darkness",
+      "name": "Sanctuary of Darkness",
+      "sunlight": 174,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "sanctum-verge": {
+      "id": "sanctum-verge",
+      "name": "Sanctum Verge",
+      "sunlight": 89,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "saturn-1": {
+      "id": "saturn-1",
+      "name": "Saturn 1",
+      "sunlight": 8,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "saturn-2": {
+      "id": "saturn-2",
+      "name": "Saturn 2",
+      "sunlight": 8,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "savage-spur-i": {
+      "id": "savage-spur-i",
+      "name": "Savage Spur I",
+      "sunlight": 117,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "savage-spur-ii": {
+      "id": "savage-spur-ii",
+      "name": "Savage Spur II",
+      "sunlight": 125,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "scale-plate-green-i": {
+      "id": "scale-plate-green-i",
+      "name": "Scale Plate Green I",
+      "sunlight": 126,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "scale-plate-green-vii": {
+      "id": "scale-plate-green-vii",
+      "name": "Scale Plate Green VII",
+      "sunlight": 115,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "scarlet-star": {
+      "id": "scarlet-star",
+      "name": "Scarlet Star",
+      "sunlight": 266,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": true,
+        "helium": true,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "second-contact-ii-flashpoint": {
+      "id": "second-contact-ii-flashpoint",
+      "name": "Second Contact II Flashpoint",
+      "sunlight": 59,
+      "owner": "Antigone Republic",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "second-contact-vii": {
+      "id": "second-contact-vii",
+      "name": "Second Contact VII",
+      "sunlight": 55,
+      "owner": "Antigone Republic",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "second-contact-xi": {
+      "id": "second-contact-xi",
+      "name": "Second Contact XI",
+      "sunlight": 47,
+      "owner": "Antigone Republic",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "segaris": {
+      "id": "segaris",
+      "name": "Segaris",
+      "sunlight": 187,
+      "owner": "Segaris Pioneers",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "silent-witness-i": {
+      "id": "silent-witness-i",
+      "name": "Silent Witness I",
+      "sunlight": 98,
+      "owner": "Argon Federation",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "silent-witness-xi": {
+      "id": "silent-witness-xi",
+      "name": "Silent Witness XI",
+      "sunlight": 118,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "silent-witness-xii": {
+      "id": "silent-witness-xii",
+      "name": "Silent Witness XII",
+      "sunlight": 147,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "tempting-fumes": {
+      "id": "tempting-fumes",
+      "name": "Tempting Fumes",
+      "sunlight": 166,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": true,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "tharkas-cascade-xv": {
+      "id": "tharkas-cascade-xv",
+      "name": "Tharka's Cascade XV",
+      "sunlight": 142,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "tharkas-cascade-xvii": {
+      "id": "tharkas-cascade-xvii",
+      "name": "Tharka's Cascade XVII",
+      "sunlight": 129,
+      "owner": "Xenon",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "tharkas-ravine-iv-tharkas-fall": {
+      "id": "tharkas-ravine-iv-tharkas-fall",
+      "name": "Tharka's Ravine IV Tharka's Fall",
+      "sunlight": 131,
+      "owner": "Xenon",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "tharkas-ravine-viii": {
+      "id": "tharkas-ravine-viii",
+      "name": "Tharka's Ravine VIII",
+      "sunlight": 126,
+      "owner": "Free Families",
+      "resources": {
+        "ice": true,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "tharkas-ravine-xvi": {
+      "id": "tharkas-ravine-xvi",
+      "name": "Tharka's Ravine XVI",
+      "sunlight": 117,
+      "owner": "Free Families",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "tharkas-ravine-xxiv": {
+      "id": "tharkas-ravine-xxiv",
+      "name": "Tharka's Ravine XXIV",
+      "sunlight": 109,
+      "owner": "Free Families",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "the-moon": {
+      "id": "the-moon",
+      "name": "The Moon",
+      "sunlight": 105,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "the-reach": {
+      "id": "the-reach",
+      "name": "The Reach",
+      "sunlight": 367,
+      "owner": "Argon Federation",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "the-void": {
+      "id": "the-void",
+      "name": "The Void",
+      "sunlight": 164,
+      "owner": "Antigone Republic",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "third-redemption": {
+      "id": "third-redemption",
+      "name": "Third Redemption",
+      "sunlight": 100,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "thuruks-demise-ii-first-impact": {
+      "id": "thuruks-demise-ii-first-impact",
+      "name": "Thuruk's Demise II First Impact",
+      "sunlight": 71,
+      "owner": "Free Families",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "thuruks-demise-iii": {
+      "id": "thuruks-demise-iii",
+      "name": "Thuruk's Demise III",
+      "sunlight": 59,
+      "owner": "Free Families",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "titan": {
+      "id": "titan",
+      "name": "Titan",
+      "sunlight": 8,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "towering-wave": {
+      "id": "towering-wave",
+      "name": "Towering Wave",
+      "sunlight": 118,
+      "owner": "Queendom of Boron",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "trinity-sanctum-iii": {
+      "id": "trinity-sanctum-iii",
+      "name": "Trinity Sanctum III",
+      "sunlight": 133,
+      "owner": "Godrealm of the Paranid",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "trinity-sanctum-vii": {
+      "id": "trinity-sanctum-vii",
+      "name": "Trinity Sanctum VII",
+      "sunlight": 106,
+      "owner": "Godrealm of the Paranid",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "true-sight": {
+      "id": "true-sight",
+      "name": "True Sight",
+      "sunlight": 71,
+      "owner": "Holy Order of the Pontifex",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "turquoise-sea-ix": {
+      "id": "turquoise-sea-ix",
+      "name": "Turquoise Sea IX",
+      "sunlight": 141,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "turquoise-sea-x": {
+      "id": "turquoise-sea-x",
+      "name": "Turquoise Sea X",
+      "sunlight": 128,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "two-grand": {
+      "id": "two-grand",
+      "name": "Two Grand",
+      "sunlight": 133,
+      "owner": "Teladi Company",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "unholy-retribution": {
+      "id": "unholy-retribution",
+      "name": "Unholy Retribution",
+      "sunlight": 163,
+      "owner": "Godrealm of the Paranid",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "unknown-system": {
+      "id": "unknown-system",
+      "name": "Unknown System",
+      "sunlight": 5,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "uranus": {
+      "id": "uranus",
+      "name": "Uranus",
+      "sunlight": 7,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "venus": {
+      "id": "venus",
+      "name": "Venus",
+      "sunlight": 189,
+      "owner": "Terran Protectorate",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "void-of-opportunity": {
+      "id": "void-of-opportunity",
+      "name": "Void of Opportunity",
+      "sunlight": 83,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": true
+      }
+    },
+    "watchful-gaze": {
+      "id": "watchful-gaze",
+      "name": "Watchful Gaze",
+      "sunlight": 41,
+      "owner": "Ownerless",
+      "resources": {
+        "ice": false,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": true,
+        "methane": true,
+        "nividium": false
+      }
+    },
+    "windfall-i-union-summit": {
+      "id": "windfall-i-union-summit",
+      "name": "Windfall I Union Summit",
+      "sunlight": 20,
+      "owner": "Vigor Syndicate",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "windfall-iii-the-hoard": {
+      "id": "windfall-iii-the-hoard",
+      "name": "Windfall III The Hoard",
+      "sunlight": 16,
+      "owner": "Vigor Syndicate",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": true,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "windfall-iv-auroras-dream": {
+      "id": "windfall-iv-auroras-dream",
+      "name": "Windfall IV Aurora's Dream",
+      "sunlight": 11,
+      "owner": "Vigor Syndicate",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": true,
+        "rawScrap": true,
+        "helium": false,
+        "methane": false,
+        "nividium": true
+      }
+    },
+    "wretched-skies-iv-family-valka": {
+      "id": "wretched-skies-iv-family-valka",
+      "name": "Wretched Skies IV Family Valka",
+      "sunlight": 130,
+      "owner": "Zyarth Patriarchy",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "wretched-skies-v-family-phi": {
+      "id": "wretched-skies-v-family-phi",
+      "name": "Wretched Skies V Family Phi",
+      "sunlight": 123,
+      "owner": "Zyarth Patriarchy",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "wretched-skies-x": {
+      "id": "wretched-skies-x",
+      "name": "Wretched Skies X",
+      "sunlight": 108,
+      "owner": "Godrealm of the Paranid",
+      "resources": {
+        "ice": true,
+        "ore": true,
+        "silicon": true,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "zyarths-dominion-i": {
+      "id": "zyarths-dominion-i",
+      "name": "Zyarth's Dominion I",
+      "sunlight": 142,
+      "owner": "Zyarth Patriarchy",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "zyarths-dominion-iv": {
+      "id": "zyarths-dominion-iv",
+      "name": "Zyarth's Dominion IV",
+      "sunlight": 210,
+      "owner": "Zyarth Patriarchy",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    },
+    "zyarths-dominion-x": {
+      "id": "zyarths-dominion-x",
+      "name": "Zyarth's Dominion X",
+      "sunlight": 151,
+      "owner": "Zyarth Patriarchy",
+      "resources": {
+        "ice": false,
+        "ore": false,
+        "silicon": false,
+        "hydrogen": false,
+        "rawScrap": false,
+        "helium": false,
+        "methane": false,
+        "nividium": false
+      }
+    }
+  }
+}
