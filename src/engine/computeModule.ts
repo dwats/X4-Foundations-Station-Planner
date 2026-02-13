@@ -115,10 +115,10 @@ export function computeModuleIO(
           amount: outputPerHour,
         });
 
-        // Calculate inputs per hour
+        // Calculate inputs per hour (no workforce/sunlight bonus — those only boost output)
         for (const input of recipe.inputs) {
           const inputPerHour =
-            input.amount * planModule.count * outputMultiplier * cyclesPerHour;
+            input.amount * planModule.count * cyclesPerHour;
           grossInputs.push({
             wareId: input.ware,
             amount: inputPerHour,

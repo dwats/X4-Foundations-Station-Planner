@@ -22,7 +22,7 @@ import { STATION_INPUT_ID, STATION_OUTPUT_ID } from '@/types/plan';
 import { getEffectiveSunlight } from './sunlight';
 import {
   calculateWorkforceStats,
-  getWorkforceUpkeep,
+  getWorkforceUpkeepForCapacity,
 } from './workforce';
 import { computeModuleIO, getModuleType } from './computeModule';
 
@@ -98,6 +98,21 @@ export function computeStation(
   const moduleMap = new Map<string, ModuleComputed>();
   for (const mc of moduleComputeds) {
     moduleMap.set(mc.moduleId, mc);
+  }
+
+  // Add food/medical inputs to habitat modules based on their share of workforce capacity
+  for (const planModule of station.modules) {
+    const moduleType = getModuleType(planModule.blueprintId, gameData);
+    if (moduleType === 'habitat') {
+      const habModule = gameData.modules.habitat[planModule.blueprintId];
+      const mc = moduleMap.get(planModule.id);
+      if (habModule && mc) {
+        const moduleCapacity = habModule.workforceCapacity * planModule.count;
+        const upkeep = getWorkforceUpkeepForCapacity(workforceStats, moduleCapacity);
+        mc.grossInputs.push(...upkeep);
+        mc.netInputs = [...mc.grossInputs];
+      }
+    }
   }
 
   // Track what each module receives via internal connections
@@ -343,10 +358,7 @@ export function computeStation(
     allNetOutputs.push(...mc.netOutputs);
   }
 
-  // Add workforce upkeep to inputs
-  const workforceUpkeep = getWorkforceUpkeep(workforceStats);
-  allGrossInputs.push(...workforceUpkeep);
-  allNetInputs.push(...workforceUpkeep);
+  // Workforce upkeep (food/medical) is included via habitat module inputs above
 
   // Aggregate resources
   const grossInputs = aggregateResources(allGrossInputs);

@@ -265,7 +265,7 @@ export const ModuleNode = memo(function ModuleNode({
       <div className={`px-3 py-2 border-b border-border ${colors.bg} rounded-t-lg`}>
         <div className="flex items-center gap-2">
           <span className="text-base">{icon}</span>
-          <h3 className="font-medium text-sm text-foreground truncate flex-1">
+          <h3 className="text-xs text-foreground truncate flex-1">
             {t(blueprint?.name, module.blueprintId)}
           </h3>
         </div>
@@ -295,8 +295,8 @@ export const ModuleNode = memo(function ModuleNode({
           </div>
         )}
 
-        {/* I/O for production modules */}
-        {moduleType === 'production' && moduleComputed && (
+        {/* I/O for production and habitat modules */}
+        {(moduleType === 'production' || moduleType === 'habitat') && moduleComputed && (
           <div className="pt-1.5 mt-1 border-t border-border/50 space-y-2">
             {/* Outputs - always render based on gross, show net status */}
             {sortedGrossOutputs.length > 0 && (
@@ -371,8 +371,8 @@ export const ModuleNode = memo(function ModuleNode({
           </div>
         )}
 
-        {/* No I/O message for non-production */}
-        {moduleType === 'production' && !moduleComputed && (
+        {/* No I/O message while loading */}
+        {(moduleType === 'production' || moduleType === 'habitat') && !moduleComputed && (
           <div className="pt-1 mt-1 border-t border-border/50">
             <p className="text-xs text-muted-foreground italic">
               Loading I/O...

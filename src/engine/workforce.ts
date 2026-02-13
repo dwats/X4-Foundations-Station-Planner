@@ -102,6 +102,31 @@ export function getWorkforceMultiplier(
 }
 
 /**
+ * Get workforce upkeep for a single habitat module based on its share of total capacity.
+ *
+ * @param stats - Station-wide workforce statistics
+ * @param moduleCapacity - This habitat module's total workforce capacity (capacity * count)
+ */
+export function getWorkforceUpkeepForCapacity(
+  stats: WorkforceStats,
+  moduleCapacity: number
+): ResourceAmount[] {
+  if (stats.totalCapacity <= 0 || moduleCapacity <= 0) return [];
+
+  const share = moduleCapacity / stats.totalCapacity;
+  const upkeep: ResourceAmount[] = [];
+
+  if (stats.foodDemand > 0) {
+    upkeep.push({ wareId: FOOD_WARE_ID, amount: stats.foodDemand * share });
+  }
+  if (stats.medicalDemand > 0) {
+    upkeep.push({ wareId: MEDICAL_WARE_ID, amount: stats.medicalDemand * share });
+  }
+
+  return upkeep;
+}
+
+/**
  * Get workforce upkeep as resource amounts (per hour).
  */
 export function getWorkforceUpkeep(stats: WorkforceStats): ResourceAmount[] {
