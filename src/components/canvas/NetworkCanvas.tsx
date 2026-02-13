@@ -77,6 +77,7 @@ function NetworkCanvasInner() {
       width: sector.size.width,
       height: sector.size.height,
       zIndex: -1,
+      draggable: !sector.locked,
     }));
 
     const stationNodes: StationNodeType[] = stations.map((station) => ({
@@ -85,6 +86,7 @@ function NetworkCanvasInner() {
       position: station.position,
       data: { station },
       zIndex: 1,
+      draggable: !station.locked,
     }));
 
     return [...sectorNodes, ...stationNodes];

@@ -47,6 +47,14 @@ export function StationNodeMenu({ nodeId }: StationNodeMenuProps) {
           });
         }}
       />
+      <MenuButton
+        label={station.locked ? 'Unlock Position' : 'Lock Position'}
+        icon={station.locked ? '🔓' : '🔒'}
+        onClick={() => {
+          updateStation(nodeId, { locked: !station.locked });
+          closeContextMenu();
+        }}
+      />
       <MenuSeparator />
       <MenuButton
         label="Delete Station"

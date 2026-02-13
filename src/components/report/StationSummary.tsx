@@ -83,7 +83,18 @@ export function StationSummary() {
             {/* Station Header */}
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-2">
-                <h4 className="font-medium text-foreground">{station.name}</h4>
+                <span className={`flex-shrink-0 w-4 h-4 rounded border flex items-center justify-center text-[10px] ${
+                  station.completed
+                    ? 'bg-green-500 border-green-600 text-white'
+                    : 'border-muted-foreground/30'
+                }`}>
+                  {station.completed && (
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M2 5.5L4 7.5L8 3" />
+                    </svg>
+                  )}
+                </span>
+                <h4 className={`font-medium ${station.completed ? 'text-muted-foreground line-through' : 'text-foreground'}`}>{station.name}</h4>
                 {deficitCount > 0 && (
                   <span className="px-1.5 py-0.5 text-[10px] font-bold rounded-full bg-red-500 text-white">
                     {deficitCount} deficit{deficitCount > 1 ? 's' : ''}

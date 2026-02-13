@@ -83,6 +83,7 @@ function StationCanvasInner() {
       type: 'module',
       position: module.position,
       data: { module },
+      draggable: !module.locked,
     }));
 
     // Station Input node (always present)

@@ -52,6 +52,14 @@ export function ModuleNodeMenu({ nodeId }: ModuleNodeMenuProps) {
           onChange={(blueprintId) => updateModule(activeStationId, module.id, { blueprintId })}
         />
       )}
+      <MenuButton
+        label={module.locked ? 'Unlock Position' : 'Lock Position'}
+        icon={module.locked ? '🔓' : '🔒'}
+        onClick={() => {
+          updateModule(activeStationId, module.id, { locked: !module.locked });
+          closeContextMenu();
+        }}
+      />
       <MenuSeparator />
       <MenuButton
         label="Delete Module"

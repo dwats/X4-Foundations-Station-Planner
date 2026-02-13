@@ -288,7 +288,7 @@ export const StationNode = memo(function StationNode({
   return (
     <div
       className={`
-        min-w-[200px] max-w-[200px] rounded-lg border-2 bg-card shadow-md cursor-pointer relative
+        min-w-[240px] max-w-[240px] rounded-lg border-2 bg-card shadow-md cursor-pointer relative
         ${selected ? 'border-primary ring-2 ring-primary/20' : 'border-border'}
         ${deficitCount > 0 ? 'border-red-500/50' : ''}
       `}
@@ -304,7 +304,25 @@ export const StationNode = memo(function StationNode({
       {/* Header */}
       <div className="px-3 py-2 border-b border-border bg-muted/30 rounded-t-lg">
         <div className="flex items-center justify-between gap-2">
-          <h3 className="font-medium text-sm text-foreground truncate flex-1">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              updateStation(station.id, { completed: !station.completed });
+            }}
+            className={`nopan nodrag flex-shrink-0 w-4 h-4 rounded border flex items-center justify-center transition-colors ${
+              station.completed
+                ? 'bg-green-500 border-green-600 text-white'
+                : 'border-muted-foreground/40 hover:border-muted-foreground'
+            }`}
+            title={station.completed ? 'Mark incomplete' : 'Mark complete'}
+          >
+            {station.completed && (
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M2 5.5L4 7.5L8 3" />
+              </svg>
+            )}
+          </button>
+          <h3 className={`font-medium text-sm truncate flex-1 ${station.completed ? 'text-muted-foreground line-through' : 'text-foreground'}`}>
             {station.name}
           </h3>
           {/* Sector badge */}

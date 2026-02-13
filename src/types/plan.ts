@@ -26,6 +26,8 @@ export interface PlanSector {
   sunlight: number;
   position: { x: number; y: number };
   size: { width: number; height: number };
+  /** Whether this sector's position is locked on the canvas */
+  locked?: boolean;
 }
 
 export interface PlanStation {
@@ -43,6 +45,10 @@ export interface PlanStation {
   outputOrder?: string[];
   /** Custom display order for input wares (wareIds). If not set, uses default computed order. */
   inputOrder?: string[];
+  /** Whether this station has been built in-game (checklist tracking) */
+  completed?: boolean;
+  /** Whether this station's position is locked on the canvas */
+  locked?: boolean;
   /** Position of the Station Input node in station view */
   stationInputPosition?: { x: number; y: number };
   /** Position of the Station Output node in station view */
@@ -58,6 +64,10 @@ export interface PlanModule {
   outputOrder?: string[];
   /** Custom display order for input wares (wareIds). */
   inputOrder?: string[];
+  /** Whether this module has been built in-game (checklist tracking) */
+  completed?: boolean;
+  /** Whether this module's position is locked on the canvas */
+  locked?: boolean;
 }
 
 /** Connection between modules within a station */

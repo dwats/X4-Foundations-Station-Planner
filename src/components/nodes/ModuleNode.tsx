@@ -257,15 +257,35 @@ export const ModuleNode = memo(function ModuleNode({
   return (
     <div
       className={`
-        w-[200px] rounded-lg border-2 bg-card shadow-md
+        w-[240px] rounded-lg border-2 bg-card shadow-md
         ${selected ? 'border-primary ring-2 ring-primary/20' : colors.border}
       `}
     >
       {/* Header */}
       <div className={`px-3 py-2 border-b border-border ${colors.bg} rounded-t-lg`}>
         <div className="flex items-center gap-2">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              if (activeStationId) {
+                updateModule(activeStationId, module.id, { completed: !module.completed });
+              }
+            }}
+            className={`nopan nodrag flex-shrink-0 w-4 h-4 rounded border flex items-center justify-center transition-colors ${
+              module.completed
+                ? 'bg-green-500 border-green-600 text-white'
+                : 'border-muted-foreground/40 hover:border-muted-foreground'
+            }`}
+            title={module.completed ? 'Mark incomplete' : 'Mark complete'}
+          >
+            {module.completed && (
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M2 5.5L4 7.5L8 3" />
+              </svg>
+            )}
+          </button>
           <span className="text-base">{icon}</span>
-          <h3 className="text-xs text-foreground truncate flex-1">
+          <h3 className={`text-xs truncate flex-1 ${module.completed ? 'text-muted-foreground line-through' : 'text-foreground'}`}>
             {t(blueprint?.name, module.blueprintId)}
           </h3>
         </div>

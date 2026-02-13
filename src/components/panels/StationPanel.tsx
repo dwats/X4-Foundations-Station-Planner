@@ -247,6 +247,17 @@ export function StationPanel({ station }: StationPanelProps) {
           </div>
         )}
 
+      {/* Lock Position */}
+      <label className="flex items-center gap-2 cursor-pointer">
+        <input
+          type="checkbox"
+          checked={station.locked ?? false}
+          onChange={(e) => updateStation(station.id, { locked: e.target.checked })}
+          className="w-4 h-4 rounded border-input text-primary focus:ring-primary"
+        />
+        <span className="text-sm">Lock position</span>
+      </label>
+
       {/* Position info (debug) */}
       <div className="space-y-1.5">
         <label className="text-sm font-medium text-foreground">Position</label>

@@ -65,6 +65,14 @@ export function SectorNodeMenu({ nodeId }: SectorNodeMenuProps) {
           closeContextMenu();
         }}
       />
+      <MenuButton
+        label={sector.locked ? 'Unlock Position' : 'Lock Position'}
+        icon={sector.locked ? '🔓' : '🔒'}
+        onClick={() => {
+          updateSector(nodeId, { locked: !sector.locked });
+          closeContextMenu();
+        }}
+      />
       <MenuSeparator />
       <MenuButton
         label="Delete Sector"

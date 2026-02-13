@@ -119,6 +119,17 @@ export function SectorPanel({ sector }: SectorPanelProps) {
         </p>
       </div>
 
+      {/* Lock Position */}
+      <label className="flex items-center gap-2 cursor-pointer">
+        <input
+          type="checkbox"
+          checked={sector.locked ?? false}
+          onChange={(e) => updateSector(sector.id, { locked: e.target.checked })}
+          className="w-4 h-4 rounded border-input text-primary focus:ring-primary"
+        />
+        <span className="text-sm">Lock position</span>
+      </label>
+
       {/* Position info */}
       <div className="space-y-1.5">
         <label className="text-sm font-medium text-foreground">Position</label>
