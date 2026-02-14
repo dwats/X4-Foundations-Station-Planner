@@ -287,6 +287,57 @@
         "economy"
       ]
     },
+    "bofu": {
+      "id": "bofu",
+      "name": {
+        "en": "BoFu",
+        "ru": "Бофу",
+        "fr": "BoFu",
+        "de": "BoFu",
+        "zh": "Bo腐"
+      },
+      "group": "food",
+      "transport": "container",
+      "volume": 4,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "bogas": {
+      "id": "bogas",
+      "name": {
+        "en": "BoGas",
+        "ru": "Биогаз",
+        "fr": "Gaz Bo",
+        "de": "BoGas",
+        "zh": "Bo气"
+      },
+      "group": "refined",
+      "transport": "container",
+      "volume": 4,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "plankton": {
+      "id": "plankton",
+      "name": {
+        "en": "Plankton",
+        "ru": "Планктон",
+        "fr": "Plancton",
+        "de": "Plankton",
+        "zh": "浮游生物"
+      },
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 1,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
     "advancedcomposites": {
       "id": "advancedcomposites",
       "name": {
@@ -717,6 +768,40 @@
         "economy"
       ]
     },
+    "cheltmeat": {
+      "id": "cheltmeat",
+      "name": {
+        "en": "Chelt Meat",
+        "ru": "Мясо челтов",
+        "fr": "Viande de Chelt",
+        "de": "Cheltfleisch",
+        "zh": "钳鱼肉"
+      },
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 7,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "scruffinfruits": {
+      "id": "scruffinfruits",
+      "name": {
+        "en": "Scruffin Fruit",
+        "ru": "Фрукт скруффин",
+        "fr": "Fruit Scruffin",
+        "de": "Scruffinknollen",
+        "zh": "颈鳍果"
+      },
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 6,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
     "nostropoil": {
       "id": "nostropoil",
       "name": {
@@ -802,6 +887,23 @@
         "economy"
       ]
     },
+    "stimulants": {
+      "id": "stimulants",
+      "name": {
+        "en": "Stimulants",
+        "ru": "Стимуляторы",
+        "fr": "Stimulants",
+        "de": "Stimulanzien",
+        "zh": "兴奋剂"
+      },
+      "group": "pharmaceutical",
+      "transport": "container",
+      "volume": 12,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
     "ore": {
       "id": "ore",
       "name": {
@@ -814,25 +916,6 @@
       "group": "minerals",
       "transport": "solid",
       "volume": 10,
-      "tags": [
-        "economy",
-        "minable",
-        "mineral",
-        "solid"
-      ]
-    },
-    "nividium": {
-      "id": "nividium",
-      "name": {
-        "en": "Rhydonium",
-        "ru": "Ридониум",
-        "fr": "Rhydonium",
-        "de": "Rhydonium",
-        "zh": "赖登素"
-      },
-      "group": "minerals",
-      "transport": "solid",
-      "volume": 60,
       "tags": [
         "economy",
         "minable",
@@ -878,25 +961,6 @@
         "solid"
       ]
     },
-    "methane": {
-      "id": "methane",
-      "name": {
-        "en": "Methane",
-        "ru": "Метан",
-        "fr": "Méthane",
-        "de": "Methan",
-        "zh": "甲烷"
-      },
-      "group": "gases",
-      "transport": "liquid",
-      "volume": 6,
-      "tags": [
-        "economy",
-        "gas",
-        "liquid",
-        "minable"
-      ]
-    },
     "helium": {
       "id": "helium",
       "name": {
@@ -928,6 +992,44 @@
       "group": "ice",
       "transport": "solid",
       "volume": 8,
+      "tags": [
+        "economy",
+        "minable",
+        "mineral",
+        "solid"
+      ]
+    },
+    "methane": {
+      "id": "methane",
+      "name": {
+        "en": "Methane",
+        "ru": "Метан",
+        "fr": "Méthane",
+        "de": "Methan",
+        "zh": "甲烷"
+      },
+      "group": "gases",
+      "transport": "liquid",
+      "volume": 6,
+      "tags": [
+        "economy",
+        "gas",
+        "liquid",
+        "minable"
+      ]
+    },
+    "nividium": {
+      "id": "nividium",
+      "name": {
+        "en": "Rhydonium",
+        "ru": "Ридониум",
+        "fr": "Rhydonium",
+        "de": "Rhydonium",
+        "zh": "赖登素"
+      },
+      "group": "minerals",
+      "transport": "solid",
+      "volume": 60,
       "tags": [
         "economy",
         "minable",
@@ -1083,6 +1185,236 @@
       ],
       "workforceBonus": 0.43
     },
+    "bofu_default": {
+      "id": "bofu_default",
+      "wareId": "bofu",
+      "method": "default",
+      "time": 240,
+      "amount": 82,
+      "inputs": [
+        {
+          "ware": "bogas",
+          "amount": 40
+        },
+        {
+          "ware": "energycells",
+          "amount": 40
+        },
+        {
+          "ware": "plankton",
+          "amount": 120
+        }
+      ],
+      "workforceBonus": 0.38
+    },
+    "bogas_default": {
+      "id": "bogas_default",
+      "wareId": "bogas",
+      "method": "default",
+      "time": 150,
+      "amount": 110,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 40
+        },
+        {
+          "ware": "water",
+          "amount": 100
+        }
+      ],
+      "workforceBonus": 0.46
+    },
+    "plankton_default": {
+      "id": "plankton_default",
+      "wareId": "plankton",
+      "method": "default",
+      "time": 400,
+      "amount": 275,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 20
+        },
+        {
+          "ware": "water",
+          "amount": 50
+        }
+      ],
+      "workforceBonus": 0.4
+    },
+    "cheltmeat_default": {
+      "id": "cheltmeat_default",
+      "wareId": "cheltmeat",
+      "method": "default",
+      "time": 450,
+      "amount": 209,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 50
+        },
+        {
+          "ware": "water",
+          "amount": 120
+        }
+      ],
+      "workforceBonus": 0.6
+    },
+    "scruffinfruits_default": {
+      "id": "scruffinfruits_default",
+      "wareId": "scruffinfruits",
+      "method": "default",
+      "time": 300,
+      "amount": 255,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 30
+        },
+        {
+          "ware": "water",
+          "amount": 80
+        }
+      ],
+      "workforceBonus": 0.53
+    },
+    "computronicsubstrate_default": {
+      "id": "computronicsubstrate_default",
+      "wareId": "computronicsubstrate",
+      "method": "default",
+      "time": 600,
+      "amount": 200,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 8000
+        },
+        {
+          "ware": "hydrogen",
+          "amount": 4000
+        },
+        {
+          "ware": "ore",
+          "amount": 6000
+        },
+        {
+          "ware": "silicon",
+          "amount": 6000
+        }
+      ],
+      "workforceBonus": 0.1
+    },
+    "metallicmicrolattice_default": {
+      "id": "metallicmicrolattice_default",
+      "wareId": "metallicmicrolattice",
+      "method": "default",
+      "time": 180,
+      "amount": 400,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 100
+        },
+        {
+          "ware": "helium",
+          "amount": 260
+        },
+        {
+          "ware": "ore",
+          "amount": 100
+        }
+      ],
+      "workforceBonus": 0.2
+    },
+    "proteinpaste_default": {
+      "id": "proteinpaste_default",
+      "wareId": "proteinpaste",
+      "method": "default",
+      "time": 300,
+      "amount": 440,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 160
+        },
+        {
+          "ware": "ice",
+          "amount": 160
+        },
+        {
+          "ware": "methane",
+          "amount": 400
+        }
+      ],
+      "workforceBonus": 0.3
+    },
+    "siliconcarbide_default": {
+      "id": "siliconcarbide_default",
+      "wareId": "siliconcarbide",
+      "method": "default",
+      "time": 300,
+      "amount": 100,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 400
+        },
+        {
+          "ware": "metallicmicrolattice",
+          "amount": 4
+        },
+        {
+          "ware": "methane",
+          "amount": 800
+        },
+        {
+          "ware": "silicon",
+          "amount": 600
+        }
+      ],
+      "workforceBonus": 0.2
+    },
+    "stimulants_default": {
+      "id": "stimulants_default",
+      "wareId": "stimulants",
+      "method": "default",
+      "time": 300,
+      "amount": 98,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 80
+        },
+        {
+          "ware": "helium",
+          "amount": 400
+        },
+        {
+          "ware": "silicon",
+          "amount": 20
+        }
+      ],
+      "workforceBonus": 0.65
+    },
+    "terranmre_default": {
+      "id": "terranmre_default",
+      "wareId": "terranmre",
+      "method": "default",
+      "time": 240,
+      "amount": 115,
+      "inputs": [
+        {
+          "ware": "energycells",
+          "amount": 120
+        },
+        {
+          "ware": "proteinpaste",
+          "amount": 120
+        }
+      ],
+      "workforceBonus": 0.42
+    },
     "shipsupplies_default": {
       "id": "shipsupplies_default",
       "wareId": "shipsupplies",
@@ -1152,120 +1484,6 @@
         }
       ],
       "workforceBonus": 0.4
-    },
-    "computronicsubstrate_default": {
-      "id": "computronicsubstrate_default",
-      "wareId": "computronicsubstrate",
-      "method": "default",
-      "time": 600,
-      "amount": 200,
-      "inputs": [
-        {
-          "ware": "energycells",
-          "amount": 8000
-        },
-        {
-          "ware": "hydrogen",
-          "amount": 4000
-        },
-        {
-          "ware": "ore",
-          "amount": 6000
-        },
-        {
-          "ware": "silicon",
-          "amount": 6000
-        }
-      ],
-      "workforceBonus": 0.1
-    },
-    "siliconcarbide_default": {
-      "id": "siliconcarbide_default",
-      "wareId": "siliconcarbide",
-      "method": "default",
-      "time": 300,
-      "amount": 100,
-      "inputs": [
-        {
-          "ware": "energycells",
-          "amount": 400
-        },
-        {
-          "ware": "metallicmicrolattice",
-          "amount": 4
-        },
-        {
-          "ware": "methane",
-          "amount": 800
-        },
-        {
-          "ware": "silicon",
-          "amount": 600
-        }
-      ],
-      "workforceBonus": 0.2
-    },
-    "metallicmicrolattice_default": {
-      "id": "metallicmicrolattice_default",
-      "wareId": "metallicmicrolattice",
-      "method": "default",
-      "time": 180,
-      "amount": 400,
-      "inputs": [
-        {
-          "ware": "energycells",
-          "amount": 100
-        },
-        {
-          "ware": "helium",
-          "amount": 260
-        },
-        {
-          "ware": "ore",
-          "amount": 100
-        }
-      ],
-      "workforceBonus": 0.2
-    },
-    "terranmre_default": {
-      "id": "terranmre_default",
-      "wareId": "terranmre",
-      "method": "default",
-      "time": 240,
-      "amount": 115,
-      "inputs": [
-        {
-          "ware": "energycells",
-          "amount": 120
-        },
-        {
-          "ware": "proteinpaste",
-          "amount": 120
-        }
-      ],
-      "workforceBonus": 0.42
-    },
-    "proteinpaste_default": {
-      "id": "proteinpaste_default",
-      "wareId": "proteinpaste",
-      "method": "default",
-      "time": 300,
-      "amount": 440,
-      "inputs": [
-        {
-          "ware": "energycells",
-          "amount": 160
-        },
-        {
-          "ware": "ice",
-          "amount": 160
-        },
-        {
-          "ware": "methane",
-          "amount": 400
-        }
-      ],
-      "workforceBonus": 0.3
     },
     "advancedcomposites_default": {
       "id": "advancedcomposites_default",
@@ -2224,7 +2442,7 @@
           "zh": "太空燃料产线"
         },
         "producedWareId": "spacefuel",
-        "workforceMax": 225
+        "workforceMax": 150
       },
       "prod_arg_wheat_macro": {
         "id": "prod_arg_wheat_macro",
@@ -2238,6 +2456,54 @@
         "producedWareId": "wheat",
         "workforceMax": 75
       },
+      "prod_bor_bofu_macro": {
+        "id": "prod_bor_bofu_macro",
+        "name": {
+          "en": "BoFu Production",
+          "ru": "Производство бофу",
+          "fr": "Production de BoFu",
+          "de": "BoFu-Produktion",
+          "zh": "Bo腐产线"
+        },
+        "producedWareId": "bofu",
+        "workforceMax": 125
+      },
+      "prod_bor_bogas_macro": {
+        "id": "prod_bor_bogas_macro",
+        "name": {
+          "en": "BoGas Production",
+          "ru": "Производство бо-газа",
+          "fr": "Production de Gaz Bo",
+          "de": "BoGas-Produktion",
+          "zh": "Bo气产线"
+        },
+        "producedWareId": "bogas",
+        "workforceMax": 100
+      },
+      "prod_bor_medicalsupplies_macro": {
+        "id": "prod_bor_medicalsupplies_macro",
+        "name": {
+          "en": "Boron Medical Supply Production",
+          "ru": "Борон Производство медикаментов",
+          "fr": "Boron Production de fournitures médicales",
+          "de": "Boronen - Medizinische Versorgungsgüter-Produktion",
+          "zh": "Boron 医疗物资产线"
+        },
+        "producedWareId": "medicalsupplies",
+        "workforceMax": 90
+      },
+      "prod_bor_plankton_macro": {
+        "id": "prod_bor_plankton_macro",
+        "name": {
+          "en": "Plankton Production",
+          "ru": "Производство планктона",
+          "fr": "Production de Plancton",
+          "de": "Plankton-Produktion",
+          "zh": "浮游生物产线"
+        },
+        "producedWareId": "plankton",
+        "workforceMax": 40
+      },
       "prod_gen_advancedcomposites_macro": {
         "id": "prod_gen_advancedcomposites_macro",
         "name": {
@@ -2248,7 +2514,7 @@
           "zh": "先进复合材料产线"
         },
         "producedWareId": "advancedcomposites",
-        "workforceMax": 315
+        "workforceMax": 210
       },
       "prod_gen_advancedelectronics_macro": {
         "id": "prod_gen_advancedelectronics_macro",
@@ -2260,7 +2526,7 @@
           "zh": "先进电子设备产线"
         },
         "producedWareId": "advancedelectronics",
-        "workforceMax": 540
+        "workforceMax": 360
       },
       "prod_gen_antimattercells_macro": {
         "id": "prod_gen_antimattercells_macro",
@@ -2272,7 +2538,7 @@
           "zh": "反物质单元产线"
         },
         "producedWareId": "antimattercells",
-        "workforceMax": 180
+        "workforceMax": 120
       },
       "prod_gen_antimatterconverters_macro": {
         "id": "prod_gen_antimatterconverters_macro",
@@ -2284,7 +2550,7 @@
           "zh": "反物质转换器产线"
         },
         "producedWareId": "antimatterconverters",
-        "workforceMax": 1080
+        "workforceMax": 720
       },
       "prod_gen_claytronics_macro": {
         "id": "prod_gen_claytronics_macro",
@@ -2296,7 +2562,7 @@
           "zh": "电子黏土产线"
         },
         "producedWareId": "claytronics",
-        "workforceMax": 1215
+        "workforceMax": 810
       },
       "prod_gen_dronecomponents_macro": {
         "id": "prod_gen_dronecomponents_macro",
@@ -2308,7 +2574,7 @@
           "zh": "无人机组件产线"
         },
         "producedWareId": "dronecomponents",
-        "workforceMax": 675
+        "workforceMax": 450
       },
       "prod_gen_energycells_macro": {
         "id": "prod_gen_energycells_macro",
@@ -2320,7 +2586,7 @@
           "zh": "能量电池产线"
         },
         "producedWareId": "energycells",
-        "workforceMax": 90
+        "workforceMax": 60
       },
       "prod_gen_engineparts_macro": {
         "id": "prod_gen_engineparts_macro",
@@ -2332,7 +2598,7 @@
           "zh": "引擎部件产线"
         },
         "producedWareId": "engineparts",
-        "workforceMax": 225
+        "workforceMax": 150
       },
       "prod_gen_fieldcoils_macro": {
         "id": "prod_gen_fieldcoils_macro",
@@ -2344,7 +2610,7 @@
           "zh": "励磁线圈产线"
         },
         "producedWareId": "fieldcoils",
-        "workforceMax": 810
+        "workforceMax": 540
       },
       "prod_gen_graphene_macro": {
         "id": "prod_gen_graphene_macro",
@@ -2356,7 +2622,7 @@
           "zh": "石墨烯生产线"
         },
         "producedWareId": "graphene",
-        "workforceMax": 180
+        "workforceMax": 120
       },
       "prod_gen_hullparts_macro": {
         "id": "prod_gen_hullparts_macro",
@@ -2368,7 +2634,19 @@
           "zh": "船体部件产线"
         },
         "producedWareId": "hullparts",
-        "workforceMax": 270
+        "workforceMax": 180
+      },
+      "prod_gen_medicalsupplies_macro": {
+        "id": "prod_gen_medicalsupplies_macro",
+        "name": {
+          "en": "Teladi Hull Part Production",
+          "ru": "Телади Производство деталей корпуса",
+          "fr": "Teladi Production de pièces de coque",
+          "de": "Teladi Hüllenteileproduktion",
+          "zh": "Teladi 船体部件产线"
+        },
+        "producedWareId": "medicalsupplies",
+        "workforceMax": 90
       },
       "prod_gen_microchips_macro": {
         "id": "prod_gen_microchips_macro",
@@ -2380,7 +2658,7 @@
           "zh": "微芯片产线"
         },
         "producedWareId": "microchips",
-        "workforceMax": 450
+        "workforceMax": 300
       },
       "prod_gen_missilecomponents_macro": {
         "id": "prod_gen_missilecomponents_macro",
@@ -2392,7 +2670,7 @@
           "zh": "导弹部件产线"
         },
         "producedWareId": "missilecomponents",
-        "workforceMax": 22
+        "workforceMax": 15
       },
       "prod_gen_plasmaconductors_macro": {
         "id": "prod_gen_plasmaconductors_macro",
@@ -2404,7 +2682,7 @@
           "zh": "等离子导体产线"
         },
         "producedWareId": "plasmaconductors",
-        "workforceMax": 225
+        "workforceMax": 150
       },
       "prod_gen_quantumtubes_macro": {
         "id": "prod_gen_quantumtubes_macro",
@@ -2416,7 +2694,7 @@
           "zh": "量子管产线"
         },
         "producedWareId": "quantumtubes",
-        "workforceMax": 225
+        "workforceMax": 150
       },
       "prod_gen_refinedmetals_macro": {
         "id": "prod_gen_refinedmetals_macro",
@@ -2428,7 +2706,7 @@
           "zh": "精炼金属产线"
         },
         "producedWareId": "refinedmetals",
-        "workforceMax": 225
+        "workforceMax": 150
       },
       "prod_gen_scanningarrays_macro": {
         "id": "prod_gen_scanningarrays_macro",
@@ -2440,7 +2718,7 @@
           "zh": "扫描阵列产线"
         },
         "producedWareId": "scanningarrays",
-        "workforceMax": 315
+        "workforceMax": 210
       },
       "prod_gen_scrap_recycler_macro": {
         "id": "prod_gen_scrap_recycler_macro",
@@ -2464,7 +2742,7 @@
           "zh": "护盾部件产线"
         },
         "producedWareId": "shieldcomponents",
-        "workforceMax": 225
+        "workforceMax": 150
       },
       "prod_gen_siliconwafers_macro": {
         "id": "prod_gen_siliconwafers_macro",
@@ -2476,7 +2754,7 @@
           "zh": "硅晶片产线"
         },
         "producedWareId": "siliconwafers",
-        "workforceMax": 225
+        "workforceMax": 150
       },
       "prod_gen_smartchips_macro": {
         "id": "prod_gen_smartchips_macro",
@@ -2488,7 +2766,7 @@
           "zh": "智能芯片产线"
         },
         "producedWareId": "smartchips",
-        "workforceMax": 60
+        "workforceMax": 40
       },
       "prod_gen_spices_macro": {
         "id": "prod_gen_spices_macro",
@@ -2512,7 +2790,7 @@
           "zh": "超流体冷却剂产线"
         },
         "producedWareId": "superfluidcoolant",
-        "workforceMax": 180
+        "workforceMax": 120
       },
       "prod_gen_turretcomponents_macro": {
         "id": "prod_gen_turretcomponents_macro",
@@ -2524,7 +2802,7 @@
           "zh": "炮塔部件产线"
         },
         "producedWareId": "turretcomponents",
-        "workforceMax": 225
+        "workforceMax": 150
       },
       "prod_gen_water_macro": {
         "id": "prod_gen_water_macro",
@@ -2536,7 +2814,7 @@
           "zh": "水产线"
         },
         "producedWareId": "water",
-        "workforceMax": 180
+        "workforceMax": 120
       },
       "prod_gen_weaponcomponents_macro": {
         "id": "prod_gen_weaponcomponents_macro",
@@ -2548,7 +2826,7 @@
           "zh": "武器部件产线"
         },
         "producedWareId": "weaponcomponents",
-        "workforceMax": 225
+        "workforceMax": 150
       },
       "prod_par_majadust_macro": {
         "id": "prod_par_majadust_macro",
@@ -2572,7 +2850,7 @@
           "zh": "艳耀蜗牛产线"
         },
         "producedWareId": "majasnails",
-        "workforceMax": 175
+        "workforceMax": 78
       },
       "prod_par_medicalsupplies_macro": {
         "id": "prod_par_medicalsupplies_macro",
@@ -2596,7 +2874,7 @@
           "zh": "白豆产线"
         },
         "producedWareId": "sojabeans",
-        "workforceMax": 175
+        "workforceMax": 78
       },
       "prod_par_sojahusk_macro": {
         "id": "prod_par_sojahusk_macro",
@@ -2610,6 +2888,42 @@
         "producedWareId": "sojahusk",
         "workforceMax": 99
       },
+      "prod_spl_cheltmeat_macro": {
+        "id": "prod_spl_cheltmeat_macro",
+        "name": {
+          "en": "Chelt Production",
+          "ru": "Производство челтов",
+          "fr": "Production de Chelt",
+          "de": "Chelt-Produktion",
+          "zh": "钳鱼产线"
+        },
+        "producedWareId": "cheltmeat",
+        "workforceMax": 90
+      },
+      "prod_spl_medicalsupplies_macro": {
+        "id": "prod_spl_medicalsupplies_macro",
+        "name": {
+          "en": "Split Medical Supply Production",
+          "ru": "Сплит Производство медикаментов",
+          "fr": "Split Production de fournitures médicales",
+          "de": "Split Medizinische Versorgungsgüter-Produktion",
+          "zh": "Split 医疗物资产线"
+        },
+        "producedWareId": "medicalsupplies",
+        "workforceMax": 90
+      },
+      "prod_spl_scruffinfruit_macro": {
+        "id": "prod_spl_scruffinfruit_macro",
+        "name": {
+          "en": "Scruffin Production",
+          "ru": "Производство скруффинов",
+          "fr": "Production de Scruffin",
+          "de": "Scruffin-Produktion",
+          "zh": "颈鳍果产线"
+        },
+        "producedWareId": "scruffinfruits",
+        "workforceMax": 90
+      },
       "prod_tel_advancedcomposites_macro": {
         "id": "prod_tel_advancedcomposites_macro",
         "name": {
@@ -2620,7 +2934,7 @@
           "zh": "Teladi 先进复合材料产线"
         },
         "producedWareId": "advancedcomposites",
-        "workforceMax": 315
+        "workforceMax": 210
       },
       "prod_tel_engineparts_macro": {
         "id": "prod_tel_engineparts_macro",
@@ -2632,7 +2946,7 @@
           "zh": "Teladi 引擎部件产线"
         },
         "producedWareId": "engineparts",
-        "workforceMax": 225
+        "workforceMax": 150
       },
       "prod_tel_hullparts_macro": {
         "id": "prod_tel_hullparts_macro",
@@ -2644,7 +2958,7 @@
           "zh": "Teladi 船体部件产线"
         },
         "producedWareId": "hullparts",
-        "workforceMax": 270
+        "workforceMax": 180
       },
       "prod_tel_medicalsupplies_macro": {
         "id": "prod_tel_medicalsupplies_macro",
@@ -2680,7 +2994,7 @@
           "zh": "Teladi 扫描阵列产线"
         },
         "producedWareId": "scanningarrays",
-        "workforceMax": 315
+        "workforceMax": 210
       },
       "prod_tel_spaceweed_macro": {
         "id": "prod_tel_spaceweed_macro",
@@ -2704,7 +3018,7 @@
           "zh": "日出花产线"
         },
         "producedWareId": "sunriseflowers",
-        "workforceMax": 50
+        "workforceMax": 75
       },
       "prod_tel_swampplant_macro": {
         "id": "prod_tel_swampplant_macro",
@@ -2716,7 +3030,7 @@
           "zh": "沼泽植物产线"
         },
         "producedWareId": "swampplant",
-        "workforceMax": 50
+        "workforceMax": 75
       },
       "prod_tel_teladianium_macro": {
         "id": "prod_tel_teladianium_macro",
@@ -2728,7 +3042,115 @@
           "zh": "T材料产线"
         },
         "producedWareId": "teladianium",
-        "workforceMax": 225
+        "workforceMax": 180
+      },
+      "prod_ter_computronicsubstrate_macro": {
+        "id": "prod_ter_computronicsubstrate_macro",
+        "name": {
+          "en": "Computronic Substrate Production",
+          "ru": "Производство компьютронного субстрата",
+          "fr": "Production de substrat informatique",
+          "de": "Computroniksubstratproduktion",
+          "zh": "电子基质生产线"
+        },
+        "producedWareId": "computronicsubstrate",
+        "workforceMax": 1500
+      },
+      "prod_ter_energycells_macro": {
+        "id": "prod_ter_energycells_macro",
+        "name": {
+          "en": "Terran Energy Cell Production",
+          "ru": "Землянин Производство энергоэлементов",
+          "fr": "Terrien Production de photopiles",
+          "de": "Terraner Energiezellenproduktion",
+          "zh": "Terran 能量电池产线"
+        },
+        "producedWareId": "energycells",
+        "workforceMax": 45
+      },
+      "prod_ter_medicalsupplies_macro": {
+        "id": "prod_ter_medicalsupplies_macro",
+        "name": {
+          "en": "Terran Medical Supply Production",
+          "ru": "Землянин Производство медикаментов",
+          "fr": "Terrien Production de fournitures médicales",
+          "de": "Terraner Medizinische Versorgungsgüter-Produktion",
+          "zh": "Terran 医疗物资产线"
+        },
+        "producedWareId": "medicalsupplies",
+        "workforceMax": 90
+      },
+      "prod_ter_metallicmicrolattice_macro": {
+        "id": "prod_ter_metallicmicrolattice_macro",
+        "name": {
+          "en": "Metallic Microlattice Production",
+          "ru": "Производство металлической микрорешетки",
+          "fr": "Production de micro-treillis métallique",
+          "de": "Metallmikrogitterproduktion",
+          "zh": "金属微晶产线"
+        },
+        "producedWareId": "metallicmicrolattice",
+        "workforceMax": 120
+      },
+      "prod_ter_mre_macro": {
+        "id": "prod_ter_mre_macro",
+        "name": {
+          "en": "Terran MRE Production",
+          "ru": "Производство земных пайков",
+          "fr": "Production de plats cuisinés terriens",
+          "de": "Terranische Notrationproduktion",
+          "zh": "地球即食餐产线"
+        },
+        "producedWareId": "terranmre",
+        "workforceMax": 135
+      },
+      "prod_ter_proteinpaste_macro": {
+        "id": "prod_ter_proteinpaste_macro",
+        "name": {
+          "en": "Protein Paste Production",
+          "ru": "Производство протеиновой пасты",
+          "fr": "Production de pâte protéinée",
+          "de": "Proteinpastenproduktion",
+          "zh": "蛋白糊产线"
+        },
+        "producedWareId": "proteinpaste",
+        "workforceMax": 180
+      },
+      "prod_ter_scrap_recycler_macro": {
+        "id": "prod_ter_scrap_recycler_macro",
+        "name": {
+          "en": "Terran Scrap Recycler",
+          "ru": "Землянин Переработчик Металлолома",
+          "fr": "Recycleur de ferraille Terrien",
+          "de": "Terraner Schrottrecycler",
+          "zh": "Terran 废料再生设施"
+        },
+        "producedWareId": "computronicsubstrate siliconcarbide",
+        "workforceMax": 1250
+      },
+      "prod_ter_siliconcarbide_macro": {
+        "id": "prod_ter_siliconcarbide_macro",
+        "name": {
+          "en": "Silicon Carbide Production",
+          "ru": "Производство карборунда",
+          "fr": "Production de carbure de silicium",
+          "de": "Siliziumkarbid\\-produktion",
+          "zh": "碳化硅产线"
+        },
+        "producedWareId": "siliconcarbide",
+        "workforceMax": 750
+      },
+      "prod_ter_stimulants_macro": {
+        "id": "prod_ter_stimulants_macro",
+        "name": {
+          "en": "Stimulant Production",
+          "ru": "Производство стимуляторов",
+          "fr": "Production de stimulants",
+          "de": "Stimulansproduktion",
+          "zh": "兴奋剂产线"
+        },
+        "producedWareId": "stimulants",
+        "workforceMax": 300
       }
     },
     "habitat": {
@@ -2768,6 +3190,42 @@
         "race": "argon",
         "workforceCapacity": 250
       },
+      "hab_bor_l_01_macro": {
+        "id": "hab_bor_l_01_macro",
+        "name": {
+          "en": "Boron L Oasis",
+          "ru": "Борон L Оазис",
+          "fr": "Boron L Oasis",
+          "de": "Boronen L-Oase",
+          "zh": "Boron L 绿洲"
+        },
+        "race": "boron",
+        "workforceCapacity": 1000
+      },
+      "hab_bor_m_01_macro": {
+        "id": "hab_bor_m_01_macro",
+        "name": {
+          "en": "Boron M Oasis",
+          "ru": "Борон M Оазис",
+          "fr": "Boron M Oasis",
+          "de": "Boronen M-Oase",
+          "zh": "Boron M 绿洲"
+        },
+        "race": "boron",
+        "workforceCapacity": 500
+      },
+      "hab_bor_s_01_macro": {
+        "id": "hab_bor_s_01_macro",
+        "name": {
+          "en": "Boron S Oasis",
+          "ru": "Борон S Оазис",
+          "fr": "Boron S Oasis",
+          "de": "Boronen S-Oase",
+          "zh": "Boron S 绿洲"
+        },
+        "race": "boron",
+        "workforceCapacity": 250
+      },
       "hab_par_l_01_macro": {
         "id": "hab_par_l_01_macro",
         "name": {
@@ -2792,6 +3250,18 @@
         "race": "paranid",
         "workforceCapacity": 666
       },
+      "hab_par_m_02_macro": {
+        "id": "hab_par_m_02_macro",
+        "name": {
+          "en": "Paranid M Dome",
+          "ru": "Паранид M Купол",
+          "fr": "Paranide M Dome",
+          "de": "Paraniden M-Kuppel",
+          "zh": "Paranid M 穹顶"
+        },
+        "race": "paranid",
+        "workforceCapacity": 488
+      },
       "hab_par_s_01_macro": {
         "id": "hab_par_s_01_macro",
         "name": {
@@ -2803,6 +3273,66 @@
         },
         "race": "paranid",
         "workforceCapacity": 333
+      },
+      "hab_par_s_02_macro": {
+        "id": "hab_par_s_02_macro",
+        "name": {
+          "en": "Paranid S Dome",
+          "ru": "Паранид S Купол",
+          "fr": "Paranide S Dome",
+          "de": "Paraniden S-Kuppel",
+          "zh": "Paranid S 穹顶"
+        },
+        "race": "paranid",
+        "workforceCapacity": 243
+      },
+      "hab_par_s_03_macro": {
+        "id": "hab_par_s_03_macro",
+        "name": {
+          "en": "Paranid S Dome",
+          "ru": "Паранид S Купол",
+          "fr": "Paranide S Dome",
+          "de": "Paraniden S-Kuppel",
+          "zh": "Paranid S 穹顶"
+        },
+        "race": "paranid",
+        "workforceCapacity": 123
+      },
+      "hab_spl_l_01_macro": {
+        "id": "hab_spl_l_01_macro",
+        "name": {
+          "en": "Split L Parlour",
+          "ru": "Сплит L Зал",
+          "fr": "Split L Salle",
+          "de": "Split L-Wohnbereich",
+          "zh": "Split L 客厅"
+        },
+        "race": "split",
+        "workforceCapacity": 1000
+      },
+      "hab_spl_m_01_macro": {
+        "id": "hab_spl_m_01_macro",
+        "name": {
+          "en": "Split M Parlour",
+          "ru": "Сплит M Зал",
+          "fr": "Split M Salle",
+          "de": "Split M-Wohnbereich",
+          "zh": "Split M 客厅"
+        },
+        "race": "split",
+        "workforceCapacity": 500
+      },
+      "hab_spl_s_01_macro": {
+        "id": "hab_spl_s_01_macro",
+        "name": {
+          "en": "Split S Parlour",
+          "ru": "Сплит S Зал",
+          "fr": "Split S Salle",
+          "de": "Split S-Wohnbereich",
+          "zh": "Split S 客厅"
+        },
+        "race": "split",
+        "workforceCapacity": 250
       },
       "hab_tel_l_01_macro": {
         "id": "hab_tel_l_01_macro",
@@ -2839,6 +3369,42 @@
         },
         "race": "teladi",
         "workforceCapacity": 250
+      },
+      "hab_ter_l_01_macro": {
+        "id": "hab_ter_l_01_macro",
+        "name": {
+          "en": "Terran L Living Quarters",
+          "ru": "Землянин L Жилые помещения",
+          "fr": "Terrien L Quartiers d'habitation",
+          "de": "Terraner L Wohnquartiere",
+          "zh": "Terran L 生活舱室"
+        },
+        "race": "terran",
+        "workforceCapacity": 500
+      },
+      "hab_ter_m_01_macro": {
+        "id": "hab_ter_m_01_macro",
+        "name": {
+          "en": "Terran M Living Quarters",
+          "ru": "Землянин M Жилые помещения",
+          "fr": "Terrien M Quartiers d'habitation",
+          "de": "Terraner M Wohnquartiere",
+          "zh": "Terran M 生活舱室"
+        },
+        "race": "terran",
+        "workforceCapacity": 250
+      },
+      "hab_ter_s_01_macro": {
+        "id": "hab_ter_s_01_macro",
+        "name": {
+          "en": "Terran S Living Quarters",
+          "ru": "Землянин S Жилые помещения",
+          "fr": "Terrien S Quartiers d'habitation",
+          "de": "Terraner S Wohnquartiere",
+          "zh": "Terran S 生活舱室"
+        },
+        "race": "terran",
+        "workforceCapacity": 100
       },
       "deathstar_01_macro": {
         "id": "deathstar_01_macro",
@@ -3163,7 +3729,7 @@
           "de": "Argonen L-Universallager",
           "zh": "Argon L 通用仓储"
         },
-        "cargoMax": 300000,
+        "cargoMax": 2000000,
         "cargoType": "liquid"
       },
       "storage_arg_m_container_01_macro": {
@@ -3234,6 +3800,114 @@
           "fr": "Solide S horiz.",
           "de": "Horizontaler S Solid",
           "zh": "水平 S 固体容器"
+        },
+        "cargoMax": 100000,
+        "cargoType": "solid"
+      },
+      "storage_bor_l_container_01_macro": {
+        "id": "storage_bor_l_container_01_macro",
+        "name": {
+          "en": "Boron L Container Storage",
+          "ru": "Борон L Хранилище контейнеров",
+          "fr": "Boron L Stockage de conteneurs",
+          "de": "Boronen L-Containerlager",
+          "zh": "Boron L 集装仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "container"
+      },
+      "storage_bor_l_liquid_01_macro": {
+        "id": "storage_bor_l_liquid_01_macro",
+        "name": {
+          "en": "Boron L Liquid Storage",
+          "ru": "Борон L Хранилище жидкостей",
+          "fr": "Boron L Stockage de liquide",
+          "de": "Boronen L-Flüssigkeitslager",
+          "zh": "Boron L 液体仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "liquid"
+      },
+      "storage_bor_l_solid_01_macro": {
+        "id": "storage_bor_l_solid_01_macro",
+        "name": {
+          "en": "Boron L Solid Storage",
+          "ru": "Борон L Хранилище твердых грузов",
+          "fr": "Boron L Stockage de solide",
+          "de": "Boronen L-Feststofflager",
+          "zh": "Boron L 固体仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "solid"
+      },
+      "storage_bor_m_container_01_macro": {
+        "id": "storage_bor_m_container_01_macro",
+        "name": {
+          "en": "Boron M Container Storage",
+          "ru": "Борон M Хранилище контейнеров",
+          "fr": "Boron M Stockage de conteneurs",
+          "de": "Boronen M-Containerlager",
+          "zh": "Boron M 集装仓储"
+        },
+        "cargoMax": 250000,
+        "cargoType": "container"
+      },
+      "storage_bor_m_liquid_01_macro": {
+        "id": "storage_bor_m_liquid_01_macro",
+        "name": {
+          "en": "Boron M Liquid Storage",
+          "ru": "Борон M Хранилище жидкостей",
+          "fr": "Boron M Stockage de liquide",
+          "de": "Boronen M-Flüssigkeitslager",
+          "zh": "Boron M 液体仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "liquid"
+      },
+      "storage_bor_m_solid_01_macro": {
+        "id": "storage_bor_m_solid_01_macro",
+        "name": {
+          "en": "Boron M Solid Storage",
+          "ru": "Борон M Хранилище твердых грузов",
+          "fr": "Boron M Stockage de solide",
+          "de": "Boronen M-Feststofflager",
+          "zh": "Boron M 固体仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "solid"
+      },
+      "storage_bor_s_container_01_macro": {
+        "id": "storage_bor_s_container_01_macro",
+        "name": {
+          "en": "Boron S Container Storage",
+          "ru": "Борон S Хранилище контейнеров",
+          "fr": "Boron S Stockage de conteneurs",
+          "de": "Boronen S-Containerlager",
+          "zh": "Boron S 集装仓储"
+        },
+        "cargoMax": 50000,
+        "cargoType": "container"
+      },
+      "storage_bor_s_liquid_01_macro": {
+        "id": "storage_bor_s_liquid_01_macro",
+        "name": {
+          "en": "Boron S Liquid Storage",
+          "ru": "Борон S Хранилище жидкостей",
+          "fr": "Boron S Stockage de liquide",
+          "de": "Boronen S-Flüssigkeitslager",
+          "zh": "Boron S 液体仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_bor_s_solid_01_macro": {
+        "id": "storage_bor_s_solid_01_macro",
+        "name": {
+          "en": "Boron S Solid Storage",
+          "ru": "Борон S Хранилище твердых грузов",
+          "fr": "Boron S Stockage de solide",
+          "de": "Boronen S-Feststofflager",
+          "zh": "Boron S 固体仓储"
         },
         "cargoMax": 100000,
         "cargoType": "solid"
@@ -3346,6 +4020,114 @@
         "cargoMax": 100000,
         "cargoType": "solid"
       },
+      "storage_spl_l_container_01_macro": {
+        "id": "storage_spl_l_container_01_macro",
+        "name": {
+          "en": "Split L Container Storage",
+          "ru": "Сплит L Хранилище контейнеров",
+          "fr": "Split L Stockage de conteneurs",
+          "de": "Split L Containerlager",
+          "zh": "Split L 集装仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "container"
+      },
+      "storage_spl_l_liquid_01_macro": {
+        "id": "storage_spl_l_liquid_01_macro",
+        "name": {
+          "en": "Split L Liquid Storage",
+          "ru": "Сплит L Хранилище жидкостей",
+          "fr": "Split L Stockage de liquide",
+          "de": "Split L Flüssigkeitslager",
+          "zh": "Split L 液体仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "liquid"
+      },
+      "storage_spl_l_solid_01_macro": {
+        "id": "storage_spl_l_solid_01_macro",
+        "name": {
+          "en": "Split L Solid Storage",
+          "ru": "Сплит L Хранилище твердых грузов",
+          "fr": "Split L Stockage de solide",
+          "de": "Split L Feststofflager",
+          "zh": "Split L 固体仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "solid"
+      },
+      "storage_spl_m_container_01_macro": {
+        "id": "storage_spl_m_container_01_macro",
+        "name": {
+          "en": "Split M Container Storage",
+          "ru": "Сплит M Хранилище контейнеров",
+          "fr": "Split M Stockage de conteneurs",
+          "de": "Split M Containerlager",
+          "zh": "Split M 集装仓储"
+        },
+        "cargoMax": 250000,
+        "cargoType": "container"
+      },
+      "storage_spl_m_liquid_01_macro": {
+        "id": "storage_spl_m_liquid_01_macro",
+        "name": {
+          "en": "Split M Liquid Storage",
+          "ru": "Сплит M Хранилище жидкостей",
+          "fr": "Split M Stockage de liquide",
+          "de": "Split M Flüssigkeitslager",
+          "zh": "Split M 液体仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "liquid"
+      },
+      "storage_spl_m_solid_01_macro": {
+        "id": "storage_spl_m_solid_01_macro",
+        "name": {
+          "en": "Split M Solid Storage",
+          "ru": "Сплит M Хранилище твердых грузов",
+          "fr": "Split M Stockage de solide",
+          "de": "Split M Feststofflager",
+          "zh": "Split M 固体仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "solid"
+      },
+      "storage_spl_s_container_01_macro": {
+        "id": "storage_spl_s_container_01_macro",
+        "name": {
+          "en": "Split S Container Storage",
+          "ru": "Сплит S Хранилище контейнеров",
+          "fr": "Split S Stockage de conteneurs",
+          "de": "Split S Containerlager",
+          "zh": "Split S 集装仓储"
+        },
+        "cargoMax": 50000,
+        "cargoType": "container"
+      },
+      "storage_spl_s_liquid_01_macro": {
+        "id": "storage_spl_s_liquid_01_macro",
+        "name": {
+          "en": "Split S Liquid Storage",
+          "ru": "Сплит S Хранилище жидкостей",
+          "fr": "Split S Stockage de liquide",
+          "de": "Split S Flüssigkeitslager",
+          "zh": "Split S 液体仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_spl_s_solid_01_macro": {
+        "id": "storage_spl_s_solid_01_macro",
+        "name": {
+          "en": "Split S Solid Storage",
+          "ru": "Сплит S Хранилище твердых грузов",
+          "fr": "Split S Stockage de solide",
+          "de": "Split S Feststofflager",
+          "zh": "Split S 固体仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "solid"
+      },
       "storage_tel_l_container_01_macro": {
         "id": "storage_tel_l_container_01_macro",
         "name": {
@@ -3450,6 +4232,138 @@
           "fr": "Solide S vert.",
           "de": "Vertikaler S Solid",
           "zh": "垂直 S 固体容器"
+        },
+        "cargoMax": 100000,
+        "cargoType": "solid"
+      },
+      "storage_ter_l_container_01_macro": {
+        "id": "storage_ter_l_container_01_macro",
+        "name": {
+          "en": "Terran L Container Storage",
+          "ru": "Землянин L Хранилище контейнеров",
+          "fr": "Terrien L Stockage de conteneurs",
+          "de": "Terraner L Containerlager",
+          "zh": "Terran L 集装仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "container"
+      },
+      "storage_ter_l_liquid_01_macro": {
+        "id": "storage_ter_l_liquid_01_macro",
+        "name": {
+          "en": "Terran L Liquid Storage",
+          "ru": "Землянин L Хранилище жидкостей",
+          "fr": "Terrien L Stockage de liquide",
+          "de": "Terraner L Flüssigkeitslager",
+          "zh": "Terran L 液体仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "liquid"
+      },
+      "storage_ter_l_solid_01_macro": {
+        "id": "storage_ter_l_solid_01_macro",
+        "name": {
+          "en": "Terran L Solid Storage",
+          "ru": "Землянин L Хранилище твердых грузов",
+          "fr": "Terrien L Stockage de solide",
+          "de": "Terraner L Feststofflager",
+          "zh": "Terran L 固体仓储"
+        },
+        "cargoMax": 1000000,
+        "cargoType": "solid"
+      },
+      "storage_ter_m_container_01_macro": {
+        "id": "storage_ter_m_container_01_macro",
+        "name": {
+          "en": "Terran M Container Storage",
+          "ru": "Землянин M Хранилище контейнеров",
+          "fr": "Terrien M Stockage de conteneurs",
+          "de": "Terraner M Containerlager",
+          "zh": "Terran M 集装仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "container"
+      },
+      "storage_ter_m_container_tradestation_01_macro": {
+        "id": "storage_ter_m_container_tradestation_01_macro",
+        "name": {
+          "en": "Terran M Trading Station Container Storage",
+          "ru": "Землянин M Хранилище контейнеров Торговой станции",
+          "fr": "Terrien M Stockage de conteneurs de station commerciale",
+          "de": "Terraner M Handelsstationscontainerlager",
+          "zh": "Terran M 贸易空间站集装仓储"
+        },
+        "cargoMax": 300000,
+        "cargoType": "container"
+      },
+      "storage_ter_m_liquid_01_macro": {
+        "id": "storage_ter_m_liquid_01_macro",
+        "name": {
+          "en": "Terran M Liquid Storage",
+          "ru": "Землянин M Хранилище жидкостей",
+          "fr": "Terrien M Stockage de liquide",
+          "de": "Terraner M Flüssigkeitslager",
+          "zh": "Terran M 液体仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "liquid"
+      },
+      "storage_ter_m_solid_01_macro": {
+        "id": "storage_ter_m_solid_01_macro",
+        "name": {
+          "en": "Terran M Solid Storage",
+          "ru": "Землянин M Хранилище твердых грузов",
+          "fr": "Terrien M Stockage de solide",
+          "de": "Terraner M Feststofflager",
+          "zh": "Terran M 固体仓储"
+        },
+        "cargoMax": 500000,
+        "cargoType": "solid"
+      },
+      "storage_ter_s_container_01_macro": {
+        "id": "storage_ter_s_container_01_macro",
+        "name": {
+          "en": "Terran S Container Storage",
+          "ru": "Землянин S Хранилище контейнеров",
+          "fr": "Terrien S Stockage de conteneurs",
+          "de": "Terraner S Containerlager",
+          "zh": "Terran S 集装仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "container"
+      },
+      "storage_ter_s_liquid_01_macro": {
+        "id": "storage_ter_s_liquid_01_macro",
+        "name": {
+          "en": "Terran S Liquid Storage",
+          "ru": "Землянин S Хранилище жидкостей",
+          "fr": "Terrien S Stockage de liquide",
+          "de": "Terraner S Flüssigkeitslager",
+          "zh": "Terran S 液体仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_ter_s_liquid_tradestation_01_macro": {
+        "id": "storage_ter_s_liquid_tradestation_01_macro",
+        "name": {
+          "en": "Terran S Trading Station Liquid Storage",
+          "ru": "Землянин S Хранилище жидкостей Торговой станции",
+          "fr": "Terrien S Stockage liquide de station commerciale",
+          "de": "Terraner S Handelsstationsflüssigkeitenlager",
+          "zh": "Terran S 贸易空间站液体仓储"
+        },
+        "cargoMax": 100000,
+        "cargoType": "liquid"
+      },
+      "storage_ter_s_solid_01_macro": {
+        "id": "storage_ter_s_solid_01_macro",
+        "name": {
+          "en": "Terran S Solid Storage",
+          "ru": "Землянин S Хранилище твердых грузов",
+          "fr": "Terrien S Stockage de solide",
+          "de": "Terraner S Feststofflager",
+          "zh": "Terran S 固体仓储"
         },
         "cargoMax": 100000,
         "cargoType": "solid"
