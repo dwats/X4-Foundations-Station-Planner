@@ -1,9 +1,10 @@
-import { memo, useMemo, useState, useCallback } from 'react';
-import { Handle, Position, type NodeProps, type Node } from '@xyflow/react';
+import { memo, useMemo, useState, useCallback, useEffect } from 'react';
+import { Handle, Position, useUpdateNodeInternals, type NodeProps, type Node } from '@xyflow/react';
 import { usePlanStore, useGameDataStore, useUIStore } from '@/store';
 import { useLocale } from '@/hooks/useLocale';
 import { formatAmount } from '@/lib/format';
 import { WareIORow, STATION_OUTPUT_PRESET, computeStatus, type IOStatus, type DragConfig } from './WareIORow';
+import { STATION_OUTPUT_ID } from '@/types/plan';
 
 export type StationOutputNodeData = Record<string, never>;
 
@@ -15,6 +16,7 @@ export const STATION_OUTPUT_GENERIC_HANDLE = 'generic-export';
 export const StationOutputNode = memo(function StationOutputNode({
   selected,
 }: NodeProps<StationOutputNodeType>) {
+  const updateNodeInternals = useUpdateNodeInternals();
   const activeStationId = useUIStore((state) => state.activeStationId);
   const computed = usePlanStore((state) => state.computed);
   const gameData = useGameDataStore((state) => state.gameData);
@@ -100,6 +102,16 @@ export const StationOutputNode = memo(function StationOutputNode({
 
     return items;
   }, [stationOutputs, externallyConsumed, remainingOutputs, station?.outputOrder]);
+
+  // Notify React Flow when handles change position (e.g., due to resorting)
+  const wareOrder = connectedWares.map((w) => w.wareId).join(',');
+  useEffect(() => {
+    if (wareOrder) {
+      requestAnimationFrame(() => {
+        updateNodeInternals(STATION_OUTPUT_ID);
+      });
+    }
+  }, [wareOrder, updateNodeInternals]);
 
   // Drag and drop handlers
   const handleDragStart = useCallback(
