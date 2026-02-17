@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ReactFlow,
   ReactFlowProvider,
@@ -6,6 +6,7 @@ import {
   Controls,
   MiniMap,
   useReactFlow,
+  useUpdateNodeInternals,
   type Connection,
   type OnNodesChange,
   type OnEdgesChange,
@@ -55,6 +56,7 @@ const edgeTypes: EdgeTypes = {
 
 function StationCanvasInner() {
   const { setViewport, screenToFlowPosition } = useReactFlow();
+  const updateNodeInternals = useUpdateNodeInternals();
   const activeStationId = useUIStore((state) => state.activeStationId);
   const stations = usePlanStore((state) => state.plan.stations);
   const computed = usePlanStore((state) => state.computed);
@@ -336,6 +338,20 @@ function StationCanvasInner() {
     return [stationInputNode, ...moduleNodes, stationOutputNode];
   }, [station, handleWareDoubleClick, measuredDimensions]);
 
+  // Compute a fingerprint of all ware orderings (station I/O + module I/O)
+  // Used to force edge re-rendering when handle positions change due to reordering
+  const orderFingerprint = useMemo(() => {
+    if (!station) return '';
+    const parts = [
+      (station.inputOrder ?? []).join(','),
+      (station.outputOrder ?? []).join(','),
+      ...station.modules.map(m =>
+        `${m.id}:${(m.inputOrder ?? []).join(',')}|${(m.outputOrder ?? []).join(',')}`
+      ),
+    ];
+    return parts.join(';');
+  }, [station]);
+
   // Convert module connections to React Flow edges
   const edges = useMemo<ModuleEdgeType[]>(() => {
     if (!station) return [];
@@ -349,9 +365,19 @@ function StationCanvasInner() {
       sourceHandle: conn.wareId ? `output-${conn.wareId}` : undefined,
       targetHandle: conn.wareId ? `input-${conn.wareId}` : undefined,
       type: 'module',
-      data: { connection: conn },
+      data: { connection: conn, _orderVersion: orderFingerprint },
     }));
-  }, [station]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [station, orderFingerprint]);
+
+  // When ware order changes, update all node internals so React Flow
+  // recalculates handle positions, then edges re-render via new data refs
+  useEffect(() => {
+    if (orderFingerprint && nodes.length > 0) {
+      const nodeIds = nodes.map(n => n.id);
+      updateNodeInternals(nodeIds);
+    }
+  }, [orderFingerprint, nodes, updateNodeInternals]);
 
   const updateStation = usePlanStore((state) => state.updateStation);
 

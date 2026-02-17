@@ -12,6 +12,8 @@ import type { PlanModuleConnection } from '@/types';
 
 export type ModuleEdgeData = {
   connection: PlanModuleConnection;
+  /** Opaque key that changes when ware order changes, forcing edge re-render */
+  _orderVersion?: string;
 };
 
 export type ModuleEdgeType = Edge<ModuleEdgeData, 'module'>;

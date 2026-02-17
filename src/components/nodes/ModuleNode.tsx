@@ -1,5 +1,5 @@
-import { memo, useCallback, useEffect, useMemo, useState } from 'react';
-import { useUpdateNodeInternals, type NodeProps, type Node } from '@xyflow/react';
+import { memo, useCallback, useMemo, useState } from 'react';
+import { type NodeProps, type Node } from '@xyflow/react';
 import { usePlanStore, useGameDataStore, useUIStore } from '@/store';
 import { useLocale } from '@/hooks/useLocale';
 import { getModuleComputed } from '@/engine';
@@ -34,7 +34,6 @@ export const ModuleNode = memo(function ModuleNode({
   selected,
 }: NodeProps<ModuleNodeType>) {
   const { module, onWareDoubleClick } = data;
-  const updateNodeInternals = useUpdateNodeInternals();
   const activeStationId = useUIStore((state) => state.activeStationId);
   const computed = usePlanStore((state) => state.computed);
   const updateModule = usePlanStore((state) => state.updateModule);
@@ -115,17 +114,6 @@ export const ModuleNode = memo(function ModuleNode({
   const sortedGrossInputs = useMemo(() => {
     return sortItems(moduleComputed?.grossInputs ?? [], module.inputOrder);
   }, [moduleComputed?.grossInputs, module.inputOrder, sortItems]);
-
-  // Notify React Flow when handles change position (e.g., due to resorting)
-  const outputOrder = sortedGrossOutputs.map((w) => w.wareId).join(',');
-  const inputOrder = sortedGrossInputs.map((w) => w.wareId).join(',');
-  useEffect(() => {
-    if (outputOrder || inputOrder) {
-      requestAnimationFrame(() => {
-        updateNodeInternals(module.id);
-      });
-    }
-  }, [outputOrder, inputOrder, updateNodeInternals, module.id]);
 
   // Check if there are any connections (net differs from gross)
   const hasConnections = useMemo(() => {
