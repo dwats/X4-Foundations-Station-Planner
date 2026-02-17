@@ -2,7 +2,7 @@
 
 > Fair warning: vibe coded slop ahead.
 
-A browser-based station planner for [**X4: Foundations**](https://www.egosoft.com/games/x4/info_en.php) (all DLCs) and the [**Star Wars Interworlds**](https://www.nexusmods.com/x4foundations/mods/349) mod. Design logistics networks by placing stations on a canvas, drilling into them to configure production modules, and connecting stations via resource flows. The focus is on balancing station I/O, sunlight modifiers, and habitat productivity boosts — not profit calculations (yet).
+A browser-based station planner for [**X4: Foundations**](https://www.egosoft.com/games/x4/info_en.php) (all DLCs) and the [**Star Wars Interworlds**](https://www.nexusmods.com/x4foundations/mods/349) mod. Design logistics networks by placing stations on a canvas, drilling into them to configure production modules, and connecting stations via resource flows. The focus is on balancing station I/O, sunlight modifiers, and habitat productivity boosts; not profit calculations (yet).
 
 All data stays client-side in localStorage. Plans can be exported and imported as base64-encoded JSON.
 
@@ -37,4 +37,4 @@ npm run parse     # Regenerate gamedata.json from raw game data
 
 ## Contributing
 
-Contributions and issues are welcome. No formal process yet — just open a PR or file an issue and I'll get to it when I can.
+Contributions and issues are welcome. No formal process yet, just open a PR or file an issue and I'll get to it when I can.
