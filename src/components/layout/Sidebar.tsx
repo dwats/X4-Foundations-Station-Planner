@@ -1,17 +1,32 @@
+import { useEffect } from 'react';
 import { useUIStore, usePlanStore } from '@/store';
 import { StationPanel, SectorPanel, ModulePalette, ModulePanel, ConnectionPanel, ModuleConnectionPanel } from '@/components/panels';
 
 export function Sidebar() {
   const sidebarOpen = useUIStore((state) => state.sidebarOpen);
+  const toggleSidebar = useUIStore((state) => state.toggleSidebar);
+  const setSidebarOpen = useUIStore((state) => state.setSidebarOpen);
   const selectedNodeId = useUIStore((state) => state.selectedNodeId);
   const selectedEdgeId = useUIStore((state) => state.selectedEdgeId);
   const viewMode = useUIStore((state) => state.viewMode);
   const activeStationId = useUIStore((state) => state.activeStationId);
   const plan = usePlanStore((state) => state.plan);
 
-  if (!sidebarOpen) {
-    return null;
-  }
+  // Auto-collapse on small screens
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setSidebarOpen(false);
+      }
+    };
+
+    // Check on mount
+    handleResize();
+
+    // Listen for resize events
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [setSidebarOpen]);
 
   // Network view selections
   const selectedStation = viewMode === 'network'
@@ -93,10 +108,68 @@ export function Sidebar() {
     );
   };
 
+  // Collapsed state: just show toggle button
+  if (!sidebarOpen) {
+    return (
+      <aside className="w-10 border-l border-border bg-card flex flex-col transition-all duration-200">
+        <div className="p-2 border-b border-border flex items-center justify-center">
+          <button
+            onClick={toggleSidebar}
+            className="p-1 hover:bg-accent rounded transition-colors"
+            title="Expand sidebar"
+            aria-label="Expand sidebar"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="text-foreground"
+            >
+              <path
+                d="M6 12L10 8L6 4"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                transform="rotate(180 8 8)"
+              />
+            </svg>
+          </button>
+        </div>
+      </aside>
+    );
+  }
+
+  // Expanded state: full sidebar
   return (
-    <aside className="w-72 border-l border-border bg-card flex flex-col">
-      <div className="p-4 border-b border-border">
+    <aside className="w-72 border-l border-border bg-card flex flex-col transition-all duration-200">
+      <div className="p-4 border-b border-border flex items-center justify-between">
         <h2 className="font-semibold text-foreground">{panelTitle}</h2>
+        <button
+          onClick={toggleSidebar}
+          className="p-1 hover:bg-accent rounded transition-colors"
+          title="Collapse sidebar"
+          aria-label="Collapse sidebar"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-foreground"
+          >
+            <path
+              d="M6 12L10 8L6 4"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </button>
       </div>
 
       <div className="flex-1 p-4 overflow-y-auto">

@@ -19,6 +19,25 @@ export function Breadcrumb() {
     <nav className="h-10 border-b border-border bg-muted/50 flex items-center px-4 text-sm">
       <button
         onClick={exitStationView}
+        className="mr-2 p-1 rounded hover:bg-muted-foreground/10 transition-colors"
+        aria-label="Back to sector view"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="text-muted-foreground hover:text-foreground"
+        >
+          <polyline points="10 12 6 8 10 4" />
+        </svg>
+      </button>
+      <button
+        onClick={exitStationView}
         className="text-primary hover:underline"
       >
         {plan.name}
