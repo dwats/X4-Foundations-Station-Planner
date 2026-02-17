@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import {
   ReactFlow,
   ReactFlowProvider,
@@ -65,6 +65,9 @@ function NetworkCanvasInner() {
 
   const reactFlowWrapper = useRef<HTMLDivElement>(null);
 
+  // Track measured node dimensions for MiniMap rendering
+  const [measuredDimensions, setMeasuredDimensions] = useState<Map<string, { width: number; height: number }>>(new Map());
+
   // Convert plan sectors and stations to React Flow nodes
   // Sectors are rendered first (lower z-index) so stations appear on top
   const nodes = useMemo<AllNodeTypes[]>(() => {
@@ -87,10 +90,13 @@ function NetworkCanvasInner() {
       data: { station },
       zIndex: 1,
       draggable: !station.locked,
+      ...(measuredDimensions.get(station.id)
+        ? { measured: measuredDimensions.get(station.id) }
+        : { initialWidth: 260, initialHeight: 140 }),
     }));
 
     return [...sectorNodes, ...stationNodes];
-  }, [sectors, stations]);
+  }, [sectors, stations, measuredDimensions]);
 
   // Convert plan connections to React Flow edges
   const edges = useMemo<ResourceEdgeType[]>(() => {
@@ -171,6 +177,16 @@ function NetworkCanvasInner() {
           if (change.selected) {
             selectNode(change.id);
           }
+        } else if (change.type === 'dimensions' && change.dimensions) {
+          setMeasuredDimensions((prev) => {
+            const existing = prev.get(change.id);
+            if (existing?.width === change.dimensions!.width && existing?.height === change.dimensions!.height) {
+              return prev;
+            }
+            const next = new Map(prev);
+            next.set(change.id, change.dimensions!);
+            return next;
+          });
         }
       });
     },
@@ -390,10 +406,9 @@ function NetworkCanvasInner() {
         <Controls />
         <MiniMap
           nodeColor={(node) => {
-            if (node.type === 'sector') {
-              return node.selected ? '#3b82f6' : '#475569';
-            }
-            return node.selected ? '#3b82f6' : '#64748b';
+            if (node.selected) return '#3b82f6';
+            if (node.type === 'sector') return '#475569';
+            return '#94a3b8';
           }}
           maskColor="rgba(0, 0, 0, 0.4)"
         />

@@ -4,6 +4,7 @@ import {
   ReactFlowProvider,
   Background,
   Controls,
+  MiniMap,
   useReactFlow,
   type Connection,
   type OnNodesChange,
@@ -25,6 +26,7 @@ import { getModuleComputed, findRecipeForModule } from '@/engine';
 import {
   ModuleNode,
   type ModuleNodeType,
+  type ModuleNodeData,
   StationInputNode,
   type StationInputNodeType,
   StationOutputNode,
@@ -69,8 +71,12 @@ function StationCanvasInner() {
 
   const addModule = usePlanStore((state) => state.addModule);
   const gameData = useGameDataStore((state) => state.gameData);
+  const getModuleType = useGameDataStore((state) => state.getModuleType);
 
   const reactFlowWrapper = useRef<HTMLDivElement>(null);
+
+  // Track measured node dimensions for MiniMap rendering
+  const [measuredDimensions, setMeasuredDimensions] = useState<Map<string, { width: number; height: number }>>(new Map());
 
   // Auto-create state
   const [pickerState, setPickerState] = useState<{
@@ -298,6 +304,9 @@ function StationCanvasInner() {
       position: module.position,
       data: { module, onWareDoubleClick: handleWareDoubleClick },
       draggable: !module.locked,
+      ...(measuredDimensions.get(module.id)
+        ? { measured: measuredDimensions.get(module.id) }
+        : { initialWidth: 240, initialHeight: 200 }),
     }));
 
     // Station Input node (always present)
@@ -307,6 +316,9 @@ function StationCanvasInner() {
       position: station.stationInputPosition ?? defaultInputPosition,
       data: {},
       deletable: false,
+      ...(measuredDimensions.get(STATION_INPUT_ID)
+        ? { measured: measuredDimensions.get(STATION_INPUT_ID) }
+        : { initialWidth: 200, initialHeight: 110 }),
     };
 
     // Station Output node (always present)
@@ -316,10 +328,13 @@ function StationCanvasInner() {
       position: station.stationOutputPosition ?? defaultOutputPosition,
       data: {},
       deletable: false,
+      ...(measuredDimensions.get(STATION_OUTPUT_ID)
+        ? { measured: measuredDimensions.get(STATION_OUTPUT_ID) }
+        : { initialWidth: 200, initialHeight: 110 }),
     };
 
     return [stationInputNode, ...moduleNodes, stationOutputNode];
-  }, [station, handleWareDoubleClick]);
+  }, [station, handleWareDoubleClick, measuredDimensions]);
 
   // Convert module connections to React Flow edges
   const edges = useMemo<ModuleEdgeType[]>(() => {
@@ -364,6 +379,16 @@ function StationCanvasInner() {
           if (change.selected) {
             selectNode(change.id);
           }
+        } else if (change.type === 'dimensions' && change.dimensions) {
+          setMeasuredDimensions((prev) => {
+            const existing = prev.get(change.id);
+            if (existing?.width === change.dimensions!.width && existing?.height === change.dimensions!.height) {
+              return prev;
+            }
+            const next = new Map(prev);
+            next.set(change.id, change.dimensions!);
+            return next;
+          });
         }
       });
     },
@@ -597,6 +622,24 @@ function StationCanvasInner() {
       >
         <Background gap={16} size={1} />
         <Controls />
+        <MiniMap
+          nodeColor={(node) => {
+            if (node.selected) return '#3b82f6';
+            if (node.type === 'stationInput') return '#a855f7';
+            if (node.type === 'stationOutput') return '#14b8a6';
+            if (node.type === 'module') {
+              const blueprintId = (node.data as ModuleNodeData | undefined)?.module?.blueprintId;
+              if (blueprintId) {
+                const type = getModuleType(blueprintId);
+                if (type === 'production') return '#fb923c';
+                if (type === 'habitat') return '#22c55e';
+                if (type === 'storage') return '#3b82f6';
+              }
+            }
+            return '#64748b';
+          }}
+          maskColor="rgba(0, 0, 0, 0.4)"
+        />
       </ReactFlow>
 
       {/* Station info overlay */}
