@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { temporal } from 'zundo';
 import { nanoid } from 'nanoid';
 import type { Plan, PlanStation, PlanSector, PlanModule, PlanConnection, PlanModuleConnection, NetworkComputed, GameMode } from '@/types';
 import { STATION_INPUT_ID } from '@/types/plan';
@@ -71,9 +72,11 @@ interface PlanStore {
   recompute: () => void;
 }
 
-export const usePlanStore = create<PlanStore>((set, get) => ({
-  plan: createEmptyPlan('New Plan'),
-  computed: createEmptyComputed(),
+export const usePlanStore = create<PlanStore>()(
+  temporal(
+    (set, get) => ({
+      plan: createEmptyPlan('New Plan'),
+      computed: createEmptyComputed(),
 
   createPlan: (name) => {
     set({ plan: createEmptyPlan(name), computed: createEmptyComputed() });
@@ -433,7 +436,14 @@ export const usePlanStore = create<PlanStore>((set, get) => ({
     const computed = computeNetwork(plan, gameData);
     set({ computed });
   },
-}));
+    }),
+    {
+      partialize: (state) => ({ plan: state.plan }),
+      limit: 50,
+      equality: (pastState, currentState) => pastState.plan === currentState.plan,
+    }
+  )
+);
 
 // Auto-save subscription: delegate to planManagerStore on plan changes
 // Accepts saveCurrentPlan function to avoid circular dependency

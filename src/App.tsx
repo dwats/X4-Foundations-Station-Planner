@@ -11,10 +11,12 @@ import { useGameModeStore } from '@/store/gameModeStore';
 import { setupAutoSave } from '@/store/planStore';
 import { useTheme } from '@/hooks/useTheme';
 import { useLanguage } from '@/hooks/useLanguage';
+import { useUndoRedo } from '@/hooks/useUndoRedo';
 
 function App() {
   useTheme();
   useLanguage();
+  useUndoRedo();
   const { gameData, loading, error, setGameData, setError } = useGameDataStore();
   const viewMode = useUIStore((state) => state.viewMode);
   const gameMode = useGameModeStore((state) => state.gameMode);
