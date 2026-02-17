@@ -3,6 +3,12 @@ import type { ContextMenuState } from '@/components/canvas/context-menu/types';
 
 export type ViewMode = 'network' | 'station';
 export type Theme = 'light' | 'dark' | 'system';
+export type ToastType = 'success' | 'error' | 'info';
+
+interface ToastState {
+  message: string;
+  type: ToastType;
+}
 
 interface UIStore {
   // View state
@@ -27,6 +33,9 @@ interface UIStore {
   // Context menu state
   contextMenu: ContextMenuState | null;
 
+  // Toast state
+  toast: ToastState | null;
+
   // Actions
   setViewMode: (mode: ViewMode) => void;
   drillIntoStation: (stationId: string) => void;
@@ -47,7 +56,12 @@ interface UIStore {
 
   openContextMenu: (state: ContextMenuState) => void;
   closeContextMenu: () => void;
+
+  showToast: (message: string, type?: ToastType) => void;
+  dismissToast: () => void;
 }
+
+let toastTimeoutId: NodeJS.Timeout | null = null;
 
 export const useUIStore = create<UIStore>((set) => ({
   viewMode: 'network',
@@ -60,6 +74,7 @@ export const useUIStore = create<UIStore>((set) => ({
   theme: 'system',
   language: 'en',
   contextMenu: null,
+  toast: null,
 
   setViewMode: (mode) => set({ viewMode: mode }),
 
@@ -110,4 +125,29 @@ export const useUIStore = create<UIStore>((set) => ({
 
   openContextMenu: (state) => set({ contextMenu: state }),
   closeContextMenu: () => set({ contextMenu: null }),
+
+  showToast: (message, type = 'info') => {
+    // Clear any existing timeout
+    if (toastTimeoutId) {
+      clearTimeout(toastTimeoutId);
+    }
+
+    // Set the new toast
+    set({ toast: { message, type } });
+
+    // Auto-dismiss after 3 seconds
+    toastTimeoutId = setTimeout(() => {
+      set({ toast: null });
+      toastTimeoutId = null;
+    }, 3000);
+  },
+
+  dismissToast: () => {
+    // Clear timeout if exists
+    if (toastTimeoutId) {
+      clearTimeout(toastTimeoutId);
+      toastTimeoutId = null;
+    }
+    set({ toast: null });
+  },
 }));

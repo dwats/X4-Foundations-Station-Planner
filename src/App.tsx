@@ -3,6 +3,7 @@ import { ReactFlowProvider } from '@xyflow/react';
 import { TopBar, Sidebar, Breadcrumb } from '@/components/layout';
 import { ReportDrawer } from '@/components/report';
 import { NetworkCanvas, StationCanvas } from '@/components/canvas';
+import { Toast } from '@/components/shared/Toast';
 import { loadGameData } from '@/data/loader';
 import { useGameDataStore, useUIStore, usePlanStore } from '@/store';
 import { usePlanManagerStore } from '@/store/planManagerStore';
@@ -74,6 +75,7 @@ function App() {
             {Object.keys(gameData.sectors).length} sectors
           </div>
         )}
+        <Toast />
       </div>
     </ReactFlowProvider>
   );

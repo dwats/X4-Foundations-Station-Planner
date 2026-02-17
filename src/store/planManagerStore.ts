@@ -33,6 +33,7 @@ interface PlanManagerStore {
   deletePlan: (id: string) => void;
   duplicatePlan: (id: string, newName: string, newTags: string[]) => void;
   updatePlanMeta: (id: string, patch: { name?: string; tags?: string[] }) => void;
+  importPlan: (plan: Plan) => void;
 }
 
 export const usePlanManagerStore = create<PlanManagerStore>((set, get) => ({
@@ -257,5 +258,22 @@ export const usePlanManagerStore = create<PlanManagerStore>((set, get) => ({
         console.error('Failed to update plan meta:', e);
       }
     }
+  },
+
+  importPlan: (plan) => {
+    // Save plan data to localStorage
+    localStorage.setItem(planKey(plan.id), JSON.stringify(plan));
+
+    // Update index with new plan
+    const meta = extractMeta(plan);
+    const { planIndex } = get();
+    const newIndex = [...planIndex, meta];
+    localStorage.setItem(INDEX_KEY, JSON.stringify(newIndex));
+    localStorage.setItem(CURRENT_PLAN_KEY, plan.id);
+
+    set({ planIndex: newIndex, currentPlanId: plan.id });
+
+    // Load into planStore
+    usePlanStore.getState().loadPlan(plan);
   },
 }));

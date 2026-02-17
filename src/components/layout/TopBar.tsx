@@ -1,6 +1,10 @@
-import { usePlanStore, useUIStore, useGameDataStore, useGameModeStore, Theme } from '@/store';
+import { useState } from 'react';
+import { usePlanStore, useUIStore, useGameDataStore, useGameModeStore, usePlanManagerStore, Theme } from '@/store';
 import { GameModeToggle } from './GameModeToggle';
 import { PlanManagerDialog } from './PlanManagerDialog';
+import { ExportDialog } from '@/components/shared/ExportDialog';
+import { ImportDialog } from '@/components/shared/ImportDialog';
+import type { Plan } from '@/types';
 
 export function TopBar() {
   const plan = usePlanStore((state) => state.plan);
@@ -9,16 +13,26 @@ export function TopBar() {
   const reportOpen = useUIStore((state) => state.reportOpen);
   const plansOpen = useUIStore((state) => state.plansOpen);
   const setPlansOpen = useUIStore((state) => state.setPlansOpen);
+  const showToast = useUIStore((state) => state.showToast);
   const theme = useUIStore((state) => state.theme);
   const setTheme = useUIStore((state) => state.setTheme);
   const language = useUIStore((state) => state.language);
   const setLanguage = useUIStore((state) => state.setLanguage);
   const gameData = useGameDataStore((state) => state.gameData);
   const gameMode = useGameModeStore((state) => state.gameMode);
+  const importPlanToManager = usePlanManagerStore((state) => state.importPlan);
+
+  const [exportOpen, setExportOpen] = useState(false);
+  const [importOpen, setImportOpen] = useState(false);
 
   const cycleTheme = () => {
     const next: Theme = theme === 'light' ? 'dark' : theme === 'dark' ? 'system' : 'light';
     setTheme(next);
+  };
+
+  const handleImport = (plan: Plan) => {
+    importPlanToManager(plan);
+    showToast(`Imported "${plan.name}" successfully!`, 'success');
   };
 
   const appTitle = gameMode === 'swi' ? 'X4 SWI Station Planner' : 'X4 Station Planner';
@@ -63,6 +77,18 @@ export function TopBar() {
             <span className="text-xs">{theme.charAt(0).toUpperCase() + theme.slice(1)}</span>
           </button>
           <button
+            onClick={() => setExportOpen(true)}
+            className="px-3 py-1.5 text-sm rounded bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+          >
+            Export
+          </button>
+          <button
+            onClick={() => setImportOpen(true)}
+            className="px-3 py-1.5 text-sm rounded bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+          >
+            Import
+          </button>
+          <button
             onClick={() => setPlansOpen(true)}
             className="px-3 py-1.5 text-sm rounded bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
           >
@@ -85,6 +111,18 @@ export function TopBar() {
         open={plansOpen}
         onClose={() => setPlansOpen(false)}
         gameMode={gameMode}
+      />
+
+      <ExportDialog
+        open={exportOpen}
+        onClose={() => setExportOpen(false)}
+        plan={plan}
+      />
+
+      <ImportDialog
+        open={importOpen}
+        onClose={() => setImportOpen(false)}
+        onImport={handleImport}
       />
     </>
   );
