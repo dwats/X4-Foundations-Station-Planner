@@ -31,6 +31,8 @@ export interface WareIORowProps {
   handleTooltip?: string;
   /** Tooltip for amount display */
   amountTooltip?: string;
+  /** Double-click handler for auto-create */
+  onDoubleClick?: () => void;
 }
 
 export function WareIORow({
@@ -44,6 +46,7 @@ export function WareIORow({
   drag,
   handleTooltip,
   amountTooltip,
+  onDoubleClick,
 }: WareIORowProps) {
   const gameData = useGameDataStore((s) => s.gameData);
   const { t } = useLocale();
@@ -178,6 +181,7 @@ export function WareIORow({
 
   return (
     <div
+      onDoubleClick={onDoubleClick ? (e) => { e.stopPropagation(); onDoubleClick(); } : undefined}
       onDragOver={drag?.onDragOver}
       onDragLeave={drag?.onDragLeave}
       onDrop={drag?.onDrop}

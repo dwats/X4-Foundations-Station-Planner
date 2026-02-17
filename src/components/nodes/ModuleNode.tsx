@@ -10,6 +10,7 @@ import './nodes.css';
 
 export type ModuleNodeData = {
   module: PlanModule;
+  onWareDoubleClick?: (wareId: string, moduleId: string, type: 'input' | 'output') => void;
 };
 
 export type ModuleNodeType = Node<ModuleNodeData, 'module'>;
@@ -32,7 +33,7 @@ export const ModuleNode = memo(function ModuleNode({
   data,
   selected,
 }: NodeProps<ModuleNodeType>) {
-  const { module } = data;
+  const { module, onWareDoubleClick } = data;
   const activeStationId = useUIStore((state) => state.activeStationId);
   const computed = usePlanStore((state) => state.computed);
   const updateModule = usePlanStore((state) => state.updateModule);
@@ -250,6 +251,7 @@ export const ModuleNode = memo(function ModuleNode({
         preset={MODULE_PRESET}
         drag={createDragConfig(grossItem.wareId, type)}
         amountTooltip={`Full: ${formatAmount(grossItem.amount)}/hr`}
+        onDoubleClick={onWareDoubleClick ? () => onWareDoubleClick(grossItem.wareId, module.id, type) : undefined}
       />
     );
   };

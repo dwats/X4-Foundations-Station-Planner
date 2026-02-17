@@ -53,7 +53,7 @@ interface PlanStore {
   moveStationToSector: (stationId: string, sectorId: string | null) => void;
 
   // Modules
-  addModule: (stationId: string, blueprintId: string, position: { x: number; y: number }) => void;
+  addModule: (stationId: string, blueprintId: string, position: { x: number; y: number }) => string;
   updateModule: (stationId: string, moduleId: string, patch: Partial<PlanModule>) => void;
   removeModule: (stationId: string, moduleId: string) => void;
 
@@ -229,6 +229,7 @@ export const usePlanStore = create<PlanStore>((set, get) => ({
       },
     }));
     get().recompute();
+    return module.id;
   },
 
   updateModule: (stationId, moduleId, patch) => {

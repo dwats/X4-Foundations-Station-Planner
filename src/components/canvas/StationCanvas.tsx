@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import {
   ReactFlow,
   ReactFlowProvider,
@@ -9,6 +9,8 @@ import {
   type OnNodesChange,
   type OnEdgesChange,
   type OnConnect,
+  type OnConnectStart,
+  type OnConnectEnd,
   type NodeTypes,
   type EdgeTypes,
   type Viewport,
@@ -18,7 +20,8 @@ import {
 import '@xyflow/react/dist/style.css';
 
 import { usePlanStore, useUIStore } from '@/store';
-import { getModuleComputed } from '@/engine';
+import { useGameDataStore } from '@/store/gamedataStore';
+import { getModuleComputed, findRecipeForModule } from '@/engine';
 import {
   ModuleNode,
   type ModuleNodeType,
@@ -29,7 +32,9 @@ import {
 } from '@/components/nodes';
 import { ModuleEdge, type ModuleEdgeType } from '@/components/edges';
 import { ContextMenuShell } from './context-menu';
+import { ModulePickerDialog } from '@/components/shared/ModulePickerDialog';
 import { STATION_INPUT_ID, STATION_OUTPUT_ID } from '@/types/plan';
+import type { ProductionModule } from '@/types';
 
 // Type for all nodes in station canvas
 export type StationCanvasNode = ModuleNodeType | StationInputNodeType | StationOutputNodeType;
@@ -62,7 +67,27 @@ function StationCanvasInner() {
   const openContextMenu = useUIStore((state) => state.openContextMenu);
   const closeContextMenu = useUIStore((state) => state.closeContextMenu);
 
+  const addModule = usePlanStore((state) => state.addModule);
+  const gameData = useGameDataStore((state) => state.gameData);
+
   const reactFlowWrapper = useRef<HTMLDivElement>(null);
+
+  // Auto-create state
+  const [pickerState, setPickerState] = useState<{
+    wareId: string;
+    existingModuleId: string;
+    candidates: ProductionModule[];
+    direction: 'producer' | 'consumer';
+    position: { x: number; y: number };
+  } | null>(null);
+
+  // Connection drag tracking refs
+  const pendingConnection = useRef<{
+    nodeId: string;
+    handleId: string;
+    handleType: 'source' | 'target';
+  } | null>(null);
+  const connectionCompleted = useRef(false);
 
   // Find the active station
   const station = useMemo(
@@ -74,6 +99,195 @@ function StationCanvasInner() {
   const defaultInputPosition = { x: -300, y: 100 };
   const defaultOutputPosition = { x: 400, y: 100 };
 
+  // Find production modules that produce a given ware
+  const findProducers = useCallback(
+    (wareId: string): ProductionModule[] => {
+      if (!gameData) return [];
+      return Object.values(gameData.modules.production).filter(
+        (m) => m.producedWareId === wareId
+      );
+    },
+    [gameData]
+  );
+
+  // Find production modules that consume a given ware (have it as recipe input)
+  const findConsumers = useCallback(
+    (wareId: string): ProductionModule[] => {
+      if (!gameData) return [];
+      return Object.values(gameData.modules.production).filter((m) => {
+        const recipe = findRecipeForModule(m, gameData.recipes);
+        return recipe?.inputs.some((inp) => inp.ware === wareId) ?? false;
+      });
+    },
+    [gameData]
+  );
+
+  // Create a module and connect it to the existing module
+  const createModuleAndConnect = useCallback(
+    (
+      blueprintId: string,
+      wareId: string,
+      existingModuleId: string,
+      direction: 'producer' | 'consumer',
+      position: { x: number; y: number }
+    ) => {
+      if (!activeStationId) return;
+
+      const newModuleId = addModule(activeStationId, blueprintId, position);
+
+      // After addModule, computed is fresh (Zustand set is synchronous)
+      const freshComputed = usePlanStore.getState().computed;
+
+      if (direction === 'producer') {
+        // New module produces -> existing module consumes
+        const sourceComputed = getModuleComputed(freshComputed, activeStationId, newModuleId);
+        const targetComputed = getModuleComputed(freshComputed, activeStationId, existingModuleId);
+        const sourceGross = sourceComputed?.grossOutputs.find((o) => o.wareId === wareId)?.amount ?? 0;
+        const targetGross = targetComputed?.grossInputs.find((i) => i.wareId === wareId)?.amount ?? 0;
+        const amount = Math.min(sourceGross, targetGross);
+        const ratio = sourceGross > 0 ? amount / sourceGross : 0;
+
+        addModuleConnection(activeStationId, {
+          sourceModuleId: newModuleId,
+          targetModuleId: existingModuleId,
+          wareId,
+          amount,
+          mode: 'auto',
+          locked: false,
+          ratio,
+        });
+      } else {
+        // Existing module produces -> new module consumes
+        const sourceComputed = getModuleComputed(freshComputed, activeStationId, existingModuleId);
+        const targetComputed = getModuleComputed(freshComputed, activeStationId, newModuleId);
+        const sourceGross = sourceComputed?.grossOutputs.find((o) => o.wareId === wareId)?.amount ?? 0;
+        const targetGross = targetComputed?.grossInputs.find((i) => i.wareId === wareId)?.amount ?? 0;
+        const amount = Math.min(sourceGross, targetGross);
+        const ratio = sourceGross > 0 ? amount / sourceGross : 0;
+
+        addModuleConnection(activeStationId, {
+          sourceModuleId: existingModuleId,
+          targetModuleId: newModuleId,
+          wareId,
+          amount,
+          mode: 'auto',
+          locked: false,
+          ratio,
+        });
+      }
+    },
+    [activeStationId, addModule, addModuleConnection]
+  );
+
+  // Trigger auto-create logic for a ware
+  const triggerAutoCreate = useCallback(
+    (
+      wareId: string,
+      existingModuleId: string,
+      direction: 'producer' | 'consumer',
+      position: { x: number; y: number }
+    ) => {
+      const candidates = direction === 'producer' ? findProducers(wareId) : findConsumers(wareId);
+
+      if (candidates.length === 0) return;
+      if (candidates.length === 1) {
+        createModuleAndConnect(candidates[0].id, wareId, existingModuleId, direction, position);
+      } else {
+        setPickerState({ wareId, existingModuleId, candidates, direction, position });
+      }
+    },
+    [findProducers, findConsumers, createModuleAndConnect]
+  );
+
+  // Handle double-click on a ware row
+  const handleWareDoubleClick = useCallback(
+    (wareId: string, moduleId: string, type: 'input' | 'output') => {
+      // Find existing module position for offset
+      const mod = station?.modules.find((m) => m.id === moduleId);
+      const basePos = mod?.position ?? { x: 0, y: 0 };
+
+      if (type === 'input') {
+        // Input ware: create a producer to the left
+        triggerAutoCreate(wareId, moduleId, 'producer', {
+          x: basePos.x - 320,
+          y: basePos.y,
+        });
+      } else {
+        // Output ware: create a consumer to the right
+        triggerAutoCreate(wareId, moduleId, 'consumer', {
+          x: basePos.x + 320,
+          y: basePos.y,
+        });
+      }
+    },
+    [station, triggerAutoCreate]
+  );
+
+  // Handle picker selection
+  const handlePickerSelect = useCallback(
+    (blueprintId: string) => {
+      if (!pickerState) return;
+      createModuleAndConnect(
+        blueprintId,
+        pickerState.wareId,
+        pickerState.existingModuleId,
+        pickerState.direction,
+        pickerState.position
+      );
+      setPickerState(null);
+    },
+    [pickerState, createModuleAndConnect]
+  );
+
+  // Track connection drag start
+  const onConnectStart: OnConnectStart = useCallback(
+    (_event, params) => {
+      connectionCompleted.current = false;
+      if (params.nodeId && params.handleId && params.handleType) {
+        pendingConnection.current = {
+          nodeId: params.nodeId,
+          handleId: params.handleId,
+          handleType: params.handleType,
+        };
+      }
+    },
+    []
+  );
+
+  // Track connection drag end (drop on empty space)
+  const onConnectEnd: OnConnectEnd = useCallback(
+    (event) => {
+      if (connectionCompleted.current || !pendingConnection.current) {
+        pendingConnection.current = null;
+        return;
+      }
+
+      const pending = pendingConnection.current;
+      pendingConnection.current = null;
+
+      // Skip Station I/O nodes
+      if (pending.nodeId === STATION_INPUT_ID || pending.nodeId === STATION_OUTPUT_ID) return;
+
+      // Get drop position from the event
+      const mouseEvent = event as MouseEvent;
+      if (!mouseEvent.clientX && !mouseEvent.clientY) return;
+      const flowPos = screenToFlowPosition({ x: mouseEvent.clientX, y: mouseEvent.clientY });
+
+      // Parse ware from handle
+      const wareId = parseWareFromHandle(pending.handleId);
+      if (!wareId) return;
+
+      if (pending.handleType === 'source') {
+        // Dragged from output handle -> create consumer at drop position
+        triggerAutoCreate(wareId, pending.nodeId, 'consumer', flowPos);
+      } else {
+        // Dragged from input handle -> create producer at drop position
+        triggerAutoCreate(wareId, pending.nodeId, 'producer', flowPos);
+      }
+    },
+    [screenToFlowPosition, triggerAutoCreate]
+  );
+
   // Convert plan modules to React Flow nodes (including Station I/O nodes)
   const nodes = useMemo<StationCanvasNode[]>(() => {
     if (!station) return [];
@@ -82,7 +296,7 @@ function StationCanvasInner() {
       id: module.id,
       type: 'module',
       position: module.position,
-      data: { module },
+      data: { module, onWareDoubleClick: handleWareDoubleClick },
       draggable: !module.locked,
     }));
 
@@ -105,7 +319,7 @@ function StationCanvasInner() {
     };
 
     return [stationInputNode, ...moduleNodes, stationOutputNode];
-  }, [station]);
+  }, [station, handleWareDoubleClick]);
 
   // Convert module connections to React Flow edges
   const edges = useMemo<ModuleEdgeType[]>(() => {
@@ -182,6 +396,7 @@ function StationCanvasInner() {
   // Handle new connections
   const onConnect: OnConnect = useCallback(
     (connection: Connection) => {
+      connectionCompleted.current = true;
       if (!activeStationId || !connection.source || !connection.target) {
         return;
       }
@@ -364,6 +579,8 @@ function StationCanvasInner() {
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
+        onConnectStart={onConnectStart}
+        onConnectEnd={onConnectEnd}
         onPaneClick={onPaneClick}
         onPaneContextMenu={onPaneContextMenu}
         onNodeContextMenu={onNodeContextMenu}
@@ -392,6 +609,14 @@ function StationCanvasInner() {
 
       {/* Context Menu */}
       <ContextMenuShell />
+
+      {/* Module Picker Dialog */}
+      <ModulePickerDialog
+        open={pickerState !== null}
+        onClose={() => setPickerState(null)}
+        candidates={pickerState?.candidates ?? []}
+        onSelect={handlePickerSelect}
+      />
     </div>
   );
 }
