@@ -384,6 +384,7 @@ function NetworkCanvasInner() {
         snapGrid={[16, 16]}
         deleteKeyCode={['Delete', 'Backspace']}
         selectionKeyCode={null}
+
       >
         <Background gap={16} size={1} />
         <Controls />

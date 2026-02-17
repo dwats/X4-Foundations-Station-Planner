@@ -4,6 +4,7 @@ import { GameModeToggle } from './GameModeToggle';
 import { PlanManagerDialog } from './PlanManagerDialog';
 import { ExportDialog } from '@/components/shared/ExportDialog';
 import { ImportDialog } from '@/components/shared/ImportDialog';
+import { AboutDialog } from '@/components/shared/AboutDialog';
 import type { Plan } from '@/types';
 
 export function TopBar() {
@@ -24,6 +25,7 @@ export function TopBar() {
 
   const [exportOpen, setExportOpen] = useState(false);
   const [importOpen, setImportOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   const cycleTheme = () => {
     const next: Theme = theme === 'light' ? 'dark' : theme === 'dark' ? 'system' : 'light';
@@ -104,6 +106,12 @@ export function TopBar() {
           >
             Report
           </button>
+          <button
+            onClick={() => setAboutOpen(true)}
+            className="px-3 py-1.5 text-sm rounded bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+          >
+            About
+          </button>
         </div>
       </header>
 
@@ -123,6 +131,11 @@ export function TopBar() {
         open={importOpen}
         onClose={() => setImportOpen(false)}
         onImport={handleImport}
+      />
+
+      <AboutDialog
+        open={aboutOpen}
+        onClose={() => setAboutOpen(false)}
       />
     </>
   );

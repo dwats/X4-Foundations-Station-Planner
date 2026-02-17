@@ -92,6 +92,15 @@
   fill: hsl(var(--foreground)) !important;
 }
 
+/* React Flow Attribution - theme aware */
+.react-flow__attribution {
+  background: hsl(var(--card) / 0.7) !important;
+}
+
+.react-flow__attribution a {
+  color: hsl(var(--muted-foreground)) !important;
+}
+
 /* React Flow MiniMap - theme aware */
 .react-flow__minimap {
   background: hsl(var(--card)) !important;

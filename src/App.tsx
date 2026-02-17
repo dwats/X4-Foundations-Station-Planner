@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { ReactFlowProvider } from '@xyflow/react';
 import { TopBar, Sidebar, Breadcrumb } from '@/components/layout';
 import { ReportDrawer } from '@/components/report';
@@ -20,6 +20,12 @@ function App() {
   const { gameData, loading, error, setGameData, setError } = useGameDataStore();
   const viewMode = useUIStore((state) => state.viewMode);
   const gameMode = useGameModeStore((state) => state.gameMode);
+  const [showDebug, setShowDebug] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowDebug(false), 5000);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     // Initialize plan manager (handles migration from legacy format)
@@ -70,9 +76,9 @@ function App() {
           <Sidebar />
         </div>
         <ReportDrawer />
-        {/* Debug info - remove later */}
+        {/* Debug info */}
         {gameData && (
-          <div className="absolute bottom-4 left-4 text-xs text-muted-foreground bg-card/80 p-2 rounded">
+          <div className={`absolute bottom-4 left-4 text-xs text-muted-foreground bg-card/80 p-2 rounded transition-opacity duration-1000 pointer-events-none ${showDebug ? 'opacity-100' : 'opacity-0'}`}>
             Loaded: {Object.keys(gameData.wares).length} wares,{' '}
             {Object.keys(gameData.sectors).length} sectors
           </div>
