@@ -2412,18 +2412,6 @@
         "producedWareId": "hullparts",
         "workforceMax": 180
       },
-      "prod_gen_medicalsupplies_macro": {
-        "id": "prod_gen_medicalsupplies_macro",
-        "name": {
-          "en": "Teladi Hull Part Production",
-          "ru": "Телади Производство деталей корпуса",
-          "fr": "Teladi Production de pièces de coque",
-          "de": "Teladi Hüllenteileproduktion",
-          "zh": "Teladi 船体部件产线"
-        },
-        "producedWareId": "medicalsupplies",
-        "workforceMax": 90
-      },
       "prod_gen_microchips_macro": {
         "id": "prod_gen_microchips_macro",
         "name": {

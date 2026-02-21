@@ -182,94 +182,6 @@
         "economy"
       ]
     },
-    "computronicsubstrate": {
-      "id": "computronicsubstrate",
-      "name": {
-        "en": "Darkfusion Cell",
-        "ru": "Тёмнофузионная ячейка",
-        "fr": "Cellule de fusion noire",
-        "de": "Dunklefusions Zelle",
-        "zh": "暗融合单元"
-      },
-      "group": "hightech",
-      "transport": "container",
-      "volume": 50,
-      "tags": [
-        "container",
-        "economy",
-        "stationbuilding"
-      ]
-    },
-    "metallicmicrolattice": {
-      "id": "metallicmicrolattice",
-      "name": {
-        "en": "Fibersteel",
-        "ru": "Волокнистая сталь",
-        "fr": "Fibroacier",
-        "de": "Fiberstahl",
-        "zh": "复合金属纤维"
-      },
-      "group": "hightech",
-      "transport": "container",
-      "volume": 1,
-      "tags": [
-        "container",
-        "economy",
-        "stationbuilding"
-      ]
-    },
-    "terranmre": {
-      "id": "terranmre",
-      "name": {
-        "en": "Cloning Vats",
-        "ru": "Клонировочные резервуары",
-        "fr": "Cuves de clonage",
-        "de": "Klonbehälter",
-        "zh": "克隆缸"
-      },
-      "group": "food",
-      "transport": "container",
-      "volume": 2,
-      "tags": [
-        "container",
-        "economy"
-      ]
-    },
-    "proteinpaste": {
-      "id": "proteinpaste",
-      "name": {
-        "en": "Bacta Solution",
-        "ru": "Бакта-раствор",
-        "fr": "Solution de bacta",
-        "de": "Bacta Lösung",
-        "zh": "巴克塔溶液"
-      },
-      "group": "agricultural",
-      "transport": "container",
-      "volume": 4,
-      "tags": [
-        "container",
-        "economy"
-      ]
-    },
-    "siliconcarbide": {
-      "id": "siliconcarbide",
-      "name": {
-        "en": "Obsidian Composite",
-        "ru": "Обсидиановый композит",
-        "fr": "Composite d’obsidienne",
-        "de": "Obsidian Komposit",
-        "zh": "黑石复合材料"
-      },
-      "group": "hightech",
-      "transport": "container",
-      "volume": 20,
-      "tags": [
-        "container",
-        "economy",
-        "stationbuilding"
-      ]
-    },
     "spacefuel": {
       "id": "spacefuel",
       "name": {
@@ -885,6 +797,94 @@
       "tags": [
         "container",
         "economy"
+      ]
+    },
+    "computronicsubstrate": {
+      "id": "computronicsubstrate",
+      "name": {
+        "en": "Darkfusion Cell",
+        "ru": "Тёмнофузионная ячейка",
+        "fr": "Cellule de fusion noire",
+        "de": "Dunklefusions Zelle",
+        "zh": "暗融合单元"
+      },
+      "group": "hightech",
+      "transport": "container",
+      "volume": 50,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "metallicmicrolattice": {
+      "id": "metallicmicrolattice",
+      "name": {
+        "en": "Fibersteel",
+        "ru": "Волокнистая сталь",
+        "fr": "Fibroacier",
+        "de": "Fiberstahl",
+        "zh": "复合金属纤维"
+      },
+      "group": "hightech",
+      "transport": "container",
+      "volume": 1,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
+      ]
+    },
+    "terranmre": {
+      "id": "terranmre",
+      "name": {
+        "en": "Cloning Vats",
+        "ru": "Клонировочные резервуары",
+        "fr": "Cuves de clonage",
+        "de": "Klonbehälter",
+        "zh": "克隆缸"
+      },
+      "group": "food",
+      "transport": "container",
+      "volume": 2,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "proteinpaste": {
+      "id": "proteinpaste",
+      "name": {
+        "en": "Bacta Solution",
+        "ru": "Бакта-раствор",
+        "fr": "Solution de bacta",
+        "de": "Bacta Lösung",
+        "zh": "巴克塔溶液"
+      },
+      "group": "agricultural",
+      "transport": "container",
+      "volume": 4,
+      "tags": [
+        "container",
+        "economy"
+      ]
+    },
+    "siliconcarbide": {
+      "id": "siliconcarbide",
+      "name": {
+        "en": "Obsidian Composite",
+        "ru": "Обсидиановый композит",
+        "fr": "Composite d’obsidienne",
+        "de": "Obsidian Komposit",
+        "zh": "黑石复合材料"
+      },
+      "group": "hightech",
+      "transport": "container",
+      "volume": 20,
+      "tags": [
+        "container",
+        "economy",
+        "stationbuilding"
       ]
     },
     "stimulants": {
@@ -2312,90 +2312,6 @@
         "producedWareId": "wheat",
         "workforceMax": 75
       },
-      "prod_sith_computronicsubstrate_macro": {
-        "id": "prod_sith_computronicsubstrate_macro",
-        "name": {
-          "en": "Darkfusion Cell Factory",
-          "ru": "Завод Тёмнофузионных ячеек",
-          "fr": "Usine de cellules de fusion noire",
-          "de": "Dunklefusions Zelle Fabrik",
-          "zh": "暗融合单元工厂"
-        },
-        "producedWareId": "computronicsubstrate",
-        "workforceMax": 1500
-      },
-      "prod_sith_metallicmicrolattice_macro": {
-        "id": "prod_sith_metallicmicrolattice_macro",
-        "name": {
-          "en": "Fibersteel Foundry",
-          "ru": "Фабрика волокнистой стали",
-          "fr": "Fonderie de fibroacier",
-          "de": "Fiberstahl Gießerei",
-          "zh": "复合金属纤维精炼厂"
-        },
-        "producedWareId": "metallicmicrolattice",
-        "workforceMax": 120
-      },
-      "prod_sith_mre_macro": {
-        "id": "prod_sith_mre_macro",
-        "name": {
-          "en": "Cloning Vats Factory",
-          "ru": "Фабрика клонировочных резервуаров",
-          "fr": "Usine de cuves de clonage",
-          "de": "Klonbehälter Fabrik",
-          "zh": "克隆缸工厂"
-        },
-        "producedWareId": "terranmre",
-        "workforceMax": 135
-      },
-      "prod_sith_proteinpaste_macro": {
-        "id": "prod_sith_proteinpaste_macro",
-        "name": {
-          "en": "Bacta Blender",
-          "ru": "Смеситель бакты",
-          "fr": "Mélangeur de bacta",
-          "de": "Bacta Mixer",
-          "zh": "巴克塔混合器"
-        },
-        "producedWareId": "proteinpaste",
-        "workforceMax": 180
-      },
-      "prod_sith_scrap_recycler_macro": {
-        "id": "prod_sith_scrap_recycler_macro",
-        "name": {
-          "en": "Sith Scrap Recycler",
-          "ru": "Ситх переработчик лома",
-          "fr": "Recycleur de Ferraille Sith",
-          "de": "Sith Schrottumwandler",
-          "zh": "西斯废料回收器"
-        },
-        "producedWareId": "computronicsubstrate siliconcarbide",
-        "workforceMax": 1250
-      },
-      "prod_sith_shipsupplies_macro": {
-        "id": "prod_sith_shipsupplies_macro",
-        "name": {
-          "en": "Sith Ship Supplies Factory",
-          "ru": "Ситх Завод корабельных запасов",
-          "fr": "Sith Usine de ravitaillement de vaisseaux",
-          "de": "Sith Schiffsvorratswaren Fabrik",
-          "zh": "Sith 舰船补给品制造厂"
-        },
-        "producedWareId": "shipsupplies",
-        "workforceMax": 100
-      },
-      "prod_sith_siliconcarbide_macro": {
-        "id": "prod_sith_siliconcarbide_macro",
-        "name": {
-          "en": "Obsidian Composite Factory",
-          "ru": "Фабрика обсидиановых композитов",
-          "fr": "Usine de composite d’obsidienne",
-          "de": "Obsidian Komposit Fabrik",
-          "zh": "黑石复合材料工厂"
-        },
-        "producedWareId": "siliconcarbide",
-        "workforceMax": 750
-      },
       "prod_arg_foodrations_macro": {
         "id": "prod_arg_foodrations_macro",
         "name": {
@@ -2423,11 +2339,11 @@
       "prod_arg_medicalsupplies_macro": {
         "id": "prod_arg_medicalsupplies_macro",
         "name": {
-          "en": "Argon Medical Supply Production",
-          "ru": "Аргон Производство медикаментов",
-          "fr": "Argon Production de fournitures médicales",
-          "de": "Argonen Medizinische Versorgungsgüter-Produktion",
-          "zh": "Argon 医疗物资产线"
+          "en": "Medical Supplies Production",
+          "ru": "Производство медицинских принадлежностей",
+          "fr": "Production de fournitures médicales",
+          "de": "Produktion von medizinischem Material",
+          "zh": "医疗用品产线"
         },
         "producedWareId": "medicalsupplies",
         "workforceMax": 90
@@ -2435,11 +2351,11 @@
       "prod_arg_spacefuel_macro": {
         "id": "prod_arg_spacefuel_macro",
         "name": {
-          "en": "Spacefuel Production",
-          "ru": "Производство космотоплива",
-          "fr": "Production de whisky de l'espace",
-          "de": "Raumspritproduktion",
-          "zh": "太空燃料产线"
+          "en": "Brewery",
+          "ru": "Пивоварня",
+          "fr": "Brasserie",
+          "de": "Brauerei",
+          "zh": "酿酒厂"
         },
         "producedWareId": "spacefuel",
         "workforceMax": 150
@@ -2447,11 +2363,11 @@
       "prod_arg_wheat_macro": {
         "id": "prod_arg_wheat_macro",
         "name": {
-          "en": "Wheat Production",
-          "ru": "Производство пшеницы",
-          "fr": "Production de blé",
-          "de": "Weizenproduktion",
-          "zh": "小麦产线"
+          "en": "Agricultural Goods Factory",
+          "ru": "Фабрика сельхозпродукции",
+          "fr": "Usine de produits agricoles",
+          "de": "Landwirtschaftliche Güter Fabrik",
+          "zh": "农产品厂"
         },
         "producedWareId": "wheat",
         "workforceMax": 75
@@ -2519,11 +2435,11 @@
       "prod_gen_advancedelectronics_macro": {
         "id": "prod_gen_advancedelectronics_macro",
         "name": {
-          "en": "Advanced Electronics Production",
-          "ru": "Производство систем упреждения",
-          "fr": "Production d'électronique avancée",
-          "de": "Elektronikkomponentenproduktion",
-          "zh": "先进电子设备产线"
+          "en": "Advanced Electronics Factory",
+          "ru": "Фабрика продвинутой электроники",
+          "fr": "Usine d’Électronique Avancée",
+          "de": "Advanced Electronics Fabrik",
+          "zh": "先进电子设备工厂"
         },
         "producedWareId": "advancedelectronics",
         "workforceMax": 360
@@ -2531,11 +2447,11 @@
       "prod_gen_antimattercells_macro": {
         "id": "prod_gen_antimattercells_macro",
         "name": {
-          "en": "Antimatter Cell Production",
-          "ru": "Производство АМ-элементов",
-          "fr": "Production de cellules d'antimatière",
-          "de": "Antimateriezellenproduktion",
-          "zh": "反物质单元产线"
+          "en": "Tibanna Refinery",
+          "ru": "Завод по переработке Тибанна",
+          "fr": "Raffinerie de tibanna",
+          "de": "Tibanna Raffinerie",
+          "zh": "提班纳精炼厂"
         },
         "producedWareId": "antimattercells",
         "workforceMax": 120
@@ -2555,11 +2471,11 @@
       "prod_gen_claytronics_macro": {
         "id": "prod_gen_claytronics_macro",
         "name": {
-          "en": "Claytronics Production",
-          "ru": "Производство клэйтроники",
-          "fr": "Production de nanobots",
-          "de": "Nanotronikproduktion",
-          "zh": "电子黏土产线"
+          "en": "Module PreFab Factory",
+          "ru": "Фабрика модульных конструкций",
+          "fr": "Usine de modules préfabriqués",
+          "de": "Modul Fertigteil Fabrik",
+          "zh": "模块预制厂"
         },
         "producedWareId": "claytronics",
         "workforceMax": 810
@@ -2567,11 +2483,11 @@
       "prod_gen_dronecomponents_macro": {
         "id": "prod_gen_dronecomponents_macro",
         "name": {
-          "en": "Drone Component Production",
-          "ru": "Производство компонентов дронов",
-          "fr": "Production de composants de drones",
-          "de": "Drohnenkomponentenproduktion",
-          "zh": "无人机组件产线"
+          "en": "Droid Parts Factory",
+          "ru": "Завод по производству запчастей дроидов",
+          "fr": "Usine de pièces de droïdes",
+          "de": "Droidenteile Fabrik",
+          "zh": "机器人零件厂"
         },
         "producedWareId": "dronecomponents",
         "workforceMax": 450
@@ -2627,26 +2543,14 @@
       "prod_gen_hullparts_macro": {
         "id": "prod_gen_hullparts_macro",
         "name": {
-          "en": "Hull Part Production",
-          "ru": "Производство деталей корпуса",
-          "fr": "Production de pièces de coque",
-          "de": "Hüllenteileproduktion",
-          "zh": "船体部件产线"
+          "en": "Durasteel Foundry",
+          "ru": "Производство Дюрастали",
+          "fr": "Fonderie de duracier",
+          "de": "Durastahl Gießerei",
+          "zh": "硬质合金钢铸造厂"
         },
         "producedWareId": "hullparts",
         "workforceMax": 180
-      },
-      "prod_gen_medicalsupplies_macro": {
-        "id": "prod_gen_medicalsupplies_macro",
-        "name": {
-          "en": "Teladi Hull Part Production",
-          "ru": "Телади Производство деталей корпуса",
-          "fr": "Teladi Production de pièces de coque",
-          "de": "Teladi Hüllenteileproduktion",
-          "zh": "Teladi 船体部件产线"
-        },
-        "producedWareId": "medicalsupplies",
-        "workforceMax": 90
       },
       "prod_gen_microchips_macro": {
         "id": "prod_gen_microchips_macro",
@@ -2687,11 +2591,11 @@
       "prod_gen_quantumtubes_macro": {
         "id": "prod_gen_quantumtubes_macro",
         "name": {
-          "en": "Quantum Tube Production",
-          "ru": "Производство квантовых трубок",
-          "fr": "Production de tubes quantiques",
-          "de": "Quantumröhrenproduktion",
-          "zh": "量子管产线"
+          "en": "Capacitors Factory",
+          "ru": "Завод конденсаторов",
+          "fr": "Usine de condensateurs",
+          "de": "Kondensatoren Fabrik",
+          "zh": "电容器工厂"
         },
         "producedWareId": "quantumtubes",
         "workforceMax": 150
@@ -2711,11 +2615,11 @@
       "prod_gen_scanningarrays_macro": {
         "id": "prod_gen_scanningarrays_macro",
         "name": {
-          "en": "Scanning Array Production",
-          "ru": "Производство сканирующих матриц",
-          "fr": "Production d'ensemble de scanners",
-          "de": "Sensorbündelproduktion",
-          "zh": "扫描阵列产线"
+          "en": "Sensor Components Factory",
+          "ru": "Завод компонентов сенсоров",
+          "fr": "Usine de composants de capteurs",
+          "de": "Sensorkomponenten Fabrik",
+          "zh": "传感器元件厂"
         },
         "producedWareId": "scanningarrays",
         "workforceMax": 210
@@ -2724,10 +2628,10 @@
         "id": "prod_gen_scrap_recycler_macro",
         "name": {
           "en": "Scrap Recycler",
-          "ru": "Переработчик Металлолома",
-          "fr": "Recycleur de ferraille",
-          "de": "Schrottrecycler",
-          "zh": "废料再生设施"
+          "ru": "Переработчик лома",
+          "fr": "Recycleur de Ferraille",
+          "de": "Schrottumwandler",
+          "zh": "废料回收器"
         },
         "producedWareId": "claytronics hullparts",
         "workforceMax": 1250
@@ -2999,11 +2903,11 @@
       "prod_tel_spaceweed_macro": {
         "id": "prod_tel_spaceweed_macro",
         "name": {
-          "en": "Spaceweed Production",
-          "ru": "Производство космотабака",
-          "fr": "Production d'herbe de l'espace",
-          "de": "Raumkrautproduktion",
-          "zh": "太空烟草产线"
+          "en": "Hutt Spice Lab",
+          "ru": "Дворец блаженства Хаттов",
+          "fr": "Laboratoire d’Épice Hutt",
+          "de": "Hutt Glückseligkeits-Palast",
+          "zh": "赫特香料实验室"
         },
         "producedWareId": "spaceweed",
         "workforceMax": 90
@@ -3023,11 +2927,11 @@
       "prod_tel_swampplant_macro": {
         "id": "prod_tel_swampplant_macro",
         "name": {
-          "en": "Swamp Plant Production",
-          "ru": "Производство болотной травы",
-          "fr": "Production d'herbe de marécage",
-          "de": "Sumpfpflanzenproduktion",
-          "zh": "沼泽植物产线"
+          "en": "Hutt Chemicals Lab",
+          "ru": "Химическая лаборатория Хаттов",
+          "fr": "Laboratoire de Produits Chimiques Hutts",
+          "de": "Hutt Chemikalien Labor",
+          "zh": "赫特化学实验室"
         },
         "producedWareId": "swampplant",
         "workforceMax": 75
@@ -3157,11 +3061,11 @@
       "hab_arg_l_01_macro": {
         "id": "hab_arg_l_01_macro",
         "name": {
-          "en": "Argon L Habitat",
-          "ru": "Аргон L Ареал",
-          "fr": "Argon L Habitat",
-          "de": "Argonen L-Habitat",
-          "zh": "Argon L 居住区"
+          "en": "Generic L Habitat",
+          "ru": "Стандартный L Ареал",
+          "fr": "Habitat L générique",
+          "de": "Generic L Habitat",
+          "zh": "通用 L 栖息地"
         },
         "race": "argon",
         "workforceCapacity": 1000
@@ -3169,11 +3073,11 @@
       "hab_arg_m_01_macro": {
         "id": "hab_arg_m_01_macro",
         "name": {
-          "en": "Argon M Habitat",
-          "ru": "Аргон M Ареал",
-          "fr": "Argon M Habitat",
-          "de": "Argonen M-Habitat",
-          "zh": "Argon M 居住区"
+          "en": "Generic M Habitat",
+          "ru": "Стандартный M Ареал",
+          "fr": "Habitat M générique",
+          "de": "Generic M Habitat",
+          "zh": "通用 M 栖息地"
         },
         "race": "argon",
         "workforceCapacity": 500
@@ -3181,11 +3085,11 @@
       "hab_arg_s_01_macro": {
         "id": "hab_arg_s_01_macro",
         "name": {
-          "en": "Argon S Habitat",
-          "ru": "Аргон S Ареал",
-          "fr": "Argon S Habitat",
-          "de": "Argonen S-Habitat",
-          "zh": "Argon S 居住区"
+          "en": "Generic S Habitat",
+          "ru": "Стандартный S Ареал",
+          "fr": "Habitat S générique",
+          "de": "Generic S Habitat",
+          "zh": "通用 M 栖息地"
         },
         "race": "argon",
         "workforceCapacity": 250
